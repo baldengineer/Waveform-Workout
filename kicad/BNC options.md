@@ -2,6 +2,8 @@
 
 The v1 trainer plugs into a 1 MΩ scope input and has a button that users press while watching the waveform. For that use, try a locking BNC-to-terminal adapter in a printed cradle alongside the direct edge-mount plug. For a trainer that can rest on the bench, a captive coax pigtail is the simplest build.
 
+Place the 0.1-inch two-pin header J4 immediately behind the HenryTech J2 footprint, toward the board interior and clear of the BNC solder tabs. J4 pin 1 carries output A after R5, in parallel with the BNC center contact. Pin 2 is ground. Mark the pads A and GND so an adapter or pigtail can be wired directly.
+
 | Connection | Parts and availability | Prototype check |
 |---|---|---|
 | Direct edge-mount male BNC (current J2) | HenryTech HL3-BNC-JFD-4-1, LCSC C54815072. Two available. [Drawing](https://datasheet.lcsc.com/datasheet/pdf/f3d1af0f565e3e068431c614c40f7cf6.pdf?productCode=C54815072) | Uses a 1.6 mm board edge. Check bayonet grip and adjacent-channel clearance before drawing the footprint. |
