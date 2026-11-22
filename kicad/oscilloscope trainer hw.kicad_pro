@@ -436,6 +436,18 @@
     [
       "7b4adbc8-cae5-4d7b-a864-30be1a51237a",
       "Root"
+    ],
+    [
+      "7e0c96ab-06f3-41b5-91de-ed4f94883be7",
+      "Power and current measurement"
+    ],
+    [
+      "fc722937-2062-4585-929f-9dafa86e1dc5",
+      "Waveform and trigger outputs"
+    ],
+    [
+      "33f655f7-ca2c-480f-9fc6-e4fac6112077",
+      "Button and indicators"
     ]
   ],
   "text_variables": {},

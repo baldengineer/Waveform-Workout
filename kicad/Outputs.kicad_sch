@@ -1,11 +1,16 @@
 (kicad_sch
-	(version 20250610)
-	(generator "konnect")
+	(version 20260306)
+	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "fcefed74-c069-4d06-b400-cfa982c66cbb")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Analog_Switch:TS5A23157DGS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -5.08 8.89 0)
 				(show_name no)
@@ -63,6 +68,16 @@
 					)
 				)
 			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Texas-Instruments"
 				(at 0 0 0)
 				(show_name no)
@@ -85,27 +100,10 @@
 					)
 				)
 			)
-			(embedded_fonts no)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(symbol "TS5A23157DGS_1_1"
 				(polyline
 					(pts
-						(xy -5.08 0)
-						(xy -2.794 0)
+						(xy -5.08 0) (xy -2.794 0)
 					)
 					(stroke
 						(width 0)
@@ -139,8 +137,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 0.127)
-						(xy 2.54 1.905)
+						(xy -1.651 0.127) (xy 2.54 1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -152,8 +149,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.254)
-						(xy 0 0.508)
+						(xy 0 0.254) (xy 0 0.508)
 					)
 					(stroke
 						(width 0)
@@ -165,8 +161,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.254)
-						(xy 0 0)
+						(xy 0 -0.254) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -178,8 +173,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762)
-						(xy 0 -0.508)
+						(xy 0 -0.762) (xy 0 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -191,8 +185,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27)
-						(xy 0 -1.016)
+						(xy 0 -1.27) (xy 0 -1.016)
 					)
 					(stroke
 						(width 0)
@@ -204,8 +197,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.778)
-						(xy 0 -1.524)
+						(xy 0 -1.778) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -217,8 +209,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.286)
-						(xy 0 -2.032)
+						(xy 0 -2.286) (xy 0 -2.032)
 					)
 					(stroke
 						(width 0)
@@ -230,8 +221,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.794)
-						(xy 0 -2.54)
+						(xy 0 -2.794) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -243,8 +233,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.302)
-						(xy 0 -3.048)
+						(xy 0 -3.302) (xy 0 -3.048)
 					)
 					(stroke
 						(width 0)
@@ -256,8 +245,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.81)
-						(xy 0 -3.556)
+						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -269,8 +257,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -4.318)
-						(xy 0 -4.064)
+						(xy 0 -4.318) (xy 0 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -282,8 +269,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -5.08)
-						(xy 0 -4.572)
+						(xy 0 -5.08) (xy 0 -4.572)
 					)
 					(stroke
 						(width 0)
@@ -317,8 +303,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 2.54)
-						(xy 2.794 2.54)
+						(xy 5.08 2.54) (xy 2.794 2.54)
 					)
 					(stroke
 						(width 0)
@@ -330,8 +315,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -2.54)
-						(xy 2.794 -2.54)
+						(xy 5.08 -2.54) (xy 2.794 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -417,8 +401,7 @@
 			(symbol "TS5A23157DGS_2_1"
 				(polyline
 					(pts
-						(xy -5.08 0)
-						(xy -2.794 0)
+						(xy -5.08 0) (xy -2.794 0)
 					)
 					(stroke
 						(width 0)
@@ -452,8 +435,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 0.127)
-						(xy 2.54 1.905)
+						(xy -1.651 0.127) (xy 2.54 1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -465,8 +447,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.254)
-						(xy 0 0.508)
+						(xy 0 0.254) (xy 0 0.508)
 					)
 					(stroke
 						(width 0)
@@ -478,8 +459,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.254)
-						(xy 0 0)
+						(xy 0 -0.254) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -491,8 +471,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762)
-						(xy 0 -0.508)
+						(xy 0 -0.762) (xy 0 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -504,8 +483,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27)
-						(xy 0 -1.016)
+						(xy 0 -1.27) (xy 0 -1.016)
 					)
 					(stroke
 						(width 0)
@@ -517,8 +495,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.778)
-						(xy 0 -1.524)
+						(xy 0 -1.778) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -530,8 +507,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.286)
-						(xy 0 -2.032)
+						(xy 0 -2.286) (xy 0 -2.032)
 					)
 					(stroke
 						(width 0)
@@ -543,8 +519,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.794)
-						(xy 0 -2.54)
+						(xy 0 -2.794) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -556,8 +531,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.302)
-						(xy 0 -3.048)
+						(xy 0 -3.302) (xy 0 -3.048)
 					)
 					(stroke
 						(width 0)
@@ -569,8 +543,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.81)
-						(xy 0 -3.556)
+						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -582,8 +555,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -4.318)
-						(xy 0 -4.064)
+						(xy 0 -4.318) (xy 0 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -595,8 +567,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -5.08)
-						(xy 0 -4.572)
+						(xy 0 -5.08) (xy 0 -4.572)
 					)
 					(stroke
 						(width 0)
@@ -630,8 +601,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 2.54)
-						(xy 2.794 2.54)
+						(xy 5.08 2.54) (xy 2.794 2.54)
 					)
 					(stroke
 						(width 0)
@@ -643,8 +613,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -2.54)
-						(xy 2.794 -2.54)
+						(xy 5.08 -2.54) (xy 2.794 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -776,145 +745,6 @@
 					)
 				)
 			)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
 			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_Coaxial"
@@ -1005,8 +835,7 @@
 			(symbol "Conn_Coaxial_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0)
-						(xy -0.508 0)
+						(xy -2.54 0) (xy -0.508 0)
 					)
 					(stroke
 						(width 0)
@@ -1053,8 +882,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54)
-						(xy 0 -1.778)
+						(xy 0 -2.54) (xy 0 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -1320,8 +1148,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1333,8 +1160,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1385,6 +1211,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Trainer:TLV9002IDR"
 			(pin_names
 				(offset 1.016)
@@ -1395,7 +1361,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at 0 7.6200 0)
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1405,7 +1371,7 @@
 				)
 			)
 			(property "Value" "TLV9002IDR"
-				(at 0 -7.6200 0)
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1450,10 +1416,7 @@
 			(symbol "TLV9002IDR_1_1"
 				(polyline
 					(pts
-						(xy -5.08 5.08)
-						(xy 5.08 0)
-						(xy -5.08 -5.08)
-						(xy -5.08 5.08)
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -1463,17 +1426,17 @@
 						(type background)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 0.762 0.762)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1499,17 +1462,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 0.762 0.762)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1521,10 +1484,7 @@
 			(symbol "TLV9002IDR_2_1"
 				(polyline
 					(pts
-						(xy -5.08 5.08)
-						(xy 5.08 0)
-						(xy -5.08 -5.08)
-						(xy -5.08 5.08)
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -1591,32 +1551,14 @@
 			)
 			(symbol "TLV9002IDR_3_1"
 				(rectangle
-					(start -2.5400 -5.0800)
-					(end 2.5400 5.0800)
+					(start -2.54 -5.08)
+					(end 2.54 5.08)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 				(pin power_in line
@@ -1630,6 +1572,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1722,12 +1682,7 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 -1.27)
-						(xy 1.27 -1.27)
-						(xy 0 -2.54)
-						(xy -1.27 -1.27)
-						(xy 0 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1842,8 +1797,7 @@
 			(symbol "VDD_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27)
-						(xy 0 2.54)
+						(xy -0.762 1.27) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1855,8 +1809,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54)
-						(xy 0.762 1.27)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1868,8 +1821,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 2.54)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1903,307 +1855,8 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 88.9 69.85)
-		(diameter 0)
-		(uuid "0f9c5722-0350-400f-ae01-18cc1a93d26c")
-	)
-	(junction
-		(at 88.9 124.46)
-		(diameter 0)
-		(uuid "39236d4f-ff01-4a01-acce-a72920c6de51")
-	)
-	(junction
-		(at 158.75 81.28)
-		(diameter 0)
-		(uuid "09b296cf-9dfa-4782-abab-720242eca911")
-	)
-	(junction
-		(at 158.75 139.7)
-		(diameter 0)
-		(uuid "3418332a-bcac-4bff-abff-c9a0c8248664")
-	)
-	(wire
-		(pts
-			(xy 62.23 67.31)
-			(xy 52.07 67.31)
-		)
-		(uuid "be594c15-5586-4fa5-a1dd-2c7550dda13b")
-	)
-	(wire
-		(pts
-			(xy 62.23 72.39)
-			(xy 58.42 72.39)
-		)
-		(uuid "1d4504d5-0169-4b17-a4b5-0b66e9dcd5dd")
-	)
-	(wire
-		(pts
-			(xy 58.42 72.39)
-			(xy 58.42 80.01)
-		)
-		(uuid "4789e42c-0bd5-406b-96f3-b8b7655bdf14")
-	)
-	(wire
-		(pts
-			(xy 58.42 80.01)
-			(xy 88.9 80.01)
-		)
-		(uuid "4e569bd0-5b6a-4491-9caa-6dc2caebba25")
-	)
-	(wire
-		(pts
-			(xy 88.9 80.01)
-			(xy 88.9 69.85)
-		)
-		(uuid "a15590b2-38ba-408f-b8ec-a73d10dde4a6")
-	)
-	(wire
-		(pts
-			(xy 77.47 69.85)
-			(xy 88.9 69.85)
-		)
-		(uuid "06ffcd90-162b-4d63-ad89-285e735568b7")
-	)
-	(wire
-		(pts
-			(xy 88.9 69.85)
-			(xy 171.45 69.85)
-		)
-		(uuid "c6201661-8a42-485f-b4ba-44f5eb02c551")
-	)
-	(wire
-		(pts
-			(xy 186.69 67.31)
-			(xy 220.98 67.31)
-		)
-		(uuid "2bc88b53-1e1d-439d-9abf-46f94afc8eb7")
-	)
-	(wire
-		(pts
-			(xy 228.6 67.31)
-			(xy 251.46 67.31)
-		)
-		(uuid "41258f8a-0c56-46fc-94ff-ee9da884871a")
-	)
-	(wire
-		(pts
-			(xy 179.07 74.93)
-			(xy 179.07 81.28)
-		)
-		(uuid "9f2f1f5a-9ff5-474f-b10e-cca57391ec4e")
-	)
-	(wire
-		(pts
-			(xy 179.07 81.28)
-			(xy 158.75 81.28)
-		)
-		(uuid "add2291b-b2f2-4551-960d-cfeaeda16f16")
-	)
-	(wire
-		(pts
-			(xy 158.75 81.28)
-			(xy 158.75 85.09)
-		)
-		(uuid "8d0d0654-0fce-417f-804b-479d7bcdcd7a")
-	)
-	(wire
-		(pts
-			(xy 149.86 81.28)
-			(xy 158.75 81.28)
-		)
-		(uuid "559799c5-56f7-457c-a69f-923675ff1f7d")
-	)
-	(wire
-		(pts
-			(xy 62.23 121.92)
-			(xy 52.07 121.92)
-		)
-		(uuid "b832f0a5-d786-4e19-abf7-bdfe0cdcdb5a")
-	)
-	(wire
-		(pts
-			(xy 62.23 127)
-			(xy 58.42 127)
-		)
-		(uuid "905b3826-116d-41be-a301-4b71d661e3aa")
-	)
-	(wire
-		(pts
-			(xy 58.42 127)
-			(xy 58.42 134.62)
-		)
-		(uuid "db3ff299-a6f0-450f-8c0a-003462044e8c")
-	)
-	(wire
-		(pts
-			(xy 58.42 134.62)
-			(xy 88.9 134.62)
-		)
-		(uuid "056287d1-9965-4011-8386-db4ee493933b")
-	)
-	(wire
-		(pts
-			(xy 88.9 134.62)
-			(xy 88.9 124.46)
-		)
-		(uuid "3628b33c-3127-4b04-be75-9dd2930f0c89")
-	)
-	(wire
-		(pts
-			(xy 77.47 124.46)
-			(xy 88.9 124.46)
-		)
-		(uuid "2ae50951-1859-4c90-8e34-49729c4ddd5f")
-	)
-	(wire
-		(pts
-			(xy 88.9 124.46)
-			(xy 171.45 124.46)
-		)
-		(uuid "f4e7233e-8476-4e9a-9090-2eb657b70e66")
-	)
-	(wire
-		(pts
-			(xy 186.69 127)
-			(xy 220.98 127)
-		)
-		(uuid "28a22c2a-b2d2-4c7c-ace7-10b29ac768d4")
-	)
-	(wire
-		(pts
-			(xy 228.6 127)
-			(xy 256.54 127)
-		)
-		(uuid "289a42b8-ca9d-4a98-8043-bc7241f1543f")
-	)
-	(wire
-		(pts
-			(xy 179.07 134.62)
-			(xy 179.07 139.7)
-		)
-		(uuid "c25827cb-8bfd-459d-b843-32ab19a50dfa")
-	)
-	(wire
-		(pts
-			(xy 179.07 139.7)
-			(xy 158.75 139.7)
-		)
-		(uuid "acde6855-3308-4dd9-a952-e5a944dfd643")
-	)
-	(wire
-		(pts
-			(xy 158.75 139.7)
-			(xy 158.75 143.51)
-		)
-		(uuid "3fbfc10a-574c-4e5a-972a-c216650379ad")
-	)
-	(wire
-		(pts
-			(xy 149.86 139.7)
-			(xy 158.75 139.7)
-		)
-		(uuid "5d858f98-0625-4843-99fc-c78e54f2d0e3")
-	)
-	(wire
-		(pts
-			(xy 171.45 64.77)
-			(xy 161.29 64.77)
-		)
-		(uuid "4002d961-7b95-4fad-a608-34f5e9944f41")
-	)
-	(wire
-		(pts
-			(xy 161.29 64.77)
-			(xy 161.29 62.23)
-		)
-		(uuid "11c7c8c9-fc9e-4b61-81e6-9651798d80d4")
-	)
-	(wire
-		(pts
-			(xy 171.45 129.54)
-			(xy 162.56 129.54)
-		)
-		(uuid "bc2becef-1b87-430f-888d-d088ebe7d3f9")
-	)
-	(wire
-		(pts
-			(xy 271.78 127)
-			(xy 271.78 132.08)
-		)
-		(uuid "a5ccb04d-f429-469c-b809-79150fdfc044")
-	)
-	(wire
-		(pts
-			(xy 60.96 160.02)
-			(xy 60.96 156.21)
-		)
-		(uuid "29045ea6-c87c-4dd1-9d04-10fcdeff89fb")
-	)
-	(wire
-		(pts
-			(xy 60.96 156.21)
-			(xy 81.28 156.21)
-		)
-		(uuid "86b875af-6c7d-4067-971c-95e3d58a1d5a")
-	)
-	(wire
-		(pts
-			(xy 81.28 156.21)
-			(xy 81.28 163.83)
-		)
-		(uuid "56573cd5-d10c-4964-9f2b-3ee60708f264")
-	)
-	(wire
-		(pts
-			(xy 60.96 175.26)
-			(xy 60.96 179.07)
-		)
-		(uuid "7f7e0a06-130e-49a2-9dfe-eda36e9e9a2f")
-	)
-	(wire
-		(pts
-			(xy 60.96 179.07)
-			(xy 81.28 179.07)
-		)
-		(uuid "019236d2-70d1-4818-98a9-8866b1683cd4")
-	)
-	(wire
-		(pts
-			(xy 81.28 179.07)
-			(xy 81.28 171.45)
-		)
-		(uuid "3eb5f053-50c6-4474-8748-d8b90eeaf54b")
-	)
-	(wire
-		(pts
-			(xy 166.37 154.94)
-			(xy 166.37 152.4)
-		)
-		(uuid "341eba45-71c8-468a-ad36-5629cfb87ec6")
-	)
-	(wire
-		(pts
-			(xy 166.37 180.34)
-			(xy 166.37 182.88)
-		)
-		(uuid "d1e8e0f6-03b6-4d82-adb2-f9307a12338a")
-	)
-	(wire
-		(pts
-			(xy 166.37 182.88)
-			(xy 143.51 182.88)
-		)
-		(uuid "0cf4b9c3-38ad-4d58-b345-259d691b04f8")
-	)
-	(wire
-		(pts
-			(xy 143.51 182.88)
-			(xy 143.51 171.45)
-		)
-		(uuid "24478f1b-ab14-4286-8c82-414842c28945")
-	)
 	(text "WAVEFORM AND TRIGGER OUTPUTS"
+		(exclude_from_sim no)
 		(at 20.32 22.86 0)
 		(effects
 			(font
@@ -2214,28 +1867,19 @@
 		)
 		(uuid "6435e41a-d673-4cec-87ab-e9b50755fbb0")
 	)
-	(text "Unbuffered DACs drive unity-gain followers. Timer selection sets the pulse edges."
-		(at 20.32 29.21 0)
+	(text "Matched plated clip holes"
+		(exclude_from_sim no)
+		(at 231.14 144.78 0)
 		(effects
 			(font
-				(size 1.5 1.5)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "afe4de51-5296-49da-82b0-9a414993b54e")
-	)
-	(text "CHANNEL A   /   waveform or pulse"
-		(at 25.4 48.26 0)
-		(effects
-			(font
-				(size 1.65 1.65)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "bfd16242-583f-4468-a283-a09222bf8bab")
+		(uuid "66bae358-d7ef-4006-ba82-bd2032be2d11")
 	)
 	(text "CHANNEL B   /   waveform or marker"
+		(exclude_from_sim no)
 		(at 25.4 104.14 0)
 		(effects
 			(font
@@ -2246,7 +1890,30 @@
 		)
 		(uuid "6c91c9e6-c83d-4b4d-acb8-0db33f45e952")
 	)
+	(text "A: LOW = ground; HIGH = DAC A.   B: LOW = DAC B; HIGH = timer marker."
+		(exclude_from_sim no)
+		(at 24.13 147.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "a632a3f3-14c1-4e8c-91c8-045477af781a")
+	)
+	(text "Unbuffered DACs drive unity-gain followers. Timer selection sets the pulse edges."
+		(exclude_from_sim no)
+		(at 20.32 29.21 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "afe4de51-5296-49da-82b0-9a414993b54e")
+	)
 	(text "1 MΩ scope input"
+		(exclude_from_sim no)
 		(at 238.76 83.82 0)
 		(effects
 			(font
@@ -2256,25 +1923,441 @@
 		)
 		(uuid "bea90985-b8ab-4ec9-9788-89298d70d4ae")
 	)
-	(text "Matched plated clip holes"
-		(at 231.14 144.78 0)
+	(text "CHANNEL A   /   waveform or pulse"
+		(exclude_from_sim no)
+		(at 25.4 48.26 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.65 1.65)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
-		(uuid "66bae358-d7ef-4006-ba82-bd2032be2d11")
+		(uuid "bfd16242-583f-4468-a283-a09222bf8bab")
 	)
-	(text "A: LOW = ground; HIGH = DAC A.   B: LOW = DAC B; HIGH = timer marker."
-		(at 24.13 147.32 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-			)
-			(justify left bottom)
+	(junction
+		(at 158.75 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09b296cf-9dfa-4782-abab-720242eca911")
+	)
+	(junction
+		(at 88.9 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f9c5722-0350-400f-ae01-18cc1a93d26c")
+	)
+	(junction
+		(at 158.75 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3418332a-bcac-4bff-abff-c9a0c8248664")
+	)
+	(junction
+		(at 88.9 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39236d4f-ff01-4a01-acce-a72920c6de51")
+	)
+	(wire
+		(pts
+			(xy 60.96 179.07) (xy 81.28 179.07)
 		)
-		(uuid "a632a3f3-14c1-4e8c-91c8-045477af781a")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "019236d2-70d1-4818-98a9-8866b1683cd4")
+	)
+	(wire
+		(pts
+			(xy 58.42 134.62) (xy 88.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "056287d1-9965-4011-8386-db4ee493933b")
+	)
+	(wire
+		(pts
+			(xy 77.47 69.85) (xy 88.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ffcd90-162b-4d63-ad89-285e735568b7")
+	)
+	(wire
+		(pts
+			(xy 166.37 182.88) (xy 143.51 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf4b9c3-38ad-4d58-b345-259d691b04f8")
+	)
+	(wire
+		(pts
+			(xy 161.29 64.77) (xy 161.29 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c7c8c9-fc9e-4b61-81e6-9651798d80d4")
+	)
+	(wire
+		(pts
+			(xy 62.23 72.39) (xy 58.42 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d4504d5-0169-4b17-a4b5-0b66e9dcd5dd")
+	)
+	(wire
+		(pts
+			(xy 143.51 182.88) (xy 143.51 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24478f1b-ab14-4286-8c82-414842c28945")
+	)
+	(wire
+		(pts
+			(xy 228.6 127) (xy 256.54 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "289a42b8-ca9d-4a98-8043-bc7241f1543f")
+	)
+	(wire
+		(pts
+			(xy 186.69 127) (xy 220.98 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28a22c2a-b2d2-4c7c-ace7-10b29ac768d4")
+	)
+	(wire
+		(pts
+			(xy 60.96 160.02) (xy 60.96 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29045ea6-c87c-4dd1-9d04-10fcdeff89fb")
+	)
+	(wire
+		(pts
+			(xy 77.47 124.46) (xy 88.9 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ae50951-1859-4c90-8e34-49729c4ddd5f")
+	)
+	(wire
+		(pts
+			(xy 186.69 67.31) (xy 220.98 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc88b53-1e1d-439d-9abf-46f94afc8eb7")
+	)
+	(wire
+		(pts
+			(xy 166.37 154.94) (xy 166.37 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "341eba45-71c8-468a-ad36-5629cfb87ec6")
+	)
+	(wire
+		(pts
+			(xy 88.9 134.62) (xy 88.9 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3628b33c-3127-4b04-be75-9dd2930f0c89")
+	)
+	(wire
+		(pts
+			(xy 81.28 179.07) (xy 81.28 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eb5f053-50c6-4474-8748-d8b90eeaf54b")
+	)
+	(wire
+		(pts
+			(xy 158.75 139.7) (xy 158.75 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fbfc10a-574c-4e5a-972a-c216650379ad")
+	)
+	(wire
+		(pts
+			(xy 171.45 64.77) (xy 161.29 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4002d961-7b95-4fad-a608-34f5e9944f41")
+	)
+	(wire
+		(pts
+			(xy 228.6 67.31) (xy 251.46 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41258f8a-0c56-46fc-94ff-ee9da884871a")
+	)
+	(wire
+		(pts
+			(xy 58.42 72.39) (xy 58.42 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4789e42c-0bd5-406b-96f3-b8b7655bdf14")
+	)
+	(wire
+		(pts
+			(xy 58.42 80.01) (xy 88.9 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e569bd0-5b6a-4491-9caa-6dc2caebba25")
+	)
+	(wire
+		(pts
+			(xy 149.86 81.28) (xy 158.75 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "559799c5-56f7-457c-a69f-923675ff1f7d")
+	)
+	(wire
+		(pts
+			(xy 81.28 156.21) (xy 81.28 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56573cd5-d10c-4964-9f2b-3ee60708f264")
+	)
+	(wire
+		(pts
+			(xy 149.86 139.7) (xy 158.75 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d858f98-0625-4843-99fc-c78e54f2d0e3")
+	)
+	(wire
+		(pts
+			(xy 60.96 175.26) (xy 60.96 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7e0a06-130e-49a2-9dfe-eda36e9e9a2f")
+	)
+	(wire
+		(pts
+			(xy 60.96 156.21) (xy 81.28 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b875af-6c7d-4067-971c-95e3d58a1d5a")
+	)
+	(wire
+		(pts
+			(xy 158.75 81.28) (xy 158.75 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d0d0654-0fce-417f-804b-479d7bcdcd7a")
+	)
+	(wire
+		(pts
+			(xy 62.23 127) (xy 58.42 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905b3826-116d-41be-a301-4b71d661e3aa")
+	)
+	(wire
+		(pts
+			(xy 179.07 74.93) (xy 179.07 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f2f1f5a-9ff5-474f-b10e-cca57391ec4e")
+	)
+	(wire
+		(pts
+			(xy 88.9 80.01) (xy 88.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15590b2-38ba-408f-b8ec-a73d10dde4a6")
+	)
+	(wire
+		(pts
+			(xy 271.78 127) (xy 271.78 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ccb04d-f429-469c-b809-79150fdfc044")
+	)
+	(wire
+		(pts
+			(xy 179.07 139.7) (xy 158.75 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acde6855-3308-4dd9-a952-e5a944dfd643")
+	)
+	(wire
+		(pts
+			(xy 179.07 81.28) (xy 158.75 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add2291b-b2f2-4551-960d-cfeaeda16f16")
+	)
+	(wire
+		(pts
+			(xy 62.23 121.92) (xy 52.07 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b832f0a5-d786-4e19-abf7-bdfe0cdcdb5a")
+	)
+	(wire
+		(pts
+			(xy 171.45 129.54) (xy 162.56 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2becef-1b87-430f-888d-d088ebe7d3f9")
+	)
+	(wire
+		(pts
+			(xy 62.23 67.31) (xy 52.07 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be594c15-5586-4fa5-a1dd-2c7550dda13b")
+	)
+	(wire
+		(pts
+			(xy 179.07 134.62) (xy 179.07 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25827cb-8bfd-459d-b843-32ab19a50dfa")
+	)
+	(wire
+		(pts
+			(xy 88.9 69.85) (xy 171.45 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6201661-8a42-485f-b4ba-44f5eb02c551")
+	)
+	(wire
+		(pts
+			(xy 166.37 180.34) (xy 166.37 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e8e0f6-03b6-4d82-adb2-f9307a12338a")
+	)
+	(wire
+		(pts
+			(xy 58.42 127) (xy 58.42 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3ff299-a6f0-450f-8c0a-003462044e8c")
+	)
+	(wire
+		(pts
+			(xy 88.9 124.46) (xy 171.45 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4e7233e-8476-4e9a-9090-2eb657b70e66")
 	)
 	(label "OUT_A"
 		(at 234.95 67.31 0)
@@ -2295,28 +2378,6 @@
 			(justify left bottom)
 		)
 		(uuid "81e4cc43-cafb-46f2-9f43-0894f198be27")
-	)
-	(hierarchical_label "DAC_A"
-		(shape input)
-		(at 52.07 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e92cedd4-6fd1-460e-a3cc-810e54114bc6")
-	)
-	(hierarchical_label "PULSE_SEL"
-		(shape input)
-		(at 149.86 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ab52a71d-91f5-4753-8909-2a2e8b9e2234")
 	)
 	(hierarchical_label "DAC_B"
 		(shape input)
@@ -2340,6 +2401,28 @@
 		)
 		(uuid "3aba74a5-6ab4-41f0-92e7-c2566c79a7bd")
 	)
+	(hierarchical_label "PULSE_SEL"
+		(shape input)
+		(at 149.86 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ab52a71d-91f5-4753-8909-2a2e8b9e2234")
+	)
+	(hierarchical_label "DAC_A"
+		(shape input)
+		(at 52.07 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e92cedd4-6fd1-460e-a3cc-810e54114bc6")
+	)
 	(hierarchical_label "MARKER"
 		(shape input)
 		(at 162.56 129.54 180)
@@ -2352,1124 +2435,21 @@
 		(uuid "ec932226-ddbf-4391-b030-733694876e01")
 	)
 	(symbol
-		(lib_id "Analog_Switch:TS5A23157DGS")
-		(at 179.07 67.31 0)
-		(mirror y)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f86799e6-0dea-4226-b2e7-2dbcb9ceea42")
-		(property "Reference" "U3"
-			(at 184.15 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TS5A23157DGS"
-			(at 184.15 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
-			(at 179.07 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
-			(at 179.07 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
-			(at 179.07 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 179.07 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Analog_Switch:TS5A23157DGS")
-		(at 179.07 127 0)
-		(mirror y)
-		(unit 2)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b63d010f-403f-46a6-8351-ee4c96eeb54c")
-		(property "Reference" "U3"
-			(at 184.15 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TS5A23157DGS"
-			(at 184.15 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
-			(at 179.07 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
-			(at 179.07 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
-			(at 179.07 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 179.07 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "U3")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Analog_Switch:TS5A23157DGS")
-		(at 166.37 167.64 0)
-		(unit 3)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "18aa23a2-e81d-4514-8e8c-8eaac9051776")
-		(property "Reference" "U3"
-			(at 173.99 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TS5A23157DGS"
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
-			(at 166.37 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
-			(at 166.37 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
-			(at 166.37 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 166.37 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "U3")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 224.79 67.31 90)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1735465b-71c0-42ad-893d-81a2e479bca0")
-		(property "Reference" "R5"
-			(at 224.79 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330R"
-			(at 224.79 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 224.79 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 224.79 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Output A"
-			(at 224.79 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 224.79 127 90)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "80dd8721-ada0-453c-a13b-7e04e699939c")
-		(property "Reference" "R6"
-			(at 224.79 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330R"
-			(at 224.79 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 224.79 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 224.79 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Output B"
-			(at 224.79 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 158.75 88.9 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fa830cdc-68dc-49b0-b9ad-8d775d425a4b")
-		(property "Reference" "R7"
-			(at 166.37 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 166.37 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.75 88.9 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 88.9 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 158.75 88.9 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 158.75 88.9 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 158.75 147.32 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d1628ae-ec83-4e0b-97e9-25cfdb243eb1")
-		(property "Reference" "R8"
-			(at 151.13 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 151.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.75 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 158.75 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 158.75 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 256.54 67.31 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5f9a3ce6-b073-4f8b-90a3-ed34a3dda316")
-		(property "Reference" "J2"
-			(at 264.16 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A / BNC male"
-			(at 266.7 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.54 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Male BNC plug with locking bayonet for direct mating to a 1-megohm oscilloscope input. Mechanical part and footprint pending."
-			(at 256.54 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Output A"
-			(at 256.54 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 256.54 127 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f51607f-a67c-4255-95e6-7ea0b4744a89")
-		(property "Reference" "TP3"
-			(at 256.54 120.142 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B"
-			(at 256.54 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D3.0mm"
-			(at 256.54 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 256.54 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Output B"
-			(at 256.54 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 271.78 127 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d7a04b99-9f99-4c4f-8c6f-ce04e664b2ee")
-		(property "Reference" "TP4"
-			(at 271.78 120.142 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 271.78 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D3.0mm"
-			(at 271.78 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 271.78 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 271.78 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Output B"
-			(at 271.78 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 81.28 167.64 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ce4661e-258a-4b00-b9e3-3a6875914fc7")
-		(property "Reference" "C9"
-			(at 81.915 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 81.915 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 81.28 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 81.28 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 81.28 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 143.51 167.64 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c15501a5-580d-477f-9e14-74460e0a4099")
-		(property "Reference" "C10"
-			(at 144.145 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 144.145 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 143.51 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 143.51 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 143.51 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Trainer:TLV9002IDR")
-		(at 69.85 69.85 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b35a4d67-41e5-43af-b434-405300d039d0")
-		(property "Reference" "U2"
-			(at 69.85 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV9002IDR"
-			(at 69.85 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 69.85 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
-			(at 69.85 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 69.85 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Trainer:TLV9002IDR")
-		(at 69.85 124.46 0)
-		(unit 2)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "80898728-8638-477e-915f-a1921b00028c")
-		(property "Reference" "U2"
-			(at 69.85 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV9002IDR"
-			(at 69.85 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 69.85 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
-			(at 69.85 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 69.85 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "U2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Trainer:TLV9002IDR")
-		(at 60.96 167.64 0)
-		(unit 3)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e730c3b-77a2-4454-ae92-95925f7dc691")
-		(property "Reference" "U2"
-			(at 53.34 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV9002IDR"
-			(at 50.8 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 60.96 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
-			(at 60.96 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "DAC followers and selector"
-			(at 60.96 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "U2")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 158.75 92.71 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0828b9f-0eb0-4066-94b6-9fa1bc276418")
-		(property "Reference" "#PWR001"
-			(at 158.75 99.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 158.75 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 92.71 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 92.71 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 92.71 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "#PWR001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 158.75 151.13 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "04224a06-f9f6-4b5c-8919-8cb104b0041b")
 		(property "Reference" "#PWR002"
 			(at 158.75 157.48 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3478,6 +2458,8 @@
 		)
 		(property "Value" "GND"
 			(at 158.75 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3487,6 +2469,8 @@
 		(property "Footprint" ""
 			(at 158.75 151.13 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3496,6 +2480,8 @@
 		(property "Datasheet" ""
 			(at 158.75 151.13 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3505,11 +2491,16 @@
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 158.75 151.13 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "4cb97dd5-52ad-4aa6-b598-60d971f194e6")
 		)
 		(instances
 			(project "oscilloscope trainer hw"
@@ -3522,76 +2513,20 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 62.23 180)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3302585c-1604-4546-b9ff-adbc7d1356e5")
-		(property "Reference" "#PWR003"
-			(at 161.29 55.88 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 161.29 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 62.23 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 62.23 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 62.23 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "#PWR003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 256.54 72.39 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ba66ee5-4d48-438a-9dbb-2966f78dfe0f")
 		(property "Reference" "#PWR004"
 			(at 256.54 78.74 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3600,6 +2535,8 @@
 		)
 		(property "Value" "GND"
 			(at 256.54 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3609,6 +2546,8 @@
 		(property "Footprint" ""
 			(at 256.54 72.39 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3618,6 +2557,8 @@
 		(property "Datasheet" ""
 			(at 256.54 72.39 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3627,11 +2568,16 @@
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 256.54 72.39 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "fca73260-2b98-424a-9ed1-82745da315d2")
 		)
 		(instances
 			(project "oscilloscope trainer hw"
@@ -3643,16 +2589,317 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 271.78 132.08 0)
+		(lib_id "Device:R")
+		(at 158.75 147.32 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "ca5a2bb5-815f-494d-88cf-30bf39fc9bff")
-		(property "Reference" "#PWR005"
-			(at 271.78 138.43 0)
+		(uuid "0d1628ae-ec83-4e0b-97e9-25cfdb243eb1")
+		(property "Reference" "R8"
+			(at 151.13 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 151.13 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 158.75 147.32 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb8372d5-d079-41b0-8164-46c0939a807a")
+		)
+		(pin "2"
+			(uuid "ea210f68-085c-4359-8b5d-6470d7d7532c")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 224.79 67.31 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1735465b-71c0-42ad-893d-81a2e479bca0")
+		(property "Reference" "R5"
+			(at 224.79 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 224.79 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Output A"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16755a80-f725-44ce-a3f5-3125c0301268")
+		)
+		(pin "2"
+			(uuid "acb8cd12-5a13-457f-a187-4f44e6ea035a")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:TS5A23157DGS")
+		(at 166.37 167.64 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18aa23a2-e81d-4514-8e8c-8eaac9051776")
+		(property "Reference" "U3"
+			(at 173.99 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TS5A23157DGS"
+			(at 173.99 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "fea7ca5b-bc68-40c5-95b1-dca6e81030d4")
+		)
+		(pin "6"
+			(uuid "79998c47-9b8c-4729-b908-6d27de3cbe51")
+		)
+		(pin "4"
+			(uuid "99efb8e9-fb5a-4da5-9ba0-019c9f175caf")
+		)
+		(pin "5"
+			(uuid "ea93dd52-f119-476c-95cf-70a53894d851")
+		)
+		(pin "3"
+			(uuid "b405f431-cbce-4ac7-8635-9eede6b01cb0")
+		)
+		(pin "8"
+			(uuid "90fa0399-e0de-4353-9281-4a959747d227")
+		)
+		(pin "1"
+			(uuid "2f61ad65-c716-40a2-a8e8-648e85c609fd")
+		)
+		(pin "2"
+			(uuid "6440b391-feda-4e4f-931f-87c4ad82fdde")
+		)
+		(pin "9"
+			(uuid "fe1b200f-cd2d-4604-9f8e-9f54f1770678")
+		)
+		(pin "10"
+			(uuid "def5e73e-a6fc-42f5-9591-4b954e9a7be0")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "U3")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 62.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3302585c-1604-4546-b9ff-adbc7d1356e5")
+		(property "Reference" "#PWR003"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,7 +2907,9 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 135.89 0)
+			(at 161.29 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3668,8 +2917,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 132.08 0)
+			(at 161.29 62.23 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,8 +2928,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 132.08 0)
+			(at 161.29 62.23 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,51 +2939,66 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 132.08 0)
+			(at 161.29 62.23 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(pin "1"
+			(uuid "ff6d545f-9f36-4763-8a79-d5f3d16240c3")
+		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "#PWR005")
+					(reference "#PWR003")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 60.96 156.21 0)
+		(lib_id "Device:C")
+		(at 81.28 167.64 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "b316f602-bf87-4668-9aab-9896fb873c20")
-		(property "Reference" "#PWR006"
-			(at 60.96 160.02 0)
-			(hide yes)
+		(uuid "5ce4661e-258a-4b00-b9e3-3a6875914fc7")
+		(property "Reference" "C9"
+			(at 81.915 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "VDD"
-			(at 60.96 152.654 0)
+		(property "Value" "100n"
+			(at 81.915 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.96 156.21 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 81.28 167.64 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,51 +3006,78 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 156.21 0)
+			(at 81.28 167.64 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 60.96 156.21 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 81.28 167.64 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 81.28 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "901ffe4d-ef42-4c51-a871-c5c4e59d5ba8")
+		)
+		(pin "2"
+			(uuid "1398d651-9bb5-4022-a8cc-dc785ef51a9c")
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "#PWR006")
+					(reference "C9")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 60.96 179.07 0)
+		(lib_id "Connector:Conn_Coaxial")
+		(at 256.54 67.31 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "94e90456-525b-4952-919f-ff3b9ed6a174")
-		(property "Reference" "#PWR007"
-			(at 60.96 185.42 0)
-			(hide yes)
+		(uuid "5f9a3ce6-b073-4f8b-90a3-ed34a3dda316")
+		(property "Reference" "J2"
+			(at 264.16 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 60.96 182.88 0)
+		(property "Value" "A / BNC male"
+			(at 266.7 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,8 +3085,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 179.07 0)
+			(at 256.54 67.31 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,60 +3096,305 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 179.07 0)
+			(at 256.54 67.31 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 179.07 0)
+		(property "Description" "Male BNC plug with locking bayonet for direct mating to a 1-megohm oscilloscope input. Mechanical part and footprint pending."
+			(at 256.54 67.31 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Group" "Output A"
+			(at 256.54 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5550a4c9-5f3b-460c-b438-3017b5f832ff")
+		)
+		(pin "2"
+			(uuid "90e16d46-54d4-4e0c-9ed9-45a7714aba91")
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "#PWR007")
+					(reference "J2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 166.37 152.4 0)
-		(unit 1)
+		(lib_id "Trainer:TLV9002IDR")
+		(at 60.96 167.64 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "aa0d7e7b-bca2-4dad-b13d-7476fac0a928")
-		(property "Reference" "#PWR008"
-			(at 166.37 156.21 0)
-			(hide yes)
+		(uuid "6e730c3b-77a2-4454-ae92-95925f7dc691")
+		(property "Reference" "U2"
+			(at 53.34 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "VDD"
-			(at 166.37 148.844 0)
+		(property "Value" "TLV9002IDR"
+			(at 50.8 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 166.37 152.4 0)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 60.96 167.64 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d410fc2d-1e6d-43a9-9914-b4b9bf2e8f33")
+		)
+		(pin "6"
+			(uuid "6dc7a574-05eb-4323-94e5-c553190d5cdc")
+		)
+		(pin "2"
+			(uuid "5bc51ebd-9749-4556-b504-33694824c49c")
+		)
+		(pin "3"
+			(uuid "e3ab720b-aba7-45f0-bad4-a91e5d6b2b10")
+		)
+		(pin "7"
+			(uuid "4f9435e1-f9a0-41d4-b46b-d8c2e1e67480")
+		)
+		(pin "8"
+			(uuid "ed9d8f0e-cbb5-4306-8c72-b5e8d9af1d74")
+		)
+		(pin "5"
+			(uuid "7f2b54df-7c00-4712-a498-4540a66c938e")
+		)
+		(pin "4"
+			(uuid "ce627d94-fd54-45de-9e19-e7bc6b7ece9a")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "U2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Trainer:TLV9002IDR")
+		(at 69.85 124.46 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80898728-8638-477e-915f-a1921b00028c")
+		(property "Reference" "U2"
+			(at 69.85 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV9002IDR"
+			(at 69.85 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "2f50c36a-11c5-42e1-9a31-bba970d25b49")
+		)
+		(pin "1"
+			(uuid "7bde95e0-999f-4133-876d-44594e93cc8f")
+		)
+		(pin "2"
+			(uuid "98db219e-2fd5-4652-8b8e-27b0145c4117")
+		)
+		(pin "3"
+			(uuid "44d0bca3-d0c0-447d-8030-504f548b3280")
+		)
+		(pin "6"
+			(uuid "f1db7b1d-81a9-432d-86a1-4a2b5691f886")
+		)
+		(pin "7"
+			(uuid "115027a4-17ff-4c34-b7d9-2b37fcd37167")
+		)
+		(pin "8"
+			(uuid "f5f9a4ba-5bb7-46aa-b871-6dd1df2ced4a")
+		)
+		(pin "4"
+			(uuid "528169a2-e5af-4728-8fe5-119d1622b026")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "U2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 224.79 127 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80dd8721-ada0-453c-a13b-7e04e699939c")
+		(property "Reference" "R6"
+			(at 224.79 120.65 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 224.79 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 224.79 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3860,27 +3402,48 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 152.4 0)
+			(at 224.79 127 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 166.37 152.4 0)
+		(property "Description" "Resistor"
+			(at 224.79 127 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Group" "Output B"
+			(at 224.79 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2555d995-c8c3-471c-9ae9-482abb4ca776")
+		)
+		(pin "2"
+			(uuid "a85c7f66-2d7c-4bcb-9f3b-2db5e179712b")
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "#PWR008")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3890,13 +3453,18 @@
 		(lib_id "power:GND")
 		(at 166.37 182.88 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "90a49f6b-fb6b-4506-8eb6-57bdd5a7d135")
 		(property "Reference" "#PWR009"
 			(at 166.37 189.23 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3905,6 +3473,8 @@
 		)
 		(property "Value" "GND"
 			(at 166.37 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3914,6 +3484,8 @@
 		(property "Footprint" ""
 			(at 166.37 182.88 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3923,6 +3495,8 @@
 		(property "Datasheet" ""
 			(at 166.37 182.88 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3932,11 +3506,16 @@
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 166.37 182.88 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "7ed807fe-508b-431c-ab0d-c16bf206e238")
 		)
 		(instances
 			(project "oscilloscope trainer hw"
@@ -3948,16 +3527,656 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 60.96 179.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "94e90456-525b-4952-919f-ff3b9ed6a174")
+		(property "Reference" "#PWR007"
+			(at 60.96 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2de17618-3b5d-4432-acbb-c7e136d01d1a")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "#PWR007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 256.54 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f51607f-a67c-4255-95e6-7ea0b4744a89")
+		(property "Reference" "TP3"
+			(at 256.54 120.142 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B"
+			(at 256.54 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D3.0mm"
+			(at 256.54 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 256.54 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Output B"
+			(at 256.54 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24fe7ea5-86fa-452c-9005-54e8c08f8ace")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 166.37 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa0d7e7b-bca2-4dad-b13d-7476fac0a928")
+		(property "Reference" "#PWR008"
+			(at 166.37 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 166.37 148.844 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 166.37 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c09b176-d83b-4320-9e38-d75b425246d7")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "#PWR008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 60.96 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b316f602-bf87-4668-9aab-9896fb873c20")
+		(property "Reference" "#PWR006"
+			(at 60.96 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 60.96 152.654 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 60.96 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d0a07c8-dda0-4ea5-93cb-601c9d1c6fe8")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "#PWR006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Trainer:TLV9002IDR")
+		(at 69.85 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b35a4d67-41e5-43af-b434-405300d039d0")
+		(property "Reference" "U2"
+			(at 69.85 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV9002IDR"
+			(at 69.85 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "4df69aef-7392-445c-90f4-805fed6b22a4")
+		)
+		(pin "4"
+			(uuid "f113ecfa-db9f-4dea-9a65-3c3f2ec103e2")
+		)
+		(pin "2"
+			(uuid "514381c9-1dd6-446d-93fc-00eb48663db6")
+		)
+		(pin "7"
+			(uuid "14974ac9-afa1-4f90-96e2-4f018e31028e")
+		)
+		(pin "3"
+			(uuid "eeaea3a6-5154-4261-9d7e-9ed8d54b5980")
+		)
+		(pin "6"
+			(uuid "7d37c494-8b0a-4c79-9c84-e075d19bc0a5")
+		)
+		(pin "8"
+			(uuid "009f6abe-5ea0-4fac-97cb-52f8cbf83406")
+		)
+		(pin "1"
+			(uuid "58dbc06e-02f4-45dd-835a-e003c1a57b97")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:TS5A23157DGS")
+		(at 179.07 127 0)
+		(mirror y)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b63d010f-403f-46a6-8351-ee4c96eeb54c")
+		(property "Reference" "U3"
+			(at 184.15 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TS5A23157DGS"
+			(at 184.15 120.015 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
+			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b278d07-1bd2-4d5a-9cce-eb1ea4c95870")
+		)
+		(pin "2"
+			(uuid "0f84c3b0-7910-4fed-aff7-874addbcd938")
+		)
+		(pin "9"
+			(uuid "a1a54a48-263f-41e9-b3b4-00d435343435")
+		)
+		(pin "10"
+			(uuid "ec80ef9f-5e7d-472f-8cfe-46e8c311eb97")
+		)
+		(pin "4"
+			(uuid "fa004b9a-0cf9-4d57-8953-e5aca1852f51")
+		)
+		(pin "5"
+			(uuid "894aa150-9737-42db-b50c-5c331716a7df")
+		)
+		(pin "6"
+			(uuid "2a7d085e-a321-4970-83e9-4877a58e07c3")
+		)
+		(pin "7"
+			(uuid "c7859f3c-7648-4e14-930b-798f1d1ad53b")
+		)
+		(pin "3"
+			(uuid "9d34c7ac-cd82-4b37-8b9f-12599ee6dda5")
+		)
+		(pin "8"
+			(uuid "cd596d14-0363-44c3-86ba-a41b116b6310")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 143.51 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c15501a5-580d-477f-9e14-74460e0a4099")
+		(property "Reference" "C10"
+			(at 144.145 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 144.145 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 143.51 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 143.51 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 143.51 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b0fb0a3-0f90-4a5f-a727-aa8a591910db")
+		)
+		(pin "2"
+			(uuid "788175aa-979d-484d-badd-64e607144d35")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 143.51 163.83 0)
 		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4cffc39-c001-4c1c-ac88-16564f529a66")
 		(property "Reference" "#PWR010"
 			(at 143.51 167.64 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,6 +4185,8 @@
 		)
 		(property "Value" "VDD"
 			(at 143.51 160.274 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3975,6 +4196,8 @@
 		(property "Footprint" ""
 			(at 143.51 163.83 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3984,6 +4207,8 @@
 		(property "Datasheet" ""
 			(at 143.51 163.83 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3993,16 +4218,469 @@
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
 			(at 143.51 163.83 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(pin "1"
+			(uuid "7c587429-9ffc-4edd-bbf0-2ed371a531ad")
+		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 271.78 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca5a2bb5-815f-494d-88cf-30bf39fc9bff")
+		(property "Reference" "#PWR005"
+			(at 271.78 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.78 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 271.78 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a0e02fe9-fb5f-4a31-90d5-54def4fb5cc2")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "#PWR005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 271.78 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7a04b99-9f99-4c4f-8c6f-ce04e664b2ee")
+		(property "Reference" "TP4"
+			(at 271.78 120.142 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.78 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D3.0mm"
+			(at 271.78 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 271.78 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Output B"
+			(at 271.78 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7241ac65-ce3c-49d8-8832-018003960895")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e0828b9f-0eb0-4066-94b6-9fa1bc276418")
+		(property "Reference" "#PWR001"
+			(at 158.75 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ea9b11a-902e-45f5-9f51-f3890e6a2a99")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "#PWR001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:TS5A23157DGS")
+		(at 179.07 67.31 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f86799e6-0dea-4226-b2e7-2dbcb9ceea42")
+		(property "Reference" "U3"
+			(at 184.15 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TS5A23157DGS"
+			(at 184.15 60.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "bbf606c4-0f76-4bec-bf2a-c3550ebd170f")
+		)
+		(pin "10"
+			(uuid "3ea8ffac-22fe-4398-a9da-1eb06fd3e2b8")
+		)
+		(pin "4"
+			(uuid "438ed6cb-96a8-4e6a-9839-131ef1c7e591")
+		)
+		(pin "7"
+			(uuid "9a6fa440-246e-4f38-8170-2ffd6978d9a6")
+		)
+		(pin "1"
+			(uuid "f9dc4b70-4e82-461b-9f28-7ae95e664e89")
+		)
+		(pin "9"
+			(uuid "2ffd9449-f84e-4075-adfe-8834f4e417db")
+		)
+		(pin "8"
+			(uuid "c866a1de-ec28-42a1-9ba5-c1e455f0ca24")
+		)
+		(pin "6"
+			(uuid "f8cc9513-6c32-43cb-a3cf-f960a7ec54e0")
+		)
+		(pin "2"
+			(uuid "a07a8158-f17f-4fa2-8a0f-c0f229821f25")
+		)
+		(pin "3"
+			(uuid "6b27f64f-cd1e-4108-a51e-dd62f14c675f")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 158.75 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa830cdc-68dc-49b0-b9ad-8d775d425a4b")
+		(property "Reference" "R7"
+			(at 166.37 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 166.37 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "DAC followers and selector"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0da87ed0-19b9-48b4-90e0-21697c601916")
+		)
+		(pin "1"
+			(uuid "fba88303-3120-4970-b2c5-a678b17a23bd")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
+					(reference "R7")
 					(unit 1)
 				)
 			)
