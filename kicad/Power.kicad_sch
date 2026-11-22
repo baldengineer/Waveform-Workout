@@ -13403,7 +13403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Batt header"
+		(property "Value" "SMU battery input"
 			(at 133.4326 180.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13436,7 +13436,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Battery-emulation input for an external source measure unit (SMU), connected across the BT1 holder."
 			(at 130.81 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -13447,7 +13447,7 @@
 				)
 			)
 		)
-		(property "Group" "Output A"
+		(property "Group" "Battery and selector"
 			(at 130.81 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -13491,7 +13491,7 @@
 				)
 			)
 		)
-		(property "PCB placement" "Place immediately behind J2 on the board-interior side, clear of the BNC body and solder pads."
+		(property "PCB placement" "Preferred location near the power switch (SW1)."
 			(at 130.81 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -13502,7 +13502,7 @@
 				)
 			)
 		)
-		(property "Sourcing note" "Vertical 2.54 mm two-pin header. Pin 1 is OUT_A after R5; pin 2 is GND."
+		(property "Sourcing note" "Vertical 2.54 mm two-pin header. Connect SMU Force HI to pin 1 (BAT+) and Force LO to pin 2 (GND). Leave BT1 empty during battery emulation."
 			(at 130.81 177.8 0)
 			(hide yes)
 			(show_name no)
