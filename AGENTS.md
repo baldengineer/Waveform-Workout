@@ -2,6 +2,13 @@
 
 Commit completed, verified changes to this project automatically. Keep each commit scoped to the task.
 
+## Schematic part numbers
+
+Maintain each catalog link independently when assigning or updating schematic part numbers. Keep both link fields hidden on the drawing.
+
+- When `LCSC` is assigned or changed, set `lcsc_link` to `https://www.lcsc.com/product-detail/{LCSC}.html`, even if `MPN` is empty.
+- When `MPN` is assigned or changed, set `Octo_Link` to `https://octopart.com/search?q={encoded MPN}`, even if `LCSC` is empty. URL-encode the exact manufacturer part number, including any literal `+` as `%2B`.
+
 ## Schematic LEDs
 
 - In a series circuit, prefer connecting the LED cathode directly to GND. Place any series resistor on the anode side so the marked cathode pad on the PCB provides an easy-to-find ground point for debugging.
