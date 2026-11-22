@@ -1646,7 +1646,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 205.74 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 205.74 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 87.63 90)
@@ -1770,7 +1788,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 76.2 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 76.2 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 233.68 87.63 0)
@@ -1895,7 +1931,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 233.68 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 233.68 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 233.68 46.99 0)
@@ -2020,7 +2074,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 233.68 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 233.68 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 46.99 90)
@@ -2144,7 +2216,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 76.2 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 76.2 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 67.31 90)
@@ -2268,7 +2358,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 76.2 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 76.2 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 248.92 50.8 0)
@@ -2472,7 +2580,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 233.68 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 233.68 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 50.8 0)
@@ -2675,7 +2801,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 76.2 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 76.2 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 67.31 0)
@@ -2800,7 +2944,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 104.14 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 104.14 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 248.92 91.44 0)
@@ -3004,7 +3166,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 104.14 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 104.14 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VDD")
 		(at 187.96 107.95 0)
@@ -3365,7 +3545,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TS-1088-AR02016"
+			(at 204.47 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C720477.html"
+			(at 204.47 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 152.4 0)
@@ -3649,7 +3847,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1003T5E"
+			(at 187.96 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C25803.html"
+			(at 187.96 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 148.59 0)
@@ -3774,7 +3990,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 104.14 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 104.14 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 132.08 0)
@@ -3977,7 +4211,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 46.99 0)
@@ -4102,7 +4354,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 104.14 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 104.14 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 248.92 71.12 0)
@@ -4305,7 +4575,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 205.74 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 205.74 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 111.76 0)
@@ -4508,7 +4796,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 205.74 67.31 90)
@@ -4632,7 +4938,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 205.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 205.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 128.27 0)
@@ -4757,7 +5081,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 104.14 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 104.14 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 107.95 0)
@@ -4882,5 +5224,23 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 104.14 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 104.14 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 )

@@ -3319,7 +3319,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=PZ254V-11-02P"
+			(at 256.54 49.53 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C492401.html"
+			(at 256.54 49.53 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 158.75 151.13 0)
@@ -3602,7 +3620,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1003T5E"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C25803.html"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 224.79 67.31 90)
@@ -3726,7 +3762,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF3300T5E"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C23138.html"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Analog_Switch:TS5A23157DGS")
 		(at 142.24 167.64 0)
@@ -3876,7 +3930,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TS5A23157DGSR"
+			(at 142.24 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C11133.html"
+			(at 142.24 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 167.64 129.54 0)
@@ -3997,7 +4069,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+			(at 167.64 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+			(at 167.64 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 81.28 167.64 0)
@@ -4123,7 +4213,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX7R9BB104"
+			(at 81.28 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 81.28 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 256.54 67.31 0)
@@ -4260,7 +4368,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=KH-BNC50-3511"
+			(at 256.54 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2837587.html"
+			(at 256.54 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Trainer:TLV9002IDR")
 		(at 60.96 167.64 0)
@@ -4404,7 +4530,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TLV9002IDR"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C398360.html"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Trainer:TLV9002IDR")
 		(at 69.85 124.46 0)
@@ -4546,7 +4690,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TLV9002IDR"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C398360.html"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 224.79 127 90)
@@ -4670,7 +4832,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF3300T5E"
+			(at 224.79 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C23138.html"
+			(at 224.79 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 142.24 182.88 0)
@@ -4948,7 +5128,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+			(at 107.95 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+			(at 107.95 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 256.54 127 0)
@@ -5158,7 +5356,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+			(at 153.67 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+			(at 153.67 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VDD")
 		(at 142.24 149.86 0)
@@ -5457,7 +5673,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TLV9002IDR"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C398360.html"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Analog_Switch:TS5A23157DGS")
 		(at 179.07 127 0)
@@ -5606,7 +5840,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TS5A23157DGSR"
+			(at 179.07 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C11133.html"
+			(at 179.07 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 119.38 167.64 0)
@@ -5732,7 +5984,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX7R9BB104"
+			(at 119.38 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 119.38 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 271.78 132.08 0)
@@ -6010,7 +6280,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+			(at 107.95 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+			(at 107.95 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 271.78 127 0)
@@ -6405,7 +6693,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=TS5A23157DGSR"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C11133.html"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 158.75 88.9 0)
@@ -6531,5 +6837,23 @@
 				)
 			)
 		)
-	)
+	
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1003T5E"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C25803.html"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 )
