@@ -5428,14 +5428,15 @@
 		)
 		(uuid "ceeacaa0-c134-4315-b817-25e39c335242")
 	)
-	(text "There are 3 right answers for the shield."
+	(text "There is only 1 right answer.\nIs this it?"
 		(exclude_from_sim no)
-		(at 22.86 105.918 0)
+		(at 39.878 109.982 0)
 		(effects
 			(font
 				(size 1.25 1.25)
+				(thickness 0.25)
+				(bold yes)
 			)
-			(justify left bottom)
 		)
 		(uuid "e31ad13e-3aa8-48a4-aed7-6e06b8b2744c")
 	)
@@ -5529,6 +5530,12 @@
 		(uuid "b2b9e646-7b66-4618-bb3f-d105af019990")
 	)
 	(junction
+		(at 88.9 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b73327d8-09df-4340-af28-ccf971c55307")
+	)
+	(junction
 		(at 39.37 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5569,6 +5576,16 @@
 			(type default)
 		)
 		(uuid "0250332a-68b0-4857-b1d6-fe4b66705c44")
+	)
+	(wire
+		(pts
+			(xy 88.9 152.4) (xy 100.33 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ffeae5-0ec9-43ce-84d1-746758c941c1")
 	)
 	(wire
 		(pts
@@ -6082,7 +6099,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 135.89) (xy 88.9 156.21)
+			(xy 88.9 135.89) (xy 88.9 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6169,6 +6186,16 @@
 			(type default)
 		)
 		(uuid "b7b605ac-b3dd-4310-a12e-3927d6ec98ce")
+	)
+	(wire
+		(pts
+			(xy 88.9 152.4) (xy 88.9 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81609ee-2721-4984-9a89-608effac6c6f")
 	)
 	(wire
 		(pts
