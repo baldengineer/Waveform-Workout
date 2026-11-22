@@ -2963,7 +2963,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
 			(at 158.75 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -3010,7 +3010,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 158.75 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 224.79 67.31 90)
@@ -3054,7 +3081,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23138"
 			(at 224.79 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3101,7 +3128,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23138"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3300T5E"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 224.79 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Analog_Switch:TS5A23157DGS")
 		(at 166.37 167.64 0)
@@ -3218,7 +3272,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C11133"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TS5A23157DGSR"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 166.37 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 161.29 66.04 0)
@@ -3343,7 +3424,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1591"
 			(at 81.28 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -3390,7 +3471,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1591"
+			(at 81.28 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 81.28 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 81.28 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 256.54 67.31 0)
@@ -3436,7 +3544,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f3d1af0f565e3e068431c614c40f7cf6.pdf?productCode=C54815072"
 			(at 256.54 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3483,7 +3591,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C54815072"
+			(at 256.54 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "HL3-BNC-JFD-4-1"
+			(at 256.54 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "HenryTech"
+			(at 256.54 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sourcing note" "Locking male edge-launch BNC for a 1.6 mm PCB. Edge footprint and enclosure fit pending."
+			(at 256.54 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Trainer:TLV9002IDR")
 		(at 60.96 167.64 0)
@@ -3594,7 +3738,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C398360"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TLV9002IDR"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Trainer:TLV9002IDR")
 		(at 69.85 124.46 0)
@@ -3703,7 +3874,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C398360"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TLV9002IDR"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 224.79 127 90)
@@ -3747,7 +3945,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23138"
 			(at 224.79 127 0)
 			(hide yes)
 			(show_name no)
@@ -3794,7 +3992,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23138"
+			(at 224.79 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3300T5E"
+			(at 224.79 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 224.79 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 166.37 182.88 0)
@@ -4308,7 +4533,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C398360"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TLV9002IDR"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Analog_Switch:TS5A23157DGS")
 		(at 179.07 127 0)
@@ -4424,7 +4676,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C11133"
+			(at 179.07 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TS5A23157DGSR"
+			(at 179.07 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 179.07 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 143.51 167.64 0)
@@ -4470,7 +4749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1591"
 			(at 143.51 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -4517,7 +4796,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1591"
+			(at 143.51 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 143.51 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 143.51 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VDD")
 		(at 143.51 163.83 0)
@@ -4960,7 +5266,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C11133"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TS5A23157DGSR"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 179.07 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 158.75 88.9 0)
@@ -5006,7 +5339,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
 			(at 158.75 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5053,5 +5386,32 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 158.75 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 )

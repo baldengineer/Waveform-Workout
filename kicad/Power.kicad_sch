@@ -5561,7 +5561,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
 			(at 134.62 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -5608,7 +5608,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C15849"
+			(at 134.62 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 134.62 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 134.62 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 88.9 50.8 0)
@@ -5811,7 +5838,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23186"
 			(at 88.9 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5858,7 +5885,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23186"
+			(at 88.9 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 88.9 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 88.9 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 69.85 142.24 0)
@@ -5904,7 +5958,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
 			(at 69.85 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -5951,7 +6005,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C15849"
+			(at 69.85 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 69.85 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 69.85 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 134.62 146.05 0)
@@ -6303,7 +6384,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C7519"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 88.9 92.71 0)
@@ -6428,7 +6536,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf"
 			(at 222.25 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6478,7 +6586,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C65189"
+			(at 222.25 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "2N7002,215"
+			(at 222.25 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 222.25 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 152.4 69.85 0)
@@ -6524,7 +6659,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C23630"
 			(at 152.4 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6571,7 +6706,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23630"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A225KO8NNNC"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 233.68 107.95 90)
@@ -6617,7 +6779,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/3b85a1cdf6ed945f2e278f00c1e42442.pdf?productCode=C492401"
 			(at 233.68 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6664,7 +6826,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Jumper cap LCSC" "C100114"
+			(at 233.68 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492401"
+			(at 233.68 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PZ254V-11-02P"
+			(at 233.68 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XFCN"
+			(at 233.68 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 39.37 66.04 0)
@@ -6708,7 +6906,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://gct.co/files/drawings/usb4105.pdf"
 			(at 39.37 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6800,7 +6998,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Interface reference" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3020560"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "GCT"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VDD")
 		(at 224.79 36.83 0)
@@ -7002,7 +7236,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf"
+		(property "Datasheet" "https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf"
 			(at 127 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7052,7 +7286,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C39051"
+			(at 127 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MCP1700T-3302E/TT"
+			(at 127 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 127 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 69.85 146.05 0)
@@ -7177,7 +7438,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7224,7 +7485,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 224.79 40.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 224.79 40.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 224.79 40.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 123.19 100.33 0)
@@ -7346,7 +7634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf"
 			(at 107.95 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7402,7 +7690,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C2649430"
+			(at 107.95 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MAX40200AUK+T"
+			(at 107.95 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 107.95 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 86.36 128.27 0)
@@ -7524,7 +7839,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-1000-series-datasheet?assetguid=68a2b41e-19a4-4cf4-821b-aca78a430f00"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-os-series-datasheet?assetguid=f8954ac2-65ba-431f-af55-b0493370575e#page=5"
 			(at 57.15 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7594,7 +7909,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C221840"
+			(at 57.15 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "OS203013MT7QN1"
+			(at 57.15 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 57.15 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sourcing note" "Panel-mount slide with solder lugs. Maintained ON-OFF-ON, commons 2 and 5. Confirm mounting, wiring and enclosure clearance before ordering."
+			(at 57.15 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 152.4 73.66 0)
@@ -7719,7 +8070,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
 			(at 198.12 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7766,7 +8117,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22935"
+			(at 198.12 72.39 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1004T5E"
+			(at 198.12 72.39 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 198.12 72.39 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 69.85 92.71 0)
@@ -7891,7 +8269,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/779"
 			(at 39.37 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -7938,7 +8316,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "Candidate LCSC" "C5457100"
+			(at 39.37 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3002"
+			(at 39.37 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 39.37 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sourcing note" "The specified Keystone 3002 holder has no verified LCSC retail stock. MYOUNG MY-2032-32-J needs larger solder lands (6.08 mm square)."
+			(at 39.37 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 39.37 144.78 0)
@@ -8140,7 +8554,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23186"
 			(at 69.85 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8187,7 +8601,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23186"
+			(at 69.85 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 69.85 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 69.85 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 31.75 97.79 180)
@@ -8391,7 +8832,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C23630"
 			(at 96.52 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -8438,7 +8879,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23630"
+			(at 96.52 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A225KO8NNNC"
+			(at 96.52 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 96.52 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 39.37 97.79 0)
@@ -8651,7 +9119,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17415"
 			(at 233.68 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -8709,7 +9177,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C17415"
+			(at 233.68 125.73 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F100JT5E"
+			(at 233.68 125.73 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 233.68 125.73 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 224.79 64.77 0)
@@ -8911,7 +9406,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-1000-series-datasheet?assetguid=68a2b41e-19a4-4cf4-821b-aca78a430f00"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-os-series-datasheet?assetguid=f8954ac2-65ba-431f-af55-b0493370575e#page=5"
 			(at 184.15 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8981,5 +9476,41 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C221840"
+			(at 184.15 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "OS203013MT7QN1"
+			(at 184.15 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 184.15 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sourcing note" "Panel-mount slide with solder lugs. Maintained ON-OFF-ON, commons 2 and 5. Confirm mounting, wiring and enclosure clearance before ordering."
+			(at 184.15 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 )

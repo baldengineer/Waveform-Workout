@@ -1566,7 +1566,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 205.74 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -1613,7 +1613,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 205.74 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 205.74 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 205.74 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 87.63 90)
@@ -1657,7 +1684,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 76.2 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -1704,7 +1731,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 76.2 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 76.2 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 76.2 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 233.68 87.63 0)
@@ -1749,7 +1803,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 233.68 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -1796,7 +1850,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 233.68 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 233.68 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 233.68 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 233.68 46.99 0)
@@ -1841,7 +1922,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 233.68 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -1888,7 +1969,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 233.68 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 233.68 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 233.68 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 46.99 90)
@@ -1932,7 +2040,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 76.2 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -1979,7 +2087,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 76.2 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 76.2 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 76.2 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 67.31 90)
@@ -2023,7 +2158,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 76.2 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -2070,7 +2205,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 76.2 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 76.2 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 76.2 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 248.92 50.8 0)
@@ -2194,7 +2356,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 233.68 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -2241,7 +2403,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 233.68 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 233.68 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 233.68 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 50.8 0)
@@ -2364,7 +2553,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 76.2 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -2411,7 +2600,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 76.2 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 76.2 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 76.2 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 67.31 0)
@@ -2456,7 +2672,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 104.14 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -2503,7 +2719,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 104.14 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 104.14 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 104.14 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 248.92 91.44 0)
@@ -2627,7 +2870,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 104.14 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2674,7 +2917,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 104.14 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 104.14 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 104.14 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VDD")
 		(at 187.96 107.95 0)
@@ -2955,7 +3225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://components.omron.com/system/files/2023-01/datasheet_pdf/A162-E1.pdf"
 			(at 204.47 127 0)
 			(hide yes)
 			(show_name no)
@@ -3002,7 +3272,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C231329"
+			(at 204.47 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "B3U-1000P"
+			(at 204.47 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Omron"
+			(at 204.47 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 152.4 0)
@@ -3206,7 +3503,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
 			(at 187.96 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -3253,7 +3550,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 187.96 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 187.96 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 187.96 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 148.59 0)
@@ -3298,7 +3622,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 104.14 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -3345,7 +3669,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 104.14 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 104.14 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 104.14 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 132.08 0)
@@ -3468,7 +3819,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 76.2 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3515,7 +3866,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 46.99 0)
@@ -3560,7 +3938,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 104.14 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -3607,7 +3985,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 104.14 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 104.14 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 104.14 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 248.92 71.12 0)
@@ -3730,7 +4135,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 205.74 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3777,7 +4182,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 205.74 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 205.74 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 205.74 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 119.38 111.76 0)
@@ -3900,7 +4332,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 76.2 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -3947,7 +4379,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 205.74 67.31 90)
@@ -3991,7 +4450,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
 			(at 205.74 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4038,7 +4497,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 205.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 205.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 205.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 128.27 0)
@@ -4083,7 +4569,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 104.14 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -4130,7 +4616,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 104.14 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 104.14 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 104.14 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 107.95 0)
@@ -4175,7 +4688,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/spec/apt1608lseck-j3-prv.pdf"
 			(at 104.14 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4222,5 +4735,32 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5357909"
+			(at 104.14 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "APT1608LSECK/J3-PRV"
+			(at 104.14 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 104.14 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 )
