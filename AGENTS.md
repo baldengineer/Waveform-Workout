@@ -2,6 +2,11 @@
 
 Commit completed, verified changes to this project automatically. Keep each commit scoped to the task.
 
+## PCB silkscreen
+
+- Make GND labels with editable KiCad silkscreen text and enable the native Knockout flag. Mirror back-side labels so they read from the solder side.
+- Leave Knockout off for reference designators by default.
+
 ## PCB routing
 
 - Fan IC signals outward from their own pads. Keep non-ground tracks and vias outside the IC body and pin field on every copper layer. A pad's own escape should leave through its outer end.
