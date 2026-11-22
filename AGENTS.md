@@ -2,6 +2,10 @@
 
 Commit completed, verified changes to this project automatically. Keep each commit scoped to the task.
 
+## Schematic LEDs
+
+- In a series circuit, prefer connecting the LED cathode directly to GND. Place any series resistor on the anode side so the marked cathode pad on the PCB provides an easy-to-find ground point for debugging.
+
 ## PCB silkscreen
 
 - Make GND labels with editable KiCad silkscreen text and enable the native Knockout flag. Mirror back-side labels so they read from the solder side.
