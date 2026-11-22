@@ -461,7 +461,8 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -1.27) (xy -8.89 6.35)
+						(xy -8.89 -1.27)
+						(xy -8.89 6.35)
 					)
 					(stroke
 						(width 0.508)
@@ -556,7 +557,8 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 6.35) (xy -5.08 -1.27)
+						(xy -5.08 6.35)
+						(xy -5.08 -1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -579,7 +581,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 6.858) (xy 0 9.398) (xy 1.27 6.858) (xy -1.27 6.858)
+						(xy -1.27 6.858)
+						(xy 0 9.398)
+						(xy 1.27 6.858)
+						(xy -1.27 6.858)
 					)
 					(stroke
 						(width 0.254)
@@ -591,7 +596,9 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.508) (xy 2.54 3.048) (xy 2.54 4.318)
+						(xy 0 0.508)
+						(xy 2.54 3.048)
+						(xy 2.54 4.318)
 					)
 					(stroke
 						(width 0.508)
@@ -603,7 +610,9 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy -2.54 1.778) (xy -2.54 3.048)
+						(xy 0 -0.762)
+						(xy -2.54 1.778)
+						(xy -2.54 3.048)
 					)
 					(stroke
 						(width 0.508)
@@ -615,7 +624,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.302) (xy 0 6.858)
+						(xy 0 -3.302)
+						(xy 0 6.858)
 					)
 					(stroke
 						(width 0.508)
@@ -990,7 +1000,8 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -3.81) (xy -8.89 3.81)
+						(xy -8.89 -3.81)
+						(xy -8.89 3.81)
 					)
 					(stroke
 						(width 0.508)
@@ -1085,7 +1096,8 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
+						(xy -5.08 3.81)
+						(xy -5.08 -3.81)
 					)
 					(stroke
 						(width 0.508)
@@ -1108,7 +1120,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
+						(xy -1.27 4.318)
+						(xy 0 6.858)
+						(xy 1.27 4.318)
+						(xy -1.27 4.318)
 					)
 					(stroke
 						(width 0.254)
@@ -1120,7 +1135,9 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
+						(xy 0 -2.032)
+						(xy 2.54 0.508)
+						(xy 2.54 1.778)
 					)
 					(stroke
 						(width 0.508)
@@ -1132,7 +1149,9 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.302) (xy -2.54 -0.762) (xy -2.54 0.508)
+						(xy 0 -3.302)
+						(xy -2.54 -0.762)
+						(xy -2.54 0.508)
 					)
 					(stroke
 						(width 0.508)
@@ -1144,7 +1163,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -5.842) (xy 0 4.318)
+						(xy 0 -5.842)
+						(xy 0 4.318)
 					)
 					(stroke
 						(width 0.508)
@@ -1788,7 +1808,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 1.778)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1800,7 +1821,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 0.762)
+						(xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -1812,7 +1834,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
+						(xy 0.762 3.048)
+						(xy 1.778 3.048)
 					)
 					(stroke
 						(width 0.254)
@@ -1824,7 +1847,8 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
+						(xy 1.27 3.556)
+						(xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -1967,7 +1991,8 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1979,7 +2004,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -2123,7 +2149,8 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 0.508)
+						(xy 1.524 0.508)
 					)
 					(stroke
 						(width 0.3048)
@@ -2135,7 +2162,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 -0.508)
+						(xy 1.524 -0.508)
 					)
 					(stroke
 						(width 0.3302)
@@ -2836,7 +2864,8 @@
 			(symbol "USBLC6-2SC6_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 2.54 0)
+						(xy -2.54 0)
+						(xy 2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -2848,7 +2877,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -2.54) (xy 2.54 -2.54)
+						(xy -2.54 -2.54)
+						(xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -2860,7 +2890,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.508) (xy -1.016 0.508) (xy -1.524 1.524) (xy -2.032 0.508)
+						(xy -2.032 0.508)
+						(xy -1.016 0.508)
+						(xy -1.524 1.524)
+						(xy -2.032 0.508)
 					)
 					(stroke
 						(width 0)
@@ -2872,7 +2905,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -3.048) (xy -1.016 -3.048)
+						(xy -2.032 -3.048)
+						(xy -1.016 -3.048)
 					)
 					(stroke
 						(width 0)
@@ -2884,7 +2918,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 1.524) (xy -2.032 1.524)
+						(xy -1.016 1.524)
+						(xy -2.032 1.524)
 					)
 					(stroke
 						(width 0)
@@ -2896,7 +2931,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 -4.064) (xy -2.032 -4.064) (xy -1.524 -3.048) (xy -1.016 -4.064)
+						(xy -1.016 -4.064)
+						(xy -2.032 -4.064)
+						(xy -1.524 -3.048)
+						(xy -1.016 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -2908,7 +2946,9 @@
 				)
 				(polyline
 					(pts
-						(xy -0.508 -1.143) (xy -0.508 -0.762) (xy 0.508 -0.762)
+						(xy -0.508 -1.143)
+						(xy -0.508 -0.762)
+						(xy 0.508 -0.762)
 					)
 					(stroke
 						(width 0)
@@ -2920,7 +2960,13 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy -0.508 2.032) (xy 0.508 2.032) (xy 0 1.524) (xy 0 -4.064) (xy -0.508 -4.572) (xy 0.508 -4.572)
+						(xy 0 2.54)
+						(xy -0.508 2.032)
+						(xy 0.508 2.032)
+						(xy 0 1.524)
+						(xy 0 -4.064)
+						(xy -0.508 -4.572)
+						(xy 0.508 -4.572)
 						(xy 0 -5.08)
 					)
 					(stroke
@@ -2933,7 +2979,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 -1.778) (xy -0.508 -1.778) (xy 0 -0.762) (xy 0.508 -1.778)
+						(xy 0.508 -1.778)
+						(xy -0.508 -1.778)
+						(xy 0 -0.762)
+						(xy 0.508 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -2945,7 +2994,8 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 1.524) (xy 2.032 1.524)
+						(xy 1.016 1.524)
+						(xy 2.032 1.524)
 					)
 					(stroke
 						(width 0)
@@ -2957,7 +3007,8 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 -3.048) (xy 2.032 -3.048)
+						(xy 1.016 -3.048)
+						(xy 2.032 -3.048)
 					)
 					(stroke
 						(width 0)
@@ -2969,7 +3020,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.032 0.508) (xy 1.016 0.508) (xy 1.524 1.524) (xy 2.032 0.508)
+						(xy 2.032 0.508)
+						(xy 1.016 0.508)
+						(xy 1.524 1.524)
+						(xy 2.032 0.508)
 					)
 					(stroke
 						(width 0)
@@ -2981,7 +3035,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.032 -4.064) (xy 1.016 -4.064) (xy 1.524 -3.048) (xy 2.032 -4.064)
+						(xy 2.032 -4.064)
+						(xy 1.016 -4.064)
+						(xy 1.524 -3.048)
+						(xy 2.032 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -3006,7 +3063,10 @@
 				)
 				(polyline
 					(pts
-						(xy -0.508 2.032) (xy -1.524 2.032) (xy -1.524 -4.572) (xy -0.508 -4.572)
+						(xy -0.508 2.032)
+						(xy -1.524 2.032)
+						(xy -1.524 -4.572)
+						(xy -0.508 -4.572)
 					)
 					(stroke
 						(width 0)
@@ -3018,7 +3078,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 -4.572) (xy 1.524 -4.572) (xy 1.524 2.032) (xy 0.508 2.032)
+						(xy 0.508 -4.572)
+						(xy 1.524 -4.572)
+						(xy 1.524 2.032)
+						(xy 0.508 2.032)
 					)
 					(stroke
 						(width 0)
@@ -3418,7 +3481,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.254) (xy 1.5748 2.286)
+						(xy -1.524 0.254)
+						(xy 1.5748 2.286)
 					)
 					(stroke
 						(width 0)
@@ -3642,7 +3706,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
+						(xy -1.651 0.254)
+						(xy 1.651 2.286)
 					)
 					(stroke
 						(width 0)
@@ -3837,7 +3902,8 @@
 			(symbol "2N7002_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
+						(xy 0.254 1.905)
+						(xy 0.254 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -3849,7 +3915,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy 0.254 0)
+						(xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -3861,7 +3928,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 0.762 2.286)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -3873,7 +3941,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
+						(xy 0.762 0.508)
+						(xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0.254)
@@ -3885,7 +3954,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 0.762 -1.27)
+						(xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
@@ -3897,7 +3967,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+						(xy 0.762 -1.778)
+						(xy 3.302 -1.778)
+						(xy 3.302 1.778)
+						(xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -3909,7 +3982,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+						(xy 1.016 0)
+						(xy 2.032 0.381)
+						(xy 2.032 -0.381)
+						(xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -3932,7 +4008,8 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
+						(xy 2.54 2.54)
+						(xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -3966,7 +4043,9 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 2.54 -2.54)
+						(xy 2.54 0)
+						(xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -3978,7 +4057,8 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
+						(xy 2.921 0.381)
+						(xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -3990,7 +4070,10 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+						(xy 3.302 0.381)
+						(xy 2.921 -0.254)
+						(xy 3.683 -0.254)
+						(xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -4141,7 +4224,12 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -4276,7 +4364,12 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -4371,7 +4464,8 @@
 			(symbol "VDD_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -0.762 1.27)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -4383,7 +4477,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.54)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -4395,7 +4490,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -4428,118 +4524,233 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "USB 2.0 full-speed device / removable CR2032 / break-before-make BAT–OFF–USB selector"
-		(exclude_from_sim no)
-		(at 20.32 29.21 0)
-		(effects
-			(font
-				(size 1.5 1.5)
+		(symbol "Trainer:CUS-13TB"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
 			)
-			(justify left bottom)
-		)
-		(uuid "0bd35069-0524-480f-99b5-a08528f45e50")
-	)
-	(text "Fit JP1 for normal use. Remove JP1 for an inline meter or a fitted R4."
-		(exclude_from_sim no)
-		(at 163.83 143.51 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.3400 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "2340d299-205f-4ba9-bc3c-ae989dc114df")
-	)
-	(text "Enable USB only with VBUS present and VDD ≥ 3.1 V."
-		(exclude_from_sim no)
-		(at 185.42 82.55 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(property "Value" "CUS-13TB"
+				(at 0 -6.3500 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "3432aed3-137f-4e85-bcd8-fd26c629ad6a")
-	)
-	(text "SW1A and SW1B are the two poles of one maintained ON–OFF–ON slide switch."
-		(exclude_from_sim no)
-		(at 24.13 168.91 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "41c20893-ac46-420b-9284-5f9eca72b749")
-	)
-	(text "TP1 / TP2 measure high-side shunt voltage. Scope ground stays on GND."
-		(exclude_from_sim no)
-		(at 163.83 149.86 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "4f738573-7b3a-46d7-9194-d853bd9d27bd")
-	)
-	(text "VBUS present: LOW"
-		(exclude_from_sim no)
-		(at 236.22 67.31 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "835c43fd-d0b1-4e62-ad12-2227c5af5991")
-	)
-	(text "BATTERY ISOLATION"
-		(exclude_from_sim no)
-		(at 24.13 119.38 0)
-		(effects
-			(font
-				(size 1.65 1.65)
-				(bold yes)
+			(symbol "CUS-13TB_0_1"
+				(polyline
+					(pts
+						(xy -2.28 0.13)
+						(xy 1.92 2.36)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.28 2.54)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.28 0)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.28 -2.54)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.28 0)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -3.81)
+						(xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "Case"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
-			(justify left bottom)
+			(embedded_fonts no)
 		)
-		(uuid "a70504d3-88d3-4bcc-a6ba-74c2207a6750")
-	)
-	(text "BAT closes 2–1 and 5–4. USB closes 2–3 and 5–6. Both poles open in OFF."
-		(exclude_from_sim no)
-		(at 24.13 175.26 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-			)
-			(justify left bottom)
-		)
-		(uuid "b24bed01-3916-4843-95c9-a90c3847f094")
-	)
-	(text "POWER, USB AND CURRENT MEASUREMENT"
-		(exclude_from_sim no)
-		(at 20.32 22.86 0)
-		(effects
-			(font
-				(size 3 3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "ceeacaa0-c134-4315-b817-25e39c335242")
-	)
-	(text "Detach above the 3.0 V minimum as VDD falls."
-		(exclude_from_sim no)
-		(at 185.42 87.63 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-			)
-			(justify left bottom)
-		)
-		(uuid "f3eb2714-b25e-498a-a462-5873db6fe990")
 	)
 	(junction
 		(at 91.44 128.27)
@@ -4584,12 +4795,6 @@
 		(uuid "6b701b51-6949-4d7d-a4d2-d675bf24bedf")
 	)
 	(junction
-		(at 69.85 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "70c15ba1-e049-42d1-831e-6695e00e31e6")
-	)
-	(junction
 		(at 39.37 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4631,9 +4836,10 @@
 		(color 0 0 0 0)
 		(uuid "ff489ddd-cef2-4a0e-aa0e-204f88ad9363")
 	)
-	(no_connect
-		(at 62.23 133.35)
-		(uuid "58472f60-20d1-4d7a-8b21-8b4bb1b938cd")
+	(junction
+		(at 49.53 125.73)
+		(diameter 0)
+		(uuid "d833a97f-423a-4092-99ec-bee65add5b46")
 	)
 	(no_connect
 		(at 54.61 78.74)
@@ -4643,9 +4849,14 @@
 		(at 54.61 81.28)
 		(uuid "bd796194-7f02-4952-b209-45e60067f66d")
 	)
+	(no_connect
+		(at 71.12 128.27)
+		(uuid "58fdaa53-0db5-4389-a07b-7fccea60bbed")
+	)
 	(wire
 		(pts
-			(xy 134.62 128.27) (xy 147.32 128.27)
+			(xy 134.62 128.27)
+			(xy 147.32 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4655,7 +4866,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 128.27) (xy 91.44 128.27)
+			(xy 86.36 128.27)
+			(xy 91.44 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4665,7 +4877,8 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 80.01) (xy 88.9 86.36)
+			(xy 88.9 80.01)
+			(xy 88.9 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4675,7 +4888,8 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 58.42) (xy 63.5 58.42)
+			(xy 54.61 58.42)
+			(xy 63.5 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4685,7 +4899,8 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 68.58) (xy 64.77 68.58)
+			(xy 59.69 68.58)
+			(xy 64.77 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4695,7 +4910,8 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 59.69) (xy 198.12 69.85)
+			(xy 198.12 59.69)
+			(xy 198.12 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4705,7 +4921,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 58.42) (xy 152.4 67.31)
+			(xy 152.4 58.42)
+			(xy 152.4 67.31)
 		)
 		(stroke
 			(width 0)
@@ -4715,7 +4932,8 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 50.8) (xy 96.52 67.31)
+			(xy 96.52 50.8)
+			(xy 96.52 67.31)
 		)
 		(stroke
 			(width 0)
@@ -4725,7 +4943,8 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 99.06) (xy 215.9 111.76)
+			(xy 215.9 99.06)
+			(xy 215.9 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4735,17 +4954,8 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 128.27) (xy 69.85 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29ab5c3a-e3b1-492b-bd2c-997daa28104d")
-	)
-	(wire
-		(pts
-			(xy 134.62 128.27) (xy 134.62 139.7)
+			(xy 134.62 128.27)
+			(xy 134.62 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4755,7 +4965,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 58.42) (xy 166.37 58.42)
+			(xy 152.4 58.42)
+			(xy 166.37 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4765,7 +4976,8 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 73.66) (xy 96.52 72.39)
+			(xy 96.52 73.66)
+			(xy 96.52 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4775,7 +4987,8 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 87.63) (xy 123.19 82.55)
+			(xy 123.19 87.63)
+			(xy 123.19 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4785,7 +4998,8 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 128.27) (xy 97.79 128.27)
+			(xy 91.44 128.27)
+			(xy 97.79 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4795,7 +5009,8 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 50.8) (xy 109.22 50.8)
+			(xy 96.52 50.8)
+			(xy 109.22 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4805,7 +5020,8 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 111.76) (xy 215.9 113.03)
+			(xy 215.9 111.76)
+			(xy 215.9 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4815,7 +5031,8 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 95.25) (xy 113.03 95.25)
+			(xy 118.11 95.25)
+			(xy 113.03 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4825,17 +5042,8 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 109.22) (xy 173.99 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49afc0c9-8281-47f9-b81c-df760a788f1f")
-	)
-	(wire
-		(pts
-			(xy 215.9 113.03) (xy 215.9 125.73)
+			(xy 215.9 113.03)
+			(xy 215.9 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4845,7 +5053,8 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 125.73) (xy 255.27 113.03)
+			(xy 255.27 125.73)
+			(xy 255.27 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4855,7 +5064,8 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 71.12) (xy 59.69 71.12)
+			(xy 54.61 71.12)
+			(xy 59.69 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4865,7 +5075,8 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 137.16) (xy 39.37 130.81)
+			(xy 39.37 137.16)
+			(xy 39.37 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4875,7 +5086,8 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 99.06) (xy 255.27 113.03)
+			(xy 255.27 99.06)
+			(xy 255.27 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4885,7 +5097,8 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 63.5) (xy 59.69 63.5)
+			(xy 54.61 63.5)
+			(xy 59.69 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4895,17 +5108,8 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 130.81) (xy 52.07 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60eb926a-5883-4c3b-954f-fbba3b16c3c2")
-	)
-	(wire
-		(pts
-			(xy 176.53 76.2) (xy 198.12 76.2)
+			(xy 176.53 76.2)
+			(xy 198.12 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4915,7 +5119,8 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 88.9) (xy 31.75 97.79)
+			(xy 31.75 88.9)
+			(xy 31.75 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4925,7 +5130,8 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 36.83) (xy 224.79 38.1)
+			(xy 224.79 36.83)
+			(xy 224.79 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4935,7 +5141,8 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 128.27) (xy 91.44 133.35)
+			(xy 91.44 128.27)
+			(xy 91.44 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4945,7 +5152,8 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 50.8) (xy 109.22 58.42)
+			(xy 109.22 50.8)
+			(xy 109.22 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4955,7 +5163,8 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 50.8) (xy 224.79 54.61)
+			(xy 224.79 50.8)
+			(xy 224.79 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4965,7 +5174,8 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 111.76) (xy 215.9 111.76)
+			(xy 189.23 111.76)
+			(xy 215.9 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4975,7 +5185,8 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 68.58) (xy 59.69 68.58)
+			(xy 54.61 68.58)
+			(xy 59.69 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4985,7 +5196,8 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 97.79) (xy 39.37 88.9)
+			(xy 39.37 97.79)
+			(xy 39.37 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4995,7 +5207,8 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 66.04) (xy 59.69 63.5)
+			(xy 59.69 66.04)
+			(xy 59.69 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5005,7 +5218,8 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 43.18) (xy 224.79 50.8)
+			(xy 224.79 43.18)
+			(xy 224.79 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5015,7 +5229,8 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 113.03) (xy 255.27 113.03)
+			(xy 236.22 113.03)
+			(xy 255.27 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5025,7 +5240,8 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 95.25) (xy 137.16 95.25)
+			(xy 128.27 95.25)
+			(xy 137.16 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5035,7 +5251,8 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 92.71) (xy 137.16 92.71)
+			(xy 128.27 92.71)
+			(xy 137.16 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5045,7 +5262,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 92.71) (xy 69.85 91.44)
+			(xy 69.85 92.71)
+			(xy 69.85 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5055,7 +5273,8 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 125.73) (xy 231.14 125.73)
+			(xy 215.9 125.73)
+			(xy 231.14 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5065,7 +5284,8 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 59.69) (xy 198.12 59.69)
+			(xy 191.77 59.69)
+			(xy 198.12 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5075,7 +5295,8 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 146.05) (xy 134.62 144.78)
+			(xy 134.62 146.05)
+			(xy 134.62 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5085,7 +5306,8 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 50.8) (xy 238.76 50.8)
+			(xy 224.79 50.8)
+			(xy 238.76 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5095,17 +5317,8 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 114.3) (xy 173.99 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acc980ef-b69b-4012-b34f-277a8b87357c")
-	)
-	(wire
-		(pts
-			(xy 198.12 59.69) (xy 217.17 59.69)
+			(xy 198.12 59.69)
+			(xy 217.17 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5115,27 +5328,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 128.27) (xy 86.36 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2c69061-5b64-4050-8bb8-bd2d0c0d5bb3")
-	)
-	(wire
-		(pts
-			(xy 69.85 128.27) (xy 69.85 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2f37f19-605c-4742-b1ac-6d1d1ce4a031")
-	)
-	(wire
-		(pts
-			(xy 236.22 125.73) (xy 255.27 125.73)
+			(xy 236.22 125.73)
+			(xy 255.27 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5145,7 +5339,8 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 97.79) (xy 39.37 97.79)
+			(xy 31.75 97.79)
+			(xy 39.37 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5155,7 +5350,8 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 71.12) (xy 59.69 68.58)
+			(xy 59.69 71.12)
+			(xy 59.69 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5165,7 +5361,8 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 50.8) (xy 96.52 50.8)
+			(xy 88.9 50.8)
+			(xy 96.52 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5175,7 +5372,8 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 58.42) (xy 152.4 58.42)
+			(xy 134.62 58.42)
+			(xy 152.4 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5185,7 +5383,8 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 113.03) (xy 233.68 113.03)
+			(xy 215.9 113.03)
+			(xy 233.68 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5195,17 +5394,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 146.05) (xy 69.85 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb8bcb79-af74-4e89-8d6d-2bf25a2cdcaf")
-	)
-	(wire
-		(pts
-			(xy 54.61 50.8) (xy 88.9 50.8)
+			(xy 54.61 50.8)
+			(xy 88.9 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5215,7 +5405,8 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 58.42) (xy 119.38 58.42)
+			(xy 109.22 58.42)
+			(xy 119.38 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5225,7 +5416,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 80.01) (xy 69.85 86.36)
+			(xy 69.85 80.01)
+			(xy 69.85 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5235,7 +5427,8 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 66.04) (xy 59.69 66.04)
+			(xy 54.61 66.04)
+			(xy 59.69 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5245,7 +5438,8 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 128.27) (xy 134.62 128.27)
+			(xy 118.11 128.27)
+			(xy 134.62 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5255,7 +5449,8 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 133.35) (xy 97.79 133.35)
+			(xy 91.44 133.35)
+			(xy 97.79 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5265,7 +5460,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 73.66) (xy 152.4 72.39)
+			(xy 152.4 73.66)
+			(xy 152.4 72.39)
 		)
 		(stroke
 			(width 0)
@@ -5275,7 +5471,8 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 55.88) (xy 63.5 55.88)
+			(xy 54.61 55.88)
+			(xy 63.5 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5285,7 +5482,8 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 63.5) (xy 64.77 63.5)
+			(xy 59.69 63.5)
+			(xy 64.77 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5295,7 +5493,8 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 113.03) (xy 267.97 113.03)
+			(xy 255.27 113.03)
+			(xy 267.97 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5305,7 +5504,8 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 92.71) (xy 113.03 92.71)
+			(xy 118.11 92.71)
+			(xy 113.03 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5315,7 +5515,8 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 76.2) (xy 198.12 74.93)
+			(xy 198.12 76.2)
+			(xy 198.12 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5325,13 +5526,186 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 92.71) (xy 88.9 91.44)
+			(xy 88.9 92.71)
+			(xy 88.9 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fd7cbf1a-25da-4349-9533-db763eb30cdb")
+	)
+	(wire
+		(pts
+			(xy 39.37 130.81)
+			(xy 39.37 125.73)
+		)
+		(uuid "c1ecfc79-4053-44c1-bcd5-51025041dbff")
+	)
+	(wire
+		(pts
+			(xy 39.37 125.73)
+			(xy 49.53 125.73)
+		)
+		(uuid "40d7b067-0004-4896-97d5-054310235386")
+	)
+	(wire
+		(pts
+			(xy 49.53 125.73)
+			(xy 71.12 125.73)
+		)
+		(uuid "6433df43-9a65-43b0-8c21-8d2955d800ea")
+	)
+	(wire
+		(pts
+			(xy 49.53 125.73)
+			(xy 49.53 139.7)
+		)
+		(uuid "207866f0-750d-462e-aef6-9ca7aa5167a8")
+	)
+	(wire
+		(pts
+			(xy 49.53 144.78)
+			(xy 49.53 146.05)
+		)
+		(uuid "c5660460-47a7-48de-9aaa-ec74bd6b36b5")
+	)
+	(wire
+		(pts
+			(xy 54.61 130.81)
+			(xy 71.12 130.81)
+		)
+		(uuid "e5477ac1-f594-488b-bfe7-8cced9a5fd90")
+	)
+	(wire
+		(pts
+			(xy 81.28 128.27)
+			(xy 86.36 128.27)
+		)
+		(uuid "f48da77d-dc71-4b68-8192-696ac17d1775")
+	)
+	(wire
+		(pts
+			(xy 147.32 128.27)
+			(xy 180.34 128.27)
+		)
+		(uuid "75a96af1-3442-4540-8626-2524922b2211")
+	)
+	(wire
+		(pts
+			(xy 180.34 128.27)
+			(xy 180.34 111.76)
+		)
+		(uuid "ed9a7553-f27a-4088-968d-f60910162e8c")
+	)
+	(wire
+		(pts
+			(xy 180.34 111.76)
+			(xy 189.23 111.76)
+		)
+		(uuid "c5a1fd45-978b-4ee0-aa9c-60103bf31057")
+	)
+	(text "USB 2.0 full-speed device / removable CR2032 / break-before-make BAT–OFF–USB selector"
+		(at 20.32 29.21 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bd35069-0524-480f-99b5-a08528f45e50")
+	)
+	(text "Fit JP1 for normal use. Remove JP1 for an inline meter or a fitted R4."
+		(at 163.83 143.51 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "2340d299-205f-4ba9-bc3c-ae989dc114df")
+	)
+	(text "Enable USB only with VBUS present and VDD ≥ 3.1 V."
+		(at 185.42 82.55 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "3432aed3-137f-4e85-bcd8-fd26c629ad6a")
+	)
+	(text "TP1 / TP2 measure high-side shunt voltage. Scope ground stays on GND."
+		(at 163.83 149.86 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f738573-7b3a-46d7-9194-d853bd9d27bd")
+	)
+	(text "VBUS present: LOW"
+		(at 236.22 67.31 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "835c43fd-d0b1-4e62-ad12-2227c5af5991")
+	)
+	(text "POWER, USB AND CURRENT MEASUREMENT"
+		(at 20.32 22.86 0)
+		(effects
+			(font
+				(size 3 3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ceeacaa0-c134-4315-b817-25e39c335242")
+	)
+	(text "Detach above the 3.0 V minimum as VDD falls."
+		(at 185.42 87.63 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3eb2714-b25e-498a-a462-5873db6fe990")
+	)
+	(text "POWER SOURCE SELECTION"
+		(at 24.13 119.38 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca1f0dcd-e41d-488e-a108-438744357f17")
+	)
+	(text "SW1 selects the CR2032 or regulated USB 3.3 V. The center throw is unconnected (OFF)."
+		(at 24.13 168.91 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee4e8ff4-86ec-42fc-ab6d-04b02e0a002e")
+	)
+	(text "U5 blocks reverse current from the system rail. C13 stays on the cell side of SW1."
+		(at 24.13 175.26 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "8df2a310-6ff0-4399-9122-a7080e0959c2")
 	)
 	(label "CC1"
 		(at 63.5 55.88 0)
@@ -5352,16 +5726,6 @@
 			(justify left bottom)
 		)
 		(uuid "3e47fb24-c234-4890-87d0-507e0588c9b1")
-	)
-	(label "USB_3V3"
-		(at 173.99 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "57a10feb-b889-44a9-a8d3-a1beab1ed341")
 	)
 	(label "USB_DM_CONN"
 		(at 64.77 63.5 0)
@@ -5392,16 +5756,6 @@
 			(justify right bottom)
 		)
 		(uuid "96a72454-0d60-4739-a56b-155477eb9686")
-	)
-	(label "BAT_BLOCKED"
-		(at 173.99 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a1a790a6-c2bf-43de-b337-416b8f21bfca")
 	)
 	(label "CC2"
 		(at 88.9 80.01 0)
@@ -5453,16 +5807,6 @@
 		)
 		(uuid "d09ceb7b-0ef8-42cb-82f1-e69df8d0b986")
 	)
-	(label "BAT_BLOCKED"
-		(at 147.32 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d168dec8-55f3-4692-812a-56285f7d98f9")
-	)
 	(label "USB_DP_CONN"
 		(at 64.77 68.58 0)
 		(effects
@@ -5482,6 +5826,16 @@
 			(justify left bottom)
 		)
 		(uuid "e80e82d0-b8a1-471e-8e74-1855f95fd774")
+	)
+	(label "USB_3V3"
+		(at 54.61 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e70642f-fa66-43e6-8cc1-fc389d7258b0")
 	)
 	(hierarchical_label "USB_VBUS_N"
 		(shape output)
@@ -5520,13 +5874,11 @@
 		(lib_id "Device:C_Small")
 		(at 134.62 142.24 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "05bcd5fd-ac2f-4e37-a831-f76cb82974a9")
 		(property "Reference" "C14"
 			(at 137.16 140.9762 0)
@@ -5594,21 +5946,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "b6427341-1609-4154-ad3d-6adb77832f7b")
-		)
-		(pin "2"
-			(uuid "acdc3e6e-6ae4-4cc4-9fb3-941b6c1b8b52")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C15849"
 			(at 134.62 142.24 0)
 			(hide yes)
@@ -5635,18 +5972,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "b6427341-1609-4154-ad3d-6adb77832f7b")
+		)
+		(pin "2"
+			(uuid "acdc3e6e-6ae4-4cc4-9fb3-941b6c1b8b52")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 88.9 50.8 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "083deeb3-e1f4-487e-804d-95b13e34d030")
 		(property "Reference" "#PWR001"
 			(at 88.9 48.895 0)
@@ -5702,6 +6054,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "2006848f-f6ba-49b0-9061-a802c41f537c")
 		)
@@ -5718,13 +6072,11 @@
 		(lib_id "power:VDD")
 		(at 267.97 113.03 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "0bfe4f27-9235-49a9-8993-7b8346f30918")
 		(property "Reference" "#PWR018"
 			(at 267.97 116.84 0)
@@ -5781,6 +6133,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "f59380c4-7563-4986-8ece-8db596f3d202")
 		)
@@ -5797,13 +6151,11 @@
 		(lib_id "Device:R_Small")
 		(at 88.9 88.9 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "0c2ef3be-b1e3-4d03-8ace-78c7d3cb7c4b")
 		(property "Reference" "R3"
 			(at 91.44 87.6299 0)
@@ -5871,21 +6223,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "8603f3e1-96b9-4b77-9878-e65649f5c499")
-		)
-		(pin "2"
-			(uuid "5c5bcce4-e551-48d6-8546-4988b8296f6e")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C23186"
 			(at 88.9 88.9 0)
 			(hide yes)
@@ -5912,21 +6249,36 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "8603f3e1-96b9-4b77-9878-e65649f5c499")
+		)
+		(pin "2"
+			(uuid "5c5bcce4-e551-48d6-8546-4988b8296f6e")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 69.85 142.24 0)
+		(at 49.53 142.24 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "1583dd8e-c07b-4139-8738-56ede36d7830")
 		(property "Reference" "C13"
-			(at 72.39 140.9762 0)
+			(at 52.07 140.9762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5937,7 +6289,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 72.39 143.5162 0)
+			(at 52.07 143.5162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5948,7 +6300,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 69.85 142.24 0)
+			(at 49.53 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5959,7 +6311,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
-			(at 69.85 142.24 0)
+			(at 49.53 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5970,7 +6322,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 69.85 142.24 0)
+			(at 49.53 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5981,7 +6333,7 @@
 			)
 		)
 		(property "Group" "Battery and selector"
-			(at 69.85 142.24 0)
+			(at 49.53 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5991,6 +6343,35 @@
 				)
 			)
 		)
+		(property "LCSC" "C15849"
+			(at 49.53 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 49.53 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 49.53 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "2"
 			(uuid "873b0302-afc2-4a82-a627-503377622820")
 		)
@@ -6005,45 +6386,16 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C15849"
-			(at 69.85 142.24 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL10A105KB8NNNC"
-			(at 69.85 142.24 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 69.85 142.24 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 134.62 146.05 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "1716b6f1-bb49-47a0-a772-1f1c82b80350")
 		(property "Reference" "#PWR017"
 			(at 134.62 152.4 0)
@@ -6100,6 +6452,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "b10cd155-310c-4044-860b-ba9ba23347f5")
 		)
@@ -6116,13 +6470,11 @@
 		(lib_id "Connector:TestPoint")
 		(at 255.27 99.06 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "24054e86-c0ab-4391-9740-e4740b992f4e")
 		(property "Reference" "TP2"
 			(at 257.81 94.4879 0)
@@ -6190,6 +6542,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "27edc5f8-752b-47c6-80c7-5ec7d63300c4")
 		)
@@ -6206,13 +6560,11 @@
 		(lib_id "power:GND")
 		(at 127 66.04 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "259df990-c09e-481e-af2f-69b3e4c69fbb")
 		(property "Reference" "#PWR003"
 			(at 127 72.39 0)
@@ -6268,6 +6620,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "a8c8ef10-d529-46ec-9bef-855a3de02e47")
 		)
@@ -6284,13 +6638,11 @@
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 123.19 92.71 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "30dacea7-a62f-47e9-80f4-89abdcee499f")
 		(property "Reference" "U6"
 			(at 124.8411 85.09 0)
@@ -6358,33 +6710,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "eefef079-b5ff-4f51-8896-6dc69ae7f5eb")
-		)
-		(pin "2"
-			(uuid "c52c9c8f-cff2-42f4-8ed1-820d35f56c24")
-		)
-		(pin "3"
-			(uuid "d4f0f549-01b1-40b6-a65e-da9f7fae202e")
-		)
-		(pin "6"
-			(uuid "71736e43-6aae-4cc1-b73c-19c3d9ab9634")
-		)
-		(pin "5"
-			(uuid "0ff80784-4fad-44f0-808e-95ea2a6228b5")
-		)
-		(pin "4"
-			(uuid "640cf578-ee66-4c61-8265-2997d69a8c19")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C7519"
 			(at 123.19 92.71 0)
 			(hide yes)
@@ -6411,18 +6736,45 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "eefef079-b5ff-4f51-8896-6dc69ae7f5eb")
+		)
+		(pin "2"
+			(uuid "c52c9c8f-cff2-42f4-8ed1-820d35f56c24")
+		)
+		(pin "3"
+			(uuid "d4f0f549-01b1-40b6-a65e-da9f7fae202e")
+		)
+		(pin "6"
+			(uuid "71736e43-6aae-4cc1-b73c-19c3d9ab9634")
+		)
+		(pin "5"
+			(uuid "0ff80784-4fad-44f0-808e-95ea2a6228b5")
+		)
+		(pin "4"
+			(uuid "640cf578-ee66-4c61-8265-2997d69a8c19")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 88.9 92.71 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "403f1028-abc3-4b7d-942f-e80b1cbe5ff9")
 		(property "Reference" "#PWR008"
 			(at 88.9 99.06 0)
@@ -6479,6 +6831,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "9163acce-2d88-4d23-960a-557d2d87f32a")
 		)
@@ -6495,13 +6849,11 @@
 		(lib_id "Transistor_FET:2N7002")
 		(at 222.25 59.69 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "44837eb8-a855-4988-b385-b5b8a241f667")
 		(property "Reference" "Q1"
 			(at 228.6 58.4199 0)
@@ -6569,24 +6921,6 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "2db1cec2-0708-4d12-b9c4-d16ed895151e")
-		)
-		(pin "3"
-			(uuid "2ca9b2dd-dbc6-4def-89d1-408ebf46a438")
-		)
-		(pin "1"
-			(uuid "8f25de6d-faca-46f1-a000-d0e7e59d84a9")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C65189"
 			(at 222.25 59.69 0)
 			(hide yes)
@@ -6613,18 +6947,36 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "2"
+			(uuid "2db1cec2-0708-4d12-b9c4-d16ed895151e")
+		)
+		(pin "3"
+			(uuid "2ca9b2dd-dbc6-4def-89d1-408ebf46a438")
+		)
+		(pin "1"
+			(uuid "8f25de6d-faca-46f1-a000-d0e7e59d84a9")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 152.4 69.85 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "5857fcee-e8c9-4744-a3a9-89875b307420")
 		(property "Reference" "C12"
 			(at 154.94 68.5862 0)
@@ -6692,21 +7044,6 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "92edb74d-6dda-4527-b082-f369bca508c0")
-		)
-		(pin "1"
-			(uuid "39c16155-00d0-4db3-9fd3-37ce5b153fe4")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C23630"
 			(at 152.4 69.85 0)
 			(hide yes)
@@ -6733,18 +7070,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "2"
+			(uuid "92edb74d-6dda-4527-b082-f369bca508c0")
+		)
+		(pin "1"
+			(uuid "39c16155-00d0-4db3-9fd3-37ce5b153fe4")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 233.68 107.95 90)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "5ad92b40-0d2b-4710-9a20-d5aca65bd43f")
 		(property "Reference" "JP1"
 			(at 238.76 106.6799 90)
@@ -6812,21 +7164,6 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "3435b22e-77e1-4c46-94e4-987797ab4873")
-		)
-		(pin "1"
-			(uuid "94cf577e-a095-4c66-a935-a5ffed1c313a")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "Jumper cap LCSC" "C100114"
 			(at 233.68 107.95 0)
 			(hide yes)
@@ -6862,18 +7199,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "2"
+			(uuid "3435b22e-77e1-4c46-94e4-987797ab4873")
+		)
+		(pin "1"
+			(uuid "94cf577e-a095-4c66-a935-a5ffed1c313a")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 39.37 66.04 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "61459823-82cb-4895-963a-8567c2ba9b13")
 		(property "Reference" "J1"
 			(at 39.37 43.18 0)
@@ -6939,6 +7291,44 @@
 				)
 			)
 		)
+		(property "Interface reference" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3020560"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "GCT"
+			(at 39.37 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "A7"
 			(uuid "f5352bb6-372e-4d88-b999-dfdabc7b3066")
 		)
@@ -6998,54 +7388,16 @@
 				)
 			)
 		)
-	
-		(property "Interface reference" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 39.37 66.04 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C3020560"
-			(at 39.37 66.04 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "USB4105-GF-A"
-			(at 39.37 66.04 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "GCT"
-			(at 39.37 66.04 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:VDD")
 		(at 224.79 36.83 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "7e73d64e-fd33-497b-a80e-9622870d29a8")
 		(property "Reference" "#PWR012"
 			(at 224.79 40.64 0)
@@ -7102,6 +7454,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "2375505f-7e1d-47d3-8e9e-ef90d032fc00")
 		)
@@ -7118,13 +7472,11 @@
 		(lib_id "power:GND")
 		(at 176.53 76.2 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "80102401-c8ab-4434-9fa0-6803c7f9e37c")
 		(property "Reference" "#PWR010"
 			(at 176.53 82.55 0)
@@ -7181,6 +7533,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "d2a650c9-c542-4f38-9bda-d627552e16d5")
 		)
@@ -7197,13 +7551,11 @@
 		(lib_id "Regulator_Linear:MCP1700x-330xxTT")
 		(at 127 58.42 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "89e305d0-16d2-4fe5-a582-589341eb2edf")
 		(property "Reference" "U4"
 			(at 127 52.07 0)
@@ -7269,24 +7621,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "9672a6de-0a72-4acf-8a76-b8bdfb10df71")
-		)
-		(pin "3"
-			(uuid "68832357-bffb-4cda-bb44-f5c4ac8b67f7")
-		)
-		(pin "2"
-			(uuid "a7eeddad-6b66-4e1e-93cb-74c0a52e959b")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C39051"
 			(at 127 58.42 0)
 			(hide yes)
@@ -7313,21 +7647,39 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "9672a6de-0a72-4acf-8a76-b8bdfb10df71")
+		)
+		(pin "3"
+			(uuid "68832357-bffb-4cda-bb44-f5c4ac8b67f7")
+		)
+		(pin "2"
+			(uuid "a7eeddad-6b66-4e1e-93cb-74c0a52e959b")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 146.05 0)
+		(at 49.53 146.05 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "8c37f944-b245-4eb6-aee7-ffea480c4b13")
 		(property "Reference" "#PWR015"
-			(at 69.85 152.4 0)
+			(at 49.53 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7338,7 +7690,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 147.3199 0)
+			(at 52.07 147.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7349,7 +7701,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 146.05 0)
+			(at 49.53 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7360,7 +7712,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 146.05 0)
+			(at 49.53 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7371,7 +7723,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 146.05 0)
+			(at 49.53 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7381,6 +7733,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "c306bbb5-8840-409b-b909-5980d7a7b744")
 		)
@@ -7397,13 +7751,11 @@
 		(lib_id "Device:R_Small")
 		(at 224.79 40.64 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "8d6ab3ca-d60f-438a-842d-0fccae94d5f1")
 		(property "Reference" "R10"
 			(at 227.33 39.3699 0)
@@ -7471,21 +7823,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "bcb3e5d0-850a-4e22-bae7-e2b485a74b48")
-		)
-		(pin "2"
-			(uuid "6f634f7c-cd46-4c9c-bf7f-b2e34b6312d8")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C25803"
 			(at 224.79 40.64 0)
 			(hide yes)
@@ -7512,18 +7849,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "bcb3e5d0-850a-4e22-bae7-e2b485a74b48")
+		)
+		(pin "2"
+			(uuid "6f634f7c-cd46-4c9c-bf7f-b2e34b6312d8")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 123.19 100.33 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "98d80f27-8e51-474b-abe9-cc324acd8a5f")
 		(property "Reference" "#PWR009"
 			(at 123.19 106.68 0)
@@ -7579,6 +7931,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "defb94e3-6033-4717-9eb2-22b87544a05c")
 		)
@@ -7595,13 +7949,11 @@
 		(lib_id "Analog_Switch:MAX40200AUK")
 		(at 107.95 130.81 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "992d022a-60c5-4c3e-ac92-24aaf5c4baba")
 		(property "Reference" "U5"
 			(at 107.95 120.65 0)
@@ -7667,30 +8019,6 @@
 				)
 			)
 		)
-		(pin "5"
-			(uuid "3e4f5866-c9d5-4fb0-bdb8-38e45124d939")
-		)
-		(pin "3"
-			(uuid "62938840-e7b2-4280-8f00-30571afdd64b")
-		)
-		(pin "1"
-			(uuid "6bbeb919-55bc-432a-b534-48cdc48d2511")
-		)
-		(pin "2"
-			(uuid "6fa10adf-05f1-40f8-a40d-20828b6ed8c2")
-		)
-		(pin "4"
-			(uuid "475ea2b8-3eaf-45e7-91d7-d5bfd6684635")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C2649430"
 			(at 107.95 130.81 0)
 			(hide yes)
@@ -7717,18 +8045,42 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "5"
+			(uuid "3e4f5866-c9d5-4fb0-bdb8-38e45124d939")
+		)
+		(pin "3"
+			(uuid "62938840-e7b2-4280-8f00-30571afdd64b")
+		)
+		(pin "1"
+			(uuid "6bbeb919-55bc-432a-b534-48cdc48d2511")
+		)
+		(pin "2"
+			(uuid "6fa10adf-05f1-40f8-a40d-20828b6ed8c2")
+		)
+		(pin "4"
+			(uuid "475ea2b8-3eaf-45e7-91d7-d5bfd6684635")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 86.36 128.27 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "9f20f035-63bf-4b57-a4c8-4aa7102278b2")
 		(property "Reference" "#PWR014"
 			(at 86.36 126.365 0)
@@ -7784,6 +8136,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "9fb49728-fde5-4d4b-aec1-13d53916f8fa")
 		)
@@ -7797,166 +8151,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DPDT_x2")
-		(at 57.15 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a20070ad-1eb7-42fe-b25a-3681f050c82d")
-		(property "Reference" "SW1"
-			(at 57.15 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT-OFF-USB"
-			(at 57.15 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-os-series-datasheet?assetguid=f8954ac2-65ba-431f-af55-b0493370575e#page=5"
-			(at 57.15 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Maintained break-before-make DPDT ON-OFF-ON slide switch. Confirm footprint against enclosure and actuator."
-			(at 57.15 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Battery and selector"
-			(at 57.15 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Candidate MPN" "C&K 1203M2S3CBE2 (mechanical fit pending)"
-			(at 57.15 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "10b34675-5cf2-4eda-9d34-da41810f5e07")
-		)
-		(pin "6"
-			(uuid "3ddf278f-ec77-4dae-b006-d1899b79bb5c")
-		)
-		(pin "1"
-			(uuid "16fdce56-e355-4542-83be-c2c3a07acd6f")
-		)
-		(pin "4"
-			(uuid "86bb4996-d6d6-4b57-a88d-8222512fa349")
-		)
-		(pin "5"
-			(uuid "87c2f03d-5619-44bd-a89e-02e782a49a4e")
-		)
-		(pin "2"
-			(uuid "427c645e-b6c2-4c41-a32d-3b2f6b243709")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "LCSC" "C221840"
-			(at 57.15 130.81 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "OS203013MT7QN1"
-			(at 57.15 130.81 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "C&K"
-			(at 57.15 130.81 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sourcing note" "Panel-mount slide with solder lugs. Maintained ON-OFF-ON, commons 2 and 5. Confirm mounting, wiring and enclosure clearance before ordering."
-			(at 57.15 130.81 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
-	(symbol
 		(lib_id "power:GND")
 		(at 152.4 73.66 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "a793fe64-e35b-4d50-a9f5-6f3115fb1c23")
 		(property "Reference" "#PWR004"
 			(at 152.4 80.01 0)
@@ -8013,6 +8215,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "e76a95ee-abf0-4142-9ceb-dd8c43c4224f")
 		)
@@ -8029,13 +8233,11 @@
 		(lib_id "Device:R_Small")
 		(at 198.12 72.39 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "ab11ab2f-eafa-47fa-aad6-745b3895d129")
 		(property "Reference" "R9"
 			(at 200.66 71.1199 0)
@@ -8103,21 +8305,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "aa3738c5-2cfa-4d5f-b9b1-792bc5162539")
-		)
-		(pin "2"
-			(uuid "fbf80723-52e2-4edd-b3d7-a308e20a2624")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C22935"
 			(at 198.12 72.39 0)
 			(hide yes)
@@ -8144,18 +8331,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "aa3738c5-2cfa-4d5f-b9b1-792bc5162539")
+		)
+		(pin "2"
+			(uuid "fbf80723-52e2-4edd-b3d7-a308e20a2624")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 69.85 92.71 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "ae205000-efa6-46ae-8043-e44c4086d3d5")
 		(property "Reference" "#PWR007"
 			(at 69.85 99.06 0)
@@ -8212,6 +8414,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "9fa92205-4114-4712-9be6-4b1367b44760")
 		)
@@ -8228,16 +8432,14 @@
 		(lib_id "Device:Battery_Cell")
 		(at 39.37 142.24 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "b3a8c017-ca49-4364-ac20-8d1a2831e85f")
 		(property "Reference" "BT1"
-			(at 43.18 139.1284 0)
+			(at 26.67 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8248,7 +8450,7 @@
 			)
 		)
 		(property "Value" "CR2032"
-			(at 43.18 141.6684 0)
+			(at 26.67 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8302,22 +8504,7 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "f9ba867b-9a09-404b-86bf-532e79fa6af5")
-		)
-		(pin "1"
-			(uuid "f8cfa12c-1bf2-4ee8-87d3-f8a23f24c900")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "Candidate LCSC" "C5457100"
+		(property "Candidate LCSC" ""
 			(at 39.37 142.24 0)
 			(hide yes)
 			(effects
@@ -8344,7 +8531,7 @@
 				)
 			)
 		)
-		(property "Sourcing note" "The specified Keystone 3002 holder has no verified LCSC retail stock. MYOUNG MY-2032-32-J needs larger solder lands (6.08 mm square)."
+		(property "Sourcing note" "Keep the Keystone 3002 holder and its existing footprint. Likely DNP for the prototype; final population decision pending. Source separately if fitted."
 			(at 39.37 142.24 0)
 			(hide yes)
 			(effects
@@ -8352,18 +8539,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "2"
+			(uuid "f9ba867b-9a09-404b-86bf-532e79fa6af5")
+		)
+		(pin "1"
+			(uuid "f8cfa12c-1bf2-4ee8-87d3-f8a23f24c900")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 39.37 144.78 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "b448255c-6d64-4b43-96ec-e3f6f3b66f70")
 		(property "Reference" "#PWR013"
 			(at 39.37 151.13 0)
@@ -8419,6 +8621,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "99b31d12-d2dd-42a6-9b00-99b66ef1ea02")
 		)
@@ -8435,13 +8639,11 @@
 		(lib_id "power:GND")
 		(at 107.95 138.43 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "c0ac2b4a-add1-4860-9ae1-0035018ec466")
 		(property "Reference" "#PWR016"
 			(at 107.95 144.78 0)
@@ -8497,6 +8699,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "fb3d95fc-be41-4de9-8973-9af4e1df4d23")
 		)
@@ -8513,13 +8717,11 @@
 		(lib_id "Device:R_Small")
 		(at 69.85 88.9 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "c29d72e4-9359-4aef-ad4b-68529660b4ac")
 		(property "Reference" "R2"
 			(at 72.39 87.6299 0)
@@ -8587,21 +8789,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "09898bff-7625-473e-8794-5a9116176991")
-		)
-		(pin "2"
-			(uuid "aa48001a-0236-48f9-81b8-7466a3973f84")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C23186"
 			(at 69.85 88.9 0)
 			(hide yes)
@@ -8628,18 +8815,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "09898bff-7625-473e-8794-5a9116176991")
+		)
+		(pin "2"
+			(uuid "aa48001a-0236-48f9-81b8-7466a3973f84")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 31.75 97.79 180)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "c4d6e837-b435-47a3-b290-6aafeaa92f33")
 		(property "Reference" "#PWR006"
 			(at 31.75 99.695 0)
@@ -8696,6 +8898,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "978d7dec-a730-4d59-a1f3-f4ceba885035")
 		)
@@ -8712,13 +8916,11 @@
 		(lib_id "power:PWR_FLAG")
 		(at 267.97 113.03 180)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "c81538f0-5ea4-4ddb-838b-43f0482f1b66")
 		(property "Reference" "#PWR019"
 			(at 267.97 114.935 0)
@@ -8775,6 +8977,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "85f64c34-78cc-43e7-8f5f-0f27b88eda6c")
 		)
@@ -8791,13 +8995,11 @@
 		(lib_id "Device:C_Small")
 		(at 96.52 69.85 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "ca17c12f-ada8-477f-8cde-861aa2fee293")
 		(property "Reference" "C11"
 			(at 99.06 68.5862 0)
@@ -8865,21 +9067,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "0e8a07fa-6bb9-4287-9516-7ef3ef107432")
-		)
-		(pin "2"
-			(uuid "3f5400dd-9bee-456d-ad11-c6309a016db3")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C23630"
 			(at 96.52 69.85 0)
 			(hide yes)
@@ -8906,18 +9093,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "0e8a07fa-6bb9-4287-9516-7ef3ef107432")
+		)
+		(pin "2"
+			(uuid "3f5400dd-9bee-456d-ad11-c6309a016db3")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 39.37 97.79 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "d5d621c9-268d-4508-8bd9-6e9508b2d8bb")
 		(property "Reference" "#PWR005"
 			(at 39.37 104.14 0)
@@ -8974,6 +9176,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "bbe895ef-cb56-456c-ab28-a6c91d3a263e")
 		)
@@ -8990,13 +9194,11 @@
 		(lib_id "Connector:TestPoint")
 		(at 215.9 99.06 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "d8995229-3667-4c9a-adf7-0f75cb96aacf")
 		(property "Reference" "TP1"
 			(at 218.44 94.4879 0)
@@ -9064,6 +9266,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "c6549e37-49fa-48e7-8d58-21001fc45abd")
 		)
@@ -9080,13 +9284,11 @@
 		(lib_id "Device:R_Small")
 		(at 233.68 125.73 90)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "dbb08c81-68c4-4bff-9e6e-bb4d1ee47d21")
 		(property "Reference" "R4"
 			(at 233.68 120.65 90)
@@ -9163,21 +9365,6 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "7320e3c1-4182-4189-a9bf-fd39a820a7cd")
-		)
-		(pin "1"
-			(uuid "b6398047-3c6f-4d7f-84a3-01066871b6a8")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C17415"
 			(at 233.68 125.73 0)
 			(hide yes)
@@ -9204,18 +9391,33 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "2"
+			(uuid "7320e3c1-4182-4189-a9bf-fd39a820a7cd")
+		)
+		(pin "1"
+			(uuid "b6398047-3c6f-4d7f-84a3-01066871b6a8")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 224.79 64.77 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "dc754726-5582-4db2-9097-18c98a6266e9")
 		(property "Reference" "#PWR011"
 			(at 224.79 71.12 0)
@@ -9271,6 +9473,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "160d5c40-f447-4884-b92d-f8ffadda38d8")
 		)
@@ -9287,13 +9491,11 @@
 		(lib_id "power:GND")
 		(at 96.52 73.66 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "e7104c86-ba49-4fd5-9894-f25c01d48fdc")
 		(property "Reference" "#PWR002"
 			(at 96.52 80.01 0)
@@ -9350,6 +9552,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "cfa4c628-312b-4737-94aa-1db87899aa33")
 		)
@@ -9363,65 +9567,51 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DPDT_x2")
-		(at 184.15 111.76 0)
+		(lib_id "Trainer:CUS-13TB")
+		(at 76.2 128.27 0)
 		(mirror y)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
+		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec603c4f-0ee4-4da4-acb5-04a890dc14f1")
+		(uuid "65bf83b7-9582-4a66-a574-07f88b6e0533")
 		(property "Reference" "SW1"
-			(at 184.15 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
+			(at 76.2 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "BAT-OFF-USB"
-			(at 184.15 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(property "Value" "CUS-13TB"
+			(at 76.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 184.15 111.76 0)
+		(property "Footprint" "Trainer:SW_SP3T_Nidec_CUS-13TB"
+			(at 76.2 128.27 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-os-series-datasheet?assetguid=f8954ac2-65ba-431f-af55-b0493370575e#page=5"
-			(at 184.15 111.76 0)
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
+			(at 76.2 128.27 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Maintained break-before-make DPDT ON-OFF-ON slide switch. Confirm footprint against enclosure and actuator."
-			(at 184.15 111.76 0)
+		(property "Description" ""
+			(at 76.2 128.27 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9429,56 +9619,69 @@
 			)
 		)
 		(property "Group" "Battery and selector"
-			(at 184.15 111.76 0)
+			(at 76.2 128.27 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Candidate MPN" "C&K 1203M2S3CBE2 (mechanical fit pending)"
-			(at 184.15 111.76 0)
+		(property "LCSC" "C2921740"
+			(at 76.2 128.27 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(pin "3"
-			(uuid "632ce932-f269-4f8a-9ab8-97bade0ec086")
+		(property "MPN" "CUS-13TB"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "6"
-			(uuid "56c29123-cfc3-46c3-8341-1723d2b55d62")
+		(property "Manufacturer" "Nidec Components"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "4"
-			(uuid "31704fb2-204b-4cef-9d0e-b79f5798223e")
-		)
-		(pin "1"
-			(uuid "d6730d8f-1a76-40ac-b8e6-c9770807cf7a")
-		)
-		(pin "2"
-			(uuid "778b0f2f-d948-4733-aab0-ff5ff608baf9")
-		)
-		(pin "5"
-			(uuid "699ccdd7-4982-4cb0-8c5e-a8df8fdbbcf7")
+		(property "Sourcing note" "Three-position side-actuated CUS-series switch. BAT on pin 1, OFF on open pin 2, USB_3V3 on pin 4, common pin 3 to U5. Ground the metal shell."
+			(at 76.2 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
 					(reference "SW1")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
-	
-		(property "LCSC" "C221840"
-			(at 184.15 111.76 0)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 135.89 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3323909e-507f-4fa9-8a59-58222d5d1f02")
+		(property "Reference" "#PWR020"
+			(at 76.2 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -9486,8 +9689,16 @@
 				)
 			)
 		)
-		(property "MPN" "OS203013MT7QN1"
-			(at 184.15 111.76 0)
+		(property "Value" "GND"
+			(at 76.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 135.89 0)
 			(hide yes)
 			(effects
 				(font
@@ -9495,8 +9706,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "C&K"
-			(at 184.15 111.76 0)
+		(property "Datasheet" ""
+			(at 76.2 135.89 0)
 			(hide yes)
 			(effects
 				(font
@@ -9504,13 +9715,22 @@
 				)
 			)
 		)
-		(property "Sourcing note" "Panel-mount slide with solder lugs. Maintained ON-OFF-ON, commons 2 and 5. Confirm mounting, wiring and enclosure clearance before ordering."
-			(at 184.15 111.76 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 135.89 0)
 			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
