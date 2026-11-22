@@ -976,6 +976,17 @@
 		)
 		(uuid "f2e4303b-6a9c-43e9-abc2-ec14217bbda9")
 	)
+	(text "Check green LED visibility at 3.3 V and 2.0 V with R15–R23 fitted (1.5 kΩ)."
+		(exclude_from_sim no)
+		(at 25.4 179.07 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "f85a8655-088b-4dc8-a52c-5311116f575f")
+	)
 	(junction
 		(at 187.96 127)
 		(diameter 0)
@@ -1512,11 +1523,6 @@
 		)
 		(uuid "fd743054-8ef7-4162-bd6e-381ed6395918")
 	)
-  (text "Check green LED visibility at 3.3 V and 2.0 V with R15–R23 fitted (1.5 kΩ)."
-    (at 25.4 179.07 0)
-    (effects (font (size 1.25 1.25)) (justify left bottom))
-    (uuid "f85a8655-088b-4dc8-a52c-5311116f575f")
-  )
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 205.74 46.99 90)
