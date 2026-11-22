@@ -4653,17 +4653,206 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "USB 2.0 full-speed device / removable CR2032 / break-before-make BAT–OFF–USB selector"
-		(exclude_from_sim no)
-		(at 20.32 29.21 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left bottom)
+	
+		(symbol
+		  "Trainer:CUS-12TB"
+		  (pin_names
+		    (offset 1.016)
+		    (hide yes)
+		  )
+		  (exclude_from_sim no)
+		  (in_bom yes)
+		  (on_board yes)
+		  (in_pos_files yes)
+		  (duplicate_pin_numbers_are_jumpers no)
+		  (property "Reference" "SW"
+		    (at 0 5.3400 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Value" "CUS-12TB"
+		    (at 0 -6.3500 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Footprint" ""
+		    (at 0 0 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
+		    (at 0 0 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Description" ""
+		    (at 0 0 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (symbol "CUS-12TB_0_1"
+		    (polyline
+		      (pts
+		        (xy -2.28 0.13)
+		        (xy 1.92 2.36)
+		      )
+		      (stroke
+		        (width 0.254)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (circle
+		      (center 2.28 2.54)
+		      (radius 0.26)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (circle
+		      (center 2.28 -2.54)
+		      (radius 0.26)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (circle
+		      (center -2.28 0)
+		      (radius 0.26)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy -1.27 -3.81)
+		        (xy 1.27 -3.81)
+		      )
+		      (stroke
+		        (width 0.254)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (pin passive line
+		      (at 5.08 2.54 180)
+		      (length 2.54)
+		      (name "A"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin passive line
+		      (at -5.08 0 0)
+		      (length 2.54)
+		      (name "COM"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin passive line
+		      (at 5.08 -2.54 180)
+		      (length 2.54)
+		      (name "B"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin passive line
+		      (at 0 -7.62 90)
+		      (length 3.81)
+		      (name "Case"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "SH"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		  )
+		  (embedded_fonts no)
 		)
-		(uuid "0bd35069-0524-480f-99b5-a08528f45e50")
 	)
 	(text "Fit JP1 for normal use. Remove JP1 for an inline meter or a fitted R4."
 		(exclude_from_sim no)
@@ -4743,17 +4932,6 @@
 			(justify left bottom)
 		)
 		(uuid "ceeacaa0-c134-4315-b817-25e39c335242")
-	)
-	(text "SW1 selects the CR2032 or regulated USB 3.3 V. The center throw is unconnected (OFF)."
-		(exclude_from_sim no)
-		(at 24.13 168.91 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-			)
-			(justify left bottom)
-		)
-		(uuid "ee4e8ff4-86ec-42fc-ab6d-04b02e0a002e")
 	)
 	(text "Detach above the 3.0 V minimum as VDD falls."
 		(exclude_from_sim no)
@@ -4861,10 +5039,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff489ddd-cef2-4a0e-aa0e-204f88ad9363")
-	)
-	(no_connect
-		(at 71.12 128.27)
-		(uuid "58fdaa53-0db5-4389-a07b-7fccea60bbed")
 	)
 	(no_connect
 		(at 54.61 78.74)
@@ -5657,6 +5831,16 @@
 		)
 		(uuid "89c6006e-06a2-4c9e-a606-4fee435ebbab")
 	)
+  (text "USB 2.0 full-speed device / removable CR2032 / BAT–USB source selector"
+    (at 20.32 29.21 0)
+    (effects (font (size 1.5 1.5)) (justify left bottom))
+    (uuid "0d94a250-5daa-40d7-9b27-5aaa3a1b14f2")
+  )
+  (text "USB disconnects the CR2032. The trainer runs on USB power with the cable attached and turns off when unplugged."
+    (at 24.13 168.91 0)
+    (effects (font (size 1.25 1.25)) (justify left bottom))
+    (uuid "7b2c3f75-976d-4a00-8b71-51fbd92acf11")
+  )
 	(symbol
 		(lib_id "power:GND")
 		(at 86.36 68.58 0)
@@ -7463,7 +7647,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Trainer:CUS-13TB")
+		(lib_id "Trainer:CUS-12TB")
 		(at 76.2 128.27 0)
 		(mirror y)
 		(unit 1)
@@ -7484,7 +7668,7 @@
 				)
 			)
 		)
-		(property "Value" "CUS-13TB"
+		(property "Value" "CUS-12TB"
 			(at 76.2 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7494,7 +7678,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Trainer:SW_SP3T_Nidec_CUS-13TB"
+		(property "Footprint" "Trainer:SW_SPDT_Nidec_CUS-12TB"
 			(at 76.2 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7538,7 +7722,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2921740"
+		(property "LCSC" "C2921739"
 			(at 76.2 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7549,7 +7733,7 @@
 				)
 			)
 		)
-		(property "MPN" "CUS-13TB"
+		(property "MPN" "CUS-12TB"
 			(at 76.2 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7571,7 +7755,7 @@
 				)
 			)
 		)
-		(property "Sourcing note" "Three-position side-actuated CUS-series switch. BAT on pin 1, OFF on open pin 2, USB_3V3 on pin 4, common pin 3 to U5. Ground the metal shell."
+		(property "Sourcing note" "Two-position, side-actuated, break-before-make SPDT. Pin 1 selects regulated USB 3.3 V, pin 3 selects BAT+, and common pin 2 feeds U5. Shell to GND. USB selected with the cable unplugged is OFF."
 			(at 76.2 128.27 0)
 			(hide yes)
 			(show_name no)
