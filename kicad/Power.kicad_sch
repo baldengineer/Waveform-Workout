@@ -3744,6 +3744,202 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Trainer:CUS-12TB"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.34 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CUS-12TB"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CUS-12TB_0_1"
+				(polyline
+					(pts
+						(xy -2.28 0.13) (xy 1.92 2.36)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.28 0)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -3.81) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.28 2.54)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.28 -2.54)
+					(radius 0.26)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "Case"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Trainer:CUS-13TB"
 			(pin_names
 				(offset 1.016)
@@ -4653,206 +4849,17 @@
 			)
 			(embedded_fonts no)
 		)
-	
-		(symbol
-		  "Trainer:CUS-12TB"
-		  (pin_names
-		    (offset 1.016)
-		    (hide yes)
-		  )
-		  (exclude_from_sim no)
-		  (in_bom yes)
-		  (on_board yes)
-		  (in_pos_files yes)
-		  (duplicate_pin_numbers_are_jumpers no)
-		  (property "Reference" "SW"
-		    (at 0 5.3400 0)
-		    (show_name no)
-		    (do_not_autoplace no)
-		    (effects
-		      (font
-		        (size 1.27 1.27)
-		      )
-		    )
-		  )
-		  (property "Value" "CUS-12TB"
-		    (at 0 -6.3500 0)
-		    (show_name no)
-		    (do_not_autoplace no)
-		    (effects
-		      (font
-		        (size 1.27 1.27)
-		      )
-		    )
-		  )
-		  (property "Footprint" ""
-		    (at 0 0 0)
-		    (show_name no)
-		    (do_not_autoplace no)
-		    (hide yes)
-		    (effects
-		      (font
-		        (size 1.27 1.27)
-		      )
-		    )
-		  )
-		  (property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
-		    (at 0 0 0)
-		    (show_name no)
-		    (do_not_autoplace no)
-		    (hide yes)
-		    (effects
-		      (font
-		        (size 1.27 1.27)
-		      )
-		    )
-		  )
-		  (property "Description" ""
-		    (at 0 0 0)
-		    (show_name no)
-		    (do_not_autoplace no)
-		    (hide yes)
-		    (effects
-		      (font
-		        (size 1.27 1.27)
-		      )
-		    )
-		  )
-		  (symbol "CUS-12TB_0_1"
-		    (polyline
-		      (pts
-		        (xy -2.28 0.13)
-		        (xy 1.92 2.36)
-		      )
-		      (stroke
-		        (width 0.254)
-		        (type default)
-		      )
-		      (fill
-		        (type none)
-		      )
-		    )
-		    (circle
-		      (center 2.28 2.54)
-		      (radius 0.26)
-		      (stroke
-		        (width 0.127)
-		        (type default)
-		      )
-		      (fill
-		        (type none)
-		      )
-		    )
-		    (circle
-		      (center 2.28 -2.54)
-		      (radius 0.26)
-		      (stroke
-		        (width 0.127)
-		        (type default)
-		      )
-		      (fill
-		        (type none)
-		      )
-		    )
-		    (circle
-		      (center -2.28 0)
-		      (radius 0.26)
-		      (stroke
-		        (width 0.127)
-		        (type default)
-		      )
-		      (fill
-		        (type none)
-		      )
-		    )
-		    (polyline
-		      (pts
-		        (xy -1.27 -3.81)
-		        (xy 1.27 -3.81)
-		      )
-		      (stroke
-		        (width 0.254)
-		        (type default)
-		      )
-		      (fill
-		        (type none)
-		      )
-		    )
-		    (pin passive line
-		      (at 5.08 2.54 180)
-		      (length 2.54)
-		      (name "A"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		      (number "1"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		    )
-		    (pin passive line
-		      (at -5.08 0 0)
-		      (length 2.54)
-		      (name "COM"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		      (number "2"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		    )
-		    (pin passive line
-		      (at 5.08 -2.54 180)
-		      (length 2.54)
-		      (name "B"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		      (number "3"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		    )
-		    (pin passive line
-		      (at 0 -7.62 90)
-		      (length 3.81)
-		      (name "Case"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		      (number "SH"
-		        (effects
-		          (font
-		            (size 1.27 1.27)
-		          )
-		        )
-		      )
-		    )
-		  )
-		  (embedded_fonts no)
+	)
+	(text "USB 2.0 full-speed device / removable CR2032 / BAT–USB source selector"
+		(exclude_from_sim no)
+		(at 20.32 29.21 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
 		)
+		(uuid "0d94a250-5daa-40d7-9b27-5aaa3a1b14f2")
 	)
 	(text "Fit JP1 for normal use. Remove JP1 for an inline meter or a fitted R4."
 		(exclude_from_sim no)
@@ -4886,6 +4893,17 @@
 			(justify left bottom)
 		)
 		(uuid "4f738573-7b3a-46d7-9194-d853bd9d27bd")
+	)
+	(text "USB disconnects the CR2032. The trainer runs on USB power with the cable attached and turns off when unplugged."
+		(exclude_from_sim no)
+		(at 24.13 168.91 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b2c3f75-976d-4a00-8b71-51fbd92acf11")
 	)
 	(text "VBUS present: LOW"
 		(exclude_from_sim no)
@@ -5027,6 +5045,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d745d435-8527-41b6-95a7-f7f6520e8b9e")
+	)
+	(junction
+		(at 31.75 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d950360c-5be1-4f20-bfb8-b6624f18a9e2")
 	)
 	(junction
 		(at 224.79 50.8)
@@ -5250,6 +5274,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 95.25) (xy 31.75 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53676e81-9124-4546-bbea-4e143684ba1e")
+	)
+	(wire
+		(pts
 			(xy 54.61 71.12) (xy 59.69 71.12)
 		)
 		(stroke
@@ -5300,16 +5334,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 88.9) (xy 31.75 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64ca8983-0d8a-4516-bc10-0d84c6c8eddc")
-	)
-	(wire
-		(pts
 			(xy 224.79 36.83) (xy 224.79 38.1)
 		)
 		(stroke
@@ -5357,6 +5381,16 @@
 			(type default)
 		)
 		(uuid "6f711721-d3f6-4b7f-b62c-da666055516f")
+	)
+	(wire
+		(pts
+			(xy 31.75 88.9) (xy 31.75 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "725da235-ff31-4b6e-88bb-0df909456c2a")
 	)
 	(wire
 		(pts
@@ -5831,16 +5865,6 @@
 		)
 		(uuid "89c6006e-06a2-4c9e-a606-4fee435ebbab")
 	)
-  (text "USB 2.0 full-speed device / removable CR2032 / BAT–USB source selector"
-    (at 20.32 29.21 0)
-    (effects (font (size 1.5 1.5)) (justify left bottom))
-    (uuid "0d94a250-5daa-40d7-9b27-5aaa3a1b14f2")
-  )
-  (text "USB disconnects the CR2032. The trainer runs on USB power with the cable attached and turns off when unplugged."
-    (at 24.13 168.91 0)
-    (effects (font (size 1.25 1.25)) (justify left bottom))
-    (uuid "7b2c3f75-976d-4a00-8b71-51fbd92acf11")
-  )
 	(symbol
 		(lib_id "power:GND")
 		(at 86.36 68.58 0)
@@ -7774,9 +7798,6 @@
 		)
 		(pin "2"
 			(uuid "6de3a99f-f084-48e8-a8b7-b901c5ffe103")
-		)
-		(pin "4"
-			(uuid "301ae580-ce8d-4611-bc6c-4b6a18c3b67e")
 		)
 		(pin "1"
 			(uuid "6d174c81-6e03-4856-ae1d-74a99ccf0c52")
@@ -10170,6 +10191,132 @@
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
 					(reference "#PWR002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 31.75 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6ddac77-4690-4177-978e-4ddd733e583b")
+		(property "Reference" "R11"
+			(at 34.29 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 34.29 93.9799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "USB and regulator"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22935"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1004T5E"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 31.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a30f61c1-de18-4423-af42-c161dfd70b16")
+		)
+		(pin "2"
+			(uuid "ab60d799-fdb1-4120-b376-ac579ffe1bec")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "R11")
 					(unit 1)
 				)
 			)
