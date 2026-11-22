@@ -1,6 +1,6 @@
 # Development PCB
 
-The board measures 110 × 56 mm. Output A is on the left-edge Kinghelm BNC, with its parallel 2.54 mm header 8.5 mm farther inboard. USB-C faces the right edge. Each of the six power measurement points has a ground point 7.5–8.0 mm away. The four waveform test pads, TP22–TP25, are on 12 mm centers above the indicator LEDs.
+The board measures 88 × 50.4 mm, a 28% reduction in area from the 110 × 56 mm revision. Output A is on the left-edge Kinghelm BNC and the adjacent 2.54 mm header. USB-C faces the right edge. The six power measurement points have ground points 7.55–7.90 mm away. The four waveform test pads, TP22–TP25, are on 9.3 mm centers above the indicator LEDs.
 
 ## Routing and stack
 
@@ -18,6 +18,6 @@ KiCad found zero unrouted connections and zero shorts. The filled In1.Cu ground 
 
 Four DRC errors remain inside J1. Each USB-C locating hole is 0.1944 mm from two overlapping ground pads, against the project's 0.25 mm hole-to-copper setting. Check the GCT land pattern and the fabricator's allowance before fabrication. [GCT USB4105 drawing](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5492/USB4105.pdf)
 
-The 122 warnings match the 110 × 70 mm checkpoint. Eight concern silkscreen on BT1, TP1 and TP2, 30 concern footprint-library differences, and 84 concern the schematic `Group` field on PCB footprints. The USB-C receptacle, battery clip, mode button and Harwin loops lack their library 3D models on this board. Simultaneous probe fit still needs a physical check.
+The 122 warnings match the 110 × 56 mm checkpoint (`7214f14`). Eight concern silkscreen on BT1, TP1 and TP2, 30 concern footprint-library differences, and 84 concern the schematic `Group` field on PCB footprints. The USB-C receptacle, battery clip, mode button and Harwin loops lack their library 3D models on this board. Simultaneous probe fit still needs a physical check.
 
-When editing the placement, move the silkscreen markings for the 33 relocated groups with their footprints. Those markings are now independent board graphics. The two inner-plane construction outlines extend past the lower board edge in the editor. Their filled copper stops 0.20 mm inside the 56 mm outline.
+When editing the placement, move the silkscreen markings for all 34 groups with their footprints. Those markings are independent board graphics. The two inner-plane construction outlines extend beyond the right and lower edges in the editor. Their filled copper stops 0.20 mm inside both edges of the 88 × 50.4 mm outline.
