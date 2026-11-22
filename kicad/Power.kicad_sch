@@ -6944,7 +6944,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced)
 		(uuid "24054e86-c0ab-4391-9740-e4740b992f4e")
 		(property "Reference" "TP2"
@@ -10121,7 +10121,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced)
 		(uuid "d8995229-3667-4c9a-adf7-0f75cb96aacf")
 		(property "Reference" "TP1"
@@ -10784,7 +10784,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "016ffe21-d410-4f30-b2c8-4b94e653b799")
 		(property "Reference" "TP5"
 			(at 60.96 32.512 0)
@@ -10889,7 +10889,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9aac9aab-4b81-46c4-a95e-94ce40a6582b")
 		(property "Reference" "TP6"
 			(at 78.74 32.512 0)
@@ -10994,7 +10994,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ab927ce1-9e1e-4279-81f7-c85ed2a77a90")
 		(property "Reference" "TP7"
 			(at 154.94 32.512 0)
@@ -11099,7 +11099,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3b8b0fbf-2cf3-4a6e-8c27-1637318389e4")
 		(property "Reference" "TP8"
 			(at 175.26 32.512 0)
@@ -11204,7 +11204,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d7b395e3-5d35-4441-8812-6839424e571c")
 		(property "Reference" "TP9"
 			(at 19.05 102.362 0)
@@ -11309,7 +11309,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dd8f9375-1c52-44a8-bab3-e20a4d21da3d")
 		(property "Reference" "TP10"
 			(at 39.37 102.362 0)
@@ -11414,7 +11414,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9a3b2c89-597c-402e-a41c-f794aae15519")
 		(property "Reference" "TP11"
 			(at 91.44 107.442 0)
@@ -11519,7 +11519,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cc2f9db0-b8d4-41b3-95a7-98e574f4628b")
 		(property "Reference" "TP12"
 			(at 111.76 107.442 0)
@@ -11624,7 +11624,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3c8cf9e0-3305-4462-afc0-30aa06ec86cc")
 		(property "Reference" "TP13"
 			(at 187.96 107.442 0)
@@ -11729,7 +11729,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ddf07651-a07e-49cc-a5a6-7cd78a50fe50")
 		(property "Reference" "TP14"
 			(at 227.33 107.442 0)

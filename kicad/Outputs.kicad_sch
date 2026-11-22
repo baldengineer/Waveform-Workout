@@ -4810,7 +4810,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced)
 		(uuid "9f51607f-a67c-4255-95e6-7ea0b4744a89")
 		(property "Reference" "TP3"
@@ -5632,7 +5632,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced)
 		(uuid "d7a04b99-9f99-4c4f-8c6f-ce04e664b2ee")
 		(property "Reference" "TP4"
@@ -6152,7 +6152,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d626e37f-ffe6-4268-8d0d-31c8bc66d1bc")
 		(property "Reference" "TP22"
 			(at 107.95 60.96 0)
@@ -6248,7 +6248,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9bb7ad40-cb8f-489b-bc1b-87003d463e90")
 		(property "Reference" "TP23"
 			(at 107.95 115.57 0)
@@ -6344,7 +6344,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a93a7434-adaf-4396-8cd3-7e73f57c710f")
 		(property "Reference" "TP24"
 			(at 153.67 72.39 0)
@@ -6441,7 +6441,7 @@
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "496bdce8-0581-4d3e-a9ab-60049ead039c")
 		(property "Reference" "TP25"
 			(at 160.02 133.35 0)

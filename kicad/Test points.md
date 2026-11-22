@@ -1,8 +1,10 @@
 # Trainer test points
 
+TP1–TP4 are bare PCB features. TP5–TP25 are exposed pads on the default build. Fit a Harwin S1751-46 surface-mount loop wherever a probe clip needs an anchor. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+
 ## Power
 
-Each rail measurement has a dedicated board-ground point. TP1 and TP2 are the original sense pads on opposite sides of the current-measurement link. To measure a populated shunt with two grounded scope probes, put the tips on TP1 and TP2, connect the ground clips to TP13 and TP14, and subtract the channels.
+Each rail measurement has a dedicated board-ground point. TP1 and TP2 are the original sense pads on opposite sides of the current-measurement link. To measure a populated shunt with two grounded scope probes, put the tips on TP1 and TP2, connect the probe grounds to TP13 and TP14, and subtract the channels.
 
 | Rail point | Ground point | What to measure |
 |---|---|---|
@@ -39,5 +41,3 @@ These pins are available for firmware experiments. Alternate functions that shar
 | TP19 | PB13 | 26 | SPI2_SCK, TIM21_CH1, I2C2_SCL |
 | TP20 | PB14 | 27 | SPI2_MISO, TIM21_CH2, I2C2_SDA |
 | TP21 | PB15 | 28 | SPI2_MOSI |
-
-TP5–TP25 use the Harwin S1751-46 surface-mount loop. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
