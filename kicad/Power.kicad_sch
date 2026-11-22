@@ -7152,7 +7152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "083deeb3-e1f4-487e-804d-95b13e34d030")
-		(property "Reference" "#PWR001"
+		(property "Reference" "#PWR048"
 			(at 72.39 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -7213,7 +7213,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR001")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -7627,7 +7627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "259df990-c09e-481e-af2f-69b3e4c69fbb")
-		(property "Reference" "#PWR003"
+		(property "Reference" "#PWR050"
 			(at 127 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7687,7 +7687,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR003")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -9696,7 +9696,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80102401-c8ab-4434-9fa0-6803c7f9e37c")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR056"
 			(at 208.28 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -9757,7 +9757,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR010")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -10229,7 +10229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98d80f27-8e51-474b-abe9-cc324acd8a5f")
-		(property "Reference" "#PWR009"
+		(property "Reference" "#PWR055"
 			(at 123.19 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -10289,7 +10289,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR009")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -10847,7 +10847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a793fe64-e35b-4d50-a9f5-6f3115fb1c23")
-		(property "Reference" "#PWR004"
+		(property "Reference" "#PWR051"
 			(at 142.24 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -10908,7 +10908,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR004")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -11227,7 +11227,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae205000-efa6-46ae-8043-e44c4086d3d5")
-		(property "Reference" "#PWR007"
+		(property "Reference" "#PWR054"
 			(at 80.01 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -11288,7 +11288,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR007")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11914,7 +11914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4d6e837-b435-47a3-b290-6aafeaa92f33")
-		(property "Reference" "#PWR006"
+		(property "Reference" "#PWR053"
 			(at 41.275 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11975,7 +11975,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR006")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -12374,7 +12374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5d621c9-268d-4508-8bd9-6e9508b2d8bb")
-		(property "Reference" "#PWR005"
+		(property "Reference" "#PWR052"
 			(at 39.37 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -12435,7 +12435,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR005")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -12853,7 +12853,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc754726-5582-4db2-9097-18c98a6266e9")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR057"
 			(at 224.79 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -12913,7 +12913,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR011")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -13315,7 +13315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7104c86-ba49-4fd5-9894-f25c01d48fdc")
-		(property "Reference" "#PWR002"
+		(property "Reference" "#PWR049"
 			(at 107.95 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -13376,7 +13376,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "#PWR002")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
