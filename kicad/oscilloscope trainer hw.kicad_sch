@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "7b4adbc8-cae5-4d7b-a864-30be1a51237a")
 	(paper "A")
+	(title_block
+		(title "Waveform Workout")
+		(date "2026-11-22")
+		(rev "r1")
+		(company "baldengineer.com")
+		(comment 1 "James L")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_ARM_JTAG_SWD_10"
 			(pin_names

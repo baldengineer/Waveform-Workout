@@ -6,6 +6,7 @@
 	(paper "A")
 	(title_block
 		(title "Waveform Workout")
+		(date "2026-11-22")
 		(rev "r1")
 		(company "baldengineer.com")
 		(comment 1 "James L")
@@ -5512,6 +5513,12 @@
 		(uuid "8ce5319f-d905-451f-9589-6795eecdc4e6")
 	)
 	(junction
+		(at 88.9 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92c72bb9-f6f5-45ba-9821-4040dc4c995f")
+	)
+	(junction
 		(at 39.37 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5528,12 +5535,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2b9e646-7b66-4618-bb3f-d105af019990")
-	)
-	(junction
-		(at 88.9 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b73327d8-09df-4340-af28-ccf971c55307")
 	)
 	(junction
 		(at 39.37 92.71)
@@ -5579,13 +5580,13 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 152.4) (xy 100.33 152.4)
+			(xy 119.38 177.8) (xy 125.73 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "02ffeae5-0ec9-43ce-84d1-746758c941c1")
+		(uuid "02c0abbd-f32f-40ab-88da-d076f34a4da1")
 	)
 	(wire
 		(pts
@@ -5699,6 +5700,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 180.34) (xy 124.46 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3480c2db-c9bd-4959-ae9a-acefcdcc0719")
+	)
+	(wire
+		(pts
 			(xy 107.95 60.96) (xy 107.95 58.42)
 		)
 		(stroke
@@ -5716,6 +5727,16 @@
 			(type default)
 		)
 		(uuid "374565df-13a3-4c24-ab48-b8e83c1a72e0")
+	)
+	(wire
+		(pts
+			(xy 125.73 180.34) (xy 124.46 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a2d1ffb-1fd1-48cc-a7cb-50865eabfee4")
 	)
 	(wire
 		(pts
@@ -5846,6 +5867,16 @@
 			(type default)
 		)
 		(uuid "67735666-eb68-441b-9fd8-d78c5f51eaeb")
+	)
+	(wire
+		(pts
+			(xy 88.9 152.4) (xy 100.33 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "690e6713-88c1-41b6-a191-77e75f5c45cb")
 	)
 	(wire
 		(pts
@@ -6099,16 +6130,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 135.89) (xy 88.9 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c560f0e-5e99-4356-ba1e-732a05e996b4")
-	)
-	(wire
-		(pts
 			(xy 152.4 161.29) (xy 152.4 157.48)
 		)
 		(stroke
@@ -6126,6 +6147,16 @@
 			(type default)
 		)
 		(uuid "a2727352-d6cd-4ab3-b1fa-782df9ed486f")
+	)
+	(wire
+		(pts
+			(xy 88.9 152.4) (xy 88.9 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e3f496-6883-4619-b0d2-79d0499e61ac")
 	)
 	(wire
 		(pts
@@ -6189,7 +6220,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 152.4) (xy 88.9 156.21)
+			(xy 88.9 135.89) (xy 88.9 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6397,6 +6428,16 @@
 		)
 		(uuid "ffba473e-3792-4da0-bba6-b6e385c9dfca")
 	)
+	(label "BAT+"
+		(at 90.17 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "08369b7b-b9ef-4205-9970-1b739d8c3a4a")
+	)
 	(label "CC1"
 		(at 63.5 55.88 0)
 		(effects
@@ -6406,6 +6447,16 @@
 			(justify left bottom)
 		)
 		(uuid "178eecea-ccda-425b-8dfd-a0ad7f822883")
+	)
+	(label "BAT+"
+		(at 119.38 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a5af7b2-b2f8-4dfa-b71d-d1068bc1ad89")
 	)
 	(label "USB_DM_CONN"
 		(at 74.93 63.5 180)
@@ -11244,6 +11295,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 124.46 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "adc38fbf-6090-4f76-b545-b32bd7c8251b")
+		(property "Reference" "#PWR058"
+			(at 124.46 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9d07485-e0c8-4e28-b732-9fd7d2dd87a9")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 80.01 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -13247,6 +13375,176 @@
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
 					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 130.81 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0a34862-b2cf-4577-8aff-a5192bf30f62")
+		(property "Reference" "J5"
+			(at 133.4326 177.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Batt header"
+			(at 133.4326 180.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/3b85a1cdf6ed945f2e278f00c1e42442.pdf?productCode=C492401"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Output A"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492401"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PZ254V-11-02P"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XFCN"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB placement" "Place immediately behind J2 on the board-interior side, clear of the BNC body and solder pads."
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sourcing note" "Vertical 2.54 mm two-pin header. Pin 1 is OUT_A after R5; pin 2 is GND."
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=PZ254V-11-02P"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C492401.html"
+			(at 130.81 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6b6864f-dc5a-460a-96e8-9462bfd3d3d7")
+		)
+		(pin "2"
+			(uuid "1cb1533a-867e-45d3-85fe-443d006153ce")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "J5")
 					(unit 1)
 				)
 			)

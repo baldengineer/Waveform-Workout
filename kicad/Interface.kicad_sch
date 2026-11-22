@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "b26672ce-fb86-4c6c-90a5-e9bc847dd8b4")
 	(paper "A")
+	(title_block
+		(title "Waveform Workout")
+		(date "2026-11-22")
+		(rev "r1")
+		(company "baldengineer.com")
+		(comment 1 "James L")
+	)
 	(lib_symbols
 		(symbol "Device:LED"
 			(pin_numbers
