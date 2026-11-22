@@ -346,6 +346,147 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -874,7 +1015,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 46.99) (xy 72.39 46.99)
+			(xy 60.96 46.99) (xy 73.66 46.99)
 		)
 		(stroke
 			(width 0)
@@ -884,13 +1025,33 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 67.31) (xy 72.39 67.31)
+			(xy 60.96 67.31) (xy 73.66 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "18211eda-1b98-4eed-8015-e9b8a451f0ca")
+	)
+	(wire
+		(pts
+			(xy 78.74 46.99) (xy 100.33 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d781aa1-cfab-4c8d-a7cb-a164c424cc52")
+	)
+	(wire
+		(pts
+			(xy 208.28 46.99) (xy 229.87 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38963147-0e5c-456a-a6d0-49d3f5cb8bb4")
 	)
 	(wire
 		(pts
@@ -901,6 +1062,16 @@
 			(type default)
 		)
 		(uuid "3e3b7128-d6c3-480f-86a3-3703ccca70bf")
+	)
+	(wire
+		(pts
+			(xy 78.74 128.27) (xy 100.33 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "415f3f4b-0ebb-4912-a314-764403b766ca")
 	)
 	(wire
 		(pts
@@ -924,37 +1095,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 67.31) (xy 100.33 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52b0d2a6-c9d4-49b1-b2fa-4259d04ab65c")
-	)
-	(wire
-		(pts
-			(xy 80.01 87.63) (xy 100.33 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58b0bbb0-250a-4652-b0ed-65e6366fea7c")
-	)
-	(wire
-		(pts
-			(xy 209.55 67.31) (xy 229.87 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58fd2557-3514-4e9d-bad6-86479014367e")
-	)
-	(wire
-		(pts
-			(xy 60.96 107.95) (xy 72.39 107.95)
+			(xy 60.96 107.95) (xy 73.66 107.95)
 		)
 		(stroke
 			(width 0)
@@ -994,27 +1135,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 115.57) (xy 187.96 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ad0abd0-1569-4509-aae9-efc1a7a36de8")
-	)
-	(wire
-		(pts
-			(xy 209.55 87.63) (xy 229.87 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fc8cb75-f567-4638-a9bf-7413a1edd20b")
-	)
-	(wire
-		(pts
-			(xy 60.96 87.63) (xy 72.39 87.63)
+			(xy 60.96 87.63) (xy 73.66 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1044,7 +1165,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 128.27) (xy 72.39 128.27)
+			(xy 60.96 128.27) (xy 73.66 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1054,23 +1175,33 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 46.99) (xy 201.93 46.99)
+			(xy 187.96 107.95) (xy 187.96 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801ec073-fe27-4931-b374-2eeda64be217")
+	)
+	(wire
+		(pts
+			(xy 78.74 87.63) (xy 100.33 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81e81d9f-96c5-4634-b18e-639fc3b75cc5")
+	)
+	(wire
+		(pts
+			(xy 190.5 46.99) (xy 203.2 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "86b10577-63fa-41ff-8ded-3b403d6f4325")
-	)
-	(wire
-		(pts
-			(xy 80.01 128.27) (xy 100.33 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87f35db9-6238-4960-a218-94d4a5f58e05")
 	)
 	(wire
 		(pts
@@ -1084,6 +1215,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 114.3) (xy 187.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93fe258b-8ca3-4337-8573-77b89a18ff25")
+	)
+	(wire
+		(pts
 			(xy 107.95 107.95) (xy 119.38 107.95)
 		)
 		(stroke
@@ -1094,13 +1235,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 46.99) (xy 100.33 46.99)
+			(xy 208.28 67.31) (xy 229.87 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9a06900c-da30-45bc-b5d7-469c3817afed")
+		(uuid "980bc25b-971e-4995-97cc-2e47778cbb9e")
 	)
 	(wire
 		(pts
@@ -1124,6 +1265,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 107.95) (xy 100.33 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a812008a-c9b7-4c68-bee1-bf6e72d85341")
+	)
+	(wire
+		(pts
 			(xy 248.92 87.63) (xy 248.92 91.44)
 		)
 		(stroke
@@ -1134,7 +1285,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 148.59) (xy 72.39 148.59)
+			(xy 60.96 148.59) (xy 73.66 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1154,13 +1305,23 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 107.95) (xy 100.33 107.95)
+			(xy 78.74 148.59) (xy 100.33 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b760e273-49e4-49a4-b02c-a7379c3d4405")
+		(uuid "b6cce1dc-b624-41cc-9fbd-19700f14558a")
+	)
+	(wire
+		(pts
+			(xy 78.74 67.31) (xy 100.33 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8bd19a4-2b18-4fe2-b2b7-ad21a1dd1c8a")
 	)
 	(wire
 		(pts
@@ -1174,7 +1335,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 67.31) (xy 201.93 67.31)
+			(xy 190.5 67.31) (xy 203.2 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1204,23 +1365,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 87.63) (xy 201.93 87.63)
+			(xy 190.5 87.63) (xy 203.2 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d66b6fb8-4852-4490-9e7e-b9486aa4e6ff")
-	)
-	(wire
-		(pts
-			(xy 209.55 46.99) (xy 229.87 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6c7d22c-6fd6-41fa-89c2-42251321fea5")
 	)
 	(wire
 		(pts
@@ -1234,16 +1385,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 148.59) (xy 100.33 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f496938b-9e99-49ca-9289-7d69a27e8caf")
-	)
-	(wire
-		(pts
 			(xy 119.38 67.31) (xy 119.38 71.12)
 		)
 		(stroke
@@ -1251,6 +1392,16 @@
 			(type default)
 		)
 		(uuid "f526c2d9-db83-4e4c-970e-e0f31beb33be")
+	)
+	(wire
+		(pts
+			(xy 208.28 87.63) (xy 229.87 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa46ae85-f028-4045-b6da-7ed561d53aea")
 	)
 	(wire
 		(pts
@@ -1373,7 +1524,7 @@
 		(uuid "fd743054-8ef7-4162-bd6e-381ed6395918")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 205.74 46.99 90)
 		(unit 1)
 		(body_style 1)
@@ -1382,9 +1533,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "1d8456ef-8e38-4b9a-8ef9-638c229e17ee")
 		(property "Reference" "R21"
-			(at 205.74 40.64 90)
+			(at 205.74 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1394,7 +1546,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 205.74 43.18 90)
+			(at 205.74 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1463,7 +1615,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 76.2 87.63 90)
 		(unit 1)
 		(body_style 1)
@@ -1472,9 +1624,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "220234c7-03ab-4f41-9661-8ab0a74cb540")
 		(property "Reference" "R17"
-			(at 76.2 81.28 90)
+			(at 76.2 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1484,7 +1637,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 76.2 83.82 90)
+			(at 76.2 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1563,9 +1716,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "33cf7875-5cc5-4090-8158-41300d0f5ebb")
 		(property "Reference" "D9"
-			(at 233.68 81.28 0)
+			(at 235.2675 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1575,7 +1729,7 @@
 			)
 		)
 		(property "Value" "3"
-			(at 233.68 83.82 0)
+			(at 235.2675 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1654,9 +1808,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "3b88be2f-4840-44a9-8ad0-bd43d3dbb395")
 		(property "Reference" "D7"
-			(at 233.68 40.64 0)
+			(at 235.2675 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1666,7 +1821,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 233.68 43.18 0)
+			(at 235.2675 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1735,7 +1890,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 76.2 46.99 90)
 		(unit 1)
 		(body_style 1)
@@ -1744,9 +1899,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "40ad5a10-6381-43f6-b2eb-d03b5e615268")
 		(property "Reference" "R15"
-			(at 76.2 40.64 90)
+			(at 76.2 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1756,7 +1912,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 76.2 43.18 90)
+			(at 76.2 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1825,7 +1981,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 76.2 67.31 90)
 		(unit 1)
 		(body_style 1)
@@ -1834,9 +1990,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "5636055c-c3bc-49ec-b43c-49751a3cd400")
 		(property "Reference" "R16"
-			(at 76.2 60.96 90)
+			(at 76.2 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1846,7 +2003,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 76.2 63.5 90)
+			(at 76.2 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1924,6 +2081,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "57c41112-f029-48e9-9eb9-e9446b368c6e")
 		(property "Reference" "#PWR007"
 			(at 248.92 57.15 0)
@@ -1937,13 +2095,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 248.92 54.61 0)
+			(at 251.46 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2002,9 +2161,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "5b70af91-1a1a-43fd-92c7-2b5b626b5f77")
 		(property "Reference" "D8"
-			(at 233.68 60.96 0)
+			(at 235.2675 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2014,7 +2174,7 @@
 			)
 		)
 		(property "Value" "2"
-			(at 233.68 63.5 0)
+			(at 235.2675 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2092,6 +2252,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "67656772-474b-418c-84c6-b0e99ba37fd7")
 		(property "Reference" "#PWR001"
 			(at 119.38 57.15 0)
@@ -2105,13 +2266,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 54.61 0)
+			(at 121.92 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2160,7 +2322,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 76.2 148.59 90)
 		(unit 1)
 		(body_style 1)
@@ -2169,9 +2331,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "6c4c4ed4-f690-458f-ad4d-b95df686d708")
 		(property "Reference" "R20"
-			(at 76.2 142.24 90)
+			(at 76.2 143.51 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2181,7 +2344,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 76.2 144.78 90)
+			(at 76.2 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2260,9 +2423,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "6ff6c62f-f797-473f-b147-27768fde34f6")
 		(property "Reference" "D2"
-			(at 104.14 60.96 0)
+			(at 105.7275 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2272,7 +2436,7 @@
 			)
 		)
 		(property "Value" "Amplitude"
-			(at 104.14 63.5 0)
+			(at 105.7275 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2350,6 +2514,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "756edb96-d481-42d8-8e4d-cfe8fd432e8d")
 		(property "Reference" "#PWR009"
 			(at 248.92 97.79 0)
@@ -2363,13 +2528,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 248.92 95.25 0)
+			(at 251.46 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2428,9 +2594,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7f92d1ec-4137-4319-8902-1df664047edf")
 		(property "Reference" "D3"
-			(at 104.14 81.28 0)
+			(at 105.7275 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2440,7 +2607,7 @@
 			)
 		)
 		(property "Value" "Frequency"
-			(at 104.14 83.82 0)
+			(at 105.7275 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2518,6 +2685,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "870070fe-7082-4859-8938-de630171dff1")
 		(property "Reference" "#PWR010"
 			(at 187.96 111.76 0)
@@ -2531,13 +2699,14 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 187.96 104.394 0)
+			(at 190.5 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2595,6 +2764,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "874be4a3-3ba1-48c7-ad56-6279065cfccc")
 		(property "Reference" "#PWR011"
 			(at 217.17 135.89 0)
@@ -2608,13 +2778,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.17 133.35 0)
+			(at 219.71 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2672,6 +2843,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "88894c9e-8afd-45a5-a824-11e88bf1d56e")
 		(property "Reference" "#PWR003"
 			(at 119.38 97.79 0)
@@ -2685,13 +2857,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 95.25 0)
+			(at 121.92 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2749,20 +2922,20 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8bd34680-4a91-4d2e-9a25-a871dc9280e2")
 		(property "Reference" "SW2"
-			(at 205.74 124.46 0)
+			(at 204.47 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MODE"
-			(at 204.47 128.524 0)
+			(at 204.47 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2840,6 +3013,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9f92c6f5-fde3-47b2-b902-30ef026ed731")
 		(property "Reference" "#PWR006"
 			(at 119.38 158.75 0)
@@ -2853,13 +3027,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 156.21 0)
+			(at 121.92 153.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2917,6 +3092,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a6b50cde-14f4-4621-b420-7b10896badcf")
 		(property "Reference" "#PWR002"
 			(at 119.38 77.47 0)
@@ -2930,13 +3106,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 74.93 0)
+			(at 121.92 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2985,7 +3162,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 187.96 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -2994,25 +3171,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a7fce309-60ef-4cc7-992b-9e428a4aacb8")
 		(property "Reference" "R24"
-			(at 194.31 110.49 0)
+			(at 190.5 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "100k"
-			(at 194.31 113.03 0)
+			(at 190.5 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -3085,9 +3265,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a899a908-42d6-4b3c-8ca4-49fe4bf21d88")
 		(property "Reference" "D6"
-			(at 104.14 142.24 0)
+			(at 105.7275 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3097,7 +3278,7 @@
 			)
 		)
 		(property "Value" "Trigger"
-			(at 104.14 144.78 0)
+			(at 105.7275 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3175,6 +3356,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b4ce5218-9195-4071-8648-d7c401e54cda")
 		(property "Reference" "#PWR005"
 			(at 119.38 138.43 0)
@@ -3188,13 +3370,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 135.89 0)
+			(at 121.92 133.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3243,7 +3426,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 76.2 107.95 90)
 		(unit 1)
 		(body_style 1)
@@ -3252,9 +3435,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "bab425e9-ff81-4a18-a5d3-c177b4c56340")
 		(property "Reference" "R18"
-			(at 76.2 101.6 90)
+			(at 76.2 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3264,7 +3448,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 76.2 104.14 90)
+			(at 76.2 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3343,9 +3527,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "c5943549-f564-4b7e-b959-328fa8b84299")
 		(property "Reference" "D1"
-			(at 104.14 40.64 0)
+			(at 105.7275 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3355,7 +3540,7 @@
 			)
 		)
 		(property "Value" "Shape"
-			(at 104.14 43.18 0)
+			(at 105.7275 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3433,6 +3618,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "cc57a713-2e33-4758-9118-33d490b4b390")
 		(property "Reference" "#PWR008"
 			(at 248.92 77.47 0)
@@ -3446,13 +3632,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 248.92 74.93 0)
+			(at 251.46 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3501,7 +3688,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 205.74 87.63 90)
 		(unit 1)
 		(body_style 1)
@@ -3510,9 +3697,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "da79fd47-f659-405b-8880-2f0e8229ba0f")
 		(property "Reference" "R23"
-			(at 205.74 81.28 90)
+			(at 205.74 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3522,7 +3710,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 205.74 83.82 90)
+			(at 205.74 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3600,6 +3788,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e0492160-78d6-48c4-a885-ee66f8ea351e")
 		(property "Reference" "#PWR004"
 			(at 119.38 118.11 0)
@@ -3613,13 +3802,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 115.57 0)
+			(at 121.92 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3668,7 +3858,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 76.2 128.27 90)
 		(unit 1)
 		(body_style 1)
@@ -3677,9 +3867,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e849814b-d0c5-4129-b0ff-8c80caf87b4a")
 		(property "Reference" "R19"
-			(at 76.2 121.92 90)
+			(at 76.2 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3689,7 +3880,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 76.2 124.46 90)
+			(at 76.2 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3758,7 +3949,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 205.74 67.31 90)
 		(unit 1)
 		(body_style 1)
@@ -3767,9 +3958,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ea41f01d-9e8c-4b06-8993-c047c7a2db74")
 		(property "Reference" "R22"
-			(at 205.74 60.96 90)
+			(at 205.74 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3779,7 +3971,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 205.74 63.5 90)
+			(at 205.74 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3858,9 +4050,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "fe82bb3e-8263-4418-a3da-1eb51f02126d")
 		(property "Reference" "D5"
-			(at 104.14 121.92 0)
+			(at 105.7275 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3870,7 +4063,7 @@
 			)
 		)
 		(property "Value" "XY phase"
-			(at 104.14 124.46 0)
+			(at 105.7275 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3949,9 +4142,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "fec53b78-5527-4e97-ac37-17b4abd1fe97")
 		(property "Reference" "D4"
-			(at 104.14 101.6 0)
+			(at 105.7275 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3961,7 +4155,7 @@
 			)
 		)
 		(property "Value" "DC"
-			(at 104.14 104.14 0)
+			(at 105.7275 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

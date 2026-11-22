@@ -533,6 +533,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -655,6 +811,147 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
 					(name ""
 						(effects
 							(font
@@ -2370,7 +2667,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 63.5) (xy 66.04 66.04)
+			(xy 66.04 63.5) (xy 66.04 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2400,7 +2697,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 170.18) (xy 106.68 173.99)
+			(xy 106.68 168.91) (xy 106.68 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2410,7 +2707,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 170.18) (xy 76.2 173.99)
+			(xy 76.2 168.91) (xy 76.2 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2427,6 +2724,16 @@
 			(type default)
 		)
 		(uuid "13c1f027-74f4-404b-9253-0a0b406bc7ee")
+	)
+	(wire
+		(pts
+			(xy 167.64 158.75) (xy 167.64 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "188b64f6-2bc6-4bc7-abaa-ea996a108a63")
 	)
 	(wire
 		(pts
@@ -2510,7 +2817,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 162.56) (xy 106.68 158.75)
+			(xy 106.68 158.75) (xy 106.68 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2520,23 +2827,13 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 170.18) (xy 91.44 173.99)
+			(xy 91.44 168.91) (xy 91.44 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2688093c-758a-4cd9-8330-2e5eb7caed71")
-	)
-	(wire
-		(pts
-			(xy 167.64 162.56) (xy 167.64 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27a578f1-2830-448a-a075-105b4863e808")
 	)
 	(wire
 		(pts
@@ -2600,16 +2897,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 74.93) (xy 66.04 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39462495-6b41-464b-a92a-7faa93259c2d")
-	)
-	(wire
-		(pts
 			(xy 199.39 118.11) (xy 182.88 118.11)
 		)
 		(stroke
@@ -2630,7 +2917,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 162.56) (xy 137.16 158.75)
+			(xy 137.16 158.75) (xy 137.16 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2670,6 +2957,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 168.91) (xy 137.16 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4506ce5a-e373-48be-bc92-bf85a5810506")
+	)
+	(wire
+		(pts
 			(xy 199.39 68.58) (xy 182.88 68.58)
 		)
 		(stroke
@@ -2677,16 +2974,6 @@
 			(type default)
 		)
 		(uuid "4532d069-453f-4f0f-9dda-4df304415aa4")
-	)
-	(wire
-		(pts
-			(xy 52.07 58.42) (xy 52.07 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45711ced-91f7-408f-859e-2db513f0324c")
 	)
 	(wire
 		(pts
@@ -2710,16 +2997,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 170.18) (xy 152.4 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52807335-6785-467b-8ad4-73604fd3e90b")
-	)
-	(wire
-		(pts
 			(xy 69.85 88.9) (xy 83.82 88.9)
 		)
 		(stroke
@@ -2727,16 +3004,6 @@
 			(type default)
 		)
 		(uuid "54169ca1-c9dc-44c1-af92-a6abc3c2256f")
-	)
-	(wire
-		(pts
-			(xy 137.16 170.18) (xy 137.16 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58fe3b4f-5906-4db7-8e41-acbb31b1f056")
 	)
 	(wire
 		(pts
@@ -2830,7 +3097,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 162.56) (xy 91.44 158.75)
+			(xy 91.44 158.75) (xy 91.44 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2860,7 +3127,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 170.18) (xy 167.64 173.99)
+			(xy 167.64 168.91) (xy 167.64 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2887,6 +3154,16 @@
 			(type default)
 		)
 		(uuid "982168de-be3c-4af2-94fe-6dae9bd72e46")
+	)
+	(wire
+		(pts
+			(xy 52.07 58.42) (xy 52.07 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f2100ec-018e-472e-8d43-a97bb901d0d2")
 	)
 	(wire
 		(pts
@@ -2930,7 +3207,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 73.66) (xy 52.07 74.93)
+			(xy 52.07 72.39) (xy 52.07 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2960,7 +3237,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 162.56) (xy 121.92 158.75)
+			(xy 121.92 158.75) (xy 121.92 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2987,6 +3264,16 @@
 			(type default)
 		)
 		(uuid "bee380a0-f77a-4672-8115-6929476e461e")
+	)
+	(wire
+		(pts
+			(xy 152.4 168.91) (xy 152.4 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0e0fd60-63c9-4003-a61b-83e6a96eef04")
 	)
 	(wire
 		(pts
@@ -3050,7 +3337,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 170.18) (xy 121.92 173.99)
+			(xy 121.92 168.91) (xy 121.92 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3130,7 +3417,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 162.56) (xy 76.2 158.75)
+			(xy 76.2 158.75) (xy 76.2 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3180,7 +3467,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 162.56) (xy 152.4 158.75)
+			(xy 152.4 158.75) (xy 152.4 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3217,6 +3504,16 @@
 			(type default)
 		)
 		(uuid "f8d6a4bc-ac4e-4b2b-8d3b-ce2756a2956e")
+	)
+	(wire
+		(pts
+			(xy 66.04 72.39) (xy 66.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faac19a6-30d9-46b0-9559-a09eb4ca6a2f")
 	)
 	(wire
 		(pts
@@ -3689,7 +3986,7 @@
 		(uuid "fa001f13-7e0c-48f8-ae37-91bcebad8fcd")
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 106.68 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -4207,7 +4504,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 121.92 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -4377,7 +4674,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 52.07 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -4470,7 +4767,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 137.16 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -4563,7 +4860,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small")
 		(at 66.04 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -5007,7 +5304,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 167.64 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -5177,7 +5474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 152.4 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -5270,7 +5567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 91.44 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -5363,7 +5660,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Small")
 		(at 76.2 166.37 0)
 		(unit 1)
 		(body_style 1)
