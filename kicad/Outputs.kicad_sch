@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "fcefed74-c069-4d06-b400-cfa982c66cbb")
-	(paper "A4")
+	(paper "A")
 	(lib_symbols
 		(symbol "Analog_Switch:TS5A23157DGS"
 			(exclude_from_sim no)
