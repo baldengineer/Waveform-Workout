@@ -470,7 +470,8 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -482,7 +483,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -626,7 +628,8 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 0.508)
+						(xy 1.524 0.508)
 					)
 					(stroke
 						(width 0.3048)
@@ -638,7 +641,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 -0.508)
+						(xy 1.524 -0.508)
 					)
 					(stroke
 						(width 0.3302)
@@ -2220,7 +2224,12 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2335,7 +2344,8 @@
 			(symbol "VDD_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -0.762 1.27)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2347,7 +2357,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.54)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2359,7 +2370,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2392,108 +2404,130 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "C1–C3: VDD    C4: VDD_USB    C5–C6: VDDA    C7: bulk"
-		(exclude_from_sim no)
-		(at 73.66 152.4 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+		(symbol "My Library:TestPoint_Harwin"
+			(pin_numbers
+				(hide yes)
 			)
-			(justify left bottom)
-		)
-		(uuid "1f85a4bd-188b-4f53-a64b-939e0c3b483c")
-	)
-	(text "OSCILLOSCOPE TRAINER"
-		(exclude_from_sim no)
-		(at 20.32 22.86 0)
-		(effects
-			(font
-				(size 3 3)
-				(bold yes)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
 			)
-			(justify left bottom)
-		)
-		(uuid "4891de73-48f4-4e25-82ad-2aac9d8d80fe")
-	)
-	(text "Target voltage sense on pin 1"
-		(exclude_from_sim no)
-		(at 19.05 165.1 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "58e4940d-b4c0-432f-a3d5-a0756b068d96")
-	)
-	(text "V1 prototype  /  STM32L072CBT6 controller"
-		(exclude_from_sim no)
-		(at 20.32 29.21 0)
-		(effects
-			(font
-				(size 1.6 1.6)
+			(property "Value" "TestPoint_Harwin"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "7ba3706d-124b-4657-ac5a-1714c273656e")
-	)
-	(text "ST-LINK  /  SWD"
-		(exclude_from_sim no)
-		(at 19.05 116.84 0)
-		(effects
-			(font
-				(size 1.65 1.65)
-				(bold yes)
+			(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "9b879b1b-d785-4789-a4ce-ff0329d35785")
-	)
-	(text "Cell / USB selector, shunt and sense pads"
-		(exclude_from_sim no)
-		(at 203.2 35.56 0)
-		(effects
-			(font
-				(size 1.18 1.18)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "c468b9d5-ae65-4d14-bd7c-c7cf4e26075b")
-	)
-	(text "LOCAL BYPASS"
-		(exclude_from_sim no)
-		(at 73.66 147.32 0)
-		(effects
-			(font
-				(size 1.65 1.65)
-				(bold yes)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "e70b64ec-d6b1-45a8-948e-d61f1f273ecf")
-	)
-	(text "2 × 5, 1.27 mm pitch. Omit pin 7 for keyed sockets."
-		(exclude_from_sim no)
-		(at 19.05 176.53 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "fb8dfe33-59eb-4562-acc5-1a3901ab90e8")
-	)
-	(text "Power the target through JP1."
-		(exclude_from_sim no)
-		(at 19.05 170.18 0)
-		(effects
-			(font
-				(size 1.25 1.25)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
+			(symbol "TestPoint_Harwin_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Harwin_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
-		(uuid "fd31adf8-8e85-4142-91d4-69926f4ce19e")
 	)
 	(junction
 		(at 121.92 158.75)
@@ -2600,20 +2634,12 @@
 		(uuid "44021630-873d-4a94-94bc-11ad4d563f7d")
 	)
 	(no_connect
-		(at 83.82 124.46)
-		(uuid "4ea2c233-07b3-4386-a1bd-76e18dc7e647")
-	)
-	(no_connect
 		(at 119.38 96.52)
 		(uuid "5ceb5bf6-78a3-46e5-958b-4731ba5bfe3e")
 	)
 	(no_connect
 		(at 119.38 66.04)
 		(uuid "626bb574-8280-47b2-92b9-764724f3bcab")
-	)
-	(no_connect
-		(at 119.38 83.82)
-		(uuid "64d1992a-c4de-4539-acb7-b5c59acc8c85")
 	)
 	(no_connect
 		(at 83.82 78.74)
@@ -2624,10 +2650,6 @@
 		(uuid "9835f8b4-237a-4d5e-8301-bd841ad1d84a")
 	)
 	(no_connect
-		(at 83.82 119.38)
-		(uuid "a132c51d-6d3f-4a51-b2e5-1c1be4744fc2")
-	)
-	(no_connect
 		(at 83.82 68.58)
 		(uuid "ad0600ba-5eed-48b8-b86d-b237a23d12bd")
 	)
@@ -2636,28 +2658,13 @@
 		(uuid "b1659f40-5f8e-4192-8107-2da78b55c257")
 	)
 	(no_connect
-		(at 119.38 73.66)
-		(uuid "b3e96648-a3ac-450c-9ddc-7d5a814cede0")
-	)
-	(no_connect
-		(at 119.38 81.28)
-		(uuid "b8636ba4-3cc7-40ca-95bc-5dc6c786d164")
-	)
-	(no_connect
 		(at 83.82 71.12)
 		(uuid "d2e3ec56-e9e3-4c99-8e49-52e479a3d4d9")
 	)
-	(no_connect
-		(at 83.82 116.84)
-		(uuid "d77da0d4-7507-461d-98c2-a751119a7dcd")
-	)
-	(no_connect
-		(at 83.82 121.92)
-		(uuid "e0cc5ab9-422b-4ef4-b98b-db493c3a2b2f")
-	)
 	(wire
 		(pts
-			(xy 199.39 73.66) (xy 182.88 73.66)
+			(xy 199.39 73.66)
+			(xy 182.88 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2667,7 +2674,8 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 63.5) (xy 66.04 67.31)
+			(xy 66.04 63.5)
+			(xy 66.04 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2677,7 +2685,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 71.12) (xy 133.35 71.12)
+			(xy 119.38 71.12)
+			(xy 133.35 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2687,7 +2696,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 106.68) (xy 83.82 106.68)
+			(xy 69.85 106.68)
+			(xy 83.82 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2697,7 +2707,8 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 168.91) (xy 106.68 173.99)
+			(xy 106.68 168.91)
+			(xy 106.68 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2707,7 +2718,8 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 168.91) (xy 76.2 173.99)
+			(xy 76.2 168.91)
+			(xy 76.2 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2717,7 +2729,8 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 173.99) (xy 91.44 173.99)
+			(xy 76.2 173.99)
+			(xy 91.44 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2727,7 +2740,8 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 158.75) (xy 167.64 163.83)
+			(xy 167.64 158.75)
+			(xy 167.64 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2737,7 +2751,8 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 132.08) (xy 101.6 135.89)
+			(xy 101.6 132.08)
+			(xy 101.6 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2747,7 +2762,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 101.6) (xy 83.82 101.6)
+			(xy 69.85 101.6)
+			(xy 83.82 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2757,7 +2773,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 133.35) (xy 182.88 133.35)
+			(xy 199.39 133.35)
+			(xy 182.88 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2767,7 +2784,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 110.49) (xy 182.88 110.49)
+			(xy 199.39 110.49)
+			(xy 182.88 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2777,7 +2795,8 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 44.45) (xy 104.14 44.45)
+			(xy 101.6 44.45)
+			(xy 104.14 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2787,7 +2806,8 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 158.75) (xy 137.16 158.75)
+			(xy 121.92 158.75)
+			(xy 137.16 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2797,7 +2817,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 91.44) (xy 83.82 91.44)
+			(xy 69.85 91.44)
+			(xy 83.82 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2807,7 +2828,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 121.92) (xy 182.88 121.92)
+			(xy 199.39 121.92)
+			(xy 182.88 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2817,7 +2839,8 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 158.75) (xy 106.68 163.83)
+			(xy 106.68 158.75)
+			(xy 106.68 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2827,7 +2850,8 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 168.91) (xy 91.44 173.99)
+			(xy 91.44 168.91)
+			(xy 91.44 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2837,7 +2861,8 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 135.89) (xy 104.14 132.08)
+			(xy 104.14 135.89)
+			(xy 104.14 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2847,7 +2872,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 30.48) (xy 182.88 30.48)
+			(xy 199.39 30.48)
+			(xy 182.88 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2857,7 +2883,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 99.06) (xy 83.82 99.06)
+			(xy 69.85 99.06)
+			(xy 83.82 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2867,7 +2894,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 96.52) (xy 83.82 96.52)
+			(xy 69.85 96.52)
+			(xy 83.82 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2877,7 +2905,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 63.5) (xy 182.88 63.5)
+			(xy 199.39 63.5)
+			(xy 182.88 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2887,7 +2916,8 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 137.16) (xy 58.42 137.16)
+			(xy 48.26 137.16)
+			(xy 58.42 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2897,7 +2927,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 118.11) (xy 182.88 118.11)
+			(xy 199.39 118.11)
+			(xy 182.88 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2907,7 +2938,8 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 63.5) (xy 83.82 63.5)
+			(xy 66.04 63.5)
+			(xy 83.82 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2917,7 +2949,8 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 158.75) (xy 137.16 163.83)
+			(xy 137.16 158.75)
+			(xy 137.16 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2927,7 +2960,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 173.99) (xy 167.64 173.99)
+			(xy 152.4 173.99)
+			(xy 167.64 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2937,7 +2971,8 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 50.8) (xy 99.06 44.45)
+			(xy 99.06 50.8)
+			(xy 99.06 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2947,7 +2982,8 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 44.45) (xy 99.06 44.45)
+			(xy 96.52 44.45)
+			(xy 99.06 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2957,7 +2993,8 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 168.91) (xy 137.16 173.99)
+			(xy 137.16 168.91)
+			(xy 137.16 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2967,7 +3004,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 68.58) (xy 182.88 68.58)
+			(xy 199.39 68.58)
+			(xy 182.88 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2977,7 +3015,8 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 135.89) (xy 104.14 135.89)
+			(xy 101.6 135.89)
+			(xy 104.14 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2987,7 +3026,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 68.58) (xy 133.35 68.58)
+			(xy 119.38 68.58)
+			(xy 133.35 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2997,7 +3037,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 88.9) (xy 83.82 88.9)
+			(xy 69.85 88.9)
+			(xy 83.82 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3007,7 +3048,8 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 58.42) (xy 83.82 58.42)
+			(xy 52.07 58.42)
+			(xy 83.82 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3017,7 +3059,8 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 158.75) (xy 121.92 158.75)
+			(xy 106.68 158.75)
+			(xy 121.92 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3027,7 +3070,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 78.74) (xy 182.88 78.74)
+			(xy 199.39 78.74)
+			(xy 182.88 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3037,7 +3081,8 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 158.75) (xy 152.4 158.75)
+			(xy 137.16 158.75)
+			(xy 152.4 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3047,7 +3092,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 86.36) (xy 83.82 86.36)
+			(xy 69.85 86.36)
+			(xy 83.82 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3057,7 +3103,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 78.74) (xy 133.35 78.74)
+			(xy 119.38 78.74)
+			(xy 133.35 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3067,7 +3114,8 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 139.7) (xy 58.42 139.7)
+			(xy 48.26 139.7)
+			(xy 58.42 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3077,7 +3125,8 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 158.75) (xy 91.44 158.75)
+			(xy 76.2 158.75)
+			(xy 91.44 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3087,7 +3136,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 104.14) (xy 83.82 104.14)
+			(xy 69.85 104.14)
+			(xy 83.82 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3097,7 +3147,8 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 158.75) (xy 91.44 163.83)
+			(xy 91.44 158.75)
+			(xy 91.44 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3107,7 +3158,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 58.42) (xy 133.35 58.42)
+			(xy 119.38 58.42)
+			(xy 133.35 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3117,7 +3169,8 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 44.45) (xy 101.6 44.45)
+			(xy 99.06 44.45)
+			(xy 101.6 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3127,7 +3180,8 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 168.91) (xy 167.64 173.99)
+			(xy 167.64 168.91)
+			(xy 167.64 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3137,7 +3191,8 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 50.8) (xy 96.52 44.45)
+			(xy 96.52 50.8)
+			(xy 96.52 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3147,7 +3202,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 140.97) (xy 182.88 140.97)
+			(xy 199.39 140.97)
+			(xy 182.88 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3157,7 +3213,8 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 58.42) (xy 52.07 67.31)
+			(xy 52.07 58.42)
+			(xy 52.07 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3167,7 +3224,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 91.44) (xy 133.35 91.44)
+			(xy 119.38 91.44)
+			(xy 133.35 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3177,7 +3235,8 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 157.48) (xy 35.56 154.94)
+			(xy 35.56 157.48)
+			(xy 35.56 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3187,7 +3246,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 93.98) (xy 83.82 93.98)
+			(xy 69.85 93.98)
+			(xy 83.82 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3197,7 +3257,8 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 154.94) (xy 33.02 157.48)
+			(xy 33.02 154.94)
+			(xy 33.02 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3207,7 +3268,8 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 72.39) (xy 52.07 74.93)
+			(xy 52.07 72.39)
+			(xy 52.07 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3217,7 +3279,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 60.96) (xy 133.35 60.96)
+			(xy 119.38 60.96)
+			(xy 133.35 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3227,7 +3290,8 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 50.8) (xy 106.68 44.45)
+			(xy 106.68 50.8)
+			(xy 106.68 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3237,7 +3301,8 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 158.75) (xy 121.92 163.83)
+			(xy 121.92 158.75)
+			(xy 121.92 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3247,7 +3312,8 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 158.75) (xy 106.68 158.75)
+			(xy 91.44 158.75)
+			(xy 106.68 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3257,7 +3323,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 114.3) (xy 182.88 114.3)
+			(xy 199.39 114.3)
+			(xy 182.88 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3267,7 +3334,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 168.91) (xy 152.4 173.99)
+			(xy 152.4 168.91)
+			(xy 152.4 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3277,7 +3345,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 43.18) (xy 182.88 43.18)
+			(xy 199.39 43.18)
+			(xy 182.88 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3287,7 +3356,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 26.67) (xy 182.88 26.67)
+			(xy 199.39 26.67)
+			(xy 182.88 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3297,7 +3367,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 86.36) (xy 133.35 86.36)
+			(xy 119.38 86.36)
+			(xy 133.35 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3307,7 +3378,8 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 50.8) (xy 101.6 44.45)
+			(xy 101.6 50.8)
+			(xy 101.6 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3317,7 +3389,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 63.5) (xy 133.35 63.5)
+			(xy 119.38 63.5)
+			(xy 133.35 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3327,7 +3400,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 129.54) (xy 182.88 129.54)
+			(xy 199.39 129.54)
+			(xy 182.88 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3337,7 +3411,8 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 168.91) (xy 121.92 173.99)
+			(xy 121.92 168.91)
+			(xy 121.92 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3347,7 +3422,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 137.16) (xy 182.88 137.16)
+			(xy 199.39 137.16)
+			(xy 182.88 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3357,7 +3433,8 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 173.99) (xy 121.92 173.99)
+			(xy 106.68 173.99)
+			(xy 121.92 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3367,7 +3444,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 88.9) (xy 133.35 88.9)
+			(xy 119.38 88.9)
+			(xy 133.35 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3377,7 +3455,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 158.75) (xy 167.64 158.75)
+			(xy 152.4 158.75)
+			(xy 167.64 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3387,7 +3466,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 58.42) (xy 182.88 58.42)
+			(xy 199.39 58.42)
+			(xy 182.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3397,7 +3477,8 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 109.22) (xy 83.82 109.22)
+			(xy 69.85 109.22)
+			(xy 83.82 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3407,7 +3488,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 106.68) (xy 182.88 106.68)
+			(xy 199.39 106.68)
+			(xy 182.88 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3417,7 +3499,8 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 158.75) (xy 76.2 163.83)
+			(xy 76.2 158.75)
+			(xy 76.2 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3427,7 +3510,8 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 50.8) (xy 104.14 44.45)
+			(xy 104.14 50.8)
+			(xy 104.14 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3437,7 +3521,8 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 125.73) (xy 182.88 125.73)
+			(xy 199.39 125.73)
+			(xy 182.88 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3447,7 +3532,8 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 173.99) (xy 137.16 173.99)
+			(xy 121.92 173.99)
+			(xy 137.16 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3457,7 +3543,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 93.98) (xy 133.35 93.98)
+			(xy 119.38 93.98)
+			(xy 133.35 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3467,7 +3554,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 158.75) (xy 152.4 163.83)
+			(xy 152.4 158.75)
+			(xy 152.4 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3477,7 +3565,8 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 44.45) (xy 106.68 44.45)
+			(xy 104.14 44.45)
+			(xy 106.68 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3487,7 +3576,8 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 132.08) (xy 58.42 132.08)
+			(xy 48.26 132.08)
+			(xy 58.42 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3497,7 +3587,8 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 173.99) (xy 152.4 173.99)
+			(xy 137.16 173.99)
+			(xy 152.4 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3507,7 +3598,8 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 72.39) (xy 66.04 74.93)
+			(xy 66.04 72.39)
+			(xy 66.04 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3517,7 +3609,8 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 157.48) (xy 35.56 157.48)
+			(xy 33.02 157.48)
+			(xy 35.56 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3527,13 +3620,205 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 173.99) (xy 106.68 173.99)
+			(xy 91.44 173.99)
+			(xy 106.68 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fd7a3abb-1d29-4faa-b486-94f19f18432c")
+	)
+	(wire
+		(pts
+			(xy 119.38 73.66)
+			(xy 133.35 73.66)
+		)
+		(uuid "48400367-5a09-4040-be73-c40023014118")
+	)
+	(wire
+		(pts
+			(xy 133.35 96.52)
+			(xy 142.24 96.52)
+		)
+		(uuid "e95c8953-a629-43a4-982b-739ec00ef745")
+	)
+	(wire
+		(pts
+			(xy 119.38 81.28)
+			(xy 133.35 81.28)
+		)
+		(uuid "93efffe3-8eb9-40a4-ab9a-3bea36543e3c")
+	)
+	(wire
+		(pts
+			(xy 133.35 109.22)
+			(xy 142.24 109.22)
+		)
+		(uuid "af6ff19c-b8b0-4a84-9047-27e7ad585993")
+	)
+	(wire
+		(pts
+			(xy 119.38 83.82)
+			(xy 133.35 83.82)
+		)
+		(uuid "e84901c6-2622-43b1-b484-0a54733c8029")
+	)
+	(wire
+		(pts
+			(xy 133.35 121.92)
+			(xy 142.24 121.92)
+		)
+		(uuid "a13d20e1-e799-4453-b2dc-9515f18661b8")
+	)
+	(wire
+		(pts
+			(xy 83.82 116.84)
+			(xy 69.85 116.84)
+		)
+		(uuid "9a82c778-9cef-43c4-ad4b-7ba5df28318c")
+	)
+	(wire
+		(pts
+			(xy 157.48 96.52)
+			(xy 166.37 96.52)
+		)
+		(uuid "0359b2b1-bcb9-47b3-9725-eeb47a285a83")
+	)
+	(wire
+		(pts
+			(xy 83.82 119.38)
+			(xy 69.85 119.38)
+		)
+		(uuid "e6a5fe83-1ef2-4087-ac16-b752d6a7c84c")
+	)
+	(wire
+		(pts
+			(xy 157.48 109.22)
+			(xy 166.37 109.22)
+		)
+		(uuid "c3b15e9c-b5cf-44da-9bde-d2c78b757551")
+	)
+	(wire
+		(pts
+			(xy 83.82 121.92)
+			(xy 69.85 121.92)
+		)
+		(uuid "24c57110-cd4b-4147-a09f-e2fc2ea3f8b4")
+	)
+	(wire
+		(pts
+			(xy 157.48 121.92)
+			(xy 166.37 121.92)
+		)
+		(uuid "f6d056c4-86e2-46bd-8798-7134f4742e83")
+	)
+	(wire
+		(pts
+			(xy 83.82 124.46)
+			(xy 69.85 124.46)
+		)
+		(uuid "4d5de68e-1c89-42a3-a8d6-5a209aaa16f3")
+	)
+	(wire
+		(pts
+			(xy 157.48 134.62)
+			(xy 166.37 134.62)
+		)
+		(uuid "27a87d38-b0c9-4d80-995e-eca4a4edb597")
+	)
+	(text "C1–C3: VDD    C4: VDD_USB    C5–C6: VDDA    C7: bulk"
+		(at 73.66 152.4 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f85a4bd-188b-4f53-a64b-939e0c3b483c")
+	)
+	(text "OSCILLOSCOPE TRAINER"
+		(at 20.32 22.86 0)
+		(effects
+			(font
+				(size 3 3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4891de73-48f4-4e25-82ad-2aac9d8d80fe")
+	)
+	(text "Target voltage sense on pin 1"
+		(at 19.05 165.1 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "58e4940d-b4c0-432f-a3d5-a0756b068d96")
+	)
+	(text "V1 prototype  /  STM32L072CBT6 controller"
+		(at 20.32 29.21 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ba3706d-124b-4657-ac5a-1714c273656e")
+	)
+	(text "ST-LINK  /  SWD"
+		(at 19.05 116.84 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b879b1b-d785-4789-a4ce-ff0329d35785")
+	)
+	(text "Cell / USB selector, shunt and sense pads"
+		(at 203.2 35.56 0)
+		(effects
+			(font
+				(size 1.18 1.18)
+			)
+			(justify left bottom)
+		)
+		(uuid "c468b9d5-ae65-4d14-bd7c-c7cf4e26075b")
+	)
+	(text "LOCAL BYPASS"
+		(at 73.66 147.32 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e70b64ec-d6b1-45a8-948e-d61f1f273ecf")
+	)
+	(text "2 × 5, 1.27 mm pitch. Omit pin 7 for keyed sockets."
+		(at 19.05 176.53 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb8dfe33-59eb-4562-acc5-1a3901ab90e8")
+	)
+	(text "Power the target through JP1."
+		(at 19.05 170.18 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd31adf8-8e85-4142-91d4-69926f4ce19e")
 	)
 	(label "DAC_B"
 		(at 133.35 71.12 180)
@@ -3965,17 +4250,473 @@
 		)
 		(uuid "fa001f13-7e0c-48f8-ae37-91bcebad8fcd")
 	)
+	(label "PA6"
+		(at 133.35 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "91204395-fee0-485c-8b1e-efd762d9cd9d")
+	)
+	(label "PA6"
+		(at 133.35 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc80fd0e-c71f-49e7-94f1-49111e7cca22")
+	)
+	(label "PA9"
+		(at 133.35 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "542744d8-81cf-4030-8c5e-59b2a703d45a")
+	)
+	(label "PA9"
+		(at 133.35 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4dfedd88-aa4e-4d95-b66a-34c45cdbfa6a")
+	)
+	(label "PA10"
+		(at 133.35 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "756d8c33-2ff2-4199-be0d-b00094f50ff4")
+	)
+	(label "PA10"
+		(at 133.35 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "221fb32b-9db3-47e2-9e7c-f5eda515c854")
+	)
+	(label "PB12"
+		(at 69.85 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "252c50ac-36b9-441b-9ad0-dafc7aaaf9fb")
+	)
+	(label "PB12"
+		(at 157.48 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d481f31-c6a2-4c65-9e0e-5c06a73a6294")
+	)
+	(label "PB13"
+		(at 69.85 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b097870d-467d-4d87-a03f-8f06d5b41bc1")
+	)
+	(label "PB13"
+		(at 157.48 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae9e4f63-e60d-423d-83bb-18dcbd2e3d6d")
+	)
+	(label "PB14"
+		(at 69.85 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "452a77a6-70c0-4de7-b6cd-f6ca17529485")
+	)
+	(label "PB14"
+		(at 157.48 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73aeaf8c-889c-4185-9b53-e59736db6afa")
+	)
+	(label "PB15"
+		(at 69.85 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be7fd661-639d-4cb7-8678-55d254e692cf")
+	)
+	(label "PB15"
+		(at 157.48 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd87d741-bd5b-41c9-9454-194fcbcc5199")
+	)
+	(sheet
+		(at 199.39 101.6)
+		(size 71.12 48.26)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "33f655f7-ca2c-480f-9fc6-e4fac6112077")
+		(property "Sheetname" "Button and indicators"
+			(at 199.39 100.965 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interface.kicad_sch"
+			(at 199.39 150.495 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LED_SHAPE" input
+			(at 199.39 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7d0d01aa-ec4b-4d9f-9f4a-fa008d426026")
+		)
+		(pin "LED_AMP" input
+			(at 199.39 110.49 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fe2535d1-6c43-4f49-ac44-4f11cb0444cf")
+		)
+		(pin "LED_FREQ" input
+			(at 199.39 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3eae0cff-c07a-4201-96b4-4c8bdb4b882e")
+		)
+		(pin "LED_DC" input
+			(at 199.39 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b7b3e67f-9927-46eb-a0b4-1e82f51685df")
+		)
+		(pin "LED_XY" input
+			(at 199.39 121.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "55d79d7c-adc9-4e9f-bbad-56c905bce8b6")
+		)
+		(pin "LED_TRIG" input
+			(at 199.39 125.73 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "94cd3032-66d8-490e-8ef5-8b6160e23f96")
+		)
+		(pin "LED_1" input
+			(at 199.39 129.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a7d6641f-f35c-4f82-aefd-d128ff91b54d")
+		)
+		(pin "LED_2" input
+			(at 199.39 133.35 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e3b3f510-c244-4c8d-ab66-9f1bbc57a44b")
+		)
+		(pin "LED_3" input
+			(at 199.39 137.16 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a927a34c-346c-4298-be8b-eb2e5bcd476f")
+		)
+		(pin "BUTTON_N" output
+			(at 199.39 140.97 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "18260710-dd30-4d23-bc95-9de082d41090")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 199.39 22.86)
+		(size 71.12 21.59)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7e0c96ab-06f3-41b5-91de-ed4f94883be7")
+		(property "Sheetname" "Power and current measurement"
+			(at 199.39 22.225 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 199.39 38.735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_DM" bidirectional
+			(at 199.39 26.67 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d1784076-fac2-430b-9aa6-c36707410e76")
+		)
+		(pin "USB_DP" bidirectional
+			(at 199.39 30.48 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7309d2ec-f9a3-4502-8685-dcfe753ca1c5")
+		)
+		(pin "USB_VBUS_N" output
+			(at 199.39 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ff9d8c33-8611-4e42-a010-9d2531933fd5")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 199.39 53.34)
+		(size 71.12 33.02)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fc722937-2062-4585-929f-9dafa86e1dc5")
+		(property "Sheetname" "Waveform and trigger outputs"
+			(at 199.39 52.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Outputs.kicad_sch"
+			(at 199.39 86.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DAC_A" input
+			(at 199.39 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f86b43b6-0fdc-4d96-b16e-8d868bd9a76c")
+		)
+		(pin "PULSE_SEL" input
+			(at 199.39 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "93765b34-2886-4cca-8cac-47d61be678e1")
+		)
+		(pin "DAC_B" input
+			(at 199.39 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e8bf1f24-24f4-442c-97cf-3653b72f3638")
+		)
+		(pin "MARKER_SEL" input
+			(at 199.39 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3b4e9fa4-5185-4416-86e1-e51997326bc7")
+		)
+		(pin "MARKER" input
+			(at 199.39 63.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c9a5350e-539b-4f84-a57e-179201bf727d")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(page "3")
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 106.68 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "046949e2-3bf0-4d2d-923f-c931f5754791")
 		(property "Reference" "C3"
 			(at 110.49 165.0999 0)
@@ -4076,6 +4817,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "48403f9d-f184-488a-acfe-3c9cd438f32b")
 		)
@@ -4095,13 +4838,11 @@
 		(lib_id "Connector:Conn_ARM_JTAG_SWD_10")
 		(at 35.56 139.7 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "04fe1185-7371-424a-94a7-ef777a97dd83")
 		(property "Reference" "J3"
 			(at 24.13 138.4299 0)
@@ -4213,6 +4954,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "5"
 			(uuid "4ffd7e31-2468-468f-9f59-68746cb07b5d")
 		)
@@ -4256,11 +4999,9 @@
 		(lib_id "power:VDD")
 		(at 101.6 44.45 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "051b91d6-b296-449e-a22a-105433e14ef0")
 		(property "Reference" "#PWR001"
@@ -4317,6 +5058,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "47b8b0c8-833e-470a-8b24-9cd4cf07e3bf")
 		)
@@ -4333,11 +5076,9 @@
 		(lib_id "power:VDD")
 		(at 76.2 158.75 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "13ccc398-bbca-46be-b61f-a33aacf63dc7")
 		(property "Reference" "#PWR007"
@@ -4394,6 +5135,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "36c33e80-422f-4b06-aeed-1ae6bd01a170")
 		)
@@ -4410,11 +5153,9 @@
 		(lib_id "power:VDD")
 		(at 35.56 124.46 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d7c21fd-1d68-4a8e-ad3f-e4cecfefeaa9")
 		(property "Reference" "#PWR005"
@@ -4471,6 +5212,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "71292e39-3791-412a-af06-7c47ac654268")
 		)
@@ -4487,11 +5230,9 @@
 		(lib_id "power:GND")
 		(at 101.6 135.89 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "2fdd368c-bdb1-4fc7-b2e1-3fe14c46945c")
 		(property "Reference" "#PWR002"
@@ -4548,6 +5289,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "070c3113-817a-4799-8857-be5de8133cb2")
 		)
@@ -4564,13 +5307,11 @@
 		(lib_id "Device:C_Small")
 		(at 121.92 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "377f5b6e-8fdf-4dc0-bd10-af7ddbe1bd04")
 		(property "Reference" "C4"
 			(at 125.73 165.0999 0)
@@ -4671,6 +5412,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "7c4bac1f-14ac-43ab-b894-0a4599942746")
 		)
@@ -4690,11 +5433,9 @@
 		(lib_id "power:GND")
 		(at 76.2 173.99 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "5385f48e-401b-40ff-a8ec-a6ba85731ed2")
 		(property "Reference" "#PWR008"
@@ -4751,6 +5492,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "bedaafaa-6efe-45b2-83a2-0901eafa2ff0")
 		)
@@ -4767,13 +5510,11 @@
 		(lib_id "Device:C_Small")
 		(at 52.07 69.85 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "56a0076a-dc02-47c4-a4c1-13af39b5ebd9")
 		(property "Reference" "C8"
 			(at 55.88 68.5799 0)
@@ -4874,6 +5615,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "065981ce-ff48-43b5-82b1-f3c93b095ed2")
 		)
@@ -4893,13 +5636,11 @@
 		(lib_id "Device:C_Small")
 		(at 137.16 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "5f0b3809-b975-446d-8bbe-dba35645d422")
 		(property "Reference" "C5"
 			(at 140.97 165.0999 0)
@@ -5000,6 +5741,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "34881147-b5ad-4b17-b263-e3165ea9a449")
 		)
@@ -5019,13 +5762,11 @@
 		(lib_id "Device:R_Small")
 		(at 66.04 69.85 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "6309d748-250a-40ef-8a35-bce16782f6ee")
 		(property "Reference" "R1"
 			(at 68.58 68.5799 0)
@@ -5126,6 +5867,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "d978d3b5-ee14-4d13-a8c2-41735cecf7db")
 		)
@@ -5145,11 +5888,9 @@
 		(lib_id "power:GND")
 		(at 35.56 157.48 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a55544c-f187-4068-b3a2-c8cb7794cca7")
 		(property "Reference" "#PWR006"
@@ -5206,6 +5947,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "c1c2383c-7259-440a-b517-f7d1701e1eb5")
 		)
@@ -5222,11 +5965,9 @@
 		(lib_id "MCU_ST_STM32L0:STM32L072CBTx")
 		(at 101.6 91.44 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "6bb74d4d-f0b6-4359-a2b8-1b517107911c")
 		(property "Reference" "U1"
@@ -5339,6 +6080,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "2"
 			(uuid "9ffd90a0-bde9-41cf-b3aa-78eb690dce27")
 		)
@@ -5496,13 +6239,11 @@
 		(lib_id "Device:C_Small")
 		(at 167.64 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "8327d1a7-fa2a-4dbb-8926-be8c99a52778")
 		(property "Reference" "C7"
 			(at 171.45 165.0999 0)
@@ -5603,6 +6344,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "fd6e0f10-35a4-4008-a0d4-56a1bd0531eb")
 		)
@@ -5622,11 +6365,9 @@
 		(lib_id "power:GND")
 		(at 66.04 74.93 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6125d2b-cb98-4a8a-8e89-3aede85176ea")
 		(property "Reference" "#PWR003"
@@ -5683,6 +6424,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "6a6202a2-66c4-4b11-b383-93fb9ac3c474")
 		)
@@ -5699,13 +6442,11 @@
 		(lib_id "Device:C_Small")
 		(at 152.4 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "ea7a02ca-c52f-40a9-8571-8206924f444b")
 		(property "Reference" "C6"
 			(at 156.21 165.0999 0)
@@ -5806,6 +6547,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "c7b04505-f495-476b-b5ec-6ddc9a91b362")
 		)
@@ -5825,13 +6568,11 @@
 		(lib_id "Device:C_Small")
 		(at 91.44 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "ed63e97b-1cea-4fad-b3b2-60d88e110fe0")
 		(property "Reference" "C2"
 			(at 95.25 165.0999 0)
@@ -5932,6 +6673,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "d595107a-411c-4a67-9940-00941ab009ec")
 		)
@@ -5951,13 +6694,11 @@
 		(lib_id "Device:C_Small")
 		(at 76.2 166.37 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "fa43f9a1-1596-44c0-ab0c-441587de6c26")
 		(property "Reference" "C1"
 			(at 80.01 165.0999 0)
@@ -6058,6 +6799,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "1c4cfb2d-59d4-4aca-8d63-e358698ca12e")
 		)
@@ -6077,11 +6820,9 @@
 		(lib_id "power:GND")
 		(at 52.07 74.93 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "fc258e2c-3eab-4032-bb70-66514d9685aa")
 		(property "Reference" "#PWR004"
@@ -6138,6 +6879,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "42c7a4cc-9e9d-4fac-894a-8e265e315f47")
 		)
@@ -6150,328 +6893,808 @@
 			)
 		)
 	)
-	(sheet
-		(at 199.39 101.6)
-		(size 71.12 48.26)
-		(exclude_from_sim no)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 142.24 96.52 0)
+		(unit 1)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "33f655f7-ca2c-480f-9fc6-e4fac6112077")
-		(property "Sheetname" "Button and indicators"
-			(at 199.39 100.965 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "1b22edaa-d0b7-41f1-92cf-15fd128b9ab5")
+		(property "Reference" "TP15"
+			(at 142.24 89.662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Interface.kicad_sch"
-			(at 199.39 150.495 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(property "Value" "PA6"
+			(at 142.24 91.44 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(pin "LED_SHAPE" input
-			(at 199.39 106.68 180)
-			(uuid "7d0d01aa-ec4b-4d9f-9f4a-fa008d426026")
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_AMP" input
-			(at 199.39 110.49 180)
-			(uuid "fe2535d1-6c43-4f49-ac44-4f11cb0444cf")
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_FREQ" input
-			(at 199.39 114.3 180)
-			(uuid "3eae0cff-c07a-4201-96b4-4c8bdb4b882e")
+		(property "Description" "test point"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_DC" input
-			(at 199.39 118.11 180)
-			(uuid "b7b3e67f-9927-46eb-a0b4-1e82f51685df")
+		(property "Group" "MCU test points"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_XY" input
-			(at 199.39 121.92 180)
-			(uuid "55d79d7c-adc9-4e9f-bbad-56c905bce8b6")
+		(property "LCSC" "C3029083"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_TRIG" input
-			(at 199.39 125.73 180)
-			(uuid "94cd3032-66d8-490e-8ef5-8b6160e23f96")
+		(property "MPN" "S1751-46"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_1" input
-			(at 199.39 129.54 180)
-			(uuid "a7d6641f-f35c-4f82-aefd-d128ff91b54d")
+		(property "Manufacturer" "Harwin"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_2" input
-			(at 199.39 133.35 180)
-			(uuid "e3b3f510-c244-4c8d-ab66-9f1bbc57a44b")
+		(property "Pin functions" "ADC_IN6, TIM3_CH1, COMP1_OUT"
+			(at 142.24 96.52 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "LED_3" input
-			(at 199.39 137.16 180)
-			(uuid "a927a34c-346c-4298-be8b-eb2e5bcd476f")
+		(property "Probe function" "ADC_IN6"
+			(at 142.24 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-			)
-		)
-		(pin "BUTTON_N" output
-			(at 199.39 140.97 180)
-			(uuid "18260710-dd30-4d23-bc95-9de082d41090")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
-					(page "4")
+					(reference "TP15")
+					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 199.39 22.86)
-		(size 71.12 21.59)
-		(exclude_from_sim no)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 142.24 109.22 0)
+		(unit 1)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "7e0c96ab-06f3-41b5-91de-ed4f94883be7")
-		(property "Sheetname" "Power and current measurement"
-			(at 199.39 22.225 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "82a80f27-6e3e-4f45-942b-a658a49b536d")
+		(property "Reference" "TP16"
+			(at 142.24 102.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Power.kicad_sch"
-			(at 199.39 38.735 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(property "Value" "PA9"
+			(at 142.24 104.14 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(pin "USB_DM" bidirectional
-			(at 199.39 26.67 180)
-			(uuid "d1784076-fac2-430b-9aa6-c36707410e76")
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 142.24 109.22 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "USB_DP" bidirectional
-			(at 199.39 30.48 180)
-			(uuid "7309d2ec-f9a3-4502-8685-dcfe753ca1c5")
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 142.24 109.22 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "USB_VBUS_N" output
-			(at 199.39 43.18 180)
-			(uuid "ff9d8c33-8611-4e42-a010-9d2531933fd5")
+		(property "Description" "test point"
+			(at 142.24 109.22 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+			)
+		)
+		(property "Group" "MCU test points"
+			(at 142.24 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3029083"
+			(at 142.24 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S1751-46"
+			(at 142.24 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 142.24 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin functions" "USART1_TX or I2C1_SCL"
+			(at 142.24 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Probe function" "USART1_TX"
+			(at 142.24 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
-					(page "2")
+					(reference "TP16")
+					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 199.39 53.34)
-		(size 71.12 33.02)
-		(exclude_from_sim no)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 142.24 121.92 0)
+		(unit 1)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "fc722937-2062-4585-929f-9dafa86e1dc5")
-		(property "Sheetname" "Waveform and trigger outputs"
-			(at 199.39 52.705 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "2156577c-77fd-4ac8-a4ab-274800db6e45")
+		(property "Reference" "TP17"
+			(at 142.24 115.062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Outputs.kicad_sch"
-			(at 199.39 86.995 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(property "Value" "PA10"
+			(at 142.24 116.84 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(pin "DAC_A" input
-			(at 199.39 73.66 180)
-			(uuid "f86b43b6-0fdc-4d96-b16e-8d868bd9a76c")
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 142.24 121.92 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "PULSE_SEL" input
-			(at 199.39 58.42 180)
-			(uuid "93765b34-2886-4cca-8cac-47d61be678e1")
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 142.24 121.92 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "DAC_B" input
-			(at 199.39 78.74 180)
-			(uuid "e8bf1f24-24f4-442c-97cf-3653b72f3638")
+		(property "Description" "test point"
+			(at 142.24 121.92 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "MARKER_SEL" input
-			(at 199.39 68.58 180)
-			(uuid "3b4e9fa4-5185-4416-86e1-e51997326bc7")
+		(property "Group" "MCU test points"
+			(at 142.24 121.92 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(pin "MARKER" input
-			(at 199.39 63.5 180)
-			(uuid "c9a5350e-539b-4f84-a57e-179201bf727d")
+		(property "LCSC" "C3029083"
+			(at 142.24 121.92 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+			)
+		)
+		(property "MPN" "S1751-46"
+			(at 142.24 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 142.24 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin functions" "USART1_RX or I2C1_SDA"
+			(at 142.24 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Probe function" "USART1_RX"
+			(at 142.24 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
-					(page "3")
+					(reference "TP17")
+					(unit 1)
 				)
 			)
 		)
 	)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 166.37 96.52 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50e727f7-4f17-4f01-8ac7-46a1474b9cd5")
+		(property "Reference" "TP18"
+			(at 166.37 89.662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PB12"
+			(at 166.37 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "MCU test points"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3029083"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S1751-46"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin functions" "SPI2_NSS"
+			(at 166.37 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Probe function" "SPI2_NSS"
+			(at 166.37 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 166.37 109.22 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dee705f-0c82-4572-a46a-e4ea5d049e2e")
+		(property "Reference" "TP19"
+			(at 166.37 102.362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PB13"
+			(at 166.37 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "MCU test points"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3029083"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S1751-46"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin functions" "SPI2_SCK, TIM21_CH1, I2C2_SCL"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Probe function" "SPI2_SCK"
+			(at 166.37 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 166.37 121.92 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "526edac6-00f9-40e7-847e-c2e28b6b4049")
+		(property "Reference" "TP20"
+			(at 166.37 115.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PB14"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "MCU test points"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3029083"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S1751-46"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin functions" "SPI2_MISO, TIM21_CH2, I2C2_SDA"
+			(at 166.37 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Probe function" "SPI2_MISO"
+			(at 166.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "TP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My Library:TestPoint_Harwin")
+		(at 166.37 134.62 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a41f03d-5682-41a5-a2f6-85f70cf346ac")
+		(property "Reference" "TP21"
+			(at 166.37 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PB15"
+			(at 166.37 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	
+		(property "Group" "MCU test points"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3029083"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S1751-46"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin functions" "SPI2_MOSI"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Probe function" "SPI2_MOSI"
+			(at 166.37 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
+	(embedded_fonts no)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )
