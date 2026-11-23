@@ -4471,7 +4471,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "1b22edaa-d0b7-41f1-92cf-15fd128b9ab5")
 		(property "Reference" "TP15"
 			(at 152.4 89.662 0)
@@ -4712,7 +4712,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "2156577c-77fd-4ac8-a4ab-274800db6e45")
 		(property "Reference" "TP17"
 			(at 152.4 115.062 0)
@@ -5030,7 +5030,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "4a41f03d-5682-41a5-a2f6-85f70cf346ac")
 		(property "Reference" "TP21"
 			(at 166.37 127.762 0)
@@ -5194,7 +5194,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "50e727f7-4f17-4f01-8ac7-46a1474b9cd5")
 		(property "Reference" "TP18"
 			(at 166.37 89.662 0)
@@ -5358,7 +5358,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "526edac6-00f9-40e7-847e-c2e28b6b4049")
 		(property "Reference" "TP20"
 			(at 166.37 115.062 0)
@@ -6417,7 +6417,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "82a80f27-6e3e-4f45-942b-a658a49b536d")
 		(property "Reference" "TP16"
 			(at 152.4 102.362 0)
@@ -6581,7 +6581,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "9dee705f-0c82-4572-a46a-e4ea5d049e2e")
 		(property "Reference" "TP19"
 			(at 166.37 102.362 0)

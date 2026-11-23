@@ -1,6 +1,6 @@
 # Trainer test points
 
-TP1–TP4 are bare PCB features. TP5–TP25 are exposed pads on the default build. Fit a Harwin S1751-46 surface-mount loop wherever a probe clip needs an anchor. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+TP1–TP4 are bare PCB features. Fit a Harwin S1751-46 surface-mount probe loop at each of TP5–TP25 on the default build (21 loops total). [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
 
 ## Power
 
