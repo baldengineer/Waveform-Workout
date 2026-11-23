@@ -2765,7 +2765,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 45.72 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3083,7 +3083,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 167.64 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3474,7 +3474,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 243.84 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3638,7 +3638,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3879,7 +3879,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 45.72 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4043,7 +4043,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 121.92 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4207,7 +4207,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 83.82 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4750,7 +4750,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 121.92 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -5368,7 +5368,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 			(at 83.82 60.96 0)
 			(hide yes)
 			(show_name no)

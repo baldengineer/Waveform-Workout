@@ -8,7 +8,9 @@ In1.Cu carries GND and In2.Cu carries VDD downstream of JP1. All 90 surface-moun
 
 BT1 uses an externally sourced Keystone 1290-79. Bond its aluminum base to the back of the board inside the silkscreen outline using electrically insulating adhesive. The footprint has two plated wire pads and no mounting holes. Run short wires from the positive socket to square pad 1 (BAT+) and from the negative stud to round pad 2 (GND). Both pads sit outside the metal base at the BNC end. [Keystone 1290-79 drawing](https://media.soselectronic.com/KatList/keystone/1290-79.pdf)
 
-Four DRC errors remain inside USB-C connector J1. The locating holes are 0.1944 mm from the adjacent ground pads, against a 0.25 mm project rule. Review the land pattern and fabrication allowance before release. The 196 warnings comprise 157 silkscreen and text findings, 27 library-footprint differences, eight isolated-copper findings and four copper slivers. The board retains 25 legacy front-zone outlines alongside the 22 new local pours.
+Both silkscreens pass KiCad’s overlap, exposed-pad, edge-clearance and lettering checks. The front identifies the nine LEDs in daisy-chain order. The rear has a mirrored SWD pinout and mirrored power, battery and output legends. The project’s LED footprint preserves the KiCad `LED_SMD` land pattern and shortens the pin-one chamfer for the 0.15 mm silkscreen clearance.
+
+The four documented clearances inside USB-C connector J1 measure 0.1944 mm from its locating holes to adjacent ground pads against the 0.25 mm project rule. The remaining 39 warnings comprise 27 library-footprint differences, eight isolated-copper findings and four copper slivers. The board retains 25 legacy front-zone outlines alongside the 22 new local pours.
 
 ## PP3 placement checkpoint
 
