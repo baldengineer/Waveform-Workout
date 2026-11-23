@@ -1,12 +1,22 @@
 # Development PCB
 
+## PP3 first-pass placement
+
+The 92-footprint board places the Keystone 1294 on the back at (125.20, 76.25) mm with its terminals toward the BNC. Its four 3.3 mm mounting holes clear the existing via drills. Placement allows a 5 mm screw-head diameter. Actual fasteners and enclosure fit still need a mechanical check. J2 (BNC) and J1 (USB-C) share the board centerline at Y = 75.750 mm. The two DAC filter inductors sit on opposite sides of U2 with perpendicular axes.
+
+The saved board matches the schematic and passes courtyard-overlap and hole-to-hole checks. It retains the previous layout’s 677 track segments and 130 vias. DRC reports 100 unconnected items and 109 shorts after the schematic and placement changes. Routing and silkscreen need revision before fabrication.
+
+## Previous CR2032 layout
+
+The dimensions, routing results, and checks below describe the earlier CR2032 revision.
+
 The board measures 81.766681 × 37.50 mm. Shortening the 50.40 mm outline by 12.90 mm saved 1,054.79 mm², a 25.60% reduction to 3,066.25 mm². BT1 mounts on the back beneath the analog signal path and the two buffered DAC test points. The CR2032 slides out toward the top edge through a 20 mm-wide path clear of vias and through-hole leads. [Keystone 3002 retainer drawing, Fig. 2](https://www.keyelco.com/userAssets/file/K75p11.pdf)
 
 The left-edge Kinghelm BNC (J2) and right-edge USB-C (J1) share a mating centerline at Y = 75.750 mm, 18.750 mm from each long board edge. The 2.54 mm header behind the BNC also carries output A. BT1 sits at (107.10, 68.00) mm on the back, clear of the BNC mounting feet and signal lead. The power selector is 7.33 mm from the USB connector in X and 16.00 mm in Y, measured between footprint origins. The six rail measurement points have ground points 6.17–7.97 mm away.
 
 MODE and VALUE sit side by side on 8 mm centers. The six mode indicators and three value indicators form a single row, with 3.6 mm pitch within each group and a wider gap between groups. Together their 0805 courtyards occupy 32.70 × 3.36 mm. D10 indicates USB power separately.
 
-## Routing and stack
+### Routing and stack
 
 The fabrication target is JLC04161H-7628, 1.6 mm FR-4 with 1 oz outer and 0.5 oz inner copper. The top and bottom layers carry signals. In1.Cu is GND, and In2.Cu is system VDD downstream of JP1. The KiCad export uses generic dielectric thicknesses. Use the specified fabrication stack when checking impedance and ordering. [JLCPCB stackups](https://jlcpcb.com/impedance)
 
@@ -16,7 +26,7 @@ All 75 surface-mount VDD and GND pads connect locally to their planes. Each STM3
 
 The USB pair stays on L1. Its main coupled section uses 0.3134 mm traces and a 0.250 mm edge gap over L2, targeting 90 Ω differential on the specified stack. A matched pair of 45° bends lines up the pair with the centered connector and ESD protector. Both MCU-to-ESD paths measure 17.02 mm. The connector escape connects both plug orientations. [JLCPCB impedance calculator](https://jlcpcb.com/pcb-impedance-calculator)
 
-## Layout checks
+### Layout checks
 
 KiCad found zero unrouted connections and zero shorts. The filled In1.Cu ground plane covers the full trace width of all four USB data nets. Across U1–U6 and Q1, non-ground tracks leave through their own pad ends, and non-ground vias clear the IC bodies and pin fields.
 
