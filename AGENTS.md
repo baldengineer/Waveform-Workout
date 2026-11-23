@@ -11,6 +11,7 @@ Maintain each catalog link independently when assigning or updating schematic pa
 
 ## Schematic LEDs
 
+- Consider the Worldsemi **WS2812B-2020-V6** (LCSC **C52917434**) first for low-cost addressable RGB indicators. Its 2 × 2 mm package and single-wire daisy chain simplify routing, and its 3.3 V minimum supply suits the trainer's 3.45 V rail. In November 2026, LCSC priced it at $0.0743 each at 100 pieces, and JLCPCB listed it as Extended, Standard assembly only. [LCSC pricing](https://www.lcsc.com/product-detail/C52917434.html) · [JLCPCB assembly listing](https://jlcpcb.com/partdetail/Worldsemi-LED/C52917434)
 - In a series circuit, prefer connecting the LED cathode directly to GND. Place any series resistor on the anode side so the marked cathode pad on the PCB provides an easy-to-find ground point for debugging.
 
 ## PCB silkscreen
