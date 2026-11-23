@@ -17,15 +17,19 @@ env:
 jobs:
   plot:
     runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    container:
+      image: ghcr.io/kicad/kicad:10.0.8@sha256:3f4a01786dfbe803a65f345c3342b765db9add913f5e9448f8356793714ddc34
+      options: --user root
     steps:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
 
-      - name: Install KiCad 10
+      - name: Install PDF inspection tools
         run: |
-          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
-          sudo apt-get install --yes --no-install-recommends kicad kicad-symbols poppler-utils
+          apt-get update --error-on=any
+          apt-get install --yes --no-install-recommends poppler-utils
 
       - name: Plot all sheets and check the PDF
         run: |
