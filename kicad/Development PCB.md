@@ -6,13 +6,13 @@ KiCad reports zero unconnected items, shorts, schematic mismatches, dangling tra
 
 In1.Cu carries GND and In2.Cu carries VDD downstream of JP1. All 90 surface-mount rail pads have a local connection to their plane, and all 10 plated through-hole rail pads contact their plane. The MCU-to-ESD USB data traces each measure 17.022 mm. The filled GND plane covers the full width of both traces and their connector branches. The IC escape check found no non-ground tracks or vias intruding into another pin’s escape or passing beneath an IC body.
 
-Track and via copper clear the assumed 5 mm PP3 screw heads. The closest track edge is 2.559 mm from a mounting-hole center and the closest via edge is 2.661 mm away. A legacy front GND pour extends beneath the head at (135.745, 64.335) mm, reaching to within 1.901 mm of the hole center.
+BT1 uses an externally sourced Keystone 1290-79. Bond its aluminum base to the back of the board inside the silkscreen outline using electrically insulating adhesive. The footprint has two plated wire pads and no mounting holes. Run short wires from the positive socket to square pad 1 (BAT+) and from the negative stud to round pad 2 (GND). Both pads sit outside the metal base at the BNC end. [Keystone 1290-79 drawing](https://media.soselectronic.com/KatList/keystone/1290-79.pdf)
 
-Four DRC errors remain inside USB-C connector J1. The locating holes are 0.1944 mm from the adjacent ground pads, against a 0.25 mm project rule. Review the land pattern and fabrication allowance before release. The 206 warnings comprise 167 silkscreen and text findings, 27 library-footprint differences, eight isolated-copper findings and four copper slivers. The board retains 25 legacy front-zone outlines alongside the 22 new local pours. Review those outlines and the mounting-hole copper before fabrication.
+Four DRC errors remain inside USB-C connector J1. The locating holes are 0.1944 mm from the adjacent ground pads, against a 0.25 mm project rule. Review the land pattern and fabrication allowance before release. The 196 warnings comprise 157 silkscreen and text findings, 27 library-footprint differences, eight isolated-copper findings and four copper slivers. The board retains 25 legacy front-zone outlines alongside the 22 new local pours.
 
 ## PP3 placement checkpoint
 
-The 92-footprint board places the Keystone 1294 on the back at (125.20, 76.25) mm with its terminals toward the BNC. Its four 3.3 mm mounting holes clear the existing via drills. Placement allows a 5 mm screw-head diameter. Actual fasteners and enclosure fit still need a mechanical check. J2 (BNC) and J1 (USB-C) share the board centerline at Y = 75.750 mm. The two DAC filter inductors sit on opposite sides of U2 with perpendicular axes.
+The first placement used a Keystone 1294 on the back at (125.20, 76.25) mm with its terminals toward the BNC. J2 (BNC) and J1 (USB-C) share the board centerline at Y = 75.750 mm. The two DAC filter inductors sit on opposite sides of U2 with perpendicular axes.
 
 At placement commit `7f638a6`, the board matched the schematic and passed courtyard-overlap and hole-to-hole checks. It retained the previous layout’s 677 track segments and 130 vias. DRC reported 100 unconnected items and 109 shorts before rerouting.
 

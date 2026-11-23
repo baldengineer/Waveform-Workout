@@ -13518,7 +13518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Trainer:BatteryHolder_Keystone_1294_1xPP3"
+		(property "Footprint" "Trainer:BatteryHolder_Keystone_1290-79_1xPP3_Adhesive_Wire"
 			(at 36.83 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13529,7 +13529,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://media.soselectronic.com/KatList/keystone/1294.pdf"
+		(property "Datasheet" "https://media.soselectronic.com/KatList/keystone/1290-79.pdf"
 			(at 36.83 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13540,7 +13540,7 @@
 				)
 			)
 		)
-		(property "Description" "Horizontal PC-pin holder for one 9 V alkaline PP3 battery."
+		(property "Description" "Adhesive-mounted 9 V PP3 holder with solder lugs wired to the PCB."
 			(at 36.83 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13573,7 +13573,7 @@
 				)
 			)
 		)
-		(property "MPN" "1294"
+		(property "MPN" "1290-79"
 			(at 36.83 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13595,7 +13595,7 @@
 				)
 			)
 		)
-		(property "Sourcing note" "Hand fit Keystone 1294. Remove the PP3 before applying an external battery-emulation voltage to J5."
+		(property "Sourcing note" "Hand fit Keystone 1290-79 on the back with adhesive. Wire the positive lug to pad 1 (BAT+) and the negative lug to pad 2 (GND). Remove the PP3 before applying an external battery-emulation voltage to J5."
 			(at 36.83 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13606,7 +13606,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=1294"
+		(property "Octo_Link" "https://octopart.com/search?q=1290-79"
 			(at 36.83 160.02 0)
 			(hide yes)
 			(show_name no)
