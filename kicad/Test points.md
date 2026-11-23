@@ -10,12 +10,12 @@ Each rail measurement has a dedicated board-ground point. TP1 and TP2 are the or
 |---|---|---|
 | TP5 | TP6 | USB VBUS at the connector, before the 3.3 V regulator |
 | TP7 | TP8 | Regulated USB 3.3 V, before SW1 |
-| TP9 | TP10 | CR2032 positive terminal, before SW1 |
+| TP9 | TP10 | Two-cell AAA NiMH pack positive terminal, before SW1 |
 | TP11 | TP12 | Selected source at the SW1 common and MAX40200 input |
 | TP1 | TP13 | MAX40200 output, source side of JP1 |
-| TP2 | TP14 | System VDD, load side of JP1 |
+| TP2 | TP14 | Boost converter input, load side of JP1 |
 
-TP11 and TP1 let you see the voltage across U5 during a source change. With JP1 fitted, the system rail has about 12.7 µF nominal capacitance. If it is still at 3.3 V when SW1 selects a 2.5 V cell, the charge difference is about 10 µC. U5 blocks reverse current from that rail into the primary cell. The actual transient depends on switch travel and load. [MAX40200 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf)
+TP11 and TP1 show the voltage across U5 during a source change. U5 blocks reverse current into the selected source. With BAT selected, JP1 measures the current drawn from the pack by the boost converter and its loads. Probe the boost output capacitor to measure regulated system VDD, nominally 3.45 V. When using J5 to emulate the pack with an SMU, remove both cells. [MAX40200 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf)
 
 ## Waveform and trigger
 

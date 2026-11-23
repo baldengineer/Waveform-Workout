@@ -114,7 +114,11 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy -3.048 -0.762)
+						(xy -4.572 -2.286)
+						(xy -3.81 -2.286)
+						(xy -4.572 -2.286)
+						(xy -4.572 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -126,7 +130,11 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+						(xy -1.778 -0.762)
+						(xy -3.302 -2.286)
+						(xy -2.54 -2.286)
+						(xy -3.302 -2.286)
+						(xy -3.302 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -138,7 +146,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy 1.27 0)
+						(xy -1.27 0)
+						(xy 1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -150,7 +159,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -162,7 +172,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy 1.27 -1.27)
+						(xy 1.27 1.27)
+						(xy -1.27 0)
+						(xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -586,7 +599,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy 0 1.27)
+						(xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -609,7 +623,8 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy 2.54 1.27)
+						(xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -740,7 +755,12 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -855,7 +875,8 @@
 			(symbol "VDD_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -0.762 1.27)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -867,7 +888,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.54)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -879,7 +901,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -912,77 +935,289 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "VALUE"
-		(exclude_from_sim no)
-		(at 154.94 36.83 0)
-		(effects
-			(font
-				(size 1.55 1.55)
-				(bold yes)
+		(symbol "LED:WS2812B-2020"
+			(pin_names
+				(offset 0.254)
 			)
-			(justify left bottom)
-		)
-		(uuid "0a9e6207-bf6c-4205-99f7-1680fe25a8b4")
-	)
-	(text "One row and one value illuminate for two seconds after a change."
-		(exclude_from_sim no)
-		(at 20.32 29.21 0)
-		(effects
-			(font
-				(size 1.55 1.55)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "397f41fb-f277-404f-bfab-84e11f93532b")
-	)
-	(text "MODE BUTTON"
-		(exclude_from_sim no)
-		(at 25.4 162.56 0)
-		(effects
-			(font
-				(size 1.55 1.55)
-				(bold yes)
+			(property "Value" "WS2812B-2020"
+				(at 1.27 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "40de1101-231b-4654-9c7b-4b82b99d1a32")
-	)
-	(text "VALUE BUTTON"
-		(exclude_from_sim no)
-		(at 160.02 116.84 0)
-		(effects
-			(font
-				(size 1.55 1.55)
-				(bold yes)
+			(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+				(at 1.27 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "621372be-9b14-4d1f-939a-5d272da8ccff")
-	)
-	(text "ROW"
-		(exclude_from_sim no)
-		(at 25.4 36.83 0)
-		(effects
-			(font
-				(size 1.55 1.55)
-				(bold yes)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+				(at 2.54 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
 			)
-			(justify left bottom)
-		)
-		(uuid "e18877dd-68a1-4c6d-bdc7-b3176222246d")
-	)
-	(text "BUTTON AND INDICATORS"
-		(exclude_from_sim no)
-		(at 20.32 22.86 0)
-		(effects
-			(font
-				(size 3 3)
-				(bold yes)
+			(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
 			)
-			(justify left bottom)
+			(property "ki_keywords" "RGB LED NeoPixel Nano addressable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*-2020_PLCC4*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "WS2812B-2020_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B-2020_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54)
+						(xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556)
+						(xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524)
+						(xy 1.27 -2.54)
+						(xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54)
+						(xy 1.27 -3.556)
+						(xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016)
+						(xy 3.683 -3.556)
+						(xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524)
+						(xy 2.667 -1.524)
+						(xy 3.683 -3.556)
+						(xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556)
+						(xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B-2020_1_1"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
-		(uuid "f2e4303b-6a9c-43e9-abc2-ec14217bbda9")
 	)
 	(junction
 		(at 210.82 143.51)
@@ -996,49 +1231,14 @@
 		(color 0 0 0 0)
 		(uuid "614f2017-5e49-42e5-93a3-526dedd834ab")
 	)
-	(wire
-		(pts
-			(xy 119.38 148.59) (xy 119.38 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0475e5d1-6b46-49ec-9a5a-5362674a9a4e")
+	(no_connect
+		(at 251.46 60.96)
+		(uuid "1145d8a9-b482-4a09-8b18-1e013e04766d")
 	)
 	(wire
 		(pts
-			(xy 107.95 128.27) (xy 119.38 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "095eee13-5326-4750-807b-965f7492bc49")
-	)
-	(wire
-		(pts
-			(xy 60.96 46.99) (xy 73.66 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fb7f4f6-e87d-4383-aecc-ef29dc6963bb")
-	)
-	(wire
-		(pts
-			(xy 60.96 67.31) (xy 73.66 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18211eda-1b98-4eed-8015-e9b8a451f0ca")
-	)
-	(wire
-		(pts
-			(xy 210.82 143.51) (xy 222.25 143.51)
+			(xy 210.82 143.51)
+			(xy 222.25 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1048,57 +1248,8 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 46.99) (xy 100.33 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d781aa1-cfab-4c8d-a7cb-a164c424cc52")
-	)
-	(wire
-		(pts
-			(xy 208.28 46.99) (xy 229.87 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38963147-0e5c-456a-a6d0-49d3f5cb8bb4")
-	)
-	(wire
-		(pts
-			(xy 248.92 67.31) (xy 248.92 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e3b7128-d6c3-480f-86a3-3703ccca70bf")
-	)
-	(wire
-		(pts
-			(xy 78.74 128.27) (xy 100.33 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "415f3f4b-0ebb-4912-a314-764403b766ca")
-	)
-	(wire
-		(pts
-			(xy 237.49 46.99) (xy 248.92 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4180890f-e8c4-4553-b66d-1b0c51c8d5b5")
-	)
-	(wire
-		(pts
-			(xy 105.41 189.23) (xy 105.41 191.77)
+			(xy 105.41 189.23)
+			(xy 105.41 191.77)
 		)
 		(stroke
 			(width 0)
@@ -1108,27 +1259,8 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 107.95) (xy 73.66 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5daeb349-c3a2-4d76-8434-44560e9884d2")
-	)
-	(wire
-		(pts
-			(xy 107.95 148.59) (xy 119.38 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6414cf9e-7e1b-4eac-919a-e5a64ad6e37f")
-	)
-	(wire
-		(pts
-			(xy 210.82 130.81) (xy 210.82 143.51)
+			(xy 210.82 130.81)
+			(xy 210.82 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1138,7 +1270,8 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 189.23) (xy 87.63 189.23)
+			(xy 76.2 189.23)
+			(xy 87.63 189.23)
 		)
 		(stroke
 			(width 0)
@@ -1148,17 +1281,8 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 87.63) (xy 119.38 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "699bf8a9-b34c-49c5-aa17-6fe4d005b342")
-	)
-	(wire
-		(pts
-			(xy 196.85 143.51) (xy 210.82 143.51)
+			(xy 196.85 143.51)
+			(xy 210.82 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1168,47 +1292,8 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 87.63) (xy 73.66 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71cc81cc-ce70-4e8e-82b4-0552ce48a3b9")
-	)
-	(wire
-		(pts
-			(xy 119.38 107.95) (xy 119.38 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74672993-540b-43b9-999d-8d540382a78e")
-	)
-	(wire
-		(pts
-			(xy 237.49 67.31) (xy 248.92 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74fc5371-0d32-41bd-9edd-c9f4ffcc4a7f")
-	)
-	(wire
-		(pts
-			(xy 60.96 128.27) (xy 73.66 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78f42f06-e510-4b44-aa04-a7f688550e19")
-	)
-	(wire
-		(pts
-			(xy 76.2 170.18) (xy 76.2 171.45)
+			(xy 76.2 170.18)
+			(xy 76.2 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1218,27 +1303,8 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 87.63) (xy 100.33 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81e81d9f-96c5-4634-b18e-639fc3b75cc5")
-	)
-	(wire
-		(pts
-			(xy 190.5 46.99) (xy 203.2 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86b10577-63fa-41ff-8ded-3b403d6f4325")
-	)
-	(wire
-		(pts
-			(xy 232.41 143.51) (xy 240.03 143.51)
+			(xy 232.41 143.51)
+			(xy 240.03 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1248,17 +1314,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 128.27) (xy 119.38 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93ca9346-8e45-4075-9a79-e13065ceccc1")
-	)
-	(wire
-		(pts
-			(xy 76.2 176.53) (xy 76.2 189.23)
+			(xy 76.2 176.53)
+			(xy 76.2 189.23)
 		)
 		(stroke
 			(width 0)
@@ -1268,27 +1325,8 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 107.95) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9679a0d5-c573-4260-9cad-ec0ad21db01f")
-	)
-	(wire
-		(pts
-			(xy 208.28 67.31) (xy 229.87 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "980bc25b-971e-4995-97cc-2e47778cbb9e")
-	)
-	(wire
-		(pts
-			(xy 97.79 189.23) (xy 105.41 189.23)
+			(xy 97.79 189.23)
+			(xy 105.41 189.23)
 		)
 		(stroke
 			(width 0)
@@ -1298,47 +1336,8 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 87.63) (xy 119.38 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a527e128-8b2d-4a4c-9014-1c5b5fcdf67d")
-	)
-	(wire
-		(pts
-			(xy 78.74 107.95) (xy 100.33 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a812008a-c9b7-4c68-bee1-bf6e72d85341")
-	)
-	(wire
-		(pts
-			(xy 248.92 87.63) (xy 248.92 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a98a63ae-40f0-4373-9741-a8885bb19e07")
-	)
-	(wire
-		(pts
-			(xy 60.96 148.59) (xy 73.66 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1dbbe82-8d0e-4b52-9c1a-ab8c755e54d0")
-	)
-	(wire
-		(pts
-			(xy 62.23 189.23) (xy 76.2 189.23)
+			(xy 62.23 189.23)
+			(xy 76.2 189.23)
 		)
 		(stroke
 			(width 0)
@@ -1348,57 +1347,8 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 148.59) (xy 100.33 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6cce1dc-b624-41cc-9fbd-19700f14558a")
-	)
-	(wire
-		(pts
-			(xy 78.74 67.31) (xy 100.33 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8bd19a4-2b18-4fe2-b2b7-ad21a1dd1c8a")
-	)
-	(wire
-		(pts
-			(xy 119.38 46.99) (xy 119.38 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be9071bc-c1aa-4a6e-80ff-23ee952d4465")
-	)
-	(wire
-		(pts
-			(xy 190.5 67.31) (xy 203.2 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c676e604-dd78-40e4-a459-0a12a502cee5")
-	)
-	(wire
-		(pts
-			(xy 237.49 87.63) (xy 248.92 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cef31aa8-bcfa-4b05-bf60-e72f5451c3ab")
-	)
-	(wire
-		(pts
-			(xy 210.82 124.46) (xy 210.82 125.73)
+			(xy 210.82 124.46)
+			(xy 210.82 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1408,27 +1358,8 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 46.99) (xy 119.38 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4586b56-c2ab-424b-867a-4fa5f9ac73b3")
-	)
-	(wire
-		(pts
-			(xy 190.5 87.63) (xy 203.2 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d66b6fb8-4852-4490-9e7e-b9486aa4e6ff")
-	)
-	(wire
-		(pts
-			(xy 240.03 143.51) (xy 240.03 146.05)
+			(xy 240.03 143.51)
+			(xy 240.03 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1438,54 +1369,195 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 67.31) (xy 119.38 67.31)
+			(xy 53.34 60.96)
+			(xy 76.2 60.96)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f01d99b2-bb5a-426c-9f4f-89dc29195e97")
+		(uuid "a4d61bf5-af58-44c5-8f00-5d728b8100f6")
 	)
 	(wire
 		(pts
-			(xy 119.38 67.31) (xy 119.38 71.12)
+			(xy 91.44 60.96)
+			(xy 114.3 60.96)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f526c2d9-db83-4e4c-970e-e0f31beb33be")
+		(uuid "af45cf0c-bc2c-4e1e-a095-99b6a261e727")
 	)
 	(wire
 		(pts
-			(xy 208.28 87.63) (xy 229.87 87.63)
+			(xy 53.34 102.87)
+			(xy 76.2 102.87)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa46ae85-f028-4045-b6da-7ed561d53aea")
+		(uuid "04088123-93b5-47a5-8d24-3d14b04b430c")
 	)
 	(wire
 		(pts
-			(xy 248.92 46.99) (xy 248.92 50.8)
+			(xy 91.44 102.87)
+			(xy 114.3 102.87)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fba6ef02-75b8-4ca6-ba7a-635e1d1838fa")
+		(uuid "38a0751a-2ac9-4b85-8800-6ebf3ee3de3e")
 	)
-	(hierarchical_label "LED_SHAPE"
-		(shape input)
-		(at 60.96 46.99 180)
+	(wire
+		(pts
+			(xy 175.26 60.96)
+			(xy 198.12 60.96)
+		)
+		(uuid "c11518f8-fa37-4d5a-9096-f46a4628654b")
+	)
+	(wire
+		(pts
+			(xy 213.36 60.96)
+			(xy 236.22 60.96)
+		)
+		(uuid "872c77ce-96ab-485c-ad0b-abf30ef6db02")
+	)
+	(wire
+		(pts
+			(xy 30.48 60.96)
+			(xy 38.1 60.96)
+		)
+		(uuid "5ca9ab5c-81a7-4bb2-a03b-1cf883ab13ac")
+	)
+	(wire
+		(pts
+			(xy 129.54 60.96)
+			(xy 137.16 60.96)
+		)
+		(uuid "ff188f9f-5102-446e-bff8-2491f2641c1b")
+	)
+	(wire
+		(pts
+			(xy 129.54 102.87)
+			(xy 137.16 102.87)
+		)
+		(uuid "1f89f98d-94e8-48e2-b132-9a0cc29985ea")
+	)
+	(wire
+		(pts
+			(xy 30.48 102.87)
+			(xy 38.1 102.87)
+		)
+		(uuid "90c9f9de-982e-4f82-86a5-b45b66ac6c10")
+	)
+	(wire
+		(pts
+			(xy 152.4 60.96)
+			(xy 160.02 60.96)
+		)
+		(uuid "fa28bc3f-2a26-4c8c-afcd-e12c6d5b9855")
+	)
+	(text "VALUE"
+		(at 154.94 36.83 0)
+		(effects
+			(font
+				(size 1.55 1.55)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a9e6207-bf6c-4205-99f7-1680fe25a8b4")
+	)
+	(text "One row and one value illuminate for two seconds after a change."
+		(at 20.32 29.21 0)
+		(effects
+			(font
+				(size 1.55 1.55)
+			)
+			(justify left bottom)
+		)
+		(uuid "397f41fb-f277-404f-bfab-84e11f93532b")
+	)
+	(text "MODE BUTTON"
+		(at 25.4 162.56 0)
+		(effects
+			(font
+				(size 1.55 1.55)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "40de1101-231b-4654-9c7b-4b82b99d1a32")
+	)
+	(text "VALUE BUTTON"
+		(at 160.02 116.84 0)
+		(effects
+			(font
+				(size 1.55 1.55)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "621372be-9b14-4d1f-939a-5d272da8ccff")
+	)
+	(text "ROW"
+		(at 25.4 36.83 0)
+		(effects
+			(font
+				(size 1.55 1.55)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e18877dd-68a1-4c6d-bdc7-b3176222246d")
+	)
+	(text "BUTTON AND INDICATORS"
+		(at 20.32 22.86 0)
+		(effects
+			(font
+				(size 3 3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2e4303b-6a9c-43e9-abc2-ec14217bbda9")
+	)
+	(text "D1–D9  WS2812B-2020-V6"
+		(at 151.13 29.21 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "884b5118-8875-41d5-b069-7c74ba9137a8")
+	)
+	(label "DO3"
+		(at 137.16 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "1b333f34-abc3-435d-a870-0d6ab3ff897d")
+		(uuid "ca8dd4e6-8af5-4b95-ba74-70f3c2e59c31")
+	)
+	(label "DO3"
+		(at 30.48 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "55a17ed2-c478-4bb9-8180-937db13992e7")
+	)
+	(label "DO6"
+		(at 137.16 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3290b813-4957-4215-b77f-5504a167461b")
+	)
+	(label "DO6"
+		(at 152.4 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c3813c43-3321-4a59-976e-7c376193281b")
 	)
 	(hierarchical_label "BUTTON_V"
 		(shape output)
@@ -1498,50 +1570,6 @@
 		)
 		(uuid "2a711d36-4ea0-4243-bc4e-d0c1a29f9f44")
 	)
-	(hierarchical_label "LED_AMP"
-		(shape input)
-		(at 60.96 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "479d1c4a-cd9b-49a2-a7ee-ada251ffc3f0")
-	)
-	(hierarchical_label "LED_DC"
-		(shape input)
-		(at 60.96 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "552343e7-25cc-46ab-ac15-4d804b6fc5cb")
-	)
-	(hierarchical_label "LED_1"
-		(shape input)
-		(at 190.5 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "81af1638-c856-449a-b328-96b2867e1bf8")
-	)
-	(hierarchical_label "LED_XY"
-		(shape input)
-		(at 60.96 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9e61829c-d355-4656-90db-2d0ee1eccd47")
-	)
 	(hierarchical_label "BUTTON_M"
 		(shape output)
 		(at 62.23 189.23 180)
@@ -1553,500 +1581,26 @@
 		)
 		(uuid "a92b9f60-bb34-40dd-8f23-37b5b44b7106")
 	)
-	(hierarchical_label "LED_TRIG"
+	(hierarchical_label "LED_DATA"
 		(shape input)
-		(at 60.96 148.59 180)
+		(at 30.48 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "adeef6e8-b0c1-4938-9e42-5d25218bb01c")
-	)
-	(hierarchical_label "LED_3"
-		(shape input)
-		(at 190.5 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "caacbbf8-1f3b-4a01-ac39-6c2ddbc41def")
-	)
-	(hierarchical_label "LED_FREQ"
-		(shape input)
-		(at 60.96 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "faead5a2-8595-4965-b4c9-bc40c5dcab5f")
-	)
-	(hierarchical_label "LED_2"
-		(shape input)
-		(at 190.5 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fd743054-8ef7-4162-bd6e-381ed6395918")
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 205.74 46.99 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d8456ef-8e38-4b9a-8ef9-638c229e17ee")
-		(property "Reference" "R21"
-			(at 205.74 41.91 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 205.74 44.45 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Value indicators"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 205.74 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "34c98839-ee1d-4258-a344-14339bd6bcee")
-		)
-		(pin "2"
-			(uuid "31f6e7fd-7260-4264-ab4a-af4d620a631d")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 87.63 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "220234c7-03ab-4f41-9661-8ab0a74cb540")
-		(property "Reference" "R17"
-			(at 76.2 82.55 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 76.2 85.09 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 76.2 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "822b0d5e-8964-4bb4-b61f-dfd4fad7d5e7")
-		)
-		(pin "2"
-			(uuid "34159ab9-e752-4e7a-b5a8-fcca9a079fdc")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 233.68 87.63 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33cf7875-5cc5-4090-8158-41300d0f5ebb")
-		(property "Reference" "D9"
-			(at 235.2675 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3"
-			(at 235.2675 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Value indicators"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 233.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9cab73af-7340-4c6b-9f4c-95c154c21719")
-		)
-		(pin "2"
-			(uuid "a2760ce9-9b96-4712-929c-2d3f77af9fae")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "eba64f3a-fa74-4204-8a57-f638f58a15b1")
 	)
 	(symbol
 		(lib_id "power:VDD")
 		(at 210.82 124.46 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "390d3cba-4c66-4843-834d-6d8df5c13b89")
 		(property "Reference" "#PWR029"
 			(at 210.82 128.27 0)
@@ -2103,6 +1657,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "d0ef1282-2d5f-4efb-a014-4babc3a7e7ae")
 		)
@@ -2116,906 +1672,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 233.68 46.99 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b88be2f-4840-44a9-8ad0-bd43d3dbb395")
-		(property "Reference" "D7"
-			(at 235.2675 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1"
-			(at 235.2675 43.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Value indicators"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 233.68 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4d1e58c0-8461-4342-b3fb-b4096b9ba417")
-		)
-		(pin "1"
-			(uuid "29946fc7-a114-4acd-b16d-c63d3e83eab1")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 46.99 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40ad5a10-6381-43f6-b2eb-d03b5e615268")
-		(property "Reference" "R15"
-			(at 76.2 41.91 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 76.2 44.45 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 76.2 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "fe74e9f0-2de6-40de-9601-16752c8a6a7e")
-		)
-		(pin "1"
-			(uuid "2c6d8092-5ac6-4075-b212-756c3900d01e")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 67.31 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5636055c-c3bc-49ec-b43c-49751a3cd400")
-		(property "Reference" "R16"
-			(at 76.2 62.23 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 76.2 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 76.2 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2f3956af-0ad2-4854-98b2-28aab99cd44e")
-		)
-		(pin "2"
-			(uuid "7c0d6df3-5921-4ee1-8539-50cdb9c7adc2")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 248.92 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57c41112-f029-48e9-9eb9-e9446b368c6e")
-		(property "Reference" "#PWR037"
-			(at 248.92 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 251.46 52.0699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0fdd0634-eec9-45c0-8424-7968138e6e26")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 233.68 67.31 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b70af91-1a1a-43fd-92c7-2b5b626b5f77")
-		(property "Reference" "D8"
-			(at 235.2675 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2"
-			(at 235.2675 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Value indicators"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6b084053-68d5-4364-a7c9-68979b86d337")
-		)
-		(pin "1"
-			(uuid "99da7f45-939c-4f25-b84d-7669f6446da1")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 119.38 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67656772-474b-418c-84c6-b0e99ba37fd7")
-		(property "Reference" "#PWR031"
-			(at 119.38 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 52.0699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "188cf4be-089e-4b3d-9969-9c17e867fd9c")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 148.59 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c4c4ed4-f690-458f-ad4d-b95df686d708")
-		(property "Reference" "R20"
-			(at 76.2 143.51 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 76.2 146.05 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 76.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6328d71d-cce6-41c6-936b-fcda04aeba06")
-		)
-		(pin "2"
-			(uuid "e1ca3129-3ac4-4209-95db-0dea73d5cb87")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 240.03 146.05 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "6e168f55-2967-447b-9277-86756661d137")
 		(property "Reference" "#PWR030"
 			(at 240.03 152.4 0)
@@ -3072,6 +1736,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "801a5f1c-1b25-4156-85ab-cbb4ef4ab7b0")
 		)
@@ -3085,389 +1751,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 67.31 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ff6c62f-f797-473f-b147-27768fde34f6")
-		(property "Reference" "D2"
-			(at 105.7275 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Amplitude"
-			(at 105.7275 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9f7bf922-1ece-4875-94af-fc5badc49cd4")
-		)
-		(pin "2"
-			(uuid "f624d0aa-6356-4a64-939d-7f7f970ada6a")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 248.92 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "756edb96-d481-42d8-8e4d-cfe8fd432e8d")
-		(property "Reference" "#PWR009"
-			(at 248.92 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 251.46 92.7099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8684afd-55eb-4970-b55a-d45c2de3c333")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR009")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 87.63 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f92d1ec-4137-4319-8902-1df664047edf")
-		(property "Reference" "D3"
-			(at 105.7275 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Frequency"
-			(at 105.7275 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7807885c-cff4-4a98-acd1-6ccaa76e9104")
-		)
-		(pin "2"
-			(uuid "381c286c-3329-4c83-95a7-5b32522b0471")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 76.2 170.18 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "870070fe-7082-4859-8938-de630171dff1")
 		(property "Reference" "#PWR010"
 			(at 76.2 173.99 0)
@@ -3524,6 +1815,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "2a07cb4f-46db-4209-b30b-87662b5b2ecb")
 		)
@@ -3540,13 +1833,11 @@
 		(lib_id "power:GND")
 		(at 105.41 191.77 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "874be4a3-3ba1-48c7-ad56-6279065cfccc")
 		(property "Reference" "#PWR011"
 			(at 105.41 198.12 0)
@@ -3603,6 +1894,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "206eac50-5e4f-4ab2-bf0c-234ca61cea6b")
 		)
@@ -3616,95 +1909,14 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 119.38 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88894c9e-8afd-45a5-a824-11e88bf1d56e")
-		(property "Reference" "#PWR033"
-			(at 119.38 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 92.7099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "97f8c80f-94e3-4aba-925d-f8ed2b565ed0")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 92.71 189.23 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "8bd34680-4a91-4d2e-9a25-a871dc9280e2")
 		(property "Reference" "SW2"
 			(at 92.71 181.61 0)
@@ -3825,6 +2037,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "26069d00-6da0-4df0-8fca-87bea5fad10a")
 		)
@@ -3841,174 +2055,14 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 119.38 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9f92c6f5-fde3-47b2-b902-30ef026ed731")
-		(property "Reference" "#PWR036"
-			(at 119.38 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 153.6699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d095a0f2-75ec-47f9-b0c6-2140bdeeb0d6")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 119.38 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6b50cde-14f4-4621-b420-7b10896badcf")
-		(property "Reference" "#PWR032"
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 72.3899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2a7928dd-6cce-4028-b47f-a37393bbe326")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 76.2 173.99 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "a7fce309-60ef-4cc7-992b-9e428a4aacb8")
 		(property "Reference" "R24"
 			(at 78.74 172.7199 0)
@@ -4131,6 +2185,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "aea4f3a6-4699-4dc0-b5fa-e2fe7f46d912")
 		)
@@ -4147,388 +2203,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 148.59 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a899a908-42d6-4b3c-8ca4-49fe4bf21d88")
-		(property "Reference" "D6"
-			(at 105.7275 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Trigger"
-			(at 105.7275 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 104.14 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a808f82a-49fe-4771-b6b9-fe63d0fe81f9")
-		)
-		(pin "1"
-			(uuid "eb5f2819-fc2d-478e-923d-80a20d021d78")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 119.38 132.08 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4ce5218-9195-4071-8648-d7c401e54cda")
-		(property "Reference" "#PWR035"
-			(at 119.38 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 133.3499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9f708e39-bf99-4cf2-92c8-461512f93a9a")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 107.95 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bab425e9-ff81-4a18-a5d3-c177b4c56340")
-		(property "Reference" "R18"
-			(at 76.2 102.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 76.2 105.41 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 76.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2892cd4d-646d-4a32-bbb5-b120dacadc12")
-		)
-		(pin "1"
-			(uuid "f8405841-8f5d-4bc9-bc88-fea8bb596730")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 227.33 143.51 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "c2339e3a-86f6-4de1-a57d-a09d0d1c6de1")
 		(property "Reference" "SW3"
 			(at 227.33 135.89 0)
@@ -4649,6 +2331,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "5b5fb753-7229-4ea2-813e-46160257d3a1")
 		)
@@ -4665,467 +2349,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 46.99 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c5943549-f564-4b7e-b959-328fa8b84299")
-		(property "Reference" "D1"
-			(at 105.7275 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Shape"
-			(at 105.7275 43.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Row indicators"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805G"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 104.14 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "95492654-be2d-4763-a71a-b2e5ff891293")
-		)
-		(pin "1"
-			(uuid "7078cb43-9645-47ec-986e-c149b212918f")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 248.92 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc57a713-2e33-4758-9118-33d490b4b390")
-		(property "Reference" "#PWR038"
-			(at 248.92 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 251.46 72.3899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1ff30d6-7867-4a18-815a-5f9f1ab934f1")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 205.74 87.63 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da79fd47-f659-405b-8880-2f0e8229ba0f")
-		(property "Reference" "R23"
-			(at 205.74 82.55 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 205.74 85.09 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Value indicators"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22843"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 205.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4303a5ef-3dbc-4718-8d17-5ac073dca3ce")
-		)
-		(pin "2"
-			(uuid "c335eb7a-68db-4d04-84e8-400e3444b588")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 119.38 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0492160-78d6-48c4-a885-ee66f8ea351e")
-		(property "Reference" "#PWR034"
-			(at 119.38 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 113.0299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8e31e266-fa36-40a7-832a-775e64b22818")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 210.82 128.27 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(fields_autoplaced)
 		(uuid "e4f9f131-8cda-4d78-a940-10880c9d6a44")
 		(property "Reference" "R26"
 			(at 213.36 126.9999 0)
@@ -5248,6 +2479,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "1b787c44-075e-43a3-852e-3217c498153d")
 		)
@@ -5264,434 +2497,620 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 128.27 90)
+		(lib_id "LED:WS2812B-2020")
+		(at 45.72 60.96 0)
 		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e849814b-d0c5-4129-b0ff-8c80caf87b4a")
-		(property "Reference" "R19"
-			(at 76.2 123.19 90)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "51f4f318-6a81-40b5-bd34-5586256e91ee")
+		(property "Reference" "D1"
+			(at 54.61 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right bottom)
 			)
 		)
-		(property "Value" "1.5k"
-			(at 76.2 125.73 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 128.27 0)
+		(property "Value" "WS2812B-2020-V6"
+			(at 46.99 66.675 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 76.2 128.27 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 76.2 128.27 0)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Group" "Row indicators"
-			(at 76.2 128.27 0)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C22843"
-			(at 76.2 128.27 0)
+		(property "Group" "Indicators"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 76.2 128.27 0)
+		(property "Indicator" "Shape"
+			(at 54.72 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 76.2 128.27 0)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 76.2 128.27 0)
+		(property "Manufacturer" "Worldsemi"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 76.2 128.27 0)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 45.72 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(pin "1"
-			(uuid "1f3ee736-b85a-4555-966c-38f5c5e9c194")
-		)
-		(pin "2"
-			(uuid "614b2721-5d2a-46c5-9f26-9bfbd6dc6052")
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 45.72 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R19")
+					(reference "D1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 205.74 67.31 90)
+		(lib_id "LED:WS2812B-2020")
+		(at 83.82 60.96 0)
 		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea41f01d-9e8c-4b06-8993-c047c7a2db74")
-		(property "Reference" "R22"
-			(at 205.74 62.23 90)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "e62a4748-a0f3-4324-b6e2-4e74f19efe48")
+		(property "Reference" "D2"
+			(at 92.71 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right bottom)
 			)
 		)
-		(property "Value" "1.5k"
-			(at 205.74 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 205.74 67.31 0)
+		(property "Value" "WS2812B-2020-V6"
+			(at 85.09 66.675 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
-			(at 205.74 67.31 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 205.74 67.31 0)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Group" "Value indicators"
-			(at 205.74 67.31 0)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C22843"
-			(at 205.74 67.31 0)
+		(property "Group" "Indicators"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "0603WAF1501T5E"
-			(at 205.74 67.31 0)
+		(property "Indicator" "Amplitude"
+			(at 92.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 205.74 67.31 0)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
-			(at 205.74 67.31 0)
+		(property "Manufacturer" "Worldsemi"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
-			(at 205.74 67.31 0)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 83.82 60.96 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(pin "1"
-			(uuid "7dd8d033-f62d-4020-9662-9e36100ca9f8")
-		)
-		(pin "2"
-			(uuid "01f42d91-6b12-4a8e-96c0-c9a160cd07c5")
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 83.82 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "R22")
+					(reference "D2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 128.27 0)
-		(mirror y)
+		(lib_id "LED:WS2812B-2020")
+		(at 121.92 60.96 0)
 		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe82bb3e-8263-4418-a3da-1eb51f02126d")
+		(uuid "a6e914e8-7174-42f5-9d1f-5a25c4f4714a")
+		(property "Reference" "D3"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "WS2812B-2020-V6"
+			(at 123.19 66.675 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Indicators"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indicator" "Frequency"
+			(at 130.92 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B-2020")
+		(at 45.72 102.87 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78b6d239-04e5-4cbe-bac2-6231fd2bba5c")
+		(property "Reference" "D4"
+			(at 54.61 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "WS2812B-2020-V6"
+			(at 46.99 108.585 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Indicators"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indicator" "DC"
+			(at 54.72 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B-2020")
+		(at 83.82 102.87 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84c5cbc2-c32f-4c52-b2b4-5ff386534be6")
 		(property "Reference" "D5"
-			(at 105.7275 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
+			(at 92.71 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right bottom)
 			)
 		)
-		(property "Value" "XY phase"
-			(at 105.7275 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 104.14 128.27 0)
+		(property "Value" "WS2812B-2020-V6"
+			(at 85.09 108.585 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 104.14 128.27 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 104.14 128.27 0)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Group" "Row indicators"
-			(at 104.14 128.27 0)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2297"
-			(at 104.14 128.27 0)
+		(property "Group" "Indicators"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "KT-0805G"
-			(at 104.14 128.27 0)
+		(property "Indicator" "XY phase"
+			(at 92.82 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 104.14 128.27 0)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 104.14 128.27 0)
+		(property "Manufacturer" "Worldsemi"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 104.14 128.27 0)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 83.82 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(pin "1"
-			(uuid "0231b806-4111-4990-9c66-3d58c9a4b4d3")
-		)
-		(pin "2"
-			(uuid "1e8133ea-b599-462e-800e-af591d848599")
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 83.82 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
@@ -5703,147 +3122,1598 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 107.95 0)
-		(mirror y)
+		(lib_id "LED:WS2812B-2020")
+		(at 121.92 102.87 0)
 		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fec53b78-5527-4e97-ac37-17b4abd1fe97")
-		(property "Reference" "D4"
-			(at 105.7275 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "7b257a74-5c5a-4b30-bb58-7e2a04cac691")
+		(property "Reference" "D6"
+			(at 130.81 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right bottom)
 			)
 		)
-		(property "Value" "DC"
-			(at 105.7275 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 104.14 107.95 0)
+		(property "Value" "WS2812B-2020-V6"
+			(at 123.19 108.585 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
-			(at 104.14 107.95 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "Emerald green indicator LED, 0805"
-			(at 104.14 107.95 0)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Group" "Row indicators"
-			(at 104.14 107.95 0)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2297"
-			(at 104.14 107.95 0)
+		(property "Group" "Indicators"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "KT-0805G"
-			(at 104.14 107.95 0)
+		(property "Indicator" "Trigger"
+			(at 130.92 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
-			(at 104.14 107.95 0)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
-			(at 104.14 107.95 0)
+		(property "Manufacturer" "Worldsemi"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
-			(at 104.14 107.95 0)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 121.92 102.87 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(pin "1"
-			(uuid "94b420f7-6a66-48e5-b104-33fd10a4946c")
-		)
-		(pin "2"
-			(uuid "dc945bd4-6cda-48b3-8999-289e6f91bc24")
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 121.92 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
-					(reference "D4")
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B-2020")
+		(at 167.64 60.96 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a141d55-7c91-4979-a666-81ec9346a8cb")
+		(property "Reference" "D7"
+			(at 176.53 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "WS2812B-2020-V6"
+			(at 168.91 66.675 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Indicators"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indicator" "Value 1"
+			(at 176.64 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B-2020")
+		(at 205.74 60.96 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76baa533-433e-4166-9eb9-f3eb37450387")
+		(property "Reference" "D8"
+			(at 214.63 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "WS2812B-2020-V6"
+			(at 207.01 66.675 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Indicators"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indicator" "Value 2"
+			(at 214.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B-2020")
+		(at 243.84 60.96 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7619b30a-4450-462e-878b-b19ad0a4da91")
+		(property "Reference" "D9"
+			(at 252.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "WS2812B-2020-V6"
+			(at 245.11 66.675 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-2020-v6-1.0.pdf"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Indicators"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indicator" "Value 3"
+			(at 252.84 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52917434"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812B-2020-V6"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=WS2812B-2020-V6"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 45.72 53.34 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5855c0f0-e588-456b-b391-3d5b2908a0eb")
+		(property "Reference" "#PWR900"
+			(at 45.72 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 45.72 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 45.72 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR900")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25081a02-cc4c-4fd9-b109-c8e13b69ee27")
+		(property "Reference" "#PWR901"
+			(at 45.72 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 83.82 53.34 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b37bd72d-2707-4407-a628-4266565b1e87")
+		(property "Reference" "#PWR902"
+			(at 83.82 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 83.82 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 83.82 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42a3d20f-5c46-4339-8ae6-6b3b7c7eb308")
+		(property "Reference" "#PWR903"
+			(at 83.82 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 121.92 53.34 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23f4567a-0047-43ef-898d-3e4f3e1835a1")
+		(property "Reference" "#PWR904"
+			(at 121.92 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 121.92 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 121.92 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27f2e44f-8a5d-4c0e-89ae-51d861396423")
+		(property "Reference" "#PWR905"
+			(at 121.92 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 45.72 95.25 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb1240c6-da23-4e48-8fc2-2f0d9ce94eb7")
+		(property "Reference" "#PWR906"
+			(at 45.72 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 45.72 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 45.72 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR906")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76d9d31f-d554-4bc0-822a-b60813cffc2d")
+		(property "Reference" "#PWR907"
+			(at 45.72 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR907")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 83.82 95.25 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f7f42d4-bf3d-4f39-a1a2-8a60e7f88dbe")
+		(property "Reference" "#PWR908"
+			(at 83.82 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 83.82 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 83.82 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR908")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa164329-d245-4fe2-b807-ab22b9fddca9")
+		(property "Reference" "#PWR909"
+			(at 83.82 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 121.92 95.25 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f553d98-0e1f-4f04-95e3-0a22b4eae7e3")
+		(property "Reference" "#PWR910"
+			(at 121.92 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 121.92 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 121.92 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR910")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53c1494d-e685-4832-83aa-ecb6efe4fde3")
+		(property "Reference" "#PWR911"
+			(at 121.92 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR911")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 167.64 53.34 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19bfb822-7867-4870-9b16-1ba90c59d25b")
+		(property "Reference" "#PWR912"
+			(at 167.64 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 167.64 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 167.64 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR912")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 167.64 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a21d330d-000b-4467-b3a7-8cb900b24ddf")
+		(property "Reference" "#PWR913"
+			(at 167.64 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR913")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 205.74 53.34 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd600924-a3ee-4e14-b454-fbc0c2452c90")
+		(property "Reference" "#PWR914"
+			(at 205.74 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 205.74 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 205.74 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR914")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "373ca93e-fb27-452d-9f51-daa93a07fa79")
+		(property "Reference" "#PWR915"
+			(at 205.74 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR915")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 243.84 53.34 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49b1ab16-eade-480b-a0c7-3678432d5ae1")
+		(property "Reference" "#PWR916"
+			(at 243.84 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 243.84 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 243.84 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR916")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 243.84 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ebb1d4e9-fb3c-4cde-8dfb-c06e1f4ffc3a")
+		(property "Reference" "#PWR917"
+			(at 243.84 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 243.84 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/33f655f7-ca2c-480f-9fc6-e4fac6112077"
+					(reference "#PWR917")
 					(unit 1)
 				)
 			)
