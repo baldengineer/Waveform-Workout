@@ -2,6 +2,8 @@
 
 Commit completed, verified changes to this project automatically. Keep each commit scoped to the task.
 
+Do not generate schematic or PCB PDFs automatically. Generate them only when explicitly requested.
+
 ## Schematic part numbers
 
 Maintain each catalog link independently when assigning or updating schematic part numbers. Keep both link fields hidden on the drawing.
