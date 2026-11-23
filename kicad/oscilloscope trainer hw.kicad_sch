@@ -4966,7 +4966,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_3V3"
+		(property "Value" "VDD"
 			(at 118.11 153.924 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6759,7 +6759,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_3V3"
+		(property "Value" "VDD"
 			(at 106.68 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
