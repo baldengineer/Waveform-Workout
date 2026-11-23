@@ -5784,7 +5784,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5b3aae1e7925073bc9bd92db48d7aba2.pdf?productCode=C128624"
 			(at 118.11 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5817,7 +5817,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C128624"
 			(at 118.11 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5828,7 +5828,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A105KB8NNNC"
+		(property "MPN" "CC0603KRX5R9BB105"
 			(at 118.11 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5839,7 +5839,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "YAGEO"
 			(at 118.11 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5850,7 +5850,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL10A105KB8NNNC"
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX5R9BB105"
 			(at 118.11 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5861,7 +5861,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C15849.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C128624.html"
 			(at 118.11 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5932,7 +5932,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C98220"
 			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5965,7 +5965,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C98220"
 			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5976,7 +5976,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1002T5E"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5987,7 +5987,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "YAGEO"
 			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5998,7 +5998,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1002T5E"
+		(property "Octo_Link" "https://octopart.com/search?q=RC0603FR-0710KL"
 			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6009,7 +6009,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C98220.html"
 			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -7084,7 +7084,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5b3aae1e7925073bc9bd92db48d7aba2.pdf?productCode=C128624"
 			(at 106.68 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7117,7 +7117,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C128624"
 			(at 106.68 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7128,7 +7128,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A105KB8NNNC"
+		(property "MPN" "CC0603KRX5R9BB105"
 			(at 106.68 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7139,7 +7139,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "YAGEO"
 			(at 106.68 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7150,7 +7150,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL10A105KB8NNNC"
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX5R9BB105"
 			(at 106.68 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7161,7 +7161,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C15849.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C128624.html"
 			(at 106.68 165.1 0)
 			(hide yes)
 			(show_name no)

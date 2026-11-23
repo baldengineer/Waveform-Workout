@@ -1,6 +1,6 @@
 # Trainer test points
 
-TP1–TP4 are bare PCB features. Fit a Harwin S1751-46 surface-mount probe loop at each of TP5–TP25 on the default build (21 loops total). [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+TP1–TP4 are bare PCB features. Fit a Harwin S1751-46 surface-mount probe loop at each of TP5–TP26 on the default build (22 loops total). [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
 
 ## Power on the PP3 schematic
 
@@ -12,7 +12,7 @@ Each rail measurement has a dedicated board-ground point. TP1 and TP2 are the or
 | TP7 | TP8 | System VDD on the load side of JP1 |
 | TP9 | TP10 | Alkaline PP3 positive terminal and battery throw of SW1 |
 | TP11 | TP12 | Selected input at SW1 common, before protection diode D11 |
-| TP1 | TP13 | U7 regulated output, source side of JP1 (3.447 V nominal) |
+| TP1 or TP26 | TP13 | U7 regulated output, source side of JP1 (3.447 V nominal) |
 | TP2 | TP14 | Board load voltage after JP1 or the optional R4 shunt |
 
 On either power source, an ammeter in place of JP1 reads the board load. The regulator and its feedback divider draw current upstream of JP1. To measure battery current including that overhead, remove the PP3 and supply J5 from an SMU with BAT selected. For a shunt measurement, fit R4 and remove the JP1 short. At 10 mA, the 10 Ω shunt drops 100 mV between TP1 and TP2. [TPS7A24 datasheet](https://www.ti.com/lit/ds/symlink/tps7a24.pdf)

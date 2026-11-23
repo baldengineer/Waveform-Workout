@@ -8099,7 +8099,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5b3aae1e7925073bc9bd92db48d7aba2.pdf?productCode=C128624"
 			(at 109.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8132,7 +8132,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C128624"
 			(at 109.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8143,7 +8143,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A105KB8NNNC"
+		(property "MPN" "CC0603KRX5R9BB105"
 			(at 109.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8154,7 +8154,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "YAGEO"
 			(at 109.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8165,7 +8165,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL10A105KB8NNNC"
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX5R9BB105"
 			(at 109.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8176,7 +8176,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C15849.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C128624.html"
 			(at 109.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8474,7 +8474,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5b3aae1e7925073bc9bd92db48d7aba2.pdf?productCode=C128624"
 			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8507,7 +8507,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C128624"
 			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8518,7 +8518,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A105KB8NNNC"
+		(property "MPN" "CC0603KRX5R9BB105"
 			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8529,7 +8529,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "YAGEO"
 			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8540,7 +8540,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL10A105KB8NNNC"
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX5R9BB105"
 			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8551,7 +8551,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C15849.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C128624.html"
 			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10324,7 +10324,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5b3aae1e7925073bc9bd92db48d7aba2.pdf?productCode=C128624"
 			(at 182.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -10357,7 +10357,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C128624"
 			(at 182.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -10368,7 +10368,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A105KB8NNNC"
+		(property "MPN" "CC0603KRX5R9BB105"
 			(at 182.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -10379,7 +10379,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "YAGEO"
 			(at 182.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -10390,7 +10390,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL10A105KB8NNNC"
+		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX5R9BB105"
 			(at 182.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -10401,7 +10401,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C15849.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C128624.html"
 			(at 182.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -11841,7 +11841,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C98220"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11874,7 +11874,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C98220"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11885,7 +11885,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1002T5E"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11896,7 +11896,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "YAGEO"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11907,7 +11907,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1002T5E"
+		(property "Octo_Link" "https://octopart.com/search?q=RC0603FR-0710KL"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11918,7 +11918,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C98220.html"
 			(at 224.79 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12280,7 +12280,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k 0.1%"
+		(property "Value" "100k"
 			(at 166.37 163.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12302,7 +12302,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
 			(at 163.83 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12335,7 +12335,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C122538"
+		(property "LCSC" "C25803"
 			(at 163.83 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12346,7 +12346,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD07100KL"
+		(property "MPN" "0603WAF1003T5E"
 			(at 163.83 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12357,7 +12357,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 163.83 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12368,7 +12368,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=RT0603BRD07100KL"
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1003T5E"
 			(at 163.83 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12379,7 +12379,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C122538.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C25803.html"
 			(at 163.83 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -15727,7 +15727,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/ec3e308e963624b453a77b63220f4bbf.pdf?productCode=C2441185"
 			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15760,7 +15760,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C860155"
+		(property "LCSC" "C2441185"
 			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15771,7 +15771,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRB07178KL"
+		(property "MPN" "ARG03BTC1783"
 			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15782,7 +15782,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "Viking"
 			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15793,7 +15793,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=RT0603BRB07178KL"
+		(property "Octo_Link" "https://octopart.com/search?q=ARG03BTC1783"
 			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15804,7 +15804,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C860155.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2441185.html"
 			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
