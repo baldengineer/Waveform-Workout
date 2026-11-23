@@ -1,0 +1,85 @@
+name: PCB PDF
+
+on:
+  push:
+    branches: ['**']
+    paths:
+      - '**/*.kicad_pcb'
+      - 'scripts/plot_pcb.py'
+      - '.github/workflows/pcb-pdf.yml'
+  pull_request:
+    paths:
+      - '**/*.kicad_pcb'
+      - 'scripts/plot_pcb.py'
+      - '.github/workflows/pcb-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  PDF_NAME: Waveform Workout PCB.pdf
+
+jobs:
+  plot:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install KiCad 10
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get install --yes --no-install-recommends kicad python3-pypdf python3-reportlab poppler-utils
+
+      - name: Plot PCB layer views and check the PDF
+        run: |
+          /usr/bin/python3 scripts/plot_pcb.py "kicad/oscilloscope trainer hw.kicad_pcb" "$RUNNER_TEMP/$PDF_NAME"
+          pdfinfo "$RUNNER_TEMP/$PDF_NAME"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: pcb-pdf
+          path: ${{ runner.temp }}/${{ env.PDF_NAME }}
+          if-no-files-found: error
+
+  publish:
+    needs: plot
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: pcb-pdf
+          path: ${{ runner.temp }}/plot
+
+      - name: Commit the PDF to main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          # Build on the current tip so unrelated pushes during export are preserved.
+          for attempt in 1 2 3; do
+            git fetch --depth=1 origin refs/heads/main
+            git checkout --detach FETCH_HEAD
+            if ! git diff --quiet "$GITHUB_SHA" HEAD -- '*.kicad_pcb' scripts/plot_pcb.py .github/workflows/pcb-pdf.yml; then
+              echo "A later PCB plot revision has its own plot run."
+              exit 0
+            fi
+
+            cp "$RUNNER_TEMP/plot/$PDF_NAME" "kicad/$PDF_NAME"
+            git add -- "kicad/$PDF_NAME"
+            if git diff --cached --quiet; then
+              echo "The tracked PDF is already current."
+              exit 0
+            fi
+            git commit -m "Regenerate PCB PDF for ${GITHUB_SHA:0:7}"
+            if git push origin HEAD:refs/heads/main; then
+              exit 0
+            fi
+          done
+          exit 1
