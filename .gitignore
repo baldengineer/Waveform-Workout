@@ -4,6 +4,9 @@
 # Mock-up images
 /renders/
 
+# Local component STEP models
+/kicad/step_models/
+
 # User-specific KiCad settings and caches
 *.kicad_prl
 fp-info-cache

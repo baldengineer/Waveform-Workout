@@ -293,6 +293,17 @@
 			(uuid "eef66607-2e42-4ea4-944a-5e180003102f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
@@ -511,6 +522,17 @@
 			(uuid "44b4de93-cb83-47f5-9f48-5ffd76e22f66")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -1067,6 +1089,17 @@
 			(uuid "605fff47-fb13-43ce-bbc2-ae9dc73a51ef")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Package_SO:TSSOP-10_3x3mm_P0.5mm"
 		(layer "F.Cu")
@@ -1934,7 +1967,7 @@
 			(uuid "bfc0dc50-4b2f-4a7c-b102-5dca1c876ea4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3037,7 +3070,7 @@
 			(uuid "8020e257-bbaf-4561-a405-c81c569fa665")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3429,7 +3462,7 @@
 			(uuid "fcb41f11-750c-43e4-8cbd-2d3aaf43509f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3821,7 +3854,7 @@
 			(uuid "ba9353f5-fc1d-44c8-8583-ab719cff48a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4647,6 +4680,17 @@
 			(uuid "3fd2976b-daa7-44bb-92fa-7827fa3901a0")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -5805,6 +5849,17 @@
 			(uuid "c4807cd4-ab46-44ba-b196-10ebbf2d03ce")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
@@ -6423,7 +6478,7 @@
 			(uuid "06967ba5-0842-42c3-8de0-a527f81b63fb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6815,7 +6870,7 @@
 			(uuid "89ea8263-0378-4a1f-a64c-9193ea2e0f53")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8646,7 +8701,7 @@
 			(uuid "cde44b56-72c5-4b3f-8169-6a7ad48d926c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9539,6 +9594,17 @@
 			(uuid "7dcd2dca-5a98-41f0-a79d-5bb0897bee21")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
@@ -9744,6 +9810,17 @@
 			(uuid "29203aec-a191-4262-865d-b8dc63ff67ee")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
@@ -9949,6 +10026,17 @@
 			(uuid "bc821f7e-8c90-4eea-8c26-214661390f2f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
@@ -10154,6 +10242,17 @@
 			(uuid "931115f4-5798-4e1d-b795-506ab9da61a8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
@@ -12042,6 +12141,17 @@
 			(uuid "ad68abae-fa31-4598-a144-ae56306a79c0")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
@@ -12260,6 +12370,17 @@
 			(uuid "083d80a5-4154-4973-becd-570c373f6aae")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -14610,6 +14731,17 @@
 			(uuid "8665c69b-c94d-486a-bbbe-052155fb3fc9")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/CSS-1210TB.step"
+			(offset
+				(xyz 0 -0.4 1.8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
@@ -15849,6 +15981,17 @@
 			(uuid "ea895cf8-2ee6-425e-93d0-d1e055526ef4")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -16310,6 +16453,17 @@
 			(uuid "c68e6903-d298-4422-a9a8-7e85d4c38be7")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-5"
 		(layer "F.Cu")
@@ -17474,6 +17628,17 @@
 			(uuid "06a52b20-32c3-4a7f-bcb3-91a086cf3ac3")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 		(layer "F.Cu")
@@ -18202,6 +18367,17 @@
 			(uuid "30e4a2cf-872d-40a4-8a91-9ec48c4b44c5")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -18820,7 +18996,7 @@
 			(uuid "5713a47d-4dfe-4e93-8ed3-a38ae5c6398a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19033,7 +19209,7 @@
 			(uuid "4d89d97d-3d71-4ae1-9385-24bfc8eb7f3a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/balde/Dropbox/KiCad/Downloaded Libraries/s1751-46.stp"
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
 			(offset
 				(xyz 0 0.825 2)
 			)
@@ -19262,6 +19438,17 @@
 			(uuid "1fc394f0-e867-47fd-9cd1-eecb59a4d5f8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Trainer:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 		(layer "F.Cu")
@@ -19643,7 +19830,7 @@
 			(uuid "c0c3ffd3-f596-4bb1-ae89-69be10d02632")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.step"
+		(model "${KIPRJMOD}/step_models/WS2812B-2020-V6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19859,6 +20046,17 @@
 			(uuid "15e55f69-2bb3-44a8-8c13-492a7f5ccf54")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -21028,6 +21226,17 @@
 			(uuid "a69ae7f1-647f-4af5-9bcd-8cdcbaefc7fc")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/USB4105.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
 		(layer "F.Cu")
@@ -21783,6 +21992,17 @@
 			(uuid "6e7ac9b1-2106-4822-b138-ce8229859366")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm"
 		(layer "F.Cu")
@@ -23214,6 +23434,17 @@
 			(uuid "1083b567-4e4e-4d67-82a0-6d2f2f09cdfb")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
@@ -23406,6 +23637,17 @@
 			(uuid "a5d98421-b2aa-4695-9632-834c074ab8df")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -24635,6 +24877,17 @@
 			(uuid "55a0c391-050b-4270-8558-b94d7e204313")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
+			(offset
+				(xyz 0 0.825 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 		(layer "F.Cu")
@@ -25176,6 +25429,17 @@
 			(uuid "274b7651-52c0-4ab4-83fc-e34c43912e54")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/KH-BNC50-3511.step"
+			(offset
+				(xyz 0 15.8 0.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Trainer:BatteryHolder_Keystone_1290-79_1xPP3_Adhesive_Wire"
 		(layer "B.Cu")
@@ -25449,6 +25713,17 @@
 			(uuid "a6d155e8-2ac9-4e66-95b4-79a30af4c816")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Keystone_1290-79_drawing-based.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(gr_rect
 		(start 93.115 88.775)
