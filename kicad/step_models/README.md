@@ -10,4 +10,4 @@ To restore the other models after cloning, download each file into this folder a
 | J2 | Kinghelm KH-BNC50-3511 BNC jack | `KH-BNC50-3511.step` | [EasyEDA model](https://modules.easyeda.com/qAxj6KHrDKw4blvCG8QJPs7Y/0dcde789bcd54cae9917a7278df9ba96) |
 | SW1 | Nidec CSS-1210TB slide switch | `CSS-1210TB.step` | [EasyEDA model](https://modules.easyeda.com/qAxj6KHrDKw4blvCG8QJPs7Y/e6870ee571e74bea9c692e16cd3450b2) |
 | D1–D9 | Worldsemi WS2812B-2020-V6 RGB LED | `WS2812B-2020-V6.step` | [EasyEDA package model](https://modules.easyeda.com/qAxj6KHrDKw4blvCG8QJPs7Y/79fb709ea16a48209cb9819d55740b7e) |
-| TP5–TP26 | Harwin S1751-46 SMT test point | `Harwin_S1751-46.step` | [Harwin model mirrored by the LWA project](https://raw.githubusercontent.com/lwa-project/front_end/e429f8fa02577258fa76e683ea872ce53ddebf53/LWA%20Balun%202020/3D%20Models/s1751-46r.stp) |
+| TP5–TP12, TP15–TP26 | Harwin S1751-46 SMT test point | `Harwin_S1751-46.step` | [Harwin model mirrored by the LWA project](https://raw.githubusercontent.com/lwa-project/front_end/e429f8fa02577258fa76e683ea872ce53ddebf53/LWA%20Balun%202020/3D%20Models/s1751-46r.stp) |

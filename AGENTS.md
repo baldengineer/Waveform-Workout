@@ -22,6 +22,7 @@ Maintain each catalog link independently when assigning or updating schematic pa
 
 - Make GND labels with editable KiCad silkscreen text and enable the native Knockout flag. Mirror back-side labels so they read from the solder side.
 - Leave Knockout off for reference designators by default.
+- Use Knockout for LED and pushbutton function labels on this trainer. Hide test-point reference designators and keep their signal labels visible.
 
 ## PCB routing
 
