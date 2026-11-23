@@ -38,6 +38,20 @@ These estimates use an ideal DAC hold, a low-impedance source, 75 pF total at th
 4. **Locate any loss or distortion.** Compare the DAC pin, TLV9002 input, TP22/TP23 and the connectors at the same code amplitude. Use a low-capacitance active probe for the input measurement and repeat the output capture with it removed. Record the A-to-B amplitude and phase difference with both channels playing the same table. Inspect both outputs for ringing during amplitude changes. Compare against a 10 kHz sine and check DC presets after the filter has settled. [Board test points](Test%20points.md)
 5. **Repeat at operating voltage.** Test on USB power and at the 3.0 V and 2.0 V loaded battery-input test points. Record battery-terminal operating current with LEDs off and the debugger detached. Measure the DAC supply at the MCU's VDDA bypass capacitor. On the boost-equipped board, TP2 measures the converter input. Repeat the 250 kHz measurement on both channels at each supply condition. [Board rail measurements](Test%20points.md)
 
+### Compare the 250 kHz simulation with oscilloscope captures
+
+1. Before trimming the tank capacitor or calibrating the output amplitude, fit the nominal 47 pF tank capacitor and run the model’s repeating DAC codes **1457, 1457, 324, 324** at **1 MSample/s**. Measure VDDA and record the total resistance and capacitance at the connector, including the probe and cable. The reference run uses 3.45 V and a 1 MΩ load in parallel with 100 pF. Record any differences so the comparison can be repeated under the measured conditions. [Reference waveform and spectrum](../report/250khz-connector.png) · [Simulation model](../report/simulate_250khz.py)
+2. Capture the DAC pin and its loaded connector simultaneously for each channel using the acquisition settings in step 3. Export the DC-coupled sample records. Set time zero at the rising DAC transition, using the midpoint between the low and high levels. Overlay three periods (12 µs) of the measured and simulated traces on the same voltage and time scales. Keep the connector trace aligned to the DAC trigger so the overlay preserves filter delay, gain error and DC offset.
+3. Use the full record to calculate the mean, trace Vpp, fundamental Vpp and image levels. Reference each spectrum to its own 250 kHz fundamental. Enter measured minus simulated for each row below, in mV for voltages and dB for spectral levels. If an image falls below the scope’s noise floor, record an upper bound. Save the raw records, waveform overlay and spectrum with the board revision, channel and load. Record any post-calibration run separately. Apply the first-build acceptance limits in **Decision and results**.
+
+| Connector measurement | Nominal simulation | A measured / difference | B measured / difference |
+| --- | ---: | --- | --- |
+| DC mean | 0.7500 V | | |
+| Time-domain peak-to-peak | 0.9785 Vpp | | |
+| 250 kHz fundamental | 0.9999 Vpp | | |
+| 750 kHz image | −41.2 dBc | | |
+| 1.25 MHz image | −33.5 dBc | | |
+
 ### Voltage window during startup and LED brightness changes
 
 Use the calibrated low and high DAC levels from step 2 (nominally 0.27 V and 1.23 V) as the reference for each channel. Capture VDDA, the DAC pin and its loaded connector simultaneously with DC coupling and pretrigger history. Repeat for A and B. Check the buffered DAC’s operating headroom during playback against the instantaneous limits of 0.20 V and VDDA − 0.20 V. [STM32 DAC output swing, Table 67](https://www.st.com/resource/en/datasheet/stm32l072cb.pdf#page=107)
