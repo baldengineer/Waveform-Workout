@@ -8711,6 +8711,17 @@
 				)
 			)
 		)
+		(property "Function" "USB PWR"
+			(at 123.19 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b3f3f669-9804-4a0f-be14-9bf4b7ed0bbc")
 		)

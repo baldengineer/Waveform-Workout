@@ -2874,6 +2874,17 @@
 				)
 			)
 		)
+		(property "Function" "SHAPE"
+			(at 45.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4d66856e-0454-45bc-baa5-d5c4ed446b4f")
 		)
@@ -3182,6 +3193,17 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "VAL 1"
 			(at 167.64 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3583,6 +3605,17 @@
 				)
 			)
 		)
+		(property "Function" "VAL 3"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "33ed6ca7-83cf-4e4f-896f-df5c88e113ee")
 		)
@@ -3737,6 +3770,17 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "VAL 2"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3988,6 +4032,17 @@
 				)
 			)
 		)
+		(property "Function" "DC"
+			(at 45.72 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7cfc3f46-1f4b-4732-a44a-c59aeb0a3084")
 		)
@@ -4152,6 +4207,17 @@
 				)
 			)
 		)
+		(property "Function" "TRIG"
+			(at 121.92 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "c34e6b3d-e0cb-420b-96a7-8d6afa2c8b4b")
 		)
@@ -4306,6 +4372,17 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 83.82 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "XY"
 			(at 83.82 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4849,6 +4926,17 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "FREQ"
 			(at 121.92 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -5467,6 +5555,17 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C52917434.html"
+			(at 83.82 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "AMP"
 			(at 83.82 60.96 0)
 			(hide yes)
 			(show_name no)
