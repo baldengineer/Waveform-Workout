@@ -3981,6 +3981,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C4382"
+			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F5601T5E"
+			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=0805W8F5601T5E"
+			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C4382.html"
+			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "33db7d61-d05a-47b7-8978-f5a2765afadf")
 		)
@@ -3995,52 +4050,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C4382"
-			(at 30.48 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805W8F5601T5E"
-			(at 30.48 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 30.48 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0805W8F5601T5E"
-			(at 30.48 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C4382.html"
-			(at 30.48 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 39.37 64.77 0)
@@ -4118,6 +4128,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C1804"
+			(at 39.37 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21C220JBANNNC"
+			(at 39.37 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 39.37 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=CL21C220JBANNNC"
+			(at 39.37 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1804.html"
+			(at 39.37 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5bdde3d2-bbf1-4622-97e5-8e45538cdc38")
 		)
@@ -4132,52 +4197,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1804"
-			(at 39.37 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21C220JBANNNC"
-			(at 39.37 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 39.37 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL21C220JBANNNC"
-			(at 39.37 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1804.html"
-			(at 39.37 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 209.55 68.58 0)
@@ -4798,6 +4818,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C14857"
+			(at 52.07 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21C470JBANNNC"
+			(at 52.07 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 52.07 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=CL21C470JBANNNC"
+			(at 52.07 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14857.html"
+			(at 52.07 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8856f974-f5af-4827-a6a7-20812a70fc49")
 		)
@@ -4812,52 +4887,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C14857"
-			(at 52.07 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21C470JBANNNC"
-			(at 52.07 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 52.07 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL21C470JBANNNC"
-			(at 52.07 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14857.html"
-			(at 52.07 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 142.24 120.65 0)
@@ -5926,6 +5956,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C4382"
+			(at 30.48 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F5601T5E"
+			(at 30.48 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 30.48 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=0805W8F5601T5E"
+			(at 30.48 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C4382.html"
+			(at 30.48 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1b6e994d-b0f5-43fc-a075-70f53387944a")
 		)
@@ -5940,52 +6025,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C4382"
-			(at 30.48 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805W8F5601T5E"
-			(at 30.48 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 30.48 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0805W8F5601T5E"
-			(at 30.48 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C4382.html"
-			(at 30.48 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 118.11 195.58 0)
@@ -6928,7 +6968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b458e4c7-e500-4155-ac0e-2f637bc31f27")
-		(property "Reference" "L3"
+		(property "Reference" "L2"
 			(at 52.07 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7023,7 +7063,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "L3")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -7212,7 +7252,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b92e827b-512c-45d7-987e-ab1423f7cbca")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 52.07 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7307,7 +7347,7 @@
 		(instances
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/fc722937-2062-4585-929f-9dafa86e1dc5"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -7537,6 +7577,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C14857"
+			(at 52.07 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21C470JBANNNC"
+			(at 52.07 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 52.07 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=CL21C470JBANNNC"
+			(at 52.07 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14857.html"
+			(at 52.07 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fe7711f3-9b52-4f18-a87b-4c52cfe3f36b")
 		)
@@ -7551,52 +7646,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C14857"
-			(at 52.07 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21C470JBANNNC"
-			(at 52.07 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 52.07 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL21C470JBANNNC"
-			(at 52.07 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14857.html"
-			(at 52.07 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 66.04 119.38 0)
@@ -7674,6 +7724,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C1834"
+			(at 66.04 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805CG680J500NT"
+			(at 66.04 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH"
+			(at 66.04 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=0805CG680J500NT"
+			(at 66.04 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1834.html"
+			(at 66.04 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "69a9aafd-b351-48a5-917e-e37935904dbe")
 		)
@@ -7688,52 +7793,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1834"
-			(at 66.04 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805CG680J500NT"
-			(at 66.04 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH"
-			(at 66.04 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0805CG680J500NT"
-			(at 66.04 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1834.html"
-			(at 66.04 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 220.98 123.19 0)
@@ -7891,6 +7951,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C1804"
+			(at 39.37 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21C220JBANNNC"
+			(at 39.37 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 39.37 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=CL21C220JBANNNC"
+			(at 39.37 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1804.html"
+			(at 39.37 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "194b39a4-04a0-457f-8ee5-a42f47737cfd")
 		)
@@ -7905,52 +8020,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1804"
-			(at 39.37 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21C220JBANNNC"
-			(at 39.37 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 39.37 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL21C220JBANNNC"
-			(at 39.37 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1804.html"
-			(at 39.37 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 135.89 67.31 0)
@@ -8821,6 +8891,61 @@
 				)
 			)
 		)
+		(property "LCSC" "C1834"
+			(at 66.04 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805CG680J500NT"
+			(at 66.04 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH"
+			(at 66.04 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=0805CG680J500NT"
+			(at 66.04 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1834.html"
+			(at 66.04 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fb55f5ee-8362-42dc-923c-6707568db8ac")
 		)
@@ -8835,52 +8960,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1834"
-			(at 66.04 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805CG680J500NT"
-			(at 66.04 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH"
-			(at 66.04 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0805CG680J500NT"
-			(at 66.04 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C1834.html"
-			(at 66.04 64.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 133.35 85.09 0)
