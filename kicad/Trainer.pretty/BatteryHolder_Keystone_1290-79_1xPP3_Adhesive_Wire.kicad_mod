@@ -15,4 +15,8 @@
   (fp_line (start -21.925 -12.5) (end -20.135 -14.29) (stroke (width 0.1) (type solid)) (layer "F.Fab"))
   (fp_text reference "REF**" (at -26.9250 -9.6000 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
   (fp_text value "BatteryHolder_Keystone_1290-79_1xPP3_Adhesive_Wire" (at -26.9250 9.6000 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+  (model "${KIPRJMOD}/step_models/Keystone_1290-79_drawing-based_clanker.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0)))
 )

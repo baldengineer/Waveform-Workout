@@ -25713,7 +25713,7 @@
 			(uuid "a6d155e8-2ac9-4e66-95b4-79a30af4c816")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/step_models/Keystone_1290-79_drawing-based.step"
+		(model "${KIPRJMOD}/step_models/Keystone_1290-79_drawing-based_clanker.step"
 			(offset
 				(xyz 0 0 0)
 			)

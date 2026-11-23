@@ -4,6 +4,8 @@ Commit completed, verified changes to this project automatically. Keep each comm
 
 Do not generate schematic or PCB PDFs automatically. Generate them only when explicitly requested.
 
+Store component STEP models in `kicad/step_models/` and reference them through `${KIPRJMOD}/step_models/`. Give agent-generated STEP files the suffix `_clanker` before the extension and commit them. Keep downloaded STEP files local with their original provenance.
+
 ## Schematic part numbers
 
 Maintain each catalog link independently when assigning or updating schematic part numbers. Keep both link fields hidden on the drawing.

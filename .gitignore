@@ -4,8 +4,11 @@
 # Mock-up images
 /renders/
 
-# Local component STEP models
-/kicad/step_models/
+# Keep downloaded STEP models local. Track project-generated models by suffix.
+*.[sS][tT][eE][pP]
+*.[sS][tT][pP]
+!*_clanker.[sS][tT][eE][pP]
+!*_clanker.[sS][tT][pP]
 
 # User-specific KiCad settings and caches
 *.kicad_prl
