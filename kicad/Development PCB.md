@@ -1,5 +1,11 @@
 # Development PCB
 
+## USB routing after MCU placement
+
+The top-layer pair connects U1 pins 32 (DM) and 33 (DP) to U6 pins 6 and 4. Both paths measure 21.9862 mm. The 0.25 mm QFP escapes widen to 0.3134 mm on the coupled section, with a 0.25 mm edge-to-edge pair gap. The connector-side branches use 0.20 mm traces. They connect U6 pin 1 to J1 A7/B7 and U6 pin 3 to J1 A6/B6 for both plug orientations.
+
+In1.Cu supplies the continuous reference plane. The adjacent F.Cu ground uses a 0.32 mm clearance and 23 stitching vias. A two-dimensional odd-mode electrostatic estimate gives approximately 90 Ω differential for the straight coupled cross section using the board's 35 µm copper, 0.2104 mm prepreg (εr 4.4) and 0.01524 mm solder mask with assumed εr 3.6. The pad escapes, length correction and connector branches have different local geometries. Final impedance depends on the fabricated stackup and etch.
+
 ## DAC routing after MCU placement
 
 The two 0.30 mm traces from U1 pins 14 and 15 to R29 and R30 each measure 4.3986 mm. Both channels continue on F.Cu through their filters, U2 feedback loops and U3 switches. Channel A terminates at J2 and channel B at TP3. TP22 and TP23 tap the buffer outputs. The twelve signal nets use 59 track segments. Their signal paths stay on F.Cu throughout. A pre-existing unused signal via beside TP22 still appears in DRC.
