@@ -2646,7 +2646,7 @@
 	)
 	(text "Matched plated clip holes"
 		(exclude_from_sim no)
-		(at 184.15 135.89 0)
+		(at 180.34 70.612 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2680,7 +2680,7 @@
 	)
 	(text "1 MΩ scope input"
 		(exclude_from_sim no)
-		(at 191.77 80.01 0)
+		(at 191.77 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2726,7 +2726,7 @@
 		(uuid "13a36764-d25b-4f12-a248-bb639e579369")
 	)
 	(junction
-		(at 142.24 120.65)
+		(at 142.24 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27284ffa-2e6a-47c1-baec-9eb037f79723")
@@ -2738,7 +2738,7 @@
 		(uuid "2aec0c66-045e-46d3-b5b5-e79f61f90a45")
 	)
 	(junction
-		(at 184.15 63.5)
+		(at 184.15 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2bddf2e9-ab2e-4fc1-b183-844bff96240c")
@@ -2877,7 +2877,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 63.5) (xy 175.26 63.5)
+			(xy 161.29 118.11) (xy 175.26 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2904,6 +2904,16 @@
 			(type default)
 		)
 		(uuid "0dd45145-ef05-4cfb-b179-34e31e0a10f0")
+	)
+	(wire
+		(pts
+			(xy 146.05 66.04) (xy 125.73 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14cb5826-15a0-4ebd-8ef0-5828499eabdc")
 	)
 	(wire
 		(pts
@@ -2957,16 +2967,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 115.57) (xy 146.05 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a1612ad-4226-444c-927d-4cb55fc0ef84")
-	)
-	(wire
-		(pts
 			(xy 92.71 115.57) (xy 104.14 115.57)
 		)
 		(stroke
@@ -2974,16 +2974,6 @@
 			(type default)
 		)
 		(uuid "2ae50951-1859-4c90-8e34-49729c4ddd5f")
-	)
-	(wire
-		(pts
-			(xy 104.14 60.96) (xy 146.05 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c48d066-3fc7-41a5-b913-ed16d3a84e81")
 	)
 	(wire
 		(pts
@@ -2997,7 +2987,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 45.72) (xy 204.47 45.72)
+			(xy 184.15 100.33) (xy 204.47 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3027,6 +3017,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 125.73) (xy 118.11 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "392a8654-43fc-44ff-ae18-f3523ab5ad37")
+	)
+	(wire
+		(pts
 			(xy 62.23 184.15) (xy 62.23 193.04)
 		)
 		(stroke
@@ -3037,7 +3037,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 66.04) (xy 135.89 67.31)
+			(xy 135.89 60.96) (xy 135.89 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3097,7 +3097,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 66.04) (xy 135.89 66.04)
+			(xy 146.05 60.96) (xy 135.89 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3134,6 +3134,16 @@
 			(type default)
 		)
 		(uuid "559799c5-56f7-457c-a69f-923675ff1f7d")
+	)
+	(wire
+		(pts
+			(xy 118.11 115.57) (xy 104.14 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "576c8697-e90e-4ce2-b624-cd24cdeccfb8")
 	)
 	(wire
 		(pts
@@ -3187,13 +3197,33 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 63.5) (xy 184.15 45.72)
+			(xy 184.15 118.11) (xy 184.15 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6327057d-1132-4443-b529-848b0f0bb99b")
+	)
+	(wire
+		(pts
+			(xy 146.05 120.65) (xy 146.05 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a73bb0-c86a-41b3-99fa-d9c8172cd882")
+	)
+	(wire
+		(pts
+			(xy 118.11 125.73) (xy 118.11 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "713e68c0-8da6-4572-923d-ad74d39bd4d4")
 	)
 	(wire
 		(pts
@@ -3224,6 +3254,16 @@
 			(type default)
 		)
 		(uuid "8024527c-7194-4ec1-9c7b-83bfc8ba721e")
+	)
+	(wire
+		(pts
+			(xy 125.73 60.96) (xy 104.14 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b8b2f1-5d8f-4338-b44e-f62d8be02ba6")
 	)
 	(wire
 		(pts
@@ -3337,7 +3377,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 63.5) (xy 204.47 63.5)
+			(xy 184.15 118.11) (xy 204.47 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3357,7 +3397,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 118.11) (xy 220.98 123.19)
+			(xy 220.98 63.5) (xy 220.98 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3374,6 +3414,16 @@
 			(type default)
 		)
 		(uuid "a8a97963-ebd8-42e2-9646-24321d9d1902")
+	)
+	(wire
+		(pts
+			(xy 125.73 66.04) (xy 125.73 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8b44c12-a69f-4b85-9621-6727317ebfd1")
 	)
 	(wire
 		(pts
@@ -3447,7 +3497,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 120.65) (xy 137.16 120.65)
+			(xy 146.05 115.57) (xy 137.16 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3457,7 +3507,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 48.26) (xy 200.66 52.07)
+			(xy 200.66 102.87) (xy 200.66 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3497,7 +3547,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 63.5) (xy 184.15 63.5)
+			(xy 180.34 118.11) (xy 184.15 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3517,7 +3567,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 118.11) (xy 209.55 118.11)
+			(xy 180.34 63.5) (xy 209.55 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3537,7 +3587,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 48.26) (xy 200.66 48.26)
+			(xy 204.47 102.87) (xy 200.66 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3587,7 +3637,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 118.11) (xy 175.26 118.11)
+			(xy 161.29 63.5) (xy 175.26 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3596,7 +3646,7 @@
 		(uuid "f95f0c54-52b2-4b6c-8504-b88b7644677e")
 	)
 	(label "OUT_A"
-		(at 187.96 63.5 0)
+		(at 187.96 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3606,7 +3656,7 @@
 		(uuid "1438b4a3-b90f-42a0-933c-c51e04c5b57c")
 	)
 	(label "OUT_B"
-		(at 187.96 118.11 0)
+		(at 187.96 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3661,7 +3711,7 @@
 	)
 	(hierarchical_label "MARKER"
 		(shape input)
-		(at 137.16 120.65 180)
+		(at 137.16 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3672,7 +3722,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 209.55 45.72 0)
+		(at 209.55 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3682,7 +3732,7 @@
 		(dnp no)
 		(uuid "02bc598c-0a71-4af3-9845-b0921198e86b")
 		(property "Reference" "J4"
-			(at 216.535 45.72 0)
+			(at 216.535 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3692,7 +3742,7 @@
 			)
 		)
 		(property "Value" "A / 0.1in header"
-			(at 223.52 48.26 0)
+			(at 223.52 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3702,7 +3752,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3713,7 +3763,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/3b85a1cdf6ed945f2e278f00c1e42442.pdf?productCode=C492401"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3724,7 +3774,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3735,7 +3785,7 @@
 			)
 		)
 		(property "Group" "Output A"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3746,7 +3796,7 @@
 			)
 		)
 		(property "LCSC" "C492401"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3757,7 +3807,7 @@
 			)
 		)
 		(property "MPN" "PZ254V-11-02P"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3768,7 +3818,7 @@
 			)
 		)
 		(property "Manufacturer" "XFCN"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3779,7 +3829,7 @@
 			)
 		)
 		(property "PCB placement" "Place immediately behind J2 on the board-interior side, clear of the BNC body and solder pads."
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3790,7 +3840,7 @@
 			)
 		)
 		(property "Sourcing note" "Vertical 2.54 mm two-pin header. Pin 1 is OUT_A after R5; pin 2 is GND."
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3801,7 +3851,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=PZ254V-11-02P"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3812,7 +3862,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C492401.html"
-			(at 209.55 45.72 0)
+			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4200,7 +4250,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 68.58 0)
+		(at 209.55 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4211,7 +4261,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ba66ee5-4d48-438a-9dbb-2966f78dfe0f")
 		(property "Reference" "#PWR041"
-			(at 209.55 74.93 0)
+			(at 209.55 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4222,7 +4272,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 209.55 73.66 0)
+			(at 209.55 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4232,7 +4282,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 68.58 0)
+			(at 209.55 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4243,7 +4293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 68.58 0)
+			(at 209.55 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4254,7 +4304,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 68.58 0)
+			(at 209.55 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4426,7 +4476,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 177.8 63.5 90)
+		(at 177.8 118.11 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4437,7 +4487,7 @@
 		(fields_autoplaced yes)
 		(uuid "1735465b-71c0-42ad-893d-81a2e479bca0")
 		(property "Reference" "R5"
-			(at 177.8 58.42 90)
+			(at 177.8 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4447,7 +4497,7 @@
 			)
 		)
 		(property "Value" "330R"
-			(at 177.8 60.96 90)
+			(at 177.8 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4457,7 +4507,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4468,7 +4518,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23138"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4479,7 +4529,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4490,7 +4540,7 @@
 			)
 		)
 		(property "Group" "Output A"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4501,7 +4551,7 @@
 			)
 		)
 		(property "LCSC" "C23138"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4512,7 +4562,7 @@
 			)
 		)
 		(property "MPN" "0603WAF3300T5E"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4523,7 +4573,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4534,7 +4584,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=0603WAF3300T5E"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4545,7 +4595,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C23138.html"
-			(at 177.8 63.5 0)
+			(at 177.8 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4890,7 +4940,7 @@
 	)
 	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
-		(at 142.24 120.65 0)
+		(at 142.24 115.57 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4901,7 +4951,7 @@
 		(dnp no)
 		(uuid "496bdce8-0581-4d3e-a9ab-60049ead039c")
 		(property "Reference" "TP25"
-			(at 134.62 124.46 0)
+			(at 134.62 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4911,7 +4961,7 @@
 			)
 		)
 		(property "Value" "MARKER"
-			(at 134.62 127 0)
+			(at 134.62 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4921,7 +4971,7 @@
 			)
 		)
 		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4932,7 +4982,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4943,7 +4993,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4954,7 +5004,7 @@
 			)
 		)
 		(property "Group" "Output B"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4965,7 +5015,7 @@
 			)
 		)
 		(property "LCSC" "C3029083"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4976,7 +5026,7 @@
 			)
 		)
 		(property "MPN" "S1751-46"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4987,7 +5037,7 @@
 			)
 		)
 		(property "Manufacturer" "Harwin"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4998,7 +5048,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5009,7 +5059,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
-			(at 142.24 120.65 0)
+			(at 142.24 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5181,7 +5231,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 209.55 63.5 0)
+		(at 209.55 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5192,7 +5242,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f9a3ce6-b073-4f8b-90a3-ed34a3dda316")
 		(property "Reference" "J2"
-			(at 213.36 62.5231 0)
+			(at 213.36 117.1331 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5203,7 +5253,7 @@
 			)
 		)
 		(property "Value" "A / BNC female"
-			(at 213.36 65.0631 0)
+			(at 213.36 119.6731 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5214,7 +5264,7 @@
 			)
 		)
 		(property "Footprint" "Trainer:BNC_Kinghelm_KH-BNC50-3511_Horizontal"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5225,7 +5275,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.kinghelm.com.cn/upload/file/20221214/KH-BNC50-3511.pdf"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5236,7 +5286,7 @@
 			)
 		)
 		(property "Description" "Right-angle through-hole female BNC jack for output A. Connect to the scope with a male-to-male BNC coupler."
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5247,7 +5297,7 @@
 			)
 		)
 		(property "Group" "Output A"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5258,7 +5308,7 @@
 			)
 		)
 		(property "LCSC" "C2837587"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5269,7 +5319,7 @@
 			)
 		)
 		(property "MPN" "KH-BNC50-3511"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5280,7 +5330,7 @@
 			)
 		)
 		(property "Manufacturer" "Kinghelm"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5291,7 +5341,7 @@
 			)
 		)
 		(property "Sourcing note" "50 ohm right-angle through-hole jack with panel nut and washer. Use a male-to-male BNC coupler with the scope's 1 megohm input."
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +5352,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=KH-BNC50-3511"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5313,7 +5363,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2837587.html"
-			(at 209.55 63.5 0)
+			(at 209.55 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5747,7 +5797,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 177.8 118.11 90)
+		(at 177.8 63.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5758,7 +5808,7 @@
 		(fields_autoplaced yes)
 		(uuid "80dd8721-ada0-453c-a13b-7e04e699939c")
 		(property "Reference" "R6"
-			(at 177.8 113.03 90)
+			(at 177.8 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5768,7 +5818,7 @@
 			)
 		)
 		(property "Value" "330R"
-			(at 177.8 115.57 90)
+			(at 177.8 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5778,7 +5828,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5789,7 +5839,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23138"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5800,7 +5850,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5811,7 +5861,7 @@
 			)
 		)
 		(property "Group" "Output B"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5822,7 +5872,7 @@
 			)
 		)
 		(property "LCSC" "C23138"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5833,7 +5883,7 @@
 			)
 		)
 		(property "MPN" "0603WAF3300T5E"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5844,7 +5894,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5855,7 +5905,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=0603WAF3300T5E"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5866,7 +5916,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C23138.html"
-			(at 177.8 118.11 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6405,7 +6455,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 209.55 118.11 0)
+		(at 209.55 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6416,7 +6466,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f51607f-a67c-4255-95e6-7ea0b4744a89")
 		(property "Reference" "TP3"
-			(at 212.09 113.5379 0)
+			(at 212.09 58.9279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6427,7 +6477,7 @@
 			)
 		)
 		(property "Value" "B"
-			(at 212.09 116.0779 0)
+			(at 212.09 61.4679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6438,7 +6488,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D3.0mm"
-			(at 209.55 118.11 0)
+			(at 209.55 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6449,7 +6499,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 118.11 0)
+			(at 209.55 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6460,7 +6510,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 209.55 118.11 0)
+			(at 209.55 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6471,7 +6521,7 @@
 			)
 		)
 		(property "Group" "Output B"
-			(at 209.55 118.11 0)
+			(at 209.55 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7148,7 +7198,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:TS5A23157DGS")
-		(at 153.67 118.11 0)
+		(at 153.67 63.5 0)
 		(mirror y)
 		(unit 2)
 		(body_style 1)
@@ -7160,7 +7210,7 @@
 		(fields_autoplaced yes)
 		(uuid "b63d010f-403f-46a6-8351-ee4c96eeb54c")
 		(property "Reference" "U3"
-			(at 153.67 109.22 0)
+			(at 153.67 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7170,7 +7220,7 @@
 			)
 		)
 		(property "Value" "TS5A23157DGS"
-			(at 153.67 111.76 0)
+			(at 153.67 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7180,7 +7230,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7191,7 +7241,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7202,7 +7252,7 @@
 			)
 		)
 		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7213,7 +7263,7 @@
 			)
 		)
 		(property "Group" "DAC followers and selector"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7224,7 +7274,7 @@
 			)
 		)
 		(property "LCSC" "C11133"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7235,7 +7285,7 @@
 			)
 		)
 		(property "MPN" "TS5A23157DGSR"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7246,7 +7296,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7257,7 +7307,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=TS5A23157DGSR"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7268,7 +7318,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C11133.html"
-			(at 153.67 118.11 0)
+			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7873,7 +7923,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 123.19 0)
+		(at 220.98 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7884,7 +7934,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca5a2bb5-815f-494d-88cf-30bf39fc9bff")
 		(property "Reference" "#PWR042"
-			(at 220.98 129.54 0)
+			(at 220.98 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7895,7 +7945,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 124.4599 0)
+			(at 223.52 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7906,7 +7956,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 123.19 0)
+			(at 220.98 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7917,7 +7967,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 123.19 0)
+			(at 220.98 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7928,7 +7978,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 123.19 0)
+			(at 220.98 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8100,7 +8150,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 67.31 0)
+		(at 135.89 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8111,7 +8161,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd79af7f-633d-4e66-9bd9-9e75f008f96d")
 		(property "Reference" "#PWR027"
-			(at 135.89 73.66 0)
+			(at 135.89 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8122,7 +8172,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 71.12 0)
+			(at 135.89 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8133,7 +8183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 67.31 0)
+			(at 135.89 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8144,7 +8194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 67.31 0)
+			(at 135.89 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8155,7 +8205,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 67.31 0)
+			(at 135.89 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8321,7 +8371,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 220.98 118.11 0)
+		(at 220.98 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8332,7 +8382,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7a04b99-9f99-4c4f-8c6f-ce04e664b2ee")
 		(property "Reference" "TP4"
-			(at 223.52 113.5379 0)
+			(at 223.52 58.9279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8343,7 +8393,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 116.0779 0)
+			(at 223.52 61.4679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8354,7 +8404,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D3.0mm"
-			(at 220.98 118.11 0)
+			(at 220.98 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8365,7 +8415,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 118.11 0)
+			(at 220.98 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8376,7 +8426,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 220.98 118.11 0)
+			(at 220.98 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8387,7 +8437,7 @@
 			)
 		)
 		(property "Group" "Output B"
-			(at 220.98 118.11 0)
+			(at 220.98 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8490,7 +8540,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 52.07 0)
+		(at 200.66 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8500,7 +8550,7 @@
 		(dnp no)
 		(uuid "f263fb05-4b2b-4748-bf1d-3bda83ec6820")
 		(property "Reference" "#PWR047"
-			(at 200.66 58.42 0)
+			(at 200.66 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8511,7 +8561,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 200.66 55.88 0)
+			(at 200.66 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8521,7 +8571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 52.07 0)
+			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8532,7 +8582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 52.07 0)
+			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8543,7 +8593,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 52.07 0)
+			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8644,7 +8694,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:TS5A23157DGS")
-		(at 153.67 63.5 0)
+		(at 153.67 118.11 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8656,7 +8706,7 @@
 		(fields_autoplaced yes)
 		(uuid "f86799e6-0dea-4226-b2e7-2dbcb9ceea42")
 		(property "Reference" "U3"
-			(at 153.67 54.61 0)
+			(at 153.67 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8666,7 +8716,7 @@
 			)
 		)
 		(property "Value" "TS5A23157DGS"
-			(at 153.67 57.15 0)
+			(at 153.67 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8676,7 +8726,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8687,7 +8737,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a23157.pdf"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8698,7 +8748,7 @@
 			)
 		)
 		(property "Description" "Dual 10 ohms SPDT Analog Switch, TSSOP-10 (Texas DGS0010A / VSSOP)"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8709,7 +8759,7 @@
 			)
 		)
 		(property "Group" "DAC followers and selector"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8720,7 +8770,7 @@
 			)
 		)
 		(property "LCSC" "C11133"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8731,7 +8781,7 @@
 			)
 		)
 		(property "MPN" "TS5A23157DGSR"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8742,7 +8792,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8753,7 +8803,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=TS5A23157DGSR"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8764,7 +8814,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C11133.html"
-			(at 153.67 63.5 0)
+			(at 153.67 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
