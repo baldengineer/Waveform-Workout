@@ -23,12 +23,17 @@ For a scope measurement, fit R4 and remove the JP1 short. Probe TP1 with CH1 and
 
 | Test point | Signal |
 |---|---|
-| TP22 | Buffered DAC A at U2 pin 1, before the analog switch |
-| TP23 | Buffered DAC B at U2 pin 7, before the analog switch |
-| TP24 | PULSE_SEL, the control signal for the channel A pulse switch |
-| TP25 | MARKER, the digital marker fed to the channel B switch |
+| TP22 | BUF_B, the buffered DAC signal for physical B, at U2 pin 7 |
+| TP23 | BUF_A, the buffered DAC signal for physical A, at U2 pin 1 |
+| TP24 | B_SEL from PA0, the selector for physical B |
+| TP25 | A_GPIO from PA1, the digital signal available to physical A |
 
-Compare TP22 with J4 pin 1 (output A), or TP23 and TP25 with TP3 (output B). J4 pin 2 and TP4 are ground.
+| Physical output | Selector | Low selects GPIO | High selects buffered DAC |
+|---|---|---|---|
+| A, J2 BNC center | A_SEL from PB11 | PA1 (TIM2_CH2) via U3 pin 9 | PA5 (DAC channel 2) via U3 pin 2 |
+| B, TP3 clip point | B_SEL from PA0 | PA3 (TIM2_CH4 or TIM21_CH2) via U3 pin 7 | PA4 (DAC channel 1) via U3 pin 4 |
+
+Compare the A output with TP25 in GPIO mode or TP23 in DAC mode. For B, probe TP24 to see the selection timing and TP22 to see the analog level. Use the J2 shell or TP4 for ground. Both selectors and both GPIO signal inputs have 100 kΩ pull-downs, so both outputs default low while the MCU pins are high impedance.
 
 ## STM32 breakout
 
