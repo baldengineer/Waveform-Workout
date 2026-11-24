@@ -957,7 +957,7 @@
 			)
 		)
 		(property ki_fp_filters "*TSSOP*3x3mm?P0.5mm*")
-		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/b63d010f-403f-46a6-8351-ee4c96eeb54c")
+		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/f86799e6-0dea-4226-b2e7-2dbcb9ceea42")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
 		(units
@@ -3936,235 +3936,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
-		(layer "F.Cu")
-		(uuid "2fdb6dc4-1560-494c-9e84-909f9ae1371c")
-		(at 152.2 91.75)
-		(property "Reference" "TP20"
-			(at 0 -1 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "082cff8a-c806-4ff8-8f77-632ae3a80eb2")
-			(effects
-				(font
-					(size 1 1)
-					(line_spacing 0)
-				)
-			)
-		)
-		(property "Value" "PB14"
-			(at 0 1 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d532b28d-ca17-489a-a9bc-00d2cfba0904")
-			(effects
-				(font
-					(size 1 1)
-					(line_spacing 0)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "875c3027-2016-41b1-8474-d3ada836ef31")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d5aa2412-cc62-4ac3-bba3-2fb0aea959f5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "MCU test points"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "56e1c2ba-92db-4cd2-90b9-5632016b48f3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C3029083"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "64957e43-dfaf-40d0-911f-d697a4ffe763")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "S1751-46"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "44e0462c-e77e-4945-9e7a-3267c14921d8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" "Harwin"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f555c93b-434b-4684-ac44-f69ed865ecb2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Pin functions" "SPI2_MISO, TIM21_CH2, I2C2_SDA"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "95d594f6-219d-4de8-a3af-03aa285393e8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Probe function" "BUTTON_M"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34343bcb-f0c2-41e2-95ec-ff0d8e484b5b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "108958d5-518a-4bca-82e3-39f3f27c0c69")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd5dd0a1-c63e-4898-9753-1470ad626671")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/526edac6-00f9-40e7-847e-c2e28b6b4049")
-		(sheetname "/")
-		(sheetfile "oscilloscope trainer hw.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.725001 -0.925)
-			(end 1.75 -0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b33bac24-caf9-45c9-be2b-a2e13c59c2bb")
-		)
-		(fp_line
-			(start -1.725001 0.925)
-			(end -1.725001 -0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "26bd93dd-30e3-4611-a3fa-05d4aa539329")
-		)
-		(fp_line
-			(start 1.75 -0.925)
-			(end 1.75 0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7fc701f3-518e-44b5-bec4-1df3f6427ead")
-		)
-		(fp_line
-			(start 1.75 0.925)
-			(end -1.725001 0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "cc059db8-88e3-42e1-8af8-93ed09fed03f")
-		)
-		(pad "1" smd rect
-			(at 0 0)
-			(size 3.45 1.85)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/BUTTON_M")
-			(pinfunction "1_1")
-			(pintype "passive")
-			(uuid "3fd2976b-daa7-44bb-92fa-7827fa3901a0")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
-			(offset
-				(xyz 0 0.825 2)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 0 0)
-			)
-		)
-	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "317c64d3-c2b3-4beb-8857-2da1bbc19caf")
@@ -4315,6 +4086,12 @@
 		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/5ce4661e-258a-4b00-b9e3-3a6875914fc7")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5259,6 +5036,12 @@
 		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/496bdce8-0581-4d3e-a9ab-60049ead039c")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.75 -0.925)
@@ -6493,6 +6276,12 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/05bcd5fd-ac2f-4e37-a831-f76cb82974a9")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6583,11 +6372,11 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "53242210-b473-4b38-947b-a9d579510814")
-		(at 147.33 85.06 180)
+		(at 147.798 71.364 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R9"
-			(at 0 -1.43 0)
+			(at 0 -1.43 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6601,7 +6390,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 0 1.43 180)
+			(at 0 1.43 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6614,7 +6403,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5ec06e04-73eb-4f8c-81fa-3135afa4e2fd")
@@ -6625,7 +6414,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c24ee1b6-46c3-4add-a0bf-5c56b00d81ea")
@@ -6636,7 +6425,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6649,7 +6438,7 @@
 			)
 		)
 		(property "Group" "USB and regulator"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6662,7 +6451,7 @@
 			)
 		)
 		(property "LCSC" "C22935"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6675,7 +6464,7 @@
 			)
 		)
 		(property "MPN" "0603WAF1004T5E"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6688,7 +6477,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6701,7 +6490,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1004T5E"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6714,7 +6503,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22935.html"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6781,7 +6570,7 @@
 			(uuid "e50afd79-8986-4b84-8dd1-52e5587d82fa")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "701d6989-71cf-45ed-bdb3-dd55f165101f")
@@ -6793,7 +6582,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.824999 0 180)
+			(at -0.824999 0 270)
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6802,7 +6591,7 @@
 			(uuid "b9a10bf0-627a-4b82-95fc-a6340d8042cd")
 		)
 		(pad "2" smd roundrect
-			(at 0.825 0 180)
+			(at 0.825 0 270)
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6968,7 +6757,7 @@
 				)
 			)
 		)
-		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/80898728-8638-477e-915f-a1921b00028c")
+		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/b35a4d67-41e5-43af-b434-405300d039d0")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
 		(units
@@ -9064,7 +8853,7 @@
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
 		(uuid "63fea416-19b7-479c-ad39-e4b0de6880e3")
-		(at 160.02 58.42)
+		(at 151.638 66.294)
 		(property "Reference" "TP9"
 			(at 0 1.8 0)
 			(unlocked yes)
@@ -9281,7 +9070,7 @@
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
 		(uuid "688ab888-d8bc-4f41-a0cb-783cef561cc7")
-		(at 140.25 64.3)
+		(at 137.71 64.3)
 		(property "Reference" "TP7"
 			(at 0 -1 0)
 			(unlocked yes)
@@ -9425,6 +9214,12 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/ab927ce1-9e1e-4279-81f7-c85ed2a77a90")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.725001 -0.925)
@@ -9862,6 +9657,12 @@
 		(path "/56a0076a-dc02-47c4-a4c1-13af39b5ebd9")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9952,11 +9753,11 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "6e0b172a-2a6f-45b0-804e-3b666ab06383")
-		(at 145.5 92.6 90)
+		(at 159.512 59.69)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J5"
-			(at 4.8 -2.24 0)
+			(at 2.54 1.020999 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "2b38bd9e-74e4-406e-bb1d-6f790988bcf3")
@@ -9969,7 +9770,7 @@
 			)
 		)
 		(property "Value" "SMU battery input"
-			(at 0 4.92 90)
+			(at 0 4.92 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9982,7 +9783,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/3b85a1cdf6ed945f2e278f00c1e42442.pdf?productCode=C492401"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8497100e-ae12-419c-b745-5c1a893bded8")
@@ -9993,7 +9794,7 @@
 			)
 		)
 		(property "Description" "Battery-emulation input for an external source measure unit (SMU), connected across the BT1 holder."
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2b0c9a52-6ec8-41df-bcb3-1e7d1e7af215")
@@ -10004,7 +9805,7 @@
 			)
 		)
 		(property "KiLib_Generator" "connector/pin_header_socket"
-			(at 0 -0.000001 90)
+			(at 0 -0.000001 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -10017,7 +9818,7 @@
 			)
 		)
 		(property "Group" "Battery and selector"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10030,7 +9831,7 @@
 			)
 		)
 		(property "LCSC" "C492401"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10043,7 +9844,7 @@
 			)
 		)
 		(property "MPN" "PZ254V-11-02P"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10056,7 +9857,7 @@
 			)
 		)
 		(property "Manufacturer" "XFCN"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10069,7 +9870,7 @@
 			)
 		)
 		(property "PCB placement" "Preferred location near the power switch (SW1)."
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10082,7 +9883,7 @@
 			)
 		)
 		(property "Sourcing note" "Vertical 2.54 mm two-pin header. Connect SMU Force HI to pin 1 (BAT+) and Force LO to pin 2 (GND). Leave BT1 empty during battery emulation."
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10095,7 +9896,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=PZ254V-11-02P"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10108,7 +9909,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C492401.html"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10153,14 +9954,14 @@
 			(uuid "587977ff-7d1d-4008-96e3-1480bbe39e78")
 		)
 		(fp_line
-			(start 1.379999 1.269999)
-			(end 1.379999 3.92)
+			(start -1.38 1.269999)
+			(end -1.38 3.92)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ea31c835-0e5b-4f66-8e34-067adf7ca60b")
+			(uuid "206b2e90-9412-47d5-86d1-abbec138f78f")
 		)
 		(fp_line
 			(start -1.38 1.269999)
@@ -10173,16 +9974,6 @@
 			(uuid "5db61ef2-e1bf-41ad-94d2-80a5e94ff970")
 		)
 		(fp_line
-			(start -1.38 1.269999)
-			(end -1.38 3.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "206b2e90-9412-47d5-86d1-abbec138f78f")
-		)
-		(fp_line
 			(start -1.38 3.92)
 			(end 1.379999 3.92)
 			(stroke
@@ -10191,6 +9982,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "0834f33b-c533-4d88-978d-cfa38605f0e5")
+		)
+		(fp_line
+			(start 1.379999 1.269999)
+			(end 1.379999 3.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ea31c835-0e5b-4f66-8e34-067adf7ca60b")
 		)
 		(fp_rect
 			(start -1.77 -1.770001)
@@ -10204,14 +10005,24 @@
 			(uuid "7d8ae446-6d16-4d17-b1f4-c65246d36999")
 		)
 		(fp_line
-			(start 1.269999 -1.270001)
-			(end 1.269999 3.81)
+			(start -1.27 -0.635001)
+			(end -0.635 -1.270001)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "76d41fcd-40f6-498e-8237-8a5901fb9588")
+			(uuid "e4466c93-7fbf-4df4-94a0-6228129d2fea")
+		)
+		(fp_line
+			(start -1.27 3.81)
+			(end -1.27 -0.635001)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d712bf9b-c353-4cef-b7d5-7fd0f112d759")
 		)
 		(fp_line
 			(start -0.635 -1.270001)
@@ -10224,14 +10035,14 @@
 			(uuid "dfa52700-5f15-4d97-87c6-f329725f3204")
 		)
 		(fp_line
-			(start -1.27 -0.635001)
-			(end -0.635 -1.270001)
+			(start 1.269999 -1.270001)
+			(end 1.269999 3.81)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e4466c93-7fbf-4df4-94a0-6228129d2fea")
+			(uuid "76d41fcd-40f6-498e-8237-8a5901fb9588")
 		)
 		(fp_line
 			(start 1.269999 3.81)
@@ -10243,18 +10054,8 @@
 			(layer "F.Fab")
 			(uuid "ed6ab678-20f3-43a3-b5aa-ae03b2f7b30b")
 		)
-		(fp_line
-			(start -1.27 3.81)
-			(end -1.27 -0.635001)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d712bf9b-c353-4cef-b7d5-7fd0f112d759")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.269999 180)
+			(at 0 1.269999 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "92ad76e0-88f7-451e-8818-8282c83c1abe")
@@ -10266,7 +10067,7 @@
 			)
 		)
 		(pad "1" thru_hole rect
-			(at 0 -0.000001 90)
+			(at 0 -0.000001)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -10277,7 +10078,7 @@
 			(uuid "d57eb2a7-62e4-47ed-9db7-babc70bf5a19")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 90)
+			(at 0 2.54)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -10829,6 +10630,12 @@
 		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/1735465b-71c0-42ad-893d-81a2e479bca0")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11145,243 +10952,14 @@
 			)
 		)
 	)
-	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
-		(layer "F.Cu")
-		(uuid "7aee047e-0dca-4274-b9c9-c2fb7abd5835")
-		(at 149.5 89.1)
-		(property "Reference" "TP18"
-			(at 0 -1 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "6f37878e-6f74-46af-baa8-a9778c03b68a")
-			(effects
-				(font
-					(size 1 1)
-					(line_spacing 0)
-				)
-			)
-		)
-		(property "Value" "PB12"
-			(at 0 1 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "6f890388-163a-4d78-a077-c65936deb19c")
-			(effects
-				(font
-					(size 1 1)
-					(line_spacing 0)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "28e83a1d-14aa-48f4-889a-0c120eff69b8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "417db1c3-dcdf-4b7a-b0af-51c045539984")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "MCU test points"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ecd9da84-1775-4014-8d03-9d598fd5e218")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C3029083"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9635a142-bace-4776-b950-8236fa4993af")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "S1751-46"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5cea05f9-378d-4d50-b923-34bb8e4d7092")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" "Harwin"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9471cc15-c341-4370-95bc-5a2c3a9e2730")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Pin functions" "SPI2_NSS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5b4c5b5c-1886-4867-92d2-979344b00539")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Probe function" "BUTTON_V"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5e17a45e-519a-4b57-bbee-713ad111a741")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "12104314-ff8a-4eec-94a2-f0a47784ce7e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d7d626dc-49b0-46a3-8727-3da5fd0108d2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/50e727f7-4f17-4f01-8ac7-46a1474b9cd5")
-		(sheetname "/")
-		(sheetfile "oscilloscope trainer hw.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.725001 -0.925)
-			(end 1.75 -0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c34d735c-4dfa-4f20-a6b2-8d03a181d6cf")
-		)
-		(fp_line
-			(start -1.725001 0.925)
-			(end -1.725001 -0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "27f1e17e-2e9a-4a1d-9663-41947789480f")
-		)
-		(fp_line
-			(start 1.75 -0.925)
-			(end 1.75 0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a31d67d0-aaaa-4929-bc86-7606e572cfd7")
-		)
-		(fp_line
-			(start 1.75 0.925)
-			(end -1.725001 0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a0acdd5f-6e46-4733-811a-aad879072fb7")
-		)
-		(pad "1" smd rect
-			(at 0 0)
-			(size 3.45 1.85)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/BUTTON_V")
-			(pinfunction "1_1")
-			(pintype "passive")
-			(uuid "083d80a5-4154-4973-becd-570c373f6aae")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/step_models/Harwin_S1751-46.step"
-			(offset
-				(xyz 0 0.825 2)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 0 0)
-			)
-		)
-	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "817d251c-2db3-4726-8b58-d9d6ac94c914")
-		(at 146.812 82.296 180)
+		(at 145.034 71.882 -90)
 		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "Q1"
-			(at 0.64 -4.32 0)
+			(at 0.64 -4.32 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c6c725bb-7aa0-45f2-8ed0-be97e83e32cb")
@@ -11394,7 +10972,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 0 2.4 180)
+			(at 0 2.4 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11407,7 +10985,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/a141b8bd86b14475955ac8c4d3eea0a8.pdf?productCode=C8545"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "64ba1ad0-5fdd-4c32-82c3-8fa7ad6440a1")
@@ -11418,7 +10996,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2b200b8d-c17c-41e7-bf2c-2185120efee5")
@@ -11429,7 +11007,7 @@
 			)
 		)
 		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11442,7 +11020,7 @@
 			)
 		)
 		(property "Group" "USB and regulator"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11455,7 +11033,7 @@
 			)
 		)
 		(property "LCSC" "C8545"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11468,7 +11046,7 @@
 			)
 		)
 		(property "MPN" "2N7002"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11481,7 +11059,7 @@
 			)
 		)
 		(property "Manufacturer" "Jiangsu Changjing Electronics Technology"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11494,7 +11072,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=2N7002"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11507,7 +11085,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C8545.html"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11532,6 +11110,16 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start -0.76 1.56)
+			(end -0.76 1.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bf9fbe47-1b15-4347-a0bf-e1fb620b0f32")
+		)
+		(fp_line
 			(start 0.76 1.56)
 			(end -0.76 1.56)
 			(stroke
@@ -11550,26 +11138,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "d62924d4-3ac0-465a-a0a5-23159d657b47")
-		)
-		(fp_line
-			(start 0.76 -1.56)
-			(end 0.76 -0.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f5222b76-55a7-4887-a026-0c3d45a77326")
-		)
-		(fp_line
-			(start -0.76 1.56)
-			(end -0.76 1.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bf9fbe47-1b15-4347-a0bf-e1fb620b0f32")
 		)
 		(fp_line
 			(start -0.76 0.39)
@@ -11601,6 +11169,16 @@
 			(layer "F.SilkS")
 			(uuid "ece170ed-03fe-4e56-9f9a-c545855b824a")
 		)
+		(fp_line
+			(start 0.76 -1.56)
+			(end 0.76 -0.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f5222b76-55a7-4887-a026-0c3d45a77326")
+		)
 		(fp_poly
 			(pts
 				(xy -1.3 -0.38) (xy -1.06 -0.05) (xy -1.54 -0.05)
@@ -11614,24 +11192,14 @@
 			(uuid "54693b4d-8025-4e36-9e4b-81bb157daa8d")
 		)
 		(fp_line
-			(start 1.93 0.55)
-			(end 0.9 0.55)
+			(start -0.9 1.7)
+			(end -0.9 1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "5adb5252-9f38-43a9-9544-b9f9b0a2c236")
-		)
-		(fp_line
-			(start 1.93 -0.55)
-			(end 1.93 0.55)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "42ae81d3-faf2-44ee-b500-b81399a4ec13")
+			(uuid "24d4d2f1-4464-4d3b-b2c7-8a8623824ac3")
 		)
 		(fp_line
 			(start 0.9 1.7)
@@ -11644,44 +11212,14 @@
 			(uuid "dabdbcb2-2f5a-4807-abc1-00ea32d0417c")
 		)
 		(fp_line
-			(start 0.9 0.55)
-			(end 0.9 1.7)
+			(start -1.93 1.5)
+			(end -1.93 0.39)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "951f33bd-b655-44d9-a1af-83bcda82a116")
-		)
-		(fp_line
-			(start 0.9 -0.55)
-			(end 1.93 -0.55)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6bcae4d2-bcb6-453c-9219-6c0c06dc4a6c")
-		)
-		(fp_line
-			(start 0.9 -1.7)
-			(end 0.9 -0.55)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a318701e-1fd9-4bfa-a6af-f05cdaa6c8df")
-		)
-		(fp_line
-			(start -0.9 1.7)
-			(end -0.9 1.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "24d4d2f1-4464-4d3b-b2c7-8a8623824ac3")
+			(uuid "fde84727-0da7-4409-afb0-d9c39278414f")
 		)
 		(fp_line
 			(start -0.9 1.5)
@@ -11694,6 +11232,36 @@
 			(uuid "10b07209-74fa-44ab-a647-d9547d00e469")
 		)
 		(fp_line
+			(start 0.9 0.55)
+			(end 0.9 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "951f33bd-b655-44d9-a1af-83bcda82a116")
+		)
+		(fp_line
+			(start 1.93 0.55)
+			(end 0.9 0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5adb5252-9f38-43a9-9544-b9f9b0a2c236")
+		)
+		(fp_line
+			(start -1.93 0.39)
+			(end -0.9 0.39)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d5a63290-2e01-41dc-b7dd-73af1e658746")
+		)
+		(fp_line
 			(start -0.9 0.39)
 			(end -0.9 -0.39)
 			(stroke
@@ -11704,6 +11272,16 @@
 			(uuid "24e1a3b8-f4ac-44bc-a2d6-843cf6eb0522")
 		)
 		(fp_line
+			(start -1.93 -0.39)
+			(end -1.93 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "71ede184-f5f8-4ce8-bb64-03a8850cab0e")
+		)
+		(fp_line
 			(start -0.9 -0.39)
 			(end -1.93 -0.39)
 			(stroke
@@ -11712,6 +11290,36 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "ba1b4041-acd5-46bf-a258-1387f60e7243")
+		)
+		(fp_line
+			(start 0.9 -0.55)
+			(end 1.93 -0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6bcae4d2-bcb6-453c-9219-6c0c06dc4a6c")
+		)
+		(fp_line
+			(start 1.93 -0.55)
+			(end 1.93 0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "42ae81d3-faf2-44ee-b500-b81399a4ec13")
+		)
+		(fp_line
+			(start -1.93 -1.5)
+			(end -0.9 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e0cc9542-08fc-4c34-8031-89d9132d7339")
 		)
 		(fp_line
 			(start -0.9 -1.5)
@@ -11734,44 +11342,14 @@
 			(uuid "ce6485ff-f3df-4e03-bfd5-b9343567e237")
 		)
 		(fp_line
-			(start -1.93 1.5)
-			(end -1.93 0.39)
+			(start 0.9 -1.7)
+			(end 0.9 -0.55)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "fde84727-0da7-4409-afb0-d9c39278414f")
-		)
-		(fp_line
-			(start -1.93 0.39)
-			(end -0.9 0.39)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "d5a63290-2e01-41dc-b7dd-73af1e658746")
-		)
-		(fp_line
-			(start -1.93 -0.39)
-			(end -1.93 -1.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "71ede184-f5f8-4ce8-bb64-03a8850cab0e")
-		)
-		(fp_line
-			(start -1.93 -1.5)
-			(end -0.9 -1.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e0cc9542-08fc-4c34-8031-89d9132d7339")
+			(uuid "a318701e-1fd9-4bfa-a6af-f05cdaa6c8df")
 		)
 		(fp_poly
 			(pts
@@ -11786,7 +11364,7 @@
 			(uuid "b7fe820d-4ff5-4001-b564-cf18bc35bea0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "1b4890cf-c333-4852-8a88-e456ff30ede8")
@@ -11798,7 +11376,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 -0.95 180)
+			(at -0.9375 -0.95 270)
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -11808,7 +11386,7 @@
 			(uuid "eb172643-5637-429d-a913-c19aa2030b27")
 		)
 		(pad "2" smd roundrect
-			(at -0.9375 0.95 180)
+			(at -0.9375 0.95 270)
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -11818,7 +11396,7 @@
 			(uuid "f7f20414-5e1e-4c55-9fae-a6843b6aeab1")
 		)
 		(pad "3" smd roundrect
-			(at 0.9375 0 180)
+			(at 0.9375 0 270)
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -11843,7 +11421,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "8379480e-b139-4c2a-9b86-494f26ea8aef")
-		(at 151.384 66.294 90)
+		(at 147.828 66.294 90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -12227,6 +11805,12 @@
 		(path "/6309d748-250a-40ef-8a35-bce16782f6ee")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12560,7 +12144,7 @@
 	(footprint "Diode_SMD:D_SOD-323"
 		(layer "F.Cu")
 		(uuid "938eeee4-46e6-416f-943e-2329c26a1ba2")
-		(at 146.75 71.55)
+		(at 145.288 63.246)
 		(descr "SOD-323")
 		(tags "SOD-323")
 		(property "Reference" "D11"
@@ -12693,6 +12277,12 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/6ecf08c7-ad31-4a0c-bd9f-200209b687c7")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13167,7 +12757,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 -90)
+			(at 0 1.43 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13180,7 +12770,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/23ccee80ee542e7cf156a772bb589942.pdf?productCode=C14663"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7c527e15-868b-4b7a-835c-c28f5a9404f2")
@@ -13191,7 +12781,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f2292045-7a09-4af9-b513-4a97d8d70db4")
@@ -13202,7 +12792,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13215,7 +12805,7 @@
 			)
 		)
 		(property "Group" "Controller"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13228,7 +12818,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13241,7 +12831,7 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13254,7 +12844,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13267,7 +12857,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX7R9BB104"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13280,7 +12870,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14663.html"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13296,6 +12886,12 @@
 		(path "/046949e2-3bf0-4d2d-923f-c931f5754791")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13341,7 +12937,7 @@
 			(uuid "955658f2-c1bc-48ec-9be2-13acc3e2bd34")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "0a2dcbaf-5f6c-41ae-9037-db2be55424b7")
@@ -13353,7 +12949,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0 -90)
+			(at -0.775 0 270)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13362,7 +12958,7 @@
 			(uuid "89367733-b066-474b-aae6-e2aee1fc6da3")
 		)
 		(pad "2" smd roundrect
-			(at 0.775001 0 -90)
+			(at 0.775001 0 270)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13533,6 +13129,12 @@
 		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/80dd8721-ada0-453c-a13b-7e04e699939c")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15132,6 +14734,12 @@
 		(path "/ed63e97b-1cea-4fad-b3b2-60d88e110fe0")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15451,7 +15059,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "a7ea1dad-d7e2-4883-a80c-09d1f4957527")
-		(at 147.828 66.294 180)
+		(at 144.78 66.294 180)
 		(descr "SOT, 5 Pin (JEDEC MO-178 Var AA https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U7"
@@ -15930,11 +15538,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a8b6e7d1-efd2-4994-ab55-925ca153f709")
-		(at 137.47 82.25 180)
+		(at 139.7 81.026)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at 0 -1.43 0)
+			(at 0 -1.43 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -15948,7 +15556,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.43 180)
+			(at 0 1.43 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -15961,7 +15569,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/5b3aae1e7925073bc9bd92db48d7aba2.pdf?productCode=C128624"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "daac8a90-2f78-425f-a1af-e84b918bba0b")
@@ -15972,7 +15580,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c484f9c3-15fa-4402-97fa-d92858cd2ebd")
@@ -15983,7 +15591,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -15996,7 +15604,7 @@
 			)
 		)
 		(property "Group" "Controller"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16009,7 +15617,7 @@
 			)
 		)
 		(property "LCSC" "C128624"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16022,7 +15630,7 @@
 			)
 		)
 		(property "MPN" "CC0603KRX5R9BB105"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16035,7 +15643,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16048,7 +15656,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=CC0603KRX5R9BB105"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16061,7 +15669,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C128624.html"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16077,18 +15685,14 @@
 		(path "/5f0b3809-b975-446d-8bbe-dba35645d422")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.14058 0.51)
-			(end 0.14058 0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "55fd1df9-107c-481d-88b9-f9667989bf7a")
-		)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -16098,6 +15702,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "50c2985a-baf3-46d4-8d52-ad12b03acd23")
+		)
+		(fp_line
+			(start -0.14058 0.51)
+			(end 0.14058 0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "55fd1df9-107c-481d-88b9-f9667989bf7a")
 		)
 		(fp_rect
 			(start 1.48 0.73)
@@ -16122,7 +15736,7 @@
 			(uuid "77302ea8-f876-419e-86cb-a3eb97c5e3ee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "141370d9-e14e-4061-bd9b-102fccbe3514")
@@ -16134,7 +15748,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0 180)
+			(at -0.775 0)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -16143,7 +15757,7 @@
 			(uuid "17eeec85-4caf-477b-8d6e-6d87ea801e00")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0 180)
+			(at 0.775 0)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -16506,7 +16120,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b218a4de-ad30-45f2-bb87-ff9c52123aa5")
-		(at 144.78 63.754 180)
+		(at 141.732 63.754 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R28"
@@ -17483,7 +17097,7 @@
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
 		(uuid "c01194d8-3df5-4b22-9611-b3484c6f1814")
-		(at 160 67.31)
+		(at 160.782 66.294)
 		(property "Reference" "TP6"
 			(at 0 -1 0)
 			(unlocked yes)
@@ -17627,6 +17241,12 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/9aac9aab-4b81-46c4-a95e-94ce40a6582b")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.725001 -0.925)
@@ -17835,6 +17455,12 @@
 		(path "/f18d8969-1ec6-4f26-aa14-00261feed653")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18316,7 +17942,7 @@
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
 		(uuid "ceb9ae9b-dcf7-4017-9667-a476654e424b")
-		(at 146.822 77.674)
+		(at 137.668 66.802 180)
 		(property "Reference" "TP26"
 			(at -3.746 -0.314 0)
 			(layer "F.SilkS")
@@ -18363,7 +17989,7 @@
 			)
 		)
 		(property "Group" "Power test points"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18376,7 +18002,7 @@
 			)
 		)
 		(property "LCSC" "C3029083"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18389,7 +18015,7 @@
 			)
 		)
 		(property "MPN" "S1751-46"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18402,7 +18028,7 @@
 			)
 		)
 		(property "Manufacturer" "Harwin"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18415,7 +18041,7 @@
 			)
 		)
 		(property "Probe pair" "TP12 GND"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18428,7 +18054,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18441,7 +18067,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -18457,27 +18083,23 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/78270f81-78a4-4d7e-826f-619059f0d631")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.725 -0.925)
-			(end 1.75 -0.925)
+			(start 1.75 0.925)
+			(end -1.725 0.925)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "82b9a1ec-9d57-4578-9a00-1ad9efe9d857")
-		)
-		(fp_line
-			(start -1.725 0.925)
-			(end -1.725 -0.925)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "62f08f2c-4237-4c8b-b4c3-ed5f896bb622")
+			(uuid "2f7f64cc-8259-4871-9009-8b8d7c9b11cd")
 		)
 		(fp_line
 			(start 1.75 -0.925)
@@ -18490,17 +18112,27 @@
 			(uuid "ed40c4a1-1ad7-4e4a-967c-6cea99e53bef")
 		)
 		(fp_line
-			(start 1.75 0.925)
-			(end -1.725 0.925)
+			(start -1.725 0.925)
+			(end -1.725 -0.925)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "2f7f64cc-8259-4871-9009-8b8d7c9b11cd")
+			(uuid "62f08f2c-4237-4c8b-b4c3-ed5f896bb622")
+		)
+		(fp_line
+			(start -1.725 -0.925)
+			(end 1.75 -0.925)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "82b9a1ec-9d57-4578-9a00-1ad9efe9d857")
 		)
 		(pad "1" smd rect
-			(at 0 0)
+			(at 0 0 180)
 			(size 3.45 1.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VREG_3V45")
@@ -18681,6 +18313,12 @@
 		(path "/9dee705f-0c82-4572-a46a-e4ea5d049e2e")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.725001 -0.925)
@@ -19139,7 +18777,7 @@
 	(footprint "My Libraries:Harwin-S1751-46-Test-Point"
 		(layer "F.Cu")
 		(uuid "d1e29225-52de-434e-a0b0-fa088d904e0c")
-		(at 160 62.992)
+		(at 156.21 66.294)
 		(property "Reference" "TP5"
 			(at 0 -1 0)
 			(unlocked yes)
@@ -19283,6 +18921,12 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/016ffe21-d410-4f30-b2c8-4b94e653b799")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.725001 -0.925)
@@ -19349,7 +18993,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d42d4af7-8650-445c-ae36-fc8e62fb355a")
-		(at 144.78 68.834 180)
+		(at 141.732 68.834 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C16"
@@ -19733,6 +19377,12 @@
 		(path "/fa43f9a1-1596-44c0-ab0c-441587de6c26")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19965,6 +19615,12 @@
 		(path "/7e0c96ab-06f3-41b5-91de-ed4f94883be7/7ff27f5f-130a-440c-b4a1-978c6ff1482e")
 		(sheetname "/Power and current measurement/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20844,7 +20500,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e2c0a858-8db5-42d2-b539-8fb034fe07c7")
-		(at 144.78 66.294 90)
+		(at 141.732 66.294 90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R27"
@@ -21212,6 +20868,12 @@
 		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/9bb7ad40-cb8f-489b-bc1b-87003d463e90")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.725001 -0.925)
@@ -21437,6 +21099,16 @@
 		(path "/6bb74d4d-f0b6-4359-a2b8-1b517107911c")
 		(sheetname "/")
 		(sheetfile "oscilloscope trainer hw.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "7" "44" "5" "6" "2" "3" "4" "18" "19" "20" "39" "40" "41" "42"
+					"43" "45" "46" "21" "22" "25" "26" "27" "28" "1" "24" "48" "23" "35"
+					"47" "9" "8" "36" "10" "11" "12" "13" "14" "15" "16" "17" "29" "30"
+					"31" "32" "33" "34" "37" "38"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22251,11 +21923,11 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e8fbc5d1-2db2-4f21-9d06-29aa42cdc1f3")
-		(at 155.956 69.088)
+		(at 157.734 69.596 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 1 -1.43 180)
+			(at 1 -1.43 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -22269,7 +21941,7 @@
 			)
 		)
 		(property "Value" "5.1k 1%"
-			(at 0 1.43 0)
+			(at 0 1.43 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -22304,7 +21976,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -22317,7 +21989,7 @@
 			)
 		)
 		(property "Group" "USB and regulator"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -22330,7 +22002,7 @@
 			)
 		)
 		(property "LCSC" "C23186"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -22343,7 +22015,7 @@
 			)
 		)
 		(property "MPN" "0603WAF5101T5E"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -22356,7 +22028,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -22369,7 +22041,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=0603WAF5101T5E"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -22382,7 +22054,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C23186.html"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -22407,16 +22079,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.237258 -0.522501)
-			(end 0.237258 -0.522501)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6eb0e4e6-46ef-41d7-b79b-4aa872c25f41")
-		)
-		(fp_line
 			(start -0.237258 0.5225)
 			(end 0.237258 0.5225)
 			(stroke
@@ -22425,6 +22087,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "dcf6922a-af63-4c88-8373-074fef37caa1")
+		)
+		(fp_line
+			(start -0.237258 -0.522501)
+			(end 0.237258 -0.522501)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6eb0e4e6-46ef-41d7-b79b-4aa872c25f41")
 		)
 		(fp_rect
 			(start 1.48 -0.73)
@@ -22449,7 +22121,7 @@
 			(uuid "06f61bbd-9c3a-4249-bc38-5bbad39d55b6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9caf538d-0820-4ecc-9716-3599d765fce7")
@@ -22461,7 +22133,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.825 0)
+			(at -0.825 0 180)
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -22470,7 +22142,7 @@
 			(uuid "17eb55e8-14f8-45e1-b11e-aa54d4e042d0")
 		)
 		(pad "2" smd roundrect
-			(at 0.825 0)
+			(at 0.825 0 180)
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -24081,6 +23753,12 @@
 		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/d626e37f-ffe6-4268-8d0d-31c8bc66d1bc")
 		(sheetname "/Waveform and trigger outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.725001 -0.925)
@@ -25492,6 +25170,17 @@
 			)
 		)
 	)
+	(gr_text "3V45"
+		(at 137.668 68.58 0)
+		(layer "F.SilkS")
+		(uuid "2a53cab7-4758-49e4-bc94-bd5951040be2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "VALUE"
 		(at 139 89.25 0)
 		(layer "F.SilkS" knockout)
@@ -25507,17 +25196,6 @@
 		(at 139.888 84.854 0)
 		(layer "F.SilkS")
 		(uuid "c933b4ce-2b28-4680-972c-d119cb95f2ee")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "3V45"
-		(at 143.85 74.39 0)
-		(layer "F.SilkS")
-		(uuid "2a53cab7-4758-49e4-bc94-bd5951040be2")
 		(effects
 			(font
 				(size 1 1)
@@ -25558,10 +25236,32 @@
 			)
 		)
 	)
+	(gr_text "BAT+"
+		(at 151.892 68.072 0)
+		(layer "F.SilkS")
+		(uuid "a5463e64-5117-4de1-9717-1724fe40da49")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "PA10"
 		(at 153.3262 87.6952 0)
 		(layer "F.SilkS")
 		(uuid "626ce40b-77d7-46c1-b86e-0831a3ea4e86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "VBUS"
+		(at 156.21 68.054 0)
+		(layer "F.SilkS")
+		(uuid "40145b3f-cd4b-476e-bbd0-6e1ed3bf24f1")
 		(effects
 			(font
 				(size 1 1)
@@ -25580,32 +25280,10 @@
 			)
 		)
 	)
-	(gr_text "VBUS"
-		(at 160 64.752 0)
-		(layer "F.SilkS")
-		(uuid "40145b3f-cd4b-476e-bbd0-6e1ed3bf24f1")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(gr_text "GND"
-		(at 160 69.132 0)
+		(at 160.782 68.116 0)
 		(layer "F.SilkS" knockout)
 		(uuid "1d8eae8c-940c-4279-9445-88ff0c02b3af")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "BAT+"
-		(at 160.274 60.198 0)
-		(layer "F.SilkS")
-		(uuid "a5463e64-5117-4de1-9717-1724fe40da49")
 		(effects
 			(font
 				(size 1 1)
@@ -25669,7 +25347,7 @@
 		)
 	)
 	(gr_text "VDD"
-		(at 142.81 65.9 90)
+		(at 139.762 65.9 90)
 		(layer "F.SilkS")
 		(uuid "600011b6-55c2-42b4-9968-6c7d1f961b2d")
 		(effects
