@@ -13467,7 +13467,7 @@
 				)
 			)
 		)
-		(property "Value" "50 mA hold / 100 mA trip"
+		(property "Value" "50 mA hold / 150 mA trip"
 			(at 72.39 155 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13477,7 +13477,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_Bourns_MF-RHT300"
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13488,7 +13488,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-r.pdf"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ptc-1206l-datasheet?assetguid=2b6a1515-d4ee-4c83-8bd4-152b4901b8f5"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13499,7 +13499,7 @@
 				)
 			)
 		)
-		(property "Description" "Resettable PPTC in the common USB/battery feed. At 23 °C: 50 mA hold, 100 mA trip, 5 s maximum at 500 mA."
+		(property "Description" "60 V surface-mount resettable PPTC in the common USB/battery feed. Maximum time to trip is 1.5 s at 250 mA."
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13521,7 +13521,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C913267"
+		(property "LCSC" "C315892"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13532,7 +13532,7 @@
 				)
 			)
 		)
-		(property "MPN" "MF-R005-2"
+		(property "MPN" "1206L005/60WR"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13543,7 +13543,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "Manufacturer" "Littelfuse"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13554,7 +13554,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=MF-R005-2"
+		(property "Octo_Link" "https://octopart.com/search?q=1206L005%2F60WR"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13565,7 +13565,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C913267.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C315892.html"
 			(at 72.39 148.59 0)
 			(hide yes)
 			(show_name no)
