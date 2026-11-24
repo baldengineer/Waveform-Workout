@@ -6617,7 +6617,7 @@
 	)
 	(text "There is only 1 right answer.\nIs this it?"
 		(exclude_from_sim no)
-		(at 39.878 109.982 0)
+		(at 32.258 104.902 0)
 		(effects
 			(font
 				(size 1.25 1.25)
@@ -6675,6 +6675,12 @@
 		(uuid "489a445e-00d8-4221-91f9-43487f632348")
 	)
 	(junction
+		(at 31.75 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54b165aa-b6f0-44ef-96d6-e228a6d539da")
+	)
+	(junction
 		(at 163.83 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6697,6 +6703,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d61f4c1-6116-49e7-8e1c-49ba7609ae55")
+	)
+	(junction
+		(at 31.75 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "753ff054-78d0-4e22-af83-8ecca44bb9d3")
 	)
 	(junction
 		(at 260.35 148.59)
@@ -7064,6 +7076,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 90.17) (xy 31.75 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587f6c05-5c37-4e29-988e-8cb65c7e0ea8")
+	)
+	(wire
+		(pts
 			(xy 254 134.62) (xy 254 148.59)
 		)
 		(stroke
@@ -7294,6 +7316,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 97.79) (xy 31.75 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9151d577-3237-4102-8a22-f9146b770faf")
+	)
+	(wire
+		(pts
 			(xy 39.37 97.79) (xy 39.37 92.71)
 		)
 		(stroke
@@ -7361,6 +7393,16 @@
 			(type default)
 		)
 		(uuid "9798e009-1e9e-477b-92f0-cc2eb67fa2e2")
+	)
+	(wire
+		(pts
+			(xy 27.94 95.25) (xy 27.94 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ca96a7-1e35-4d78-8113-0c8bbec0b75e")
 	)
 	(wire
 		(pts
@@ -10612,7 +10654,6 @@
 	(symbol
 		(lib_id "Trainer:CSS-1210TB")
 		(at 53.34 148.59 0)
-		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10622,7 +10663,7 @@
 		(dnp no)
 		(uuid "65bf83b7-9582-4a66-a574-07f88b6e0533")
 		(property "Reference" "SW1"
-			(at 53.34 139.7 0)
+			(at 53.34 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10632,7 +10673,7 @@
 			)
 		)
 		(property "Value" "CSS-1210TB"
-			(at 53.34 142.24 0)
+			(at 53.34 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11368,6 +11409,152 @@
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
 					(reference "TP26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 27.94 92.71 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7983b883-de0f-4228-a95a-f67eb0f4bfec")
+		(property "Reference" "C23"
+			(at 21.59 92.7163 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47p"
+			(at 24.13 92.7163 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14857"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "C0G/NP0"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14857"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21C470JBANNNC"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=CL21C470JBANNNC"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14857.html"
+			(at 27.94 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f416e11f-d8f1-4b87-a3b6-e9b8a5bb2e06")
+		)
+		(pin "2"
+			(uuid "8fcd4d8c-2f96-4dd0-aae8-de284c5c40c6")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
+					(reference "C23")
 					(unit 1)
 				)
 			)

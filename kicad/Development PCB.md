@@ -1,6 +1,16 @@
 # Development PCB
 
-## DAC-only coplanar layout
+## Top-layer DAC routing
+
+Both analog channels run on F.Cu from the STM32 through their reconstruction filters, U2 buffers and U3 switches. Output A ends at the BNC (J2). Output B ends at the probe hole (TP3), with a local grounded probe contact at TP4. The 12 signal nets use 63 track segments and zero signal vias. The totals including feedback and test-point branches are 47.5 mm on A and 79.2 mm on B.
+
+The uniform sections target 50 Ω with a 0.3203 mm trace and a 0.2500 mm gap to adjacent top-layer ground. JLC04161H-7628 has 0.2104 mm of prepreg between F.Cu and In1.Cu. The stack is symmetric, so the previous coplanar calculation also applies to this layer pair. Short pad escapes, filter junctions, and openings in the side ground near crowded pads have different geometry. [JLCPCB impedance calculator](https://jlcpcb.com/pcb-impedance-calculator)
+
+In1.Cu is the board-wide ground plane. Its filled copper covers the entire width of the 0.3203 mm traces outside their own through-hole launch clearances. Sixty-four ground vias bond the top pours to that plane, including the four filter shunt returns and TP4. In2.Cu carries BAT+, VREG_3V45 and downstream VDD.
+
+The saved board passes silkscreen, courtyard, short-circuit and schematic-parity checks. All 12 analog signal nets are connected. KiCad reports 148 open connections elsewhere, four existing hole-clearance errors inside J1 and 25 footprint differences from the libraries.
+
+## Earlier bottom-layer DAC layout
 
 The two analog channels are routed from the STM32 DAC pins through the reconstruction filters, U2 buffers and U3 switches. Channel A reaches the BNC (J2) and header (J4). Channel B reaches the probe pad (TP3). TP22 and TP23 tap the buffered signals. USB, digital I/O and power distribution remain open for the next routing pass.
 
