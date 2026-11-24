@@ -5583,7 +5583,7 @@
 	)
 	(symbol
 		(lib_id "Trainer:TLV9002IDR")
-		(at 85.09 115.57 0)
+		(at 85.09 60.96 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5594,7 +5594,7 @@
 		(fields_autoplaced yes)
 		(uuid "80898728-8638-477e-915f-a1921b00028c")
 		(property "Reference" "U2"
-			(at 85.09 105.41 0)
+			(at 85.09 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5604,7 +5604,7 @@
 			)
 		)
 		(property "Value" "TLV9002IDR"
-			(at 85.09 107.95 0)
+			(at 85.09 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5614,7 +5614,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5625,7 +5625,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5636,7 +5636,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5647,7 +5647,7 @@
 			)
 		)
 		(property "Group" "DAC followers and selector"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5658,7 +5658,7 @@
 			)
 		)
 		(property "LCSC" "C398360"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5669,7 +5669,7 @@
 			)
 		)
 		(property "MPN" "TLV9002IDR"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5680,7 +5680,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5691,7 +5691,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=TLV9002IDR"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5702,7 +5702,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C398360.html"
-			(at 85.09 115.57 0)
+			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6871,7 +6871,7 @@
 	)
 	(symbol
 		(lib_id "Trainer:TLV9002IDR")
-		(at 85.09 60.96 0)
+		(at 85.09 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6882,7 +6882,7 @@
 		(fields_autoplaced yes)
 		(uuid "b35a4d67-41e5-43af-b434-405300d039d0")
 		(property "Reference" "U2"
-			(at 85.09 50.8 0)
+			(at 85.09 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6892,7 +6892,7 @@
 			)
 		)
 		(property "Value" "TLV9002IDR"
-			(at 85.09 53.34 0)
+			(at 85.09 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6902,7 +6902,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6913,7 +6913,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9002.pdf"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6924,7 +6924,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6935,7 +6935,7 @@
 			)
 		)
 		(property "Group" "DAC followers and selector"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6946,7 +6946,7 @@
 			)
 		)
 		(property "LCSC" "C398360"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6957,7 +6957,7 @@
 			)
 		)
 		(property "MPN" "TLV9002IDR"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6968,7 +6968,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6979,7 +6979,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=TLV9002IDR"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6990,7 +6990,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C398360.html"
-			(at 85.09 60.96 0)
+			(at 85.09 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
