@@ -1,6 +1,22 @@
 # Development PCB
 
-## PP3 routing trial
+## DAC routing and battery orientation
+
+The bottom-layer runs on DAC_A and DAC_B connect the STM32 to filter inputs R29 and R30. After the output stages, OUT_A runs from R5 to the BNC (J2) and header (J4), and OUT_B runs from R6 to the probe point (TP3).
+
+For JLCPCB stackup **JLC04161H-7628**, the JLCPCB calculator gives **0.3586 mm** for a 50 Ω single-ended microstrip on L4 referenced to L3. The calculation uses a 1.6 mm nominal four-layer board, 0.035 mm outer copper, 0.5 oz inner copper and 0.2104 mm of 7628 dielectric between L4 and L3. The PCB design rule enforces this width on the four B.Cu signal nets. Local GND polygons on In2.Cu provide the reference, with VDD on the rest of that layer. [JLCPCB impedance calculator](https://jlcpcb.com/pcb-impedance-calculator) · [JLCPCB stackups](https://jlcpcb.com/impedance)
+
+The B.Cu lengths are 8.24 mm for DAC_A, 4.83 mm for DAC_B, 18.83 mm total for both OUT_A branches and 27.61 mm for OUT_B. A check of the filled board found continuous GND across the full width of each run outside the signal pads’ and vias’ clearance openings. Nine ground vias join the two reference polygons to In1.Cu.
+
+The 50 Ω target applies to the uniform traces. Surface-pad escapes, vias and probe or connector pads have different geometry. The aluminum battery holder overlaps the two MCU-to-filter runs. Its spacing and the insulating adhesive affect their assembled impedance. Both output runs clear the holder.
+
+The Keystone 1290-79 mounts on the back with the wire pads toward the switch and USB-C connector. Bond the base with electrically insulating adhesive. Wire the positive socket to square pad 1 (BAT+) and the negative stud to round pad 2 (GND). [Keystone 1290-79 drawing](https://media.soselectronic.com/KatList/keystone/1290-79.pdf)
+
+KiCad reports zero unconnected items, schematic mismatches or silkscreen violations. The four existing USB-C locating-hole clearance findings and 34 earlier warnings remain.
+
+## Earlier PP3 routing trial
+
+The counts and battery orientation below describe the initial PP3 routing checkpoint.
 
 KiCad reports zero unconnected items, shorts, schematic mismatches, dangling tracks or dangling vias. The board has 666 track segments on F.Cu and B.Cu and 120 vias. All 92 footprints retain their first-pass positions.
 

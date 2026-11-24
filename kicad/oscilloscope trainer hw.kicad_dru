@@ -74,3 +74,9 @@
     (condition "A.Layer == 'F.Silkscreen' || A.Layer == 'B.Silkscreen'")
     (constraint text_height (min 1.00mm))
     (constraint text_thickness (min 0.15mm)))
+
+# JLC04161H-7628, 50 ohm single-ended L4 microstrip referenced to L3.
+(rule "DAC and output bottom-layer width"
+    (layer "B.Cu")
+    (condition "A.NetName == '/DAC_A' || A.NetName == '/DAC_B' || A.NetName == '/Waveform and trigger outputs/OUT_A' || A.NetName == '/Waveform and trigger outputs/OUT_B'")
+    (constraint track_width (min 0.3586mm) (opt 0.3586mm) (max 0.3586mm)))
