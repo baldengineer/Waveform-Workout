@@ -1,6 +1,20 @@
 # Development PCB
 
-## DAC routing and battery orientation
+## DAC-only coplanar layout
+
+The two analog channels are routed from the STM32 DAC pins through the reconstruction filters, U2 buffers and U3 switches. Channel A reaches the BNC (J2) and header (J4). Channel B reaches the probe pad (TP3). TP22 and TP23 tap the buffered signals. USB, digital I/O and power distribution remain open for the next routing pass.
+
+U1 and U2 were turned 90° and U3 was turned 180°. The filters sit between the DAC pins and U2, with L1 and L2 on perpendicular axes. Short F.Cu connections serve the filter components, buffer feedback loops and output resistors. Including the test-point and connector branches, total routed signal copper fell from 136.1 to 90.5 mm on A and from 119.5 to 89.9 mm on B.
+
+The six inter-stage and output nets use a **0.3203 mm B.Cu trace with a 0.2500 mm gap** to ground on either side. These dimensions target 50 Ω in JLCPCB’s solder-masked, single-ended coplanar model for L4 referenced to L3. Pads, vias, the output-A branch and the glued aluminum holder change the local geometry. The holder-to-board spacing depends on the adhesive. [JLCPCB impedance calculator](https://jlcpcb.com/pcb-impedance-calculator)
+
+KiCad uses the JLC04161H-7628 construction with 0.035 mm outer copper, 0.0152 mm inner copper, two 0.2104 mm layers of 7628 prepreg and a 1.065 mm core. The laminate and copper total 1.5862 mm. KiCad includes 0.01524 mm of solder mask per face in its mechanical thickness. [JLCPCB stackups](https://jlcpcb.com/impedance) · [JLCPCB calculator parameters](https://jlcpcb.com/help/article/user-guide-to-the-jlcpcb-impedance-calculator)
+
+In1.Cu is the board-wide GND plane. On In2.Cu, local GND follows the bottom signal runs, alongside BAT+, VREG_3V45 and downstream VDD power regions. Eighty-two stitching vias bond the bottom ground strips to the inner ground. Four additional ground vias serve the filter shunt capacitors. A fill check found continuous In2.Cu reference copper across the full trace width outside the signal-pad and via clearances.
+
+KiCad reports zero opens on the 12 analog signal nets, zero schematic mismatches and 150 open connections elsewhere. The four existing J1 hole-clearance findings and 25 library-footprint warnings remain.
+
+## Earlier DAC routing and battery orientation
 
 The bottom-layer runs on DAC_A and DAC_B connect the STM32 to filter inputs R29 and R30. After the output stages, OUT_A runs from R5 to the BNC (J2) and header (J4), and OUT_B runs from R6 to the probe point (TP3).
 
