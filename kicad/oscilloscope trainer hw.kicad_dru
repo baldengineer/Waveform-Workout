@@ -75,18 +75,7 @@
     (constraint text_height (min 1.00mm))
     (constraint text_thickness (min 0.15mm)))
 
-# JLC04161H-7628. Top-layer grounded coplanar traces reference In1.Cu.
-(rule "DAC and output top-layer width"
-    (layer "F.Cu")
-    (condition "A.NetName == '/DAC_A' || A.NetName == '/DAC_B' || A.NetName == 'Net-(U2A-~)' || A.NetName == 'Net-(U2B-~)' || A.NetName == 'Net-(R5-Pad1)' || A.NetName == 'Net-(R6-Pad1)' || A.NetName == '/Waveform and trigger outputs/OUT_A' || A.NetName == '/Waveform and trigger outputs/OUT_B'")
-    (constraint track_width (min 0.3203mm) (opt 0.3203mm) (max 0.3203mm)))
-
-# Allow short pad escapes and the connections between U2 feedback pins.
-(rule "DAC pad escapes and feedback"
-    (layer "F.Cu")
-    (condition "A.Length <= 1.67mm && (A.NetName == '/DAC_A' || A.NetName == '/DAC_B' || A.NetName == 'Net-(U2A-~)' || A.NetName == 'Net-(U2B-~)' || A.NetName == 'Net-(R5-Pad1)' || A.NetName == 'Net-(R6-Pad1)' || A.NetName == '/Waveform and trigger outputs/OUT_A' || A.NetName == '/Waveform and trigger outputs/OUT_B')")
-    (constraint track_width (min 0.18mm) (opt 0.3203mm) (max 0.3203mm)))
-
+# Keep side clearance to the top-layer ground around the analog signal paths.
 (rule "Coplanar ground gap"
     (layer "F.Cu")
     (condition "A.Type == 'Zone' && A.NetName == 'GND' && B.Type == 'Track' && (B.NetName == '/DAC_A' || B.NetName == '/DAC_B' || B.NetName == 'Net-(U2A-~)' || B.NetName == 'Net-(U2B-~)' || B.NetName == 'Net-(R5-Pad1)' || B.NetName == 'Net-(R6-Pad1)' || B.NetName == '/Waveform and trigger outputs/OUT_A' || B.NetName == '/Waveform and trigger outputs/OUT_B')")

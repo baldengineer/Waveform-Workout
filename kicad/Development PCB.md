@@ -1,6 +1,12 @@
 # Development PCB
 
-## Top-layer DAC routing
+## DAC routing after MCU placement
+
+The two 0.30 mm traces from U1 pins 14 and 15 to R29 and R30 each measure 4.3986 mm. Both channels continue on F.Cu through their filters, U2 feedback loops and U3 switches. Channel A terminates at J2 and channel B at TP3. TP22 and TP23 tap the buffer outputs. The twelve signal nets use 59 track segments. Their signal paths stay on F.Cu throughout. A pre-existing unused signal via beside TP22 still appears in DRC.
+
+The grounded top pour covers the filter, buffer, switch and connector routes and reaches the probe ground at TP4. The pour has 0.25 mm clearance and connects to the In1.Cu ground plane through 70 stitching vias, including 22 added for this placement. The DAC routes have no impedance target. The former exact-width rule has been removed.
+
+## Earlier top-layer DAC routing
 
 Both analog channels run on F.Cu from the STM32 through their reconstruction filters, U2 buffers and U3 switches. Output A ends at the BNC (J2). Output B ends at the probe hole (TP3), with a local grounded probe contact at TP4. The 12 signal nets use 63 track segments and zero signal vias. The totals including feedback and test-point branches are 47.5 mm on A and 79.2 mm on B.
 
