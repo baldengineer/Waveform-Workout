@@ -1,6 +1,6 @@
 # Trainer test points
 
-TP1–TP4 are bare PCB features. Fit a Harwin S1751-46 surface-mount probe loop at TP5–TP12 and TP15–TP26 on the default build (20 loops total). [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+TP1 and TP2 are bare sense pads. TP3 is a plated clip hole. Fit 18 Harwin S1751-46 surface-mount probe loops on the default build at TP4–TP12, TP15–TP17, TP19 and TP21–TP25. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
 
 ## Power on the PP3 schematic
 
@@ -9,7 +9,7 @@ TP1 and TP2 are the sense pads on opposite sides of the current-measurement link
 | Rail point | Ground point | What to measure |
 |---|---|---|
 | TP5 | TP6 | USB VBUS at the connector and USB throw of SW1 |
-| TP7 or TP26 | TP8 | System VDD at the regulated output of U7 (3.447 V nominal) |
+| TP7 | TP8 | System VDD at the regulated output of U7 (3.447 V nominal) |
 | TP9 | TP10 | Alkaline PP3 positive terminal and battery throw of SW1 |
 | TP11 | TP12 | Selected input at SW1 common, before fuse F1 and protection diode D11 |
 | TP1 | TP12 | Protected supply at the cathode of D11, on the source side of the shunt |
@@ -44,7 +44,5 @@ These pins are available for firmware experiments. Alternate functions that shar
 | TP15 | PA6 | 16 | ADC_IN6, TIM3_CH1, COMP1_OUT |
 | TP16 | PA9 | 30 | USART1_TX or I2C1_SCL |
 | TP17 | PA10 | 31 | USART1_RX or I2C1_SDA |
-| TP18 | PB12 | 25 | SPI2_NSS |
 | TP19 | PB13 | 26 | SPI2_SCK, TIM21_CH1, I2C2_SCL |
-| TP20 | PB14 | 27 | SPI2_MISO, TIM21_CH2, I2C2_SDA |
 | TP21 | PB15 | 28 | SPI2_MOSI |
