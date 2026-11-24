@@ -5,11 +5,12 @@
 	(uuid "b26672ce-fb86-4c6c-90a5-e9bc847dd8b4")
 	(paper "A")
 	(title_block
-		(title "Waveform Workout")
+		(title "Button and Indicators")
 		(date "2026-11-22")
 		(rev "r1")
 		(company "baldengineer.com")
 		(comment 1 "James L")
+		(comment 2 "Try to matrix the LEDs on the PCB.")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -1211,17 +1212,6 @@
 		)
 		(uuid "0a9e6207-bf6c-4205-99f7-1680fe25a8b4")
 	)
-	(text "One row and one value illuminate for two seconds after a change."
-		(exclude_from_sim no)
-		(at 20.32 29.21 0)
-		(effects
-			(font
-				(size 1.55 1.55)
-			)
-			(justify left bottom)
-		)
-		(uuid "397f41fb-f277-404f-bfab-84e11f93532b")
-	)
 	(text "MODE BUTTON"
 		(exclude_from_sim no)
 		(at 25.4 162.56 0)
@@ -1256,30 +1246,6 @@
 			(justify left bottom)
 		)
 		(uuid "884b5118-8875-41d5-b069-7c74ba9137a8")
-	)
-	(text "ROW"
-		(exclude_from_sim no)
-		(at 25.4 36.83 0)
-		(effects
-			(font
-				(size 1.55 1.55)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "e18877dd-68a1-4c6d-bdc7-b3176222246d")
-	)
-	(text "BUTTON AND INDICATORS"
-		(exclude_from_sim no)
-		(at 20.32 22.86 0)
-		(effects
-			(font
-				(size 3 3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "f2e4303b-6a9c-43e9-abc2-ec14217bbda9")
 	)
 	(no_connect
 		(at 251.46 60.96)
