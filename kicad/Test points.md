@@ -4,18 +4,20 @@ TP1–TP4 are bare PCB features. Fit a Harwin S1751-46 surface-mount probe loop 
 
 ## Power on the PP3 schematic
 
-TP1 and TP2 are the original sense pads on opposite sides of the current-measurement link. To measure a populated shunt with two grounded scope probes, put the tips on TP1 and TP2, connect the probe grounds to TP12 and TP8, and subtract the channels.
+TP1 and TP2 are the sense pads on opposite sides of the current-measurement link at the input of regulator U7. JP1 and the optional 10 Ω shunt R4 are in parallel.
 
 | Rail point | Ground point | What to measure |
 |---|---|---|
 | TP5 | TP6 | USB VBUS at the connector and USB throw of SW1 |
-| TP7 | TP8 | System VDD on the load side of JP1 |
+| TP7 or TP26 | TP8 | System VDD at the regulated output of U7 (3.447 V nominal) |
 | TP9 | TP10 | Alkaline PP3 positive terminal and battery throw of SW1 |
-| TP11 | TP12 | Selected input at SW1 common, before protection diode D11 |
-| TP1 or TP26 | TP12 or TP8 | U7 regulated output, source side of JP1 (3.447 V nominal) |
-| TP2 | TP8 | Board load voltage after JP1 or the optional R4 shunt |
+| TP11 | TP12 | Selected input at SW1 common, before fuse F1 and protection diode D11 |
+| TP1 | TP12 | Protected supply at the cathode of D11, on the source side of the shunt |
+| TP2 | TP8 | U7 input voltage, on the regulator side of the shunt |
 
-On either power source, an ammeter in place of JP1 reads the board load. The regulator and its feedback divider draw current upstream of JP1. To measure battery current including that overhead, remove the PP3 and supply J5 from an SMU with BAT selected. For a shunt measurement, fit R4 and remove the JP1 short. At 10 mA, the 10 Ω shunt drops 100 mV between TP1 and TP2. [TPS7A24 datasheet](https://www.ti.com/lit/ds/symlink/tps7a24.pdf)
+On USB or battery power, the link measures U7 input current, including the board load, the feedback divider and the regulator’s own current. For an ammeter reading, leave R4 unpopulated, remove the JP1 short and connect the meter across JP1.
+
+For a scope measurement, fit R4 and remove the JP1 short. Probe TP1 with CH1 and TP2 with CH2, grounding the probes at TP12 and TP8 respectively. Use CH1 − CH2 for the shunt voltage and divide by 10 Ω to get input current. A 100 mV difference corresponds to 10 mA flowing toward U7. To measure at the battery terminals with an SMU, remove the PP3, select BAT and power J5 from the SMU.
 
 ## Waveform and trigger
 
