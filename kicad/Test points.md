@@ -1,6 +1,6 @@
 # Trainer test points
 
-TP1 and TP2 are bare sense pads. TP3 is a plated clip hole. Fit 18 Harwin S1751-46 surface-mount probe loops on the default build at TP4–TP12, TP15–TP17, TP19 and TP21–TP25. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+TP1 and TP2 are bare sense pads. TP3 is a plated clip hole. TP15–TP17 are exposed 1 × 1 mm square SMT pads for PA6, PA9 and PA10, respectively. Fit 15 Harwin S1751-46 surface-mount probe loops on the default build at TP4–TP12, TP19 and TP21–TP25. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
 
 ## Power on the PP3 schematic
 

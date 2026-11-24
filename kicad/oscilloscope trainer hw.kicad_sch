@@ -386,6 +386,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
 			(pin_names
 				(offset 1.016)
@@ -5611,14 +5734,14 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
+		(lib_id "Connector:TestPoint")
 		(at 152.4 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1b22edaa-d0b7-41f1-92cf-15fd128b9ab5")
 		(property "Reference" "TP15"
@@ -5642,7 +5765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5653,7 +5776,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+		(property "Datasheet" ""
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5664,7 +5787,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare 1 mm square SMT probe pad"
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5686,7 +5809,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3029083"
+		(property "LCSC" ""
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5697,7 +5820,7 @@
 				)
 			)
 		)
-		(property "MPN" "S1751-46"
+		(property "MPN" ""
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5708,7 +5831,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Harwin"
+		(property "Manufacturer" ""
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5740,7 +5863,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+		(property "Octo_Link" ""
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5751,7 +5874,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+		(property "lcsc_link" ""
 			(at 152.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5852,14 +5975,14 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
+		(lib_id "Connector:TestPoint")
 		(at 152.4 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2156577c-77fd-4ac8-a4ab-274800db6e45")
 		(property "Reference" "TP17"
@@ -5883,7 +6006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5894,7 +6017,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+		(property "Datasheet" ""
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5905,7 +6028,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare 1 mm square SMT probe pad"
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5927,7 +6050,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3029083"
+		(property "LCSC" ""
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5938,7 +6061,7 @@
 				)
 			)
 		)
-		(property "MPN" "S1751-46"
+		(property "MPN" ""
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5949,7 +6072,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Harwin"
+		(property "Manufacturer" ""
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5981,7 +6104,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+		(property "Octo_Link" ""
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5992,7 +6115,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+		(property "lcsc_link" ""
 			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7383,14 +7506,14 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
+		(lib_id "Connector:TestPoint")
 		(at 152.4 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "82a80f27-6e3e-4f45-942b-a658a49b536d")
 		(property "Reference" "TP16"
@@ -7414,7 +7537,7 @@
 				)
 			)
 		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7425,7 +7548,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
+		(property "Datasheet" ""
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7436,7 +7559,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare 1 mm square SMT probe pad"
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7458,7 +7581,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3029083"
+		(property "LCSC" ""
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7469,7 +7592,7 @@
 				)
 			)
 		)
-		(property "MPN" "S1751-46"
+		(property "MPN" ""
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7480,7 +7603,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Harwin"
+		(property "Manufacturer" ""
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7512,7 +7635,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
+		(property "Octo_Link" ""
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7523,7 +7646,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
+		(property "lcsc_link" ""
 			(at 152.4 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -9613,5 +9736,4 @@
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )
