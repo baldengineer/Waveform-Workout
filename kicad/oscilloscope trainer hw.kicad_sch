@@ -5430,7 +5430,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical"
+		(property "Footprint" "Trainer:Samtec_FTSH-105-01-L-DV-007-TR"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5441,7 +5441,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/054525ac7368160cd5a1ed3a5eca3759.pdf?productCode=C7501289"
+		(property "Datasheet" "https://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-x-xx-mkt.pdf"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5452,7 +5452,7 @@
 				)
 			)
 		)
-		(property "Description" "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"
+		(property "Description" "Cortex SWD header, 2 x 5 positions, 1.27 mm pitch, vertical SMT, pin 7 omitted"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5485,7 +5485,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C7501289"
+		(property "LCSC" "C3347749"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5496,7 +5496,7 @@
 				)
 			)
 		)
-		(property "MPN" "ZX-PZ1.27-2-5PZZ"
+		(property "MPN" "FTSH-105-01-L-DV-007-TR"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5507,7 +5507,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Megastar"
+		(property "Manufacturer" "Samtec"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5518,7 +5518,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=ZX-PZ1.27-2-5PZZ"
+		(property "Octo_Link" "https://octopart.com/search?q=FTSH-105-01-L-DV-007-TR"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5529,7 +5529,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C7501289.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3347749.html"
 			(at 35.56 139.7 0)
 			(hide yes)
 			(show_name no)
