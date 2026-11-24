@@ -1,6 +1,6 @@
 # Trainer test points
 
-Fit 17 Harwin S1751-46 surface-mount probe loops on the default build at TP1, TP2, TP4–TP12, TP19 and TP21–TP25. TP3 is a plated clip hole. TP15–TP17 are exposed 1 × 1 mm square SMT pads for PA6, PA9 and PA10, respectively. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+Fit 16 Harwin S1751-46 surface-mount probe loops on the default build at TP1, TP2, TP4–TP12 and TP21–TP25. TP3 is a plated clip hole. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
 
 ## Power on the PP3 schematic
 
@@ -26,23 +26,15 @@ For a scope measurement, fit R4 and remove the JP1 short. Probe TP1 with CH1 and
 | TP22 | BUF_B, the buffered DAC signal for physical B, at U2 pin 7 |
 | TP23 | BUF_A, the buffered DAC signal for physical A, at U2 pin 1 |
 | TP24 | B_SEL from PA0, the selector for physical B |
-| TP25 | A_GPIO from PA1, the digital signal available to physical A |
+| TP25 | A_GPIO from PB13, the digital signal available to physical A |
 
 | Physical output | Selector | Low selects GPIO | High selects buffered DAC |
 |---|---|---|---|
-| A, J2 BNC center | A_SEL from PB11 | PA1 (TIM2_CH2) via U3 pin 9 | PA5 (DAC channel 2) via U3 pin 2 |
-| B, TP3 clip point | B_SEL from PA0 | PA3 (TIM2_CH4 or TIM21_CH2) via U3 pin 7 | PA4 (DAC channel 1) via U3 pin 4 |
+| A, J2 BNC center | A_SEL from PB11 | PB13 (TIM21_CH1) via U3 pin 9 | PA5 (DAC channel 2) via U3 pin 2 |
+| B, TP3 clip point | B_SEL from PA0 | PA1 (TIM2_CH2) via U3 pin 7 | PA4 (DAC channel 1) via U3 pin 4 |
 
 Compare the A output with TP25 in GPIO mode or TP23 in DAC mode. For B, probe TP24 to see the selection timing and TP22 to see the analog level. Use the J2 shell or TP4 for ground. Both selectors and both GPIO signal inputs have 100 kΩ pull-downs, so both outputs default low while the MCU pins are high impedance.
 
-## STM32 breakout
+## LED data and buttons
 
-These pins are available for firmware experiments. Alternate functions that share a pin are selected in firmware. An external I²C bus needs pull-ups to the trainer's I/O voltage. [STM32L072 pin and alternate-function tables](https://www.st.com/resource/en/datasheet/stm32l072cb.pdf#page=46)
-
-| Test point | STM32 pin | LQFP48 pin | Available functions |
-|---|---|---:|---|
-| TP15 | PA6 | 16 | ADC_IN6, TIM3_CH1, COMP1_OUT |
-| TP16 | PA9 | 30 | USART1_TX or I2C1_SCL |
-| TP17 | PA10 | 31 | USART1_RX or I2C1_SDA |
-| TP19 | PB13 | 26 | SPI2_SCK, TIM21_CH1, I2C2_SCL |
-| TP21 | PB15 | 28 | SPI2_MOSI |
+Probe TP21 (PB15, U1 pin 28) to observe LED_DATA at the first LED’s data input. PB15 supports SPI2_MOSI. The VALUE button (SW3) uses PB12, U1 pin 25. The MODE button (SW2) uses PB14, U1 pin 27. [STM32L072 alternate-function tables](https://www.st.com/resource/en/datasheet/stm32l072cb.pdf#page=54)

@@ -4918,16 +4918,6 @@
 		)
 		(uuid "fe003cac-d8dc-46fe-a9bd-0285164c60d8")
 	)
-	(label "BUTTON_V"
-		(at 69.85 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0caa7a23-5be2-407c-ba90-85226fb0dd69")
-	)
 	(label "I2C1_SCL"
 		(at 134.62 41.91 0)
 		(effects
@@ -5028,6 +5018,16 @@
 		)
 		(uuid "4b955956-922d-4ad6-a9be-6c0d2ab902ed")
 	)
+	(label "BUTTON_V"
+		(at 69.85 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e358c84-319e-4344-b897-d9b95cc7e845")
+	)
 	(label "A_SEL"
 		(at 182.88 68.58 0)
 		(effects
@@ -5097,6 +5097,16 @@
 			(justify left bottom)
 		)
 		(uuid "88eacb97-f021-4386-835b-72ae5bad3dc7")
+	)
+	(label "LED_DATA"
+		(at 69.85 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "966e716f-2edf-4560-ab96-643efd426990")
 	)
 	(label "B_GPIO"
 		(at 182.88 83.82 0)
@@ -5228,16 +5238,6 @@
 		)
 		(uuid "cd42d16f-929f-41f0-a840-44f03a3ab7bd")
 	)
-	(label "A_GPIO"
-		(at 69.85 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d0440cb6-9ed9-472f-a875-65e0b6f15f7c")
-	)
 	(label "USB_VBUS_N"
 		(at 182.88 43.18 0)
 		(effects
@@ -5247,6 +5247,16 @@
 			(justify left bottom)
 		)
 		(uuid "d61066c5-6500-4f25-876e-16aafbce934d")
+	)
+	(label "A_GPIO"
+		(at 69.85 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e604ba03-0f5c-44e5-a624-55eb520d6f10")
 	)
 	(label "A_SEL"
 		(at 69.85 114.3 0)
@@ -5277,16 +5287,6 @@
 			(justify right bottom)
 		)
 		(uuid "f16e075c-c6e5-41cc-a504-2d73cdaaa8d2")
-	)
-	(label "LED_DATA"
-		(at 69.85 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6fb51d1-5d44-48b6-9f65-ea03a07aaecb")
 	)
 	(label "B_SEL"
 		(at 133.35 58.42 180)
