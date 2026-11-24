@@ -1,10 +1,10 @@
 # Trainer test points
 
-TP1 and TP2 are bare sense pads. TP3 is a plated clip hole. TP15–TP17 are exposed 1 × 1 mm square SMT pads for PA6, PA9 and PA10, respectively. Fit 15 Harwin S1751-46 surface-mount probe loops on the default build at TP4–TP12, TP19 and TP21–TP25. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
+Fit 17 Harwin S1751-46 surface-mount probe loops on the default build at TP1, TP2, TP4–TP12, TP19 and TP21–TP25. TP3 is a plated clip hole. TP15–TP17 are exposed 1 × 1 mm square SMT pads for PA6, PA9 and PA10, respectively. [Harwin drawing and specifications](https://www.harwin.com/products/S1751-46)
 
 ## Power on the PP3 schematic
 
-TP1 and TP2 are the sense pads on opposite sides of the current-measurement link at the input of regulator U7. JP1 and the optional 10 Ω shunt R4 are in parallel.
+TP1 (I SOURCE) and TP2 (I LOAD) are probe loops on opposite sides of the current-measurement link at the input of regulator U7. JP1 and the optional 10 Ω shunt R4 are in parallel.
 
 | Rail point | Ground point | What to measure |
 |---|---|---|
