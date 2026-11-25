@@ -8130,7 +8130,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C434432.pdf"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8163,7 +8163,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2297"
+		(property "LCSC" "C434432"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8174,7 +8174,7 @@
 				)
 			)
 		)
-		(property "MPN" "KT-0805G"
+		(property "MPN" "SZYY0805G"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8185,7 +8185,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Hubei KENTO Electronics"
+		(property "Manufacturer" "Yongyu Photoelectric"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8196,7 +8196,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+		(property "Octo_Link" "https://octopart.com/search?q=SZYY0805G"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8207,7 +8207,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C434432.html"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
