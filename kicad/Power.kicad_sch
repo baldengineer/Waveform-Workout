@@ -10792,7 +10792,7 @@
 				)
 			)
 		)
-		(property "Value" "BAT54WS-7-F"
+		(property "Value" "1N5819WS"
 			(at 95.5675 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10813,7 +10813,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/datasheet/download/BAT54WS.pdf"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c7a6590686b7be2f86b8eed4480e569c.pdf?productCode=C191023"
 			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10846,7 +10846,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C124205"
+		(property "LCSC" "C191023"
 			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10857,7 +10857,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54WS-7-F"
+		(property "MPN" "1N5819WS"
 			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10868,7 +10868,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Diodes Incorporated"
+		(property "Manufacturer" "Guangdong Hottech"
 			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10879,7 +10879,7 @@
 				)
 			)
 		)
-		(property "Octo_Link" "https://octopart.com/search?q=BAT54WS-7-F"
+		(property "Octo_Link" "https://octopart.com/search?q=1N5819WS"
 			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10890,7 +10890,7 @@
 				)
 			)
 		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C124205.html"
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C191023.html"
 			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
