@@ -1,34 +1,38 @@
-# Adafruit 128×64 OLED lid
+# Flush Adafruit 128×64 OLED lid
 
-![The OLED faces the MODE and VALUE buttons, with the sticker area beside it](assembled.png)
+![Adafruit OLED glass seated flush in the trainer lid beside the command sticker](assembled.png)
 
-This replacement lid fits the Rev 1 PP3 and USB-only trays. It holds **Adafruit product 326, the 0.96-inch 128×64 monochrome OLED with two STEMMA QT sockets**. The face tilts 67° from the lid toward the buttons. The bezel protects the glass edges and comes off from above. The 32 × 12 mm raised land beside it takes a 30 × 10 mm sticker. [Adafruit module](https://www.adafruit.com/product/326) · [STEMMA QT board drawing](https://github.com/adafruit/Adafruit-128x64-Monochrome-OLED-PCB/blob/51ef8e242dcf460d5effc298d8565110624e6b23/Adafruit%200.96in%20128x64%20OLED%20STEMMA%20QT.brd)
+This lid mounts the Adafruit 0.96-inch 128×64 STEMMA QT OLED (product 326) from the underside. The outer viewing surface and the broad top face share one plane. Both enclosure versions retain their original 86.8 × 51.6 mm footprint and height. The command sticker fits inside the engraved outline to the right of the glass. Cut it to 30 × 10 mm. [Adafruit module](https://www.adafruit.com/product/326) · [STEMMA QT revision board drawing](https://github.com/adafruit/Adafruit-128x64-Monochrome-OLED-PCB/blob/51ef8e242dcf460d5effc298d8565110624e6b23/Adafruit%200.96in%20128x64%20OLED%20STEMMA%20QT.brd)
 
-- [Print the lid and bezel](OLED%20lid%20and%20bezel.3mf)
+- [Print the flush lid and RESET plunger](Flush%20OLED%20lid%20and%20reset.3mf)
 - [Edit the SolidCraft assembly](Waveform%20Workout%20R1%20-%20Adafruit%20326.sc)
 
-## Print and assemble
+## Setting the glass height
 
-1. Use a 0.4 mm nozzle, 0.20 mm layers and four perimeters. The print plate places the lid underside down and the bezel face down. The CAD assembly also shows the USB tray, shared controls and reference electronics.
-2. Tap the four 1.6 mm pilots in the inclined saddle M2 × 0.4. Use **four M2 × 10 mm pan-head screws** for the bezel. They engage about 4.4 mm of the saddle. Retain the existing M2.5 screws for the case.
-3. Place the bare module glass-up in the saddle, with the eight-hole header row at the high edge. Use the board with its optional pin strip uninstalled. Fit the bezel over the glass and tighten the four screws evenly by hand. The bezel clamps the PCB at its mounting holes.
-4. Transfer the three printed plungers and eleven light guides using the [original assembly instructions](../README.md#fit-and-assembly). Their lengths and fits are the same. The USB-only assembly reaches 65.9 mm high over the bezel, and the PP3 version reaches 75.7 mm.
-5. With power disconnected, plug a four-conductor STEMMA QT cable into the OLED through the right-side opening. Route a short external loop to the trainer's J6 port, clear of the selector and probe opening. Display operation requires firmware that powers J6 and drives the OLED over I²C.
+Measure from the display-side surface of your breakout PCB to the finished viewing surface, with the temporary protective film removed. Set `glassRise` to this measurement before printing. The default **1.80 mm** is an assumed assembled height including adhesive. A larger value seats the board deeper. If the glass stands 0.15 mm proud on a first print, for example, increase `glassRise` by 0.15 mm. The four seating pads bear on the PCB around its mounting holes and leave the glass unloaded.
 
-## Adjusting the fit
+## Print and assembly
 
-In SolidCraft, the module's local X and Y datum is the lower-left corner of its 29.21 × 31.75 mm bounding rectangle, viewed from the glass side with the header row up. The screen and mounting pattern have independent centers.
+1. Print the supplied plate with a 0.4 mm nozzle, 0.20 mm layers and four perimeters. The exterior of the lid and the finger end of RESET face the bed. A smooth bed gives a smooth face beside the glass. Use a small brim for RESET and local support under its short flange if needed. Clear any first-layer flare from the window before fitting the glass.
+2. Fit the headerless module from underneath. Point its eight-hole header row toward the nine settings indicators. Align the fourth mounting ear with the printed locating pin. Secure the other three holes with **M1.6 × 5 mm, 90° countersunk screws** with heads up to 3.0 mm across, and standard M1.6 hex nuts. Tighten lightly against the PCB. Check the glass with a straightedge across the lid.
+3. Insert the new rectangular RESET plunger from inside. Its offset foot points toward the center of the lid and aligns with SW4. Transfer the original MODE and VALUE plungers and all eleven light guides. Their positions and lengths are shared with the [standard lid](../README.md#fit-and-assembly).
+4. With power disconnected, connect a flexible four-wire STEMMA QT cable between the module socket nearest the sticker and trainer J6. Seat both plugs before closing the case. Dress the leads clear of RESET, the case pillars and the glass. Fit the original frame and four case screws. Check all three buttons for a free click and release. OLED operation requires firmware that powers J6 and drives the display over I²C.
+
+## Editable dimensions
+
+X and Y below are lid coordinates in millimetres. The origin is the center of the PCB outline. Positive X points toward USB-C and positive Y toward the power selector.
 
 | Parameters | Default (mm) | Effect |
 | --- | --- | --- |
-| `holePitchX`, `holePitchY` | 24.13, 26.67 | Horizontal and vertical spacing of the four screws |
-| `holeCenterX`, `holeCenterY` | 14.605, 15.875 | Moves the saddle pads, pilots, bezel collars and screw holes together |
-| `mountBore`, `mountPilot` | 2.30, 1.60 | Bezel clearance diameter and saddle tap-drill diameter |
-| `windowW`, `windowH` | 24.00, 13.00 | Clear opening over the 21.744 × 10.864 mm active area |
-| `windowX`, `windowY` | 14.605, 19.401 | Center of the viewing opening |
+| `glassRise` | 1.80 | Distance from the display PCB seating plane to the lid top |
+| `windowW`, `windowH` | 27.30, 19.76 | Through-opening for the entire 26.70 × 19.26 mm panel |
+| `windowX`, `windowY` | −12.295, 3.897 | Opening center, independent of the mounting pattern |
+| `pitchX`, `pitchY` | 24.13, 26.67 | Hole spacing |
+| `holeX`, `holeY` | −12.295, 5.325 | Center of the three screw locations and fourth locating pin |
+| `mountBore`, `headDia` | 1.80, 3.20 | Fastener clearance and countersink diameters |
 
-The bodies named **Reference** show the Adafruit PCB, glass and connector envelopes. They retain their nominal dimensions when the mount parameters change. The 3MF contains just the two printable parts.
+The SolidCraft assembly includes the USB tray and reference bodies for the module and screws. The 3MF contains only the replacement lid and RESET plunger.
 
 ## Verification
 
-Both print meshes are watertight. CAD checks found no solid overlap among the enclosure parts and reference module, or between the replacement parts and the 173 solids in the trainer PCB export. The bezel clears a straight-on projection of the full active area. The cable entry clears a 7.0 × 3.2 mm plug envelope over a 16 mm straight approach. Physical module fit, cable strain relief and screw engagement still need a first print.
+The modeled glass and lid top agree within 0.001 mm. The enclosure and reference bodies passed the assembly interference check. The upper assembly clears all 173 solids in the populated trainer export. The three nut envelopes and the module-side plug approach also clear the assembly. With RESET displaced 0.55 mm, its foot contacts SW4 and clears the other modeled board components. Both print meshes are watertight. Actual glass alignment, cable routing and button feel still need a physical fit check.

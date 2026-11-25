@@ -7,7 +7,7 @@ The enclosure fits the 81.77 × 37.50 mm Rev 1 PCB with its back-mounted Keyston
 - [Editable SolidCraft assembly](Waveform%20Workout%20R1.sc)
 - [Six-part print plate](Waveform%20Workout%20R1%20-%20print%20plate.3mf)
 
-The [Adafruit 128×64 OLED lid](oled/README.md) fits both the PP3 and USB-only enclosures. Print the replacement lid and its bezel to reuse the existing frame, buttons and light guides.
+The [flush Adafruit 128×64 OLED lid](oled/README.md) fits both the PP3 and USB-only enclosures. Print the replacement lid and offset RESET plunger. Reuse the frame, MODE and VALUE plungers, and eleven light guides.
 
 ## USB-only version
 
