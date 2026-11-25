@@ -8,6 +8,10 @@ An open-source tool to test oscilloscopes for basic operation.
 
 r1 is at the fab.
 
+## Firmware
+
+[Rev 1 firmware handoff — STM32 pinout, waveform generation, controls and indicators](FIRMWARE.md)
+
 ## Design files
 
 - [Schematic PDF](kicad/Waveform%20Workout%20Schematic.pdf)
