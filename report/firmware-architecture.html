@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Source walkthrough and linker-verified flash and SRAM map of the Waveform Workout Rev 1 trainer firmware.">
+<title>Firmware architecture &amp; memory map · Waveform Workout</title>
+<style>
+:root { color-scheme:light; --ink:#192e29; --muted:#4e655d; --paper:#faf9f4; --line:#cbd5cb; --green:#136a51; --amber:#92511c; --mono:"IBM Plex Mono",Consolas,monospace; }
+* { box-sizing:border-box }
+html { scroll-padding-top:1rem }
+body { margin:0; color:var(--ink); background:var(--paper); font:1rem/1.6 "Source Sans 3","Segoe UI",sans-serif }
+a { color:var(--green); text-underline-offset:.2em }
+a:hover { text-decoration-thickness:2px }
+a:focus-visible,summary:focus-visible { outline:3px solid #d67722; outline-offset:4px }
+.skip { position:absolute; left:1rem; top:-5rem; background:white; padding:.5rem; z-index:5 }.skip:focus { top:1rem }
+.wrap { width:min(71rem,calc(100% - 4rem)); margin-inline:auto }
+header { color:#f5f6eb; background:#153e33; border-bottom:5px solid #dca559; padding:1.25rem 0 2.35rem }
+.mast { display:flex; justify-content:space-between; align-items:center; padding-bottom:1rem; border-bottom:1px solid #557065; gap:1rem; font:700 .83rem/1.4 var(--mono); letter-spacing:.06em }
+.mast span { color:#cfdfcf; font-weight:400; letter-spacing:0 }
+h1,h2,h3,p { margin:0 }
+h1 { margin:1.7rem 0 .5rem; font-size:clamp(2.3rem,5.6vw,4.55rem); line-height:1.04; letter-spacing:-.055em; font-weight:650 }
+header p { color:#dbe6d9; max-width:54rem; font-size:1.09rem }
+.metrics { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-top:1.8rem }
+.metric { display:grid; grid-template-columns:1fr auto; align-items:baseline; gap:.35rem .7rem }
+.metric h2 { font:600 .83rem/1.4 var(--mono); color:#e3ecdf }.metric b { font:600 1.15rem/1.4 var(--mono) }
+.meter { grid-column:1 / -1; height:.62rem; background:#456357; border-radius:2px; overflow:hidden }
+.meter i { display:block; height:100%; background:#a9d4b4 }.metric:last-child .meter i { background:#ecc584 }
+.metric small { grid-column:1 / -1; color:#d4e2d6; font-family:var(--mono) }
+.layout { display:grid; grid-template-columns:10.25rem minmax(0,1fr); gap:3.75rem }
+nav { align-self:start; position:sticky; top:1rem; padding-top:2.4rem; display:grid; gap:.65rem; font-size:.96rem }
+nav a { text-decoration:none; color:var(--muted) } nav a:hover { text-decoration:underline }
+nav strong { margin-bottom:.3rem }
+main { min-width:0 }
+section { padding:2.4rem 0; border-bottom:1px solid var(--line) }
+h2 { font-size:clamp(1.65rem,3.2vw,2.5rem); line-height:1.14; letter-spacing:-.04em; margin:0 0 .8rem }
+.metric h2 { letter-spacing:0; margin:0 }
+h3 { font-size:1.14rem; margin:1.4rem 0 .3rem; line-height:1.35 }
+p + p { margin-top:.65rem }
+code,kbd { font:.9em/1.4 var(--mono); overflow-wrap:anywhere }
+kbd { border:1px solid #a4b4a7; border-bottom-width:2px; padding:.05rem .32rem; border-radius:.22rem; background:#fff }
+.flow { list-style:none; padding:0; margin:1.2rem 0 0; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); border-block:1px solid var(--line) }
+.flow li { position:relative; padding:1.05rem .85rem 1.05rem 0 }
+.flow li + li { border-left:1px solid var(--line); padding-left:1rem }
+.flow a { font:700 1rem var(--mono) }.flow b { display:block; margin:.5rem 0 .22rem }.flow p { color:var(--muted); line-height:1.5 }
+.note { background:#edf3e9; border-left:4px solid var(--green); margin:1.1rem 0 0; padding:.85rem 1rem }
+table { width:100%; border-collapse:collapse; font-size:.95rem; margin:1.1rem 0 .4rem }
+caption { text-align:left; font-weight:700; font-size:1.12rem; padding:.35rem 0 }
+th,td { text-align:left; vertical-align:top; border-bottom:1px solid var(--line); padding:.62rem .65rem }
+thead th { color:var(--muted); font-size:.85rem; background:#eff2e9 }
+td strong { display:block }
+.map td:first-child { white-space:nowrap }.map td:nth-child(2),.map th:nth-child(2),.symbols td:nth-child(3),.symbols th:nth-child(3) { text-align:right; font-variant-numeric:tabular-nums }
+details { margin:1rem 0; border:1px solid var(--line); border-radius:4px; padding:.65rem .9rem } summary { cursor:pointer; color:var(--green); font-weight:650 }
+.scroll { overflow-x:auto }
+.pair { display:flex; margin:1rem 0; font:600 .88rem/1.45 var(--mono) }
+.pair span { padding:.85rem 1rem; flex:1; border-top:3px solid var(--green); background:#e6efe5 }
+.pair span + span { background:#f3e7d3; border-color:var(--amber) } .pair small { display:block; font-weight:400 }
+dt { font-weight:650; margin-top:.8rem } dd { margin:0; color:var(--muted) }
+footer { padding:1.35rem 0 2.8rem; color:var(--muted); font-size:.9rem }
+@media(max-width:850px) { .layout { display:block } nav { position:static; display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; padding:1rem 0; border-bottom:1px solid var(--line) } nav strong { display:none } }
+@media(max-width:620px) { .wrap { width:calc(100% - 2rem) } .mast { flex-wrap:wrap; gap:.2rem .8rem } .metrics { gap:1.15rem; grid-template-columns:1fr } .flow { display:block } .flow li + li { border-left:0; border-top:1px solid var(--line); padding-left:0 } section { padding:1.75rem 0 } th,td { padding:.5rem .3rem } .map { font-size:.85rem } .symbols { min-width:36rem } }
+@media print { header { background:white; color:#172d27; border-color:#999 } header p,.mast span,.metric h2,.metric small { color:#172d27 } .wrap { width:100% } .layout { display:block } nav,.skip { display:none } section { padding:1rem 0 } h2,h3,caption { break-after:avoid } tr,.flow,.note { break-inside:avoid } .scroll { overflow:visible } a { color:inherit } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to report</a>
+<header><div class="wrap">
+<div class="mast">WAVEFORM WORKOUT <span>Rev 1 · STM32L072CBT6 · Zephyr 4.5.0</span></div>
+<h1>Firmware architecture<br>&amp; memory map</h1>
+<p>The trainer prepares one cycle when a setting changes. Timers and direct memory access (DMA) then drive both outputs while the main thread waits for the next button press.</p>
+<div class="metrics">
+<div class="metric"><h2>Flash used</h2><b>22.04%</b><div class="meter" aria-hidden="true"><i style="width:22.04%"></i></div><small>28,892 B of 128 KiB</small></div>
+<div class="metric"><h2>SRAM reserved</h2><b>50.86%</b><div class="meter" aria-hidden="true"><i style="width:50.86%"></i></div><small>10,416 B of 20 KiB</small></div>
+</div></div></header>
+<div class="wrap layout">
+<nav aria-label="Report sections"><strong>In this report</strong><a href="#structure">Code structure</a><a href="#playback">Signal playback</a><a href="#memory">Memory map</a><a href="#buffers">Buffers &amp; stacks</a><a href="#build">Build reference</a></nav>
+<main id="main">
+<section id="structure">
+<h2>Code structure</h2>
+<p>Three C modules connect the physical controls to the waveform at J2 and TP3. Follow a press of <kbd>VALUE</kbd> in the AMP row through the application.</p>
+<ol class="flow">
+<li><a href="../firmware/app/src/main.c">main.c</a><b>Receive the press</b><p>Zephyr debounces the key. <code>on_key()</code> queues its code. <code>run_trainer()</code> wakes and calls <code>lesson_next_value()</code>.</p></li>
+<li><a href="../firmware/app/src/lesson.c">lesson.c</a><b>Select the amplitude</b><p>The active row advances to its next value. <code>lesson_sample()</code> combines that amplitude with the saved shape and +0.75 V center to calculate each A/B pair.</p></li>
+<li><a href="../firmware/app/src/outputs.c">outputs.c</a><b>Apply the change</b><p><code>outputs_apply()</code> stops the old playback. <code>start_analog()</code> fills the existing buffer, primes both DACs, selects analog and starts TIM6.</p></li>
+</ol>
+<p class="note"><strong>The lights have their own timeout.</strong> After applying the change, the main thread lights the selected row and value. Two seconds later it sends a dark frame. Playback continues. Moving MODE between SHAPE, AMP and FREQ also preserves the running waveform.</p>
+<h3>Where to make a change</h3>
+<dl><dt>Presets and power-up state</dt><dd>The lesson header defines the six rows, one saved value per row, and the default 1 kHz, 1.00 Vpp sine. The host test exercises the settings, sample values, phase shifts and trigger widths. <a href="../firmware/app/src/lesson.h">lesson.h</a> · <a href="../firmware/tests/lesson_test.c">lesson_test.c</a></dd>
+<dt>Pin assignments and peripheral wiring</dt><dd>The board description sets clocks and memory capacity. Its include files map DAC channels, selectors, buttons and the LED chain. The app overlay enables the timer pin states and assigns the two trigger DMA requests. <a href="../firmware/boards/baldee/waveform_workout/waveform_workout.dts">Board DTS</a> · <a href="../firmware/boards/baldee/waveform_workout/signals.dtsi">Signals</a> · <a href="../firmware/boards/baldee/waveform_workout/interfaces.dtsi">Interfaces</a> · <a href="../firmware/app/app.overlay">App overlay</a></dd>
+<dt>Build configuration</dt><dd>CMake selects the three source modules. The project configuration enables the Zephyr drivers. Kconfig provides a separate 250 kHz filter-test image. <a href="../firmware/app/CMakeLists.txt">CMakeLists.txt</a> · <a href="../firmware/app/prj.conf">prj.conf</a> · <a href="../firmware/app/Kconfig">Kconfig</a></dd></dl>
+</section>
+<section id="playback"><h2>Signal playback</h2>
+<h3>Analog waveforms and XY</h3>
+<p>A 13-entry quarter-sine table occupies 26 bytes in flash. The code mirrors it across quadrants to make a full sine. Integer arithmetic builds the square and triangle. It scales one cycle to the selected voltage and offsets B’s sample index for XY. All 48 pairs fit in the same 192-byte SRAM buffer.</p>
+<div class="pair" aria-label="Packed 32-bit DAC word"><span>A · DAC2 → J2<small>Bits 27–16 · upper halfword</small></span><span>B · DAC1 → TP3<small>Bits 11–0 · lower halfword</small></span></div>
+<p>TIM6 latches both DACs together. DMA1 channel 2 writes the next word from <code>samples[]</code> to <code>DAC1-&gt;DHR12RD</code> at <code>0x40007420</code>. At 1 kHz, 48,000 sample pairs per second give 48 updates per cycle. At 10 kHz the same buffer plays at 480,000 pairs per second. The CPU can sleep between control events.</p>
+<h3>DC and digital triggers</h3>
+<p>DC latches one fixed pair and leaves the sample timer stopped. TRIG selects the digital paths. Each 100 µs period, two TIM2 compare events request the next A pulse width and B marker width. DMA1 channel 1 writes A to <code>TIM21-&gt;CCR1</code> at <code>0x40010834</code>. Channel 4 writes B to <code>TIM2-&gt;CCR2</code> at <code>0x40000038</code>. The timers apply the widths at rollover. These peripheral addresses are hardware registers, outside the SRAM budget.</p>
+<p>The long sequences need 1,000 periods to mark one narrow or missing pulse. The variable-width exercise repeats after just three periods. Both use the same two preallocated arrays.</p>
+</section>
+<section id="memory"><h2>Memory map</h2>
+<p>Addresses run from low to high. Each row starts at the address shown and ends just before the next row. Flash stores the program and constants. SRAM holds mutable state and the stacks used while the program runs.</p>
+<table class="map"><caption>Flash · 128 KiB</caption><thead><tr><th scope="col">Start address</th><th scope="col">Bytes</th><th scope="col">Contents</th></tr></thead><tbody>
+<tr><td><code>0x08000000</code></td><td>192</td><td><strong>Vector table</strong> Initial stack pointer and interrupt entry addresses.</td></tr>
+<tr><td><code>0x080000C0</code></td><td>25,360</td><td><strong>Executable code</strong> Application, Zephyr kernel, drivers and linked library routines.</td></tr>
+<tr><td><code>0x080063D0</code></td><td>1,028</td><td><strong>Runtime tables</strong> Unwind index, initialization levels, devices, interrupt handlers, driver APIs and input callbacks.</td></tr>
+<tr><td><code>0x080067D4</code></td><td>1,924</td><td><strong>Read-only data</strong> Constants and lookup tables, including the 26-byte quarter-sine table at <code>0x08006B84</code>.</td></tr>
+<tr><td><code>0x08006F58</code></td><td>384</td><td><strong>Initial SRAM contents</strong> Startup copies these bytes to <code>0x20000000</code> for writable data, device state and the message queue descriptor.</td></tr>
+<tr><td><code>0x080070D8</code></td><td>4</td><td><strong>Linker trailer</strong> The final <code>.last_section</code> word in this image.</td></tr>
+<tr><td><code>0x080070DC</code></td><td>102,180</td><td><strong>Unallocated flash</strong> The remaining region extends to the exclusive limit <code>0x08020000</code>.</td></tr>
+</tbody></table>
+<table class="map"><caption>SRAM · 20 KiB</caption><thead><tr><th scope="col">Start address</th><th scope="col">Bytes</th><th scope="col">Contents</th></tr></thead><tbody>
+<tr><td><code>0x20000000</code></td><td>384</td><td><strong>Initialized data</strong> 316 bytes of writable data, 28 bytes of device states and the 40-byte <code>presses</code> queue descriptor.</td></tr>
+<tr><td><code>0x20000180</code></td><td>5,660</td><td><strong>Zero-initialized data (BSS)</strong> Holds the three DMA buffers plus driver and kernel state. Startup clears this region.</td></tr>
+<tr><td><code>0x2000179C</code></td><td>4</td><td><strong>Alignment</strong> Padding before the stacks.</td></tr>
+<tr><td><code>0x200017A0</code></td><td>4,368</td><td><strong>Uninitialized storage (noinit)</strong> Four reserved stacks total 4,352 bytes. Sixteen more bytes hold the eight queued button codes.</td></tr>
+<tr><td><code>0x200028B0</code></td><td>10,064</td><td><strong>Unallocated SRAM</strong> Available for future link-time allocations up to the exclusive limit <code>0x20005000</code>.</td></tr>
+</tbody></table>
+<p class="note"><strong>Loading a waveform adds zero bytes to the linked SRAM total.</strong> The 50.86% already includes the DAC buffer, both trigger tables and every stack reservation. This figure measures reserved capacity. Measuring peak stack use requires a running target.</p>
+</section>
+<section id="buffers"><h2>Buffers &amp; stacks</h2>
+<p>The trigger tables reserve 4,000 bytes even during sine playback. The dual-DAC buffer uses 192 bytes. Together those three arrays account for 4,192 of the 5,660 bytes in BSS. The entries below are already included in the section totals above.</p>
+<div class="scroll" tabindex="0" role="region" aria-label="Linked symbols table"><table class="symbols"><caption>Selected SRAM symbols in address order</caption><thead><tr><th scope="col">Symbol</th><th scope="col">Address</th><th scope="col">Bytes</th><th scope="col">Purpose</th></tr></thead><tbody>
+<tr><td><code>samples</code></td><td><code>0x200004A8</code></td><td>192</td><td>48 packed pairs of 12-bit DAC codes, stored as 32-bit words.</td></tr>
+<tr><td><code>marker_us</code></td><td><code>0x2000078C</code></td><td>2,000</td><td>1,000 unsigned 16-bit widths for B’s event marker.</td></tr>
+<tr><td><code>pulse_us</code></td><td><code>0x20000F5C</code></td><td>2,000</td><td>1,000 unsigned 16-bit widths for A’s trigger exercise.</td></tr>
+<tr><td><code>z_interrupt_stacks</code></td><td><code>0x200017A0</code></td><td>2,048</td><td>Interrupt stack.</td></tr>
+<tr><td><code>z_idle_stacks</code></td><td><code>0x20001FA0</code></td><td>256</td><td>Idle thread stack.</td></tr>
+<tr><td><code>z_main_stack</code></td><td><code>0x200020A0</code></td><td>1,024</td><td>Main thread stack, including the active lesson and temporary LED frame.</td></tr>
+<tr><td><code>sys_work_q_stack</code></td><td><code>0x200024A0</code></td><td>1,024</td><td>System workqueue stack, used for work such as input debounce.</td></tr>
+<tr><td><code>_k_fifo_buf_presses</code></td><td><code>0x200028A0</code></td><td>16</td><td>Storage for eight 16-bit key codes.</td></tr>
+</tbody></table></div>
+<h3>What would save RAM?</h3>
+<p>Precomputing every analog preset in flash could recover at most the 192-byte DAC buffer if DMA played directly from those tables. The larger opportunity is the fixed digital trigger sequences. Moving both trigger tables to flash could reclaim 4,000 bytes, bringing the reservation to roughly 6,416 bytes (31.33%), assuming the rest of the layout stays the same. That is an estimate for a future build.</p>
+</section>
+<section id="build"><h2>Build reference</h2>
+<p>These addresses describe the Rev 1 <strong>trainer</strong> image at firmware commit <code>33f2cfb</code>. The separately linked filter diagnostic has its own layout. Byte counts come from the trainer’s final ELF and linker map. Changes to code, compiler options or Zephyr configuration can move the symbols.</p>
+<details><summary>Verify the map against a build</summary><p>Build the trainer, then inspect <code>build/trainer/zephyr/zephyr.map</code>. Run <code>arm-none-eabi-objdump -h</code> on <code>zephyr.elf</code> for section sizes and load addresses. Run <code>arm-none-eabi-nm -S -n</code> on the same ELF for symbol addresses and sizes. Both tools show sizes in hexadecimal by default.</p><p>SHA-256 of this build’s <code>zephyr.bin</code><br><code>4758d43db7185fe342a5d2557d379aa19c51886c6145313c31947dffe30c8daa</code></p></details>
+<p><a href="../firmware/README.md">Build and flash instructions</a> · <a href="../FIRMWARE.md">Rev 1 firmware handoff</a></p>
+</section><footer>Waveform Workout · Rev 1 trainer firmware</footer>
+</main></div></body></html>

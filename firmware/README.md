@@ -57,6 +57,8 @@ For a board-only check, build the Zephyr sample `deps/zephyr/samples/basic/blink
 
 ## Firmware structure and host check
 
+[Firmware architecture and memory map](../report/firmware-architecture.html) traces a button press through the output hardware and shows the linked trainer image’s flash sections, SRAM buffers and stack reservations.
+
 `app/src/lesson.c` defines the presets, physical pixel order, packed DAC samples and trigger sequences. `outputs.c` drives both DACs from TIM6 using circular DMA. In TRIG, TIM2 starts TIM21 over ITR0. Two internal TIM2 compares load the next A and B pulse widths through DMA halfway through each 100 µs period. The timers latch them at rollover. SPI2 uses separate DMA channels for the display. [STM32L0x2 reference manual, tables 51 and 95](https://www.st.com/resource/en/reference_manual/rm0376-ultralowpower-stm32l0x2-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 
 From `firmware`, a host C compiler can check the state transitions, LED positions, waveform samples and trigger sequences.
