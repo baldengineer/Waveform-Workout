@@ -136,6 +136,6 @@ footer { padding:1.35rem 0 2.8rem; color:var(--muted); font-size:.9rem }
 <section id="build"><h2>Build reference</h2>
 <p>These addresses describe the Rev 1 <strong>trainer</strong> image at firmware commit <code>33f2cfb</code>. The separately linked filter diagnostic has its own layout. Byte counts come from the trainer’s final ELF and linker map. Changes to code, compiler options or Zephyr configuration can move the symbols.</p>
 <details><summary>Verify the map against a build</summary><p>Build the trainer, then inspect <code>build/trainer/zephyr/zephyr.map</code>. Run <code>arm-none-eabi-objdump -h</code> on <code>zephyr.elf</code> for section sizes and load addresses. Run <code>arm-none-eabi-nm -S -n</code> on the same ELF for symbol addresses and sizes. Both tools show sizes in hexadecimal by default.</p><p>SHA-256 of this build’s <code>zephyr.bin</code><br><code>4758d43db7185fe342a5d2557d379aa19c51886c6145313c31947dffe30c8daa</code></p></details>
-<p><a href="../firmware/README.md">Build and flash instructions</a> · <a href="../FIRMWARE.md">Rev 1 firmware handoff</a></p>
+<p><a href="../firmware/README.md">Build and flash instructions</a> · <a href="../kicad/Rev%201%20board%20test%20plan.md">Rev 1 bench checks</a></p>
 </section><footer>Waveform Workout · Rev 1 trainer firmware</footer>
 </main></div></body></html>

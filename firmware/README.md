@@ -40,7 +40,7 @@ Flash from that workspace with `west flash -d build/trainer`. OpenOCD is the def
 
 Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. Reset should give two matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the panel goes dark. A steady D12 indicates an application setup or update error.
 
-For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer keeps USB data detached and the QT rail off. See the [preset table](../FIRMWARE.md) and the [Rev 1 bench checks](../kicad/Rev%201%20board%20test%20plan.md) for voltage, timing and loading targets.
+For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer keeps USB data detached and the QT rail off. See the [Rev 1 bench checks](../kicad/Rev%201%20board%20test%20plan.md#6-trainer-exercises) for voltage, timing and loading targets.
 
 ## Filter diagnostic and board samples
 
@@ -80,4 +80,4 @@ cc -std=c11 -Wall -Wextra -Werror -Iapp/src app/src/lesson.c tests/lesson_test.c
 | STEMMA QT | `zephyr_i2c` is J6. Enable the `qt_vdd` regulator before the first transaction. The rail defaults off and the bus uses its switched external pull-ups. |
 | Native USB | `zephyr_udc0` uses HSI48 with clock recovery from USB frames. Use `vbus-present-gpios` on `/zephyr,user` and the `volt-sensor0` supply-voltage reading to implement the attach and detach thresholds. |
 
-The [firmware handoff](../FIRMWARE.md) specifies the pixel order, startup sequence, waveform timing and USB voltage thresholds. The 3 MHz pixel encoding gives a nominal 1.00 µs zero-bit low interval, at the upper timing limit for the fitted LEDs. Check the waveform at TP21 during bring-up.
+The 3 MHz pixel encoding gives a nominal 1.00 µs zero-bit low interval, at the upper timing limit for the fitted LEDs. Check the waveform at TP21 during bring-up.
