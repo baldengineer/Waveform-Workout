@@ -1,5 +1,7 @@
 # Waveform Workout Rev 1 board test plan
 
+[Printable bench worksheet with fillable measurement fields](../output/pdf/Waveform%20Workout%20Rev%201%20bench%20worksheet.pdf)
+
 Use one board for the full sequence. Screen the remaining boards with the lot checklist at the end. Match the assembly to the order paperwork and Rev 1 BOM (hardware commit `0b94bae`). [Assembly BOM](production/bom.csv) · [Hand-fit notes](LCSC%20BOM.csv)
 
 **Bench setup**
