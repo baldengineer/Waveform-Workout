@@ -72,6 +72,26 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
+          "clearance|84910000|87051832|4005f5c7-725e-47e3-b5c8-a8e92e4e2eb9|95e43cd1-728e-456c-9297-defd6911785b",
+          ""
+        ],
+        [
+          "clearance|89392619|88900096|bfcd409f-14cc-4eb3-b158-6514744a156b|f8f0cb29-ab4a-428d-805d-8b6087f8ee36",
+          ""
+        ],
+        [
+          "clearance|89411980|86539545|6f64ee12-9d5f-4893-9421-b80a0ba8f426|fb5b0ddf-77aa-437d-b166-39c8dfe5fac4",
+          ""
+        ],
+        [
+          "clearance|90146575|92452295|18735220-4193-4599-b40e-0c5180caab84|4e739e14-5cc8-48a1-b53d-e2bee09af1c2",
+          ""
+        ],
+        [
+          "clearance|90146575|93448947|458ff770-3b11-4255-ac59-394c5e1d2e20|4e739e14-5cc8-48a1-b53d-e2bee09af1c2",
+          ""
+        ],
+        [
           "hole_clearance|156070000|72700000|3cdff260-c174-4a71-88ca-83b8496fcc89|069cc734-9717-460f-afad-24016c3bfa11",
           ""
         ],
@@ -757,7 +777,7 @@
         "uuid": "7b4adbc8-cae5-4d7b-a864-30be1a51237a"
       }
     ],
-    "used_designators": "#PWR9,#PWR15,#PWR21-30,#PWR58-60,#PWR918-923,#PWR933,D10,R11-12,R25-26,J5,C6-7,C11,C13,C16,C23,SW3,TP26",
+    "used_designators": "#PWR9,#PWR15,#PWR18,#PWR21-30,#PWR58-60,#PWR918-923,#PWR933,D10,D12,R11-12,R25-26,J5,C6-7,C11,C13,C16,C23,SW3,TP26",
     "variants": []
   },
   "sheets": [

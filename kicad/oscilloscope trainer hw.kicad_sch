@@ -1118,6 +1118,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3929,10 +4130,6 @@
 		(uuid "07fb7da6-b1d5-413b-b471-b61049a1cb15")
 	)
 	(no_connect
-		(at 119.38 66.04)
-		(uuid "0cdeec31-2d47-4ad3-a3e3-9d5140a34b1f")
-	)
-	(no_connect
 		(at 119.38 73.66)
 		(uuid "17954072-abcb-40f2-bbc6-e1637168af0f")
 	)
@@ -3943,6 +4140,10 @@
 	(no_connect
 		(at 83.82 88.9)
 		(uuid "258cd041-fa45-4e8a-81e1-fb2fd554c2f1")
+	)
+	(no_connect
+		(at 119.38 66.04)
+		(uuid "28c96c24-dfbb-4744-8617-d4b965ce0909")
 	)
 	(no_connect
 		(at 48.26 144.78)
@@ -3959,10 +4160,6 @@
 	(no_connect
 		(at 83.82 109.22)
 		(uuid "68330899-a1cd-44a6-a5ab-dcd70e03bc3a")
-	)
-	(no_connect
-		(at 119.38 63.5)
-		(uuid "7df4c26a-0059-4634-84c9-5684b9551e6f")
 	)
 	(no_connect
 		(at 83.82 78.74)
@@ -4050,6 +4247,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 83.82) (xy 154.94 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a049c49-2f77-49ae-9ded-92803231b9e3")
+	)
+	(wire
+		(pts
 			(xy 95.25 167.64) (xy 95.25 172.72)
 		)
 		(stroke
@@ -4087,6 +4294,16 @@
 			(type default)
 		)
 		(uuid "153be134-2ba4-4eea-9dcc-27c86b74a28e")
+	)
+	(wire
+		(pts
+			(xy 154.94 95.25) (xy 154.94 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1834a3a1-5097-4d27-87ad-55e0689dc9ef")
 	)
 	(wire
 		(pts
@@ -4550,7 +4767,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 134.62) (xy 166.37 134.62)
+			(xy 143.51 123.19) (xy 154.94 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4567,6 +4784,16 @@
 			(type default)
 		)
 		(uuid "982168de-be3c-4af2-94fe-6dae9bd72e46")
+	)
+	(wire
+		(pts
+			(xy 119.38 63.5) (xy 154.94 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a02050-1237-41bf-913c-42e54a07e50b")
 	)
 	(wire
 		(pts
@@ -4800,6 +5027,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 63.5) (xy 154.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e10f090f-a70a-4306-80d9-f5623822b1a9")
+	)
+	(wire
+		(pts
 			(xy 199.39 106.68) (xy 182.88 106.68)
 		)
 		(stroke
@@ -4937,6 +5174,16 @@
 			(justify right bottom)
 		)
 		(uuid "15cffc51-aa70-4d9b-9902-689fae72a83a")
+	)
+	(label "LED"
+		(at 142.24 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1839610b-2998-4dbe-b48c-1beae8c87338")
 	)
 	(label "USB_DM"
 		(at 133.35 86.36 180)
@@ -5089,7 +5336,7 @@
 		(uuid "74360524-df20-481f-b610-1d0f16f37a3f")
 	)
 	(label "LED_DATA"
-		(at 154.94 134.62 0)
+		(at 143.51 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5714,6 +5961,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 154.94 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05f061c7-e0c4-4edf-a9e4-9a5232345d77")
+		(property "Reference" "#PWR018"
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 99.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36999b33-730e-413d-88e3-7d6f5a850dfa")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 71.12 157.48 0)
 		(unit 1)
@@ -6023,7 +6349,7 @@
 	)
 	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
-		(at 166.37 134.62 0)
+		(at 154.94 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6033,7 +6359,7 @@
 		(dnp no)
 		(uuid "4a41f03d-5682-41a5-a2f6-85f70cf346ac")
 		(property "Reference" "TP21"
-			(at 166.37 127.762 0)
+			(at 154.94 116.332 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6043,7 +6369,7 @@
 			)
 		)
 		(property "Value" "PB15"
-			(at 166.37 129.54 0)
+			(at 154.94 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6054,7 +6380,7 @@
 			)
 		)
 		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6065,7 +6391,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.harwin.com/products/S1751-46"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6076,7 +6402,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6087,7 +6413,7 @@
 			)
 		)
 		(property "Group" "MCU test points"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6098,7 +6424,7 @@
 			)
 		)
 		(property "LCSC" "C3029083"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6109,7 +6435,7 @@
 			)
 		)
 		(property "MPN" "S1751-46"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6120,7 +6446,7 @@
 			)
 		)
 		(property "Manufacturer" "Harwin"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6131,7 +6457,7 @@
 			)
 		)
 		(property "Pin functions" "SPI2_MOSI"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6142,7 +6468,7 @@
 			)
 		)
 		(property "Probe function" "LED_DATA"
-			(at 166.37 129.54 0)
+			(at 154.94 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6152,7 +6478,7 @@
 			)
 		)
 		(property "Octo_Link" "https://octopart.com/search?q=S1751-46"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6163,7 +6489,7 @@
 			)
 		)
 		(property "lcsc_link" "https://www.lcsc.com/product-detail/C3029083.html"
-			(at 166.37 134.62 0)
+			(at 154.94 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7759,6 +8085,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 154.94 91.44 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf748539-3c95-47de-8eb8-ad0545ca6977")
+		(property "Reference" "D12"
+			(at 157.48 91.7574 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LED"
+			(at 157.48 94.2974 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/de342fde3322df0797012cd7a04e2194.pdf?productCode=C2297"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Emerald green indicator LED, 0805"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Row indicators"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KT-0805G"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Electronics"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=KT-0805G"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2297.html"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "USB PWR"
+			(at 154.94 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f2d32408-6269-466e-9fd8-b0353420b13d")
+		)
+		(pin "1"
+			(uuid "85d42dc8-fb71-4833-8c44-ad6572296ab0")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 146.05 31.75 0)
 		(unit 1)
@@ -7898,6 +8384,154 @@
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 154.94 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d41d5ee9-d635-46cf-afff-79efd30e1f57")
+		(property "Reference" "R26"
+			(at 157.48 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 157.48 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "Row indicators"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22843"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1501T5E"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1501T5E"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22843.html"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "44a9752f-c1bc-4e0f-8613-9adc0647d106")
+		)
+		(pin "1"
+			(uuid "b1e92501-7a2c-4400-b21d-5d3db5b7a69b")
+		)
+		(instances
+			(project "oscilloscope trainer hw"
+				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a"
+					(reference "R26")
 					(unit 1)
 				)
 			)
