@@ -24631,361 +24631,6 @@
 			)
 		)
 	)
-	(footprint "Trainer:BNC_Kinghelm_KH-BNC50-3511_Horizontal"
-		(layer "F.Cu")
-		(uuid "fac1e8b8-097f-4e18-a112-8be4664f25d1")
-		(at 93.933319 75.75 90)
-		(descr "Kinghelm KH-BNC50-3511 (LCSC C2837587), 50 ohm right-angle female BNC. Mating direction -Y. Pad 1 center, pad 2 shell. Two unnumbered plated holes for solderable mounting feet. Housing face y=-12.55 mm; body rear y=+1.95 mm; barrel end y=-33.55 mm. https://www.kinghelm.com.cn/upload/file/20221214/KH-BNC50-3511.pdf")
-		(property "Reference" "J2"
-			(at 2.08 3.519681 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "6196a67b-3426-451f-85be-a6b1a7de572c")
-			(effects
-				(font
-					(size 1 1)
-					(line_spacing 0)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "A / BNC female"
-			(at 0 1 90)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "af95ac17-3771-4405-871c-eab5f5e49013")
-			(effects
-				(font
-					(size 1 1)
-					(line_spacing 0)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.kinghelm.com.cn/upload/file/20221214/KH-BNC50-3511.pdf"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8d86f9e1-989a-4872-bb2a-4fc783073d23")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Right-angle through-hole female BNC jack for output A. Connect to the scope with a male-to-male BNC coupler."
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f6962240-a423-4252-9e2a-92d6e1144dc3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "Output A"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4ac554a9-a861-4e8c-b007-9589ba324d75")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C2837587"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4681fc14-5c7d-4d1a-a074-ba36d14e6104")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "KH-BNC50-3511"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "de60258e-869e-4b79-bbce-7d39adfc1b0e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" "Kinghelm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b8b8dfc4-1313-40db-84e6-eaedb3e1175c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sourcing note" "50 ohm right-angle through-hole jack with panel nut and washer. Use a male-to-male BNC coupler with the scope's 1 megohm input."
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14d64c5c-35d4-42dd-b0ac-704819611e2c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=KH-BNC50-3511"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e7bfb3df-25e1-47e5-a3b0-a06fd00f535e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2837587.html"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b8523548-6c04-488b-aa01-ace2f6fb5fca")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/5f9a3ce6-b073-4f8b-90a3-ed34a3dda316")
-		(sheetname "/Waveform and trigger outputs/")
-		(sheetfile "Outputs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_rect
-			(start 7.48 -12.55)
-			(end -7.48 2.08)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "06a61352-a1bd-428a-a76d-82b74a18aefa")
-		)
-		(fp_poly
-			(pts
-				(xy 1.22 0) (xy 1.88 -0.34) (xy 1.88 0.34)
-			)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "0498e5b8-86e9-4731-9648-05a1111b09cd")
-		)
-		(fp_line
-			(start -8.9 -12.55)
-			(end 8.9 -12.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Cmts.User")
-			(uuid "b95676b7-1232-4bb7-9baf-cece140b5fb7")
-		)
-		(fp_rect
-			(start 7.85 -34.05)
-			(end -7.85 2.45)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "2c02ea35-d6a5-473b-909d-034ebb600d52")
-		)
-		(fp_line
-			(start 4.75 -33.55)
-			(end 4.75 -21.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2e3455a5-f794-4794-bdc6-d692deace34a")
-		)
-		(fp_line
-			(start -4.75 -33.55)
-			(end 4.75 -33.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e65b5cb9-76fe-4f0a-b730-665c852aea30")
-		)
-		(fp_line
-			(start 6.35 -21.55)
-			(end 6.35 -12.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2396fa6f-cc8c-4533-bc52-62a0aa64d584")
-		)
-		(fp_line
-			(start 4.75 -21.55)
-			(end 6.35 -21.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9f87aa58-40e4-4e8d-a1b1-54183acd34b7")
-		)
-		(fp_line
-			(start -4.75 -21.55)
-			(end -4.75 -33.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9b5b2567-1f3b-45d8-ac79-9d33740b5b46")
-		)
-		(fp_line
-			(start -6.35 -21.55)
-			(end -4.75 -21.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5776b0a8-46c1-46c0-af27-aa50a5d0b9c2")
-		)
-		(fp_line
-			(start -6.35 -12.55)
-			(end -6.35 -21.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "260b9e94-8ae1-44b8-95f2-e65a9f276035")
-		)
-		(fp_rect
-			(start 5.5 -30.35)
-			(end 4.75 -28.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "7d36e349-73aa-4e21-89d5-c73a93dc2c22")
-		)
-		(fp_rect
-			(start -4.75 -30.35)
-			(end -5.5 -28.55)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "3efe160f-f20b-42d1-970c-0fc59990da5f")
-		)
-		(fp_rect
-			(start 7.35 -12.55)
-			(end -7.35 1.95)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "3adb4b8b-01f0-47b0-b275-63744f5fcab3")
-		)
-		(pad "" thru_hole oval
-			(at -5.05 -5.05 90)
-			(size 3.2 4.3)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "f1c181f2-fc4e-4041-8681-3dab39801bfc")
-		)
-		(pad "" thru_hole oval
-			(at 5.05 -5.05 90)
-			(size 3.2 4.3)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "c2ead72b-2012-4876-a78d-e67264acaf64")
-		)
-		(pad "1" thru_hole roundrect
-			(at 0 0 90)
-			(size 1.75 2.1)
-			(drill 0.9)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(roundrect_rratio 0.15)
-			(net "/Waveform and trigger outputs/OUT_A")
-			(pinfunction "In_1")
-			(pintype "passive")
-			(uuid "1a2038e7-95ad-4940-b456-e4240bac2447")
-		)
-		(pad "2" thru_hole oval
-			(at -2.5 0 90)
-			(size 1.75 2.1)
-			(drill 0.9)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "GND")
-			(pinfunction "Ext_2")
-			(pintype "passive")
-			(uuid "274b7651-52c0-4ab4-83fc-e34c43912e54")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/step_models/KH-BNC50-3511.step"
-			(offset
-				(xyz 0 15.8 0.5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "My Libraries:BE10v2"
 		(layer "B.Cu")
 		(uuid "7591d799-f096-43b1-9f1e-90dfeff83abb")
@@ -25787,6 +25432,372 @@
 		(model "${KIPRJMOD}/step_models/Keystone_1290-79_drawing-based_clanker.step"
 			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Trainer:BNC_Kinghelm_KH-BNC50-3511_Horizontal"
+		(layer "B.Cu")
+		(uuid "fac1e8b8-097f-4e18-a112-8be4664f25d1")
+		(at 93.8992 75.7728 -90)
+		(descr "Kinghelm KH-BNC50-3511 (LCSC C2837587), 50 ohm right-angle female BNC. Mating direction -Y. Pad 1 center, pad 2 shell. Two unnumbered plated holes for solderable mounting feet. Housing face y=-12.55 mm; body rear y=+1.95 mm; barrel end y=-33.55 mm. https://www.kinghelm.com.cn/upload/file/20221214/KH-BNC50-3511.pdf")
+		(property "Reference" "J2"
+			(at 2.08 -3.519681 180)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "6196a67b-3426-451f-85be-a6b1a7de572c")
+			(effects
+				(font
+					(size 1 1)
+					(line_spacing 0)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "A / BNC female"
+			(at 0 -1 90)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "af95ac17-3771-4405-871c-eab5f5e49013")
+			(effects
+				(font
+					(size 1 1)
+					(line_spacing 0)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://www.kinghelm.com.cn/upload/file/20221214/KH-BNC50-3511.pdf"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8d86f9e1-989a-4872-bb2a-4fc783073d23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Right-angle through-hole female BNC jack for output A. Connect to the scope with a male-to-male BNC coupler."
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f6962240-a423-4252-9e2a-92d6e1144dc3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Group" "Output A"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4ac554a9-a861-4e8c-b007-9589ba324d75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C2837587"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4681fc14-5c7d-4d1a-a074-ba36d14e6104")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "KH-BNC50-3511"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "de60258e-869e-4b79-bbce-7d39adfc1b0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "Kinghelm"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b8b8dfc4-1313-40db-84e6-eaedb3e1175c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sourcing note" "50 ohm right-angle through-hole jack with panel nut and washer. Use a male-to-male BNC coupler with the scope's 1 megohm input."
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "14d64c5c-35d4-42dd-b0ac-704819611e2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Octo_Link" "https://octopart.com/search?q=KH-BNC50-3511"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e7bfb3df-25e1-47e5-a3b0-a06fd00f535e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "lcsc_link" "https://www.lcsc.com/product-detail/C2837587.html"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b8523548-6c04-488b-aa01-ace2f6fb5fca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
+		(path "/fc722937-2062-4585-929f-9dafa86e1dc5/5f9a3ce6-b073-4f8b-90a3-ed34a3dda316")
+		(sheetname "/Waveform and trigger outputs/")
+		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start 7.48 12.55)
+			(end -7.48 -2.08)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.SilkS")
+			(uuid "06a61352-a1bd-428a-a76d-82b74a18aefa")
+		)
+		(fp_poly
+			(pts
+				(xy 1.22 0) (xy 1.88 0.34) (xy 1.88 -0.34)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "0498e5b8-86e9-4731-9648-05a1111b09cd")
+		)
+		(fp_line
+			(start -8.9 12.55)
+			(end 8.9 12.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "b95676b7-1232-4bb7-9baf-cece140b5fb7")
+		)
+		(fp_rect
+			(start 7.85 34.05)
+			(end -7.85 -2.45)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "2c02ea35-d6a5-473b-909d-034ebb600d52")
+		)
+		(fp_line
+			(start -4.75 33.55)
+			(end 4.75 33.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e65b5cb9-76fe-4f0a-b730-665c852aea30")
+		)
+		(fp_line
+			(start 4.75 33.55)
+			(end 4.75 21.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "2e3455a5-f794-4794-bdc6-d692deace34a")
+		)
+		(fp_line
+			(start -6.35 21.55)
+			(end -4.75 21.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5776b0a8-46c1-46c0-af27-aa50a5d0b9c2")
+		)
+		(fp_line
+			(start -4.75 21.55)
+			(end -4.75 33.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9b5b2567-1f3b-45d8-ac79-9d33740b5b46")
+		)
+		(fp_line
+			(start 4.75 21.55)
+			(end 6.35 21.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9f87aa58-40e4-4e8d-a1b1-54183acd34b7")
+		)
+		(fp_line
+			(start 6.35 21.55)
+			(end 6.35 12.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "2396fa6f-cc8c-4533-bc52-62a0aa64d584")
+		)
+		(fp_line
+			(start -6.35 12.55)
+			(end -6.35 21.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "260b9e94-8ae1-44b8-95f2-e65a9f276035")
+		)
+		(fp_rect
+			(start -4.75 30.35)
+			(end -5.5 28.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "3efe160f-f20b-42d1-970c-0fc59990da5f")
+		)
+		(fp_rect
+			(start 5.5 30.35)
+			(end 4.75 28.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "7d36e349-73aa-4e21-89d5-c73a93dc2c22")
+		)
+		(fp_rect
+			(start 7.35 12.55)
+			(end -7.35 -1.95)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "3adb4b8b-01f0-47b0-b275-63744f5fcab3")
+		)
+		(pad "" thru_hole oval
+			(at -5.05 5.05 270)
+			(size 3.2 4.3)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "f1c181f2-fc4e-4041-8681-3dab39801bfc")
+		)
+		(pad "" thru_hole oval
+			(at 5.05 5.05 270)
+			(size 3.2 4.3)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "c2ead72b-2012-4876-a78d-e67264acaf64")
+		)
+		(pad "1" thru_hole roundrect
+			(at 0 0 270)
+			(size 1.75 2.1)
+			(drill 0.9)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(roundrect_rratio 0.15)
+			(net "/Waveform and trigger outputs/OUT_A")
+			(pinfunction "In_1")
+			(pintype "passive")
+			(uuid "1a2038e7-95ad-4940-b456-e4240bac2447")
+		)
+		(pad "2" thru_hole oval
+			(at -2.5 0 270)
+			(size 1.75 2.1)
+			(drill 0.9)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "Ext_2")
+			(pintype "passive")
+			(uuid "274b7651-52c0-4ab4-83fc-e34c43912e54")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/KH-BNC50-3511.step"
+			(offset
+				(xyz 0 15.8 0.5)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -32037,7 +32048,7 @@
 		)
 	)
 	(gr_text "A  1 MΩ"
-		(at 86.8172 85.5472 0)
+		(at 89.1032 75.7428 0)
 		(layer "F.SilkS" knockout)
 		(uuid "b3658e00-b211-42e4-8e4c-f3f093a0c1b1")
 		(effects
