@@ -12,8 +12,6 @@ r1 is at the fab.
 
 [Build and flash the trainer](firmware/README.md). On reset, both outputs target a 1 kHz sine at 1.00 Vpp centered on +0.75 V. Use MODE and VALUE to select waveform, DC, XY and trigger exercises.
 
-[Rev 1 trainer exercises and expected scope readings](kicad/Rev%201%20board%20test%20plan.md#6-trainer-exercises)
-
 ## Design files
 
 - [Schematic PDF](kicad/Waveform%20Workout%20Schematic.pdf)

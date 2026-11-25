@@ -40,7 +40,7 @@ Flash from that workspace with `west flash -d build/trainer`. OpenOCD is the def
 
 Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. Reset should give two matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the panel goes dark. A steady D12 indicates an application setup or update error.
 
-For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer keeps USB data detached and the QT rail off. See the [Rev 1 bench checks](../kicad/Rev%201%20board%20test%20plan.md#6-trainer-exercises) for voltage, timing and loading targets.
+For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer keeps USB data detached and the QT rail off.
 
 ## Filter diagnostic and board samples
 
