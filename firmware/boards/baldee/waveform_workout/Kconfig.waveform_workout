@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT
+
+config BOARD_WAVEFORM_WORKOUT
+	select SOC_STM32L072XX

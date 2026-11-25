@@ -1,0 +1,146 @@
+/* SPDX-License-Identifier: MIT */
+
+#include <zephyr/dt-bindings/dma/stm32_dma.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+	aliases {
+		led0 = &diagnostic_led;
+		sw0 = &mode_button;
+		sw1 = &value_button;
+		volt-sensor0 = &vref;
+	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		diagnostic_led: diagnostic-led {
+			gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
+			label = "D12";
+		};
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+
+		mode_button: mode-button {
+			gpios = <&gpiob 14 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			zephyr,code = <INPUT_KEY_0>;
+			label = "MODE";
+		};
+
+		value_button: value-button {
+			gpios = <&gpiob 12 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			zephyr,code = <INPUT_KEY_1>;
+			label = "VALUE";
+		};
+	};
+
+	qt_vdd: qt-vdd {
+		compatible = "regulator-fixed";
+		regulator-name = "QT_VDD";
+		regulator-min-microvolt = <3447000>;
+		regulator-max-microvolt = <3447000>;
+		regulator-boot-off;
+		enable-gpios = <&gpiob 5 GPIO_ACTIVE_LOW>;
+	};
+
+	zephyr,user {
+		/* A high selector connects its buffered DAC to the output. */
+		a-select-gpios = <&gpiob 11 GPIO_ACTIVE_HIGH>;
+		b-select-gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+		a-digital-gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>;
+		b-digital-gpios = <&gpioa 1 GPIO_ACTIVE_HIGH>;
+		vbus-present-gpios = <&gpioa 15 GPIO_ACTIVE_LOW>;
+
+		io-channels = <&dac1 2>, <&dac1 1>;
+		io-channel-names = "dac-a", "dac-b";
+	};
+};
+
+/* J6 has external pull-ups to the switched QT_VDD rail. */
+&i2c1_scl_pb6 {
+	/delete-property/ bias-pull-up;
+};
+
+&i2c1_sda_pb7 {
+	/delete-property/ bias-pull-up;
+};
+
+zephyr_i2c: &i2c1 {
+	pinctrl-0 = <&i2c1_scl_pb6 &i2c1_sda_pb7>;
+	pinctrl-1 = <&analog_pb6 &analog_pb7>;
+	pinctrl-names = "default", "sleep";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+	status = "okay";
+};
+
+&adc1_common {
+	st,adc-clock-source = "SYNC";
+	st,adc-prescaler = <4>;
+	vref-mv = <3447>;
+	status = "okay";
+};
+
+/* VREFINT is internal to the MCU and takes no external ADC pin. */
+&adc1 {
+	status = "okay";
+};
+
+&vref {
+	status = "okay";
+};
+
+&dac1 {
+	pinctrl-0 = <&dac_out1_pa4 &dac_out2_pa5>;
+	pinctrl-names = "default";
+	/* DAC channel 1 issues one request per packed A/B sample pair. */
+	dmas = <&dma1 2 9 (STM32_DMA_PERIPH_TX | STM32_DMA_32BITS |
+			   STM32_DMA_MODE_CYCLIC | STM32_DMA_PRIORITY_HIGH)>;
+	dma-names = "dual";
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	dac_b: channel@1 {
+		reg = <1>;
+		zephyr,resolution = <12>;
+		zephyr,buffered;
+		zephyr,vref-mv = <3447>;
+	};
+
+	dac_a: channel@2 {
+		reg = <2>;
+		zephyr,resolution = <12>;
+		zephyr,buffered;
+		zephyr,vref-mv = <3447>;
+	};
+};
+
+/* PWM is opt-in. The same pads are GPIO sources for the digital routes. */
+&timers21 {
+	status = "okay";
+
+	pwm_a: pwm {
+		pinctrl-0 = <&tim21_ch1_pb13>;
+		pinctrl-names = "default";
+	};
+};
+
+&timers2 {
+	status = "okay";
+
+	pwm_b: pwm {
+		pinctrl-0 = <&tim2_ch2_pa1>;
+		pinctrl-names = "default";
+	};
+};
+
+/* TIM6 drives both DACs via TRGO when the waveform engine is running. */
+&timers6 {
+	status = "okay";
+};
+
+&dma1 {
+	status = "okay";
+};

@@ -1,0 +1,6 @@
+board:
+  name: waveform_workout
+  full_name: Waveform Workout Rev 1
+  vendor: baldee
+  socs:
+    - name: stm32l072xx

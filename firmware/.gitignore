@@ -1,0 +1,5 @@
+# West workspace metadata, module checkouts and build output.
+/.west/
+/deps/
+/build*/
+/.venv/

@@ -1,0 +1,18 @@
+identifier: waveform_workout
+name: Waveform Workout Rev 1
+type: mcu
+arch: arm
+ram: 20
+flash: 128
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - adc
+  - dac
+  - gpio
+  - i2c
+  - led_strip
+  - spi
+  - usbd
+vendor: baldee

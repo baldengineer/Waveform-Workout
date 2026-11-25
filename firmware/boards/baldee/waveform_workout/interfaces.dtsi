@@ -1,0 +1,44 @@
+/* SPDX-License-Identifier: MIT */
+
+#include <zephyr/dt-bindings/dma/stm32_dma.h>
+#include <zephyr/dt-bindings/led/led.h>
+
+/ {
+	aliases {
+		led-strip = &front_panel_pixels;
+	};
+};
+
+&spi2 {
+	/* PB12 and PB14 are buttons. PB13 is the A digital output. */
+	pinctrl-0 = <&spi2_mosi_pb15>;
+	pinctrl-names = "default";
+	st,soft-nss;
+	/* The full-duplex SPI driver discards RX. Leave DMA channels 2 and 4 for the DACs. */
+	dmas = <&dma1 5 2 STM32_DMA_PERIPH_TX>, <&dma1 6 2 STM32_DMA_PERIPH_RX>;
+	dma-names = "tx", "rx";
+	status = "okay";
+
+	front_panel_pixels: led-strip@0 {
+		compatible = "worldsemi,ws2812-spi";
+		reg = <0>;
+		chain-length = <9>;
+		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+		/* 3 MHz SPI, two 4-bit symbols per byte: 0 = 1000, 1 = 1100. */
+		spi-max-frequency = <3000000>;
+		bits-per-symbol = <4>;
+		spi-zero-frame = <0x8>;
+		spi-one-frame = <0xc>;
+		reset-delay = <300>;
+	};
+};
+
+&clk_hsi48 {
+	status = "okay";
+};
+
+zephyr_udc0: &usb {
+	pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
+	pinctrl-names = "default";
+	status = "okay";
+};

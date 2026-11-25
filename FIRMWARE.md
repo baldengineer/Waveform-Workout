@@ -4,6 +4,8 @@ Waveform Workout generates two known signals for a learner to measure on an osci
 
 This document targets the Rev 1 PP3 board with U1 **STM32L072CBT6**, LQFP48, 128 KiB flash. Pin assignments were checked against the schematic at `0b94bae` and the Rev 1 production pad netlist. Waveform values below are firmware targets at the connectors. The board test plan defines the measurements for the first article. [Rev 1 acceptance plan](kicad/Rev%201%20board%20test%20plan.md)
 
+[Build the Zephyr board target and run Blinky on D12](firmware/README.md)
+
 ## What MODE, VALUE and the lights mean
 
 On power-up, generate the same **1 kHz sine, 1.00 Vpp, centered on +0.75 V** on A and B. A DC-coupled scope should show a 1 ms period and peaks near +0.25 V and +1.25 V.

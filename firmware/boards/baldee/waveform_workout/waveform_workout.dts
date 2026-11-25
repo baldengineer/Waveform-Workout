@@ -1,0 +1,46 @@
+/* SPDX-License-Identifier: MIT */
+
+/dts-v1/;
+#include <st/l0/stm32l072.dtsi>
+#include <st/l0/stm32l072c(b-z)tx-pinctrl.dtsi>
+#include "signals.dtsi"
+#include "interfaces.dtsi"
+
+/ {
+	model = "Waveform Workout Rev 1";
+	compatible = "baldee,waveform-workout";
+
+	chosen {
+		zephyr,flash = &flash0;
+		zephyr,sram = &sram0;
+	};
+};
+
+&flash0 {
+	reg = <0x08000000 DT_SIZE_K(128)>;
+	ranges = <0 0x08000000 DT_SIZE_K(128)>;
+};
+
+&sram0 {
+	reg = <0x20000000 DT_SIZE_K(20)>;
+};
+
+&clk_hsi {
+	status = "okay";
+};
+
+/* 24 MHz gives SPI2 a 3 MHz bit clock for the front-panel LEDs. */
+&pll {
+	clocks = <&clk_hsi>;
+	mul = <3>;
+	div = <2>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(24)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+	apb2-prescaler = <1>;
+};
