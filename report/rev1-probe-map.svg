@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="552" viewBox="77 50 90 46" font-family="Helvetica" fill="#233d42" role="img" aria-labelledby="title desc">
+  <title id="title">Waveform Workout Rev 1 probe locator, component side</title>
+  <desc id="desc">Top view with the BNC at left, USB-C at right, and MODE and VALUE along the bottom. Filled markers are signal or supply points. Hollow markers TP4, TP6, TP8, TP10 and TP12 are common ground. All 17 markers are centered on their production placement coordinates. Gray shapes locate selected components.</desc>
+  <rect x="77" y="50" width="90" height="46" fill="#fff"/>
+  <text x="81.23" y="53.25" class="heading" font-size="1.85" font-weight="700">Rev 1 probe locator</text>
+  <text x="81.23" y="55.2" class="caption" font-size="1.16">Component side · BNC at left</text>
+  <g class="caption" font-size="1.16">
+    <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="131.3" y="52.65" width="1.8" height="1.15" rx=".58"/>
+    <text x="133.9" y="53.66">Signal or supply</text>
+    <rect class="ground" fill="#fff" stroke="#36595e" stroke-width=".2" x="147.2" y="52.65" width="1.8" height="1.15" rx=".15"/>
+    <text x="149.8" y="53.66">Common ground</text>
+  </g>
+  <rect class="board" fill="#f3f7f6" stroke="#526f71" stroke-width=".2" x="81.2333" y="57" width="81.7667" height="37.5" rx="2"/>
+  <g>
+    <g>
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="77.68" y="73.15" width="6.6" height="5.2" rx=".35"/>
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="81.65" y="71.75" width="10.9" height="8" rx=".35"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" x="87.1" y="75.65">J2 · BNC</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" x="87.1" y="77.13">A OUT</text>
+    </g>
+    <g>
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="155.18" y="72.23" width="7.95" height="7.04" rx=".37"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" x="159.15" y="75.65">J1</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" x="159.15" y="77.13">USB-C</text>
+    </g>
+    <g transform="translate(119.126 59.182)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.25" y="-1.15" width="4.5" height="2.3" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">SW4</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">RESET</text>
+    </g>
+    <g transform="translate(128.3208 60.9092)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.15" y="-1.175" width="4.3" height="2.35" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">J6</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">QT</text>
+    </g>
+    <g transform="translate(140.462 59.35)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-1.95" y="-1.075" width="3.9" height="2.15" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y=".36">JP1</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="2.46">I LINK</text>
+    </g>
+    <g transform="translate(151.9 60.35)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.7" y="-1.075" width="5.4" height="2.15" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y=".36">SW1</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="2.46">USB/BAT</text>
+    </g>
+    <g transform="translate(159.512 60.96)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-1.9" y="-1.15" width="3.8" height="2.3" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">J5</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">SMU</text>
+    </g>
+    <g transform="translate(113.132 73.66)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.05" y="-1.7" width="4.1" height="3.4" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y=".36">U2</text>
+    </g>
+    <g transform="translate(105.512 74.422)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-1.5" y="-1.3" width="3" height="2.6" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y=".36">U3</text>
+    </g>
+    <g transform="translate(134.62 76.295)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-3.5" y="-3.5" width="7" height="7" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">U1</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">MCU</text>
+    </g>
+    <g transform="translate(145.1864 70.1689)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-1.45" y="-0.95" width="2.9" height="1.9" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y=".36">U7</text>
+    </g>
+    <g transform="translate(146.939 90.424)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.9" y="-1.75" width="5.8" height="3.5" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">J3</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">SWD</text>
+    </g>
+    <g transform="translate(131 92.65)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.675" y="-1.3" width="5.35" height="2.6" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">SW2</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">MODE</text>
+    </g>
+    <g transform="translate(139 92.65)">
+      <rect class="part" fill="#e1e9e7" stroke="#a1b3b1" stroke-width=".12" x="-2.675" y="-1.3" width="5.35" height="2.6" rx=".28"/>
+      <text text-anchor="middle" class="part-id" fill="#43575a" font-size="1.05" font-weight="700" y="-.10">SW3</text>
+      <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" y="1.05">VALUE</text>
+    </g>
+    <g fill="#d6e2df" stroke="#879f9c" stroke-width=".12">
+      <rect x="94.511" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="98.111" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="101.711" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="105.311" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="108.911" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="112.511" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="118.111" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="121.711" y="87.392" width="1.78" height="1.78" rx=".18"/>
+      <rect x="125.311" y="87.392" width="1.78" height="1.78" rx=".18"/>
+    </g>
+    <text text-anchor="middle" class="part-name" fill="#43575a" font-size="1.05" x="110.82" y="91.12">Mode and value indicators</text>
+    <g id="TP1" transform="translate(134.283 59.436)">
+      <title>TP1 · Regulator input current, source side</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP1</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">SRC</text>
+    </g>
+    <g id="TP2" transform="translate(145.592 59.5)">
+      <title>TP2 · Regulator input current, load side</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP2</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">LOAD</text>
+    </g>
+    <g id="TP3" transform="translate(84.074 59.69)">
+      <title>TP3 · Physical output B, plated clip hole</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP3</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">B OUT</text>
+    </g>
+    <g id="TP4" transform="translate(89.916 59.69)">
+      <title>TP4 · Ground</title>
+      <rect class="ground" fill="#fff" stroke="#36595e" stroke-width=".2" x="-1.86" y="-1" width="3.72" height="2" rx=".25"/>
+      <text text-anchor="middle" class="ground-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#233d42" y=".43">TP4</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">GND</text>
+    </g>
+    <g id="TP5" transform="translate(156.21 66.294)">
+      <title>TP5 · USB VBUS</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP5</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">VBUS</text>
+    </g>
+    <g id="TP6" transform="translate(160.782 66.294)">
+      <title>TP6 · Ground</title>
+      <rect class="ground" fill="#fff" stroke="#36595e" stroke-width=".2" x="-1.86" y="-1" width="3.72" height="2" rx=".25"/>
+      <text text-anchor="middle" class="ground-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#233d42" y=".43">TP6</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">GND</text>
+    </g>
+    <g id="TP7" transform="translate(128.0668 83.7438)">
+      <title>TP7 · System VDD</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP7</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">VDD</text>
+    </g>
+    <g id="TP8" transform="translate(115.57 64.516)">
+      <title>TP8 · Ground</title>
+      <rect class="ground" fill="#fff" stroke="#36595e" stroke-width=".2" x="-1.86" y="-1" width="3.72" height="2" rx=".25"/>
+      <text text-anchor="middle" class="ground-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#233d42" y=".43">TP8</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">GND</text>
+    </g>
+    <g id="TP9" transform="translate(151.638 66.294)">
+      <title>TP9 · Battery positive</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP9</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">BAT+</text>
+    </g>
+    <g id="TP10" transform="translate(89.027 92.329)">
+      <title>TP10 · Ground</title>
+      <rect class="ground" fill="#fff" stroke="#36595e" stroke-width=".2" x="-1.86" y="-1" width="3.72" height="2" rx=".25"/>
+      <text text-anchor="middle" class="ground-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#233d42" y=".43">TP10</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="-1.65">GND</text>
+    </g>
+    <g id="TP11" transform="translate(113.25 60.7)">
+      <title>TP11 · Power selector common</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP11</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">SW OUT</text>
+    </g>
+    <g id="TP12" transform="translate(115.316 82.423)">
+      <title>TP12 · Ground</title>
+      <rect class="ground" fill="#fff" stroke="#36595e" stroke-width=".2" x="-1.86" y="-1" width="3.72" height="2" rx=".25"/>
+      <text text-anchor="middle" class="ground-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#233d42" y=".43">TP12</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">GND</text>
+    </g>
+    <g id="TP21" transform="translate(135.1788 86.7156)">
+      <title>TP21 · Addressable LED data</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP21</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">LED_DATA</text>
+    </g>
+    <g id="TP22" transform="translate(108.712 69.596)">
+      <title>TP22 · Channel B buffer output</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP22</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">BUF B</text>
+    </g>
+    <g id="TP23" transform="translate(108.45 78.74)">
+      <title>TP23 · Channel A buffer output</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP23</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">BUF A</text>
+    </g>
+    <g id="TP24" transform="translate(108.458 64.516)">
+      <title>TP24 · Channel B selector</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP24</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">B_SEL</text>
+    </g>
+    <g id="TP25" transform="translate(102.108 81.3308)">
+      <title>TP25 · Channel A digital input to the output switch</title>
+      <rect class="probe" fill="#174e58" stroke="#174e58" stroke-width=".13" x="-1.86" y="-1" width="3.72" height="2" rx="1"/>
+      <text text-anchor="middle" class="probe-id" font-family="monospace" font-weight="700" font-size="1.21" fill="#fff" y=".43">TP25</text>
+      <text text-anchor="middle" class="net" font-weight="600" font-size="1.06" y="2.66">GPIO_A</text>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,7 @@
 # DAC reconstruction filter test plan
 
+For the ordered PP3 Rev 1 boards, use 5 V USB and 9 V battery emulation for connector acceptance. The [Rev 1 board test plan](Rev%201%20board%20test%20plan.md) gives the first-power sequence and the supply conditions for all measurements on that revision.
+
 The prototype target is a 250 kHz sine with a 1.00 Vpp fundamental, centered at 0.75 V, into a 1 MΩ scope input. Run both DAC channels at 1 MSample/s. Record the actual waveform Vpp as well as the fundamental because a sampling image can change the peak reading. This is a bench proposal. All predictions below are calculated.
 
 ## Circuit under test
