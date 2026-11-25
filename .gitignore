@@ -27,3 +27,5 @@ _autosave
 *.pro-bak
 *.pcb-bak
 *.bck
+.venv/
+.venv-clean/
