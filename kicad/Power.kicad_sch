@@ -6756,12 +6756,6 @@
 		(uuid "489a445e-00d8-4221-91f9-43487f632348")
 	)
 	(junction
-		(at 66.04 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54b165aa-b6f0-44ef-96d6-e228a6d539da")
-	)
-	(junction
 		(at 142.24 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6780,22 +6774,10 @@
 		(uuid "6d61f4c1-6116-49e7-8e1c-49ba7609ae55")
 	)
 	(junction
-		(at 66.04 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "753ff054-78d0-4e22-af83-8ecca44bb9d3")
-	)
-	(junction
 		(at 33.02 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92c72bb9-f6f5-45ba-9821-4040dc4c995f")
-	)
-	(junction
-		(at 73.66 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93b05246-eb72-4ce0-9076-aa21a9e5a920")
 	)
 	(junction
 		(at 120.65 148.59)
@@ -6826,6 +6808,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca317bf0-7d85-4ddd-9d83-e3cc788f2074")
+	)
+	(junction
+		(at 69.85 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d10ec17e-a54c-430b-8163-98c90611a604")
 	)
 	(junction
 		(at 73.66 96.52)
@@ -6961,6 +6949,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 96.52) (xy 69.85 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a61c812-71c0-4231-bc9d-dce58ede4875")
+	)
+	(wire
+		(pts
 			(xy 204.47 69.85) (xy 204.47 72.39)
 		)
 		(stroke
@@ -7091,16 +7089,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 99.06) (xy 66.04 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53676e81-9124-4546-bbea-4e143684ba1e")
-	)
-	(wire
-		(pts
 			(xy 88.9 74.93) (xy 93.98 74.93)
 		)
 		(stroke
@@ -7131,16 +7119,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 93.98) (xy 66.04 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "587f6c05-5c37-4e29-988e-8cb65c7e0ea8")
-	)
-	(wire
-		(pts
 			(xy 138.43 138.43) (xy 138.43 148.59)
 		)
 		(stroke
@@ -7148,6 +7126,16 @@
 			(type default)
 		)
 		(uuid "59be6067-71a2-4c6e-ab0a-457ce8a12216")
+	)
+	(wire
+		(pts
+			(xy 69.85 96.52) (xy 73.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5be8ea5c-c243-4aaf-b65a-5f54055f2a52")
 	)
 	(wire
 		(pts
@@ -7251,16 +7239,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 92.71) (xy 66.04 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "725da235-ff31-4b6e-88bb-0df909456c2a")
-	)
-	(wire
-		(pts
 			(xy 224.79 137.16) (xy 224.79 139.7)
 		)
 		(stroke
@@ -7341,16 +7319,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 101.6) (xy 66.04 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9151d577-3237-4102-8a22-f9146b770faf")
-	)
-	(wire
-		(pts
 			(xy 73.66 101.6) (xy 73.66 96.52)
 		)
 		(stroke
@@ -7428,16 +7396,6 @@
 			(type default)
 		)
 		(uuid "9798e009-1e9e-477b-92f0-cc2eb67fa2e2")
-	)
-	(wire
-		(pts
-			(xy 62.23 99.06) (xy 62.23 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97ca96a7-1e35-4d78-8113-0c8bbec0b75e")
 	)
 	(wire
 		(pts
@@ -7538,16 +7496,6 @@
 			(type default)
 		)
 		(uuid "b78f9e81-d63d-4553-8d09-81551e5980c9")
-	)
-	(wire
-		(pts
-			(xy 66.04 101.6) (xy 73.66 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7b605ac-b3dd-4310-a12e-3927d6ec98ce")
 	)
 	(wire
 		(pts
@@ -7668,6 +7616,16 @@
 			(type default)
 		)
 		(uuid "d4e8d8b6-5f0a-47ae-ab8c-822905051a39")
+	)
+	(wire
+		(pts
+			(xy 66.04 92.71) (xy 66.04 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8276815-293f-415b-8717-c2da9ea73fb0")
 	)
 	(wire
 		(pts
@@ -11115,152 +11073,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 62.23 96.52 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7983b883-de0f-4228-a95a-f67eb0f4bfec")
-		(property "Reference" "C23"
-			(at 55.88 96.5263 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47p"
-			(at 58.42 96.5263 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14857"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Dielectric" "C0G/NP0"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C14857"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21C470JBANNNC"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=CL21C470JBANNNC"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C14857.html"
-			(at 62.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f416e11f-d8f1-4b87-a3b6-e9b8a5bb2e06")
-		)
-		(pin "2"
-			(uuid "8fcd4d8c-2f96-4dd0-aae8-de284c5c40c6")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 220.98 46.99 0)
 		(unit 1)
@@ -13424,7 +13236,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 73.66 96.52 270)
+		(at 69.85 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13435,7 +13247,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4d6e837-b435-47a3-b290-6aafeaa92f33")
 		(property "Reference" "#PWR053"
-			(at 75.565 96.52 0)
+			(at 69.85 94.615 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13446,7 +13258,8 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 77.47 96.5199 90)
+			(at 72.39 95.2499 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13457,7 +13270,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 96.52 0)
+			(at 69.85 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13468,7 +13281,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 96.52 0)
+			(at 69.85 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13479,7 +13292,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 73.66 96.52 0)
+			(at 69.85 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14951,154 +14764,6 @@
 			(project "oscilloscope trainer hw"
 				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 66.04 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6ddac77-4690-4177-978e-4ddd733e583b")
-		(property "Reference" "R11"
-			(at 68.58 95.2499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1M"
-			(at 68.58 97.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Group" "USB and regulator"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22935"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1004T5E"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Octo_Link" "https://octopart.com/search?q=0603WAF1004T5E"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_link" "https://www.lcsc.com/product-detail/C22935.html"
-			(at 66.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a30f61c1-de18-4423-af42-c161dfd70b16")
-		)
-		(pin "2"
-			(uuid "ab60d799-fdb1-4120-b376-ac579ffe1bec")
-		)
-		(instances
-			(project "oscilloscope trainer hw"
-				(path "/7b4adbc8-cae5-4d7b-a864-30be1a51237a/7e0c96ab-06f3-41b5-91de-ed4f94883be7"
-					(reference "R11")
 					(unit 1)
 				)
 			)
