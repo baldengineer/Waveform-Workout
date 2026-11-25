@@ -22872,6 +22872,17 @@
 			(uuid "7fe1c72a-fbdf-4dbf-ac0d-06000e941fea")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/step_models/Samtec_FTSH-105-xx-x-DV-007.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
 	)
 	(footprint "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
 		(layer "F.Cu")
