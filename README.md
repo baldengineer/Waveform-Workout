@@ -10,6 +10,8 @@ r1 is at the fab.
 
 ## Firmware
 
+[Build and flash the trainer](firmware/README.md). On reset, both outputs target a 1 kHz sine at 1.00 Vpp centered on +0.75 V. Use MODE and VALUE to select waveform, DC, XY and trigger exercises.
+
 [Rev 1 firmware handoff — STM32 pinout, waveform generation, controls and indicators](FIRMWARE.md)
 
 ## Design files

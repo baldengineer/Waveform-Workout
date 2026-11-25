@@ -1,0 +1,8 @@
+mainmenu "Waveform Workout"
+
+config WORKOUT_FILTER_TEST
+	bool "Run the Rev 1 dual-output 250 kHz filter diagnostic"
+	help
+	  Play the four raw DAC codes continuously after reset.
+
+source "Kconfig.zephyr"

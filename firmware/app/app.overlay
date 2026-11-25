@@ -1,0 +1,15 @@
+/* SPDX-License-Identifier: MIT */
+#include <zephyr/dt-bindings/dma/stm32_dma.h>
+
+/* Expose the timer pin states. The application owns the timers directly. */
+&pwm_a { status = "okay"; };
+&pwm_b { status = "okay"; };
+
+/* TIM2 compare events feed the two PWM preload registers halfway through
+ * each period. RM0376 table 51 maps CC3 and CC4 to request 8.
+ */
+&timers2 {
+	dmas = <&dma1 1 8 (STM32_DMA_PERIPH_TX | STM32_DMA_16BITS | STM32_DMA_MODE_CYCLIC)>,
+	       <&dma1 4 8 (STM32_DMA_PERIPH_TX | STM32_DMA_16BITS | STM32_DMA_MODE_CYCLIC)>;
+	dma-names = "pulse", "marker";
+};

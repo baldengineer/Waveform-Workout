@@ -1,4 +1,4 @@
-# Waveform Workout Rev 1 board support
+# Waveform Workout Rev 1 firmware
 
 Zephyr target `waveform_workout` uses the STM32L072CBT6 with 128 KiB of flash and 20 KiB of SRAM. The west manifest pins Zephyr 4.5.0. Run the following commands from the `firmware` directory in a configured Zephyr environment.
 
@@ -11,10 +11,11 @@ west init -l manifest
 west update
 ```
 
-In a checkout with a space-free path, build Blinky with the firmware directory as the board root.
+In a space-free checkout, build the trainer and program it through J3 with an ST-LINK. Power the board through SW1 and JP1.
 
 ```sh
-west build -b waveform_workout -d build/blinky deps/zephyr/samples/basic/blinky -- -DBOARD_ROOT="$PWD"
+west build -b waveform_workout -d build/trainer app
+west flash -d build/trainer
 ```
 
 For a Windows project path with spaces, keep the board files in the project and put the Zephyr workspace and build output in a space-free directory. In PowerShell, start in this project's `firmware` directory. The example uses `C:\src\ww-zephyr` for the dependencies.
@@ -28,14 +29,43 @@ Set-Location $workspace
 $env:ZEPHYR_BASE = "$workspace\deps\zephyr"
 west init -l manifest
 west update
-west build -b waveform_workout -d build/blinky deps/zephyr/samples/basic/blinky -- "-DBOARD_ROOT=$boardRoot"
+west build -b waveform_workout -d build/trainer "$boardRoot\app"
 ```
 
 On subsequent builds, run the final command from the same workspace with `$boardRoot` pointing to the project's `firmware` directory.
 
-Blinky toggles the green diagnostic LED D12 on PA2. To program it, power the trainer, connect an external ST-LINK to J3 including NRST, and run `west flash -d build/blinky`. OpenOCD is the default runner. The target also provides `stm32cubeprogrammer` and `jlink` runners. The board has no wired UART console.
+Flash from that workspace with `west flash -d build/trainer`. OpenOCD is the default runner. The target also provides `stm32cubeprogrammer` and `jlink` runners. The board has no wired UART console.
 
-To exercise the nine addressable LEDs instead, build `deps/zephyr/samples/drivers/led/led_strip` with the same board root and a separate build directory such as `build/pixels`.
+## First scope check
+
+Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. Reset should give two matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the panel goes dark. A steady D12 indicates an application setup or update error.
+
+For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer keeps USB data detached and the QT rail off. See the [preset table](../FIRMWARE.md) and the [Rev 1 bench checks](../kicad/Rev%201%20board%20test%20plan.md) for voltage, timing and loading targets.
+
+## Filter diagnostic and board samples
+
+To run the separate 250 kHz filter test, build the same application with a separate output directory. Substitute the full path to `app` when using an external workspace.
+
+```sh
+west build -b waveform_workout -d build/filter app -- -DCONFIG_WORKOUT_FILTER_TEST=y
+west flash -d build/filter
+```
+
+This image continuously plays the raw codes 1457, 1457, 324, 324 on both DACs at 1 MSample/s. Measure the connector amplitude and spectrum under the specified load. Flash `build/trainer` again to restore the front-panel exercises.
+
+For a board-only check, build the Zephyr sample `deps/zephyr/samples/basic/blinky` for D12 or `deps/zephyr/samples/drivers/led/led_strip` for the pixel chain. Pass `-DBOARD_ROOT=<absolute path to firmware>` after `--` when building either sample.
+
+## Firmware structure and host check
+
+`app/src/lesson.c` defines the presets, physical pixel order, packed DAC samples and trigger sequences. `outputs.c` drives both DACs from TIM6 using circular DMA. In TRIG, TIM2 starts TIM21 over ITR0. Two internal TIM2 compares load the next A and B pulse widths through DMA halfway through each 100 µs period. The timers latch them at rollover. SPI2 uses separate DMA channels for the display. [STM32L0x2 reference manual, tables 51 and 95](https://www.st.com/resource/en/reference_manual/rm0376-ultralowpower-stm32l0x2-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+
+From `firmware`, a host C compiler can check the state transitions, LED positions, waveform samples and trigger sequences.
+
+```sh
+mkdir -p build
+cc -std=c11 -Wall -Wextra -Werror -Iapp/src app/src/lesson.c tests/lesson_test.c -lm -o build/lesson-test
+./build/lesson-test
+```
 
 ## Application interfaces
 
