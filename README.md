@@ -1,5 +1,12 @@
 # Waveform-Workout
+
+![Angled top view of the Waveform-Workout r1 circuit board](images/waveform-workout-r1.png)
+
 An open-source tool to test oscilloscopes for basic operation.
+
+## Status
+
+r1 is at the fab.
 
 ## Design files
 
