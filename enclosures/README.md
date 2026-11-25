@@ -7,11 +7,23 @@ The enclosure fits the 81.77 × 37.50 mm Rev 1 PCB with its back-mounted Keyston
 - [Editable SolidCraft assembly](Waveform%20Workout%20R1.sc)
 - [Six-part print plate](Waveform%20Workout%20R1%20-%20print%20plate.3mf)
 
+## USB-only version
+
+![USB-only enclosure with the original control lid on the shallow tray](usb-only/assembled.png)
+
+For a USB-powered build, omit the PP3 cell and Keystone BT1 holder and set the power selector to USB. The shallow tray takes the original lid, connector frame, three plungers, light guides and four M2.5 × 20 mm screws. If you already printed the PP3 enclosure, print just the USB tray and transfer the other parts. Use the print settings and tap dimensions below.
+
+The USB-only enclosure measures **86.8 × 51.6 × 32.8 mm** over the raised buttons, 9.8 mm shorter than the PP3 enclosure. The rear BNC has 1.36 mm of modeled clearance above the floor. All 156 solids in the populated PCB export with BT1 omitted clear the enclosure. A CAD comparison confirmed that all five upper parts have the same geometry in both versions. Physical fit is untested.
+
+- [USB tray only](usb-only/USB%20tray.3mf)
+- [Complete USB-only print plate](usb-only/Waveform%20Workout%20R1%20-%20USB%20print%20plate.3mf)
+- [Editable USB-only SolidCraft assembly](usb-only/Waveform%20Workout%20R1%20-%20USB.sc)
+
 ## Print and hardware
 
 Use a 0.4 mm nozzle and 0.20 mm layers. Four perimeters are a starting point for the screw pillars. The 3MF places all six pieces on the bed in a 144 × 109 mm footprint. The tray prints floor-down, the connector frame lid-side down, and the lid sticker-side up. The plungers stand on their switch-contact ends. Add a small brim to the three plungers if bed adhesion is marginal.
 
-The assembled print measures 86.8 × 51.6 × 42.6 mm over the raised buttons. Allow additional space for the BNC and screw heads. The raised sticker land is 48 × 14 mm with rounded corners. A 46 × 12 mm sticker leaves a 1 mm border for the light and button legend.
+The assembled PP3 version measures 86.8 × 51.6 × 42.6 mm over the raised buttons. Allow additional space for the BNC and screw heads on both versions. The raised sticker land is 48 × 14 mm with rounded corners. A 46 × 12 mm sticker leaves a 1 mm border for the light and button legend.
 
 | Supply | Quantity | Fit |
 | --- | --- | --- |
