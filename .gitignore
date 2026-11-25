@@ -1,6 +1,10 @@
 # Local design planning
 /plan/
 
+# Local reports and artwork
+/report/
+/artwork/
+
 # Local agent instructions and skills
 /AGENTS.md
 /skills/

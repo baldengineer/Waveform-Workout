@@ -1,7 +1,5 @@
 # Waveform Workout Rev 1 board test plan
 
-[Printable bench worksheet with fillable measurement fields](../output/pdf/Waveform%20Workout%20Rev%201%20bench%20worksheet.pdf)
-
 Use one board for the full sequence. Screen the remaining boards with the lot checklist at the end. Match the assembly to the order paperwork and Rev 1 BOM (hardware commit `0b94bae`). [Assembly BOM](production/bom.csv) · [Hand-fit notes](LCSC%20BOM.csv)
 
 **Bench setup**
@@ -10,8 +8,6 @@ Use one board for the full sequence. Screen the remaining boards with the lot ch
 - Two-channel scope with FFT, DC coupling and `1 MΩ` inputs. Connect `CH1` to BNC `J2` (A). Use a compensated `10×` probe on `TP3` (B), ground at `TP4`. Remove any `50 Ω` terminator.
 - `ST-LINK` with keyed `1.27 mm` Cortex adapter, USB-C data cable and a low-current `3.45 V` STEMMA QT accessory with a known ID register.
 - Record diagnostic and trainer image versions. Without firmware, complete inspection, rails, reset and SWD identification. Mark dependent tests `Blocked`.
-
-![Rev 1 probe map, component side. BNC at left, USB-C at right.](../report/rev1-probe-map.svg)
 
 ## 1. Unpowered inspection
 
@@ -112,7 +108,7 @@ Flash and verify the trainer image. Cold-boot with `J3` detached. Use `MODE` for
 | --- | --- | --- |
 | `0.95–1.05 Vpp` | `0.725–0.775 V` | `750 kHz` and `1.25 MHz` each `≤−30 dBc` |
 
-The simulation assumes `1 MΩ ∥ 100 pF` and a different coil model. [Reference traces](../report/README.md) · [Filter measurements](DAC%20reconstruction%20filter%20test%20plan.md)
+The simulation assumes `1 MΩ ∥ 100 pF` and a different coil model. [Filter measurements](DAC%20reconstruction%20filter%20test%20plan.md)
 
 **Current and mechanical checks**
 
