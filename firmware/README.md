@@ -36,11 +36,34 @@ On subsequent builds, run the final command from the same workspace with `$board
 
 Flash from that workspace with `west flash -d build/trainer`. OpenOCD is the default runner. The target also provides `stm32cubeprogrammer` and `jlink` runners. The board has no wired UART console.
 
+## USB serial shell
+
+The trainer and filter diagnostic include Zephyr's interactive shell over native USB CDC ACM. After flashing, power the board through SW1 and JP1 and connect a USB data cable. Open the new serial port in a terminal such as PuTTY, with 115200 baud, 8 data bits, no parity, one stop bit, and hardware flow control off. CDC ACM does not use the baud rate to time USB transfers. The terminal must assert DTR; press Enter to display the `trainer:~$` prompt.
+
+Useful commands are:
+
+```text
+help
+kernel version
+kernel uptime
+kernel thread list
+kernel thread stacks
+device list
+```
+
+Tab completes commands and the arrow keys recall command history. These are Zephyr diagnostic commands; the front-panel MODE and VALUE buttons control the waveform exercises. No terminal connection is needed for waveform playback, and closing the terminal or unplugging USB does not stop playback while the board remains powered.
+
+To fit the 20 KiB SRAM, the single full-speed CDC interface uses a 512-byte USB request pool and the interrupt stack is 1 KiB; the shell retains its 2 KiB stack. During board bring-up, run `kernel thread stacks` after exercising the shell and USB reconnects to inspect runtime stack usage, and check that waveform playback continues with USB disconnected while independently powered.
+
+The application checks the active-low VBUS detector and VREFINT supply measurement every 100 ms. USB attaches with cable power present and VDD at or above 3.1 V, and detaches below 3.0 V, on cable removal, or on a failed power reading. This adds hysteresis around the STM32's [3.0 V USB minimum supply](https://www.st.com/resource/en/datasheet/stm32l072kz.pdf). Reconnect the terminal if the serial device disappears and re-enumerates. D12 also indicates a USB initialization error; waveform initialization still proceeds.
+
+USB descriptors identify the device as `Waveform Workout`, with its MCU hardware ID as the serial number. `CONFIG_WORKOUT_USB_VID` and `CONFIG_WORKOUT_USB_PID` default to Zephyr's development console IDs (`2fe3:0004`); use assigned IDs before distributing devices outside development. The implementation uses Zephyr's [USB device stack and CDC ACM class](https://docs.zephyrproject.org/latest/services/connectivity/usb/device_next/cdc_acm.html).
+
 ## First scope check
 
 Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. Reset should give two matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the panel goes dark. A steady D12 indicates an application setup or update error.
 
-For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer keeps USB data detached and the QT rail off.
+For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer provides the USB serial shell when cable power and VDD permit, and keeps the QT rail off.
 
 ## Filter diagnostic and board samples
 
@@ -57,7 +80,7 @@ For a board-only check, build the Zephyr sample `deps/zephyr/samples/basic/blink
 
 ## Firmware structure and host check
 
-`app/src/lesson.c` defines the presets, physical pixel order, packed DAC samples and trigger sequences. `outputs.c` drives both DACs from TIM6 using circular DMA. In TRIG, TIM2 starts TIM21 over ITR0. Two internal TIM2 compares load the next A and B pulse widths through DMA halfway through each 100 µs period. The timers latch them at rollover. SPI2 uses separate DMA channels for the display. [STM32L0x2 reference manual, tables 51 and 95](https://www.st.com/resource/en/reference_manual/rm0376-ultralowpower-stm32l0x2-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+`app/src/lesson.c` defines the presets, physical pixel order, packed DAC samples and trigger sequences. `usb_console.c` initializes USB CDC ACM and monitors cable power and VDD independently of the trainer loop; Zephyr's serial shell handles terminal input and output. `outputs.c` drives both DACs from TIM6 using circular DMA. In TRIG, TIM2 starts TIM21 over ITR0. Two internal TIM2 compares load the next A and B pulse widths through DMA halfway through each 100 µs period. The timers latch them at rollover. SPI2 uses separate DMA channels for the display. [STM32L0x2 reference manual, tables 51 and 95](https://www.st.com/resource/en/reference_manual/rm0376-ultralowpower-stm32l0x2-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 
 From `firmware`, a host C compiler can check the state transitions, LED positions, waveform samples and trigger sequences.
 
@@ -76,6 +99,6 @@ cc -std=c11 -Wall -Wextra -Werror -Iapp/src app/src/lesson.c tests/lesson_test.c
 | Analog outputs | `DAC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), dac_a)` selects A on PA5, DAC channel 2. Use `dac_b` for B on PA4, DAC channel 1. For synchronized playback, use TIM6 and the DAC's `dual` DMA entry (DMA1 channel 2, request 9) to transfer packed 32-bit A/B pairs. |
 | Source switches and digital outputs | On `/zephyr,user`, `a-select-gpios` and `b-select-gpios` select analog when asserted. `a-digital-gpios` and `b-digital-gpios` drive the digital paths. For timer output, enable `&pwm_a` (TIM21 CH1) or `&pwm_b` (TIM2 CH2) in an application overlay. |
 | STEMMA QT | `zephyr_i2c` is J6. Enable the `qt_vdd` regulator before the first transaction. The rail defaults off and the bus uses its switched external pull-ups. |
-| Native USB | `zephyr_udc0` uses HSI48 with clock recovery from USB frames. Use `vbus-present-gpios` on `/zephyr,user` and the `volt-sensor0` supply-voltage reading to implement the attach and detach thresholds. |
+| Native USB | `zephyr_udc0` uses HSI48 with clock recovery from USB frames. The application connects CDC ACM to `zephyr,console` and `zephyr,shell-uart`. `vbus-present-gpios` on `/zephyr,user` and the `volt-sensor0` supply-voltage reading gate USB attachment. |
 
 The 3 MHz pixel encoding gives a nominal 1.00 µs zero-bit low interval, at the upper timing limit for the fitted LEDs. Check the waveform at TP21 during bring-up.

@@ -1,5 +1,18 @@
 mainmenu "Waveform Workout"
 
+config WORKOUT_USB_VID
+	hex "USB vendor ID"
+	default 0x2fe3
+	help
+	  Defaults to the Zephyr development VID. Assign your own VID/PID
+	  before distributing the device outside development.
+
+config WORKOUT_USB_PID
+	hex "USB product ID"
+	default 0x0004
+	help
+	  Defaults to the Zephyr CDC ACM console development PID.
+
 config WORKOUT_FILTER_TEST
 	bool "Run the Rev 1 dual-output 250 kHz filter diagnostic"
 	help

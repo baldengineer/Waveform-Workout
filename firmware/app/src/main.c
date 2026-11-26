@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 #include "outputs.h"
+#include "usb_console.h"
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/drivers/led_strip.h>
 #include <zephyr/input/input.h>
@@ -73,6 +74,10 @@ int main(void)
 	if (!gpio_is_ready_dt(&diagnostic) ||
 	    gpio_pin_configure_dt(&diagnostic, GPIO_OUTPUT_INACTIVE)) {
 		return -ENODEV;
+	}
+	if (usb_console_init()) {
+		/* A console fault must not prevent standalone waveform playback. */
+		gpio_pin_set_dt(&diagnostic, 1);
 	}
 	int rc = outputs_init();
 	if (!rc) {
