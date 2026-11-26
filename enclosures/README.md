@@ -21,6 +21,8 @@ The USB-only enclosure measures **86.8 × 51.6 × 32.8 mm** over the raised butt
 - [Complete USB-only print plate](usb-only/Waveform%20Workout%20R1%20-%20USB%20print%20plate.3mf)
 - [Editable USB-only SolidCraft assembly](usb-only/Waveform%20Workout%20R1%20-%20USB.sc)
 
+For a USB-powered board with J5 and JP1 removed, the [low-profile tray kit](low-profile/README.md) brings the height down to 29.2 mm over the buttons and reuses the flush OLED lid.
+
 ## Print and hardware
 
 Use a 0.4 mm nozzle and 0.20 mm layers. Four perimeters are a starting point for the screw pillars. The 3MF places all six pieces on the bed in a 144 × 109 mm footprint. The tray prints floor-down, the connector frame lid-side down, and the lid sticker-side up. The plungers stand on their switch-contact ends. Add a small brim to the three plungers if bed adhesion is marginal.
