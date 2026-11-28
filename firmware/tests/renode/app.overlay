@@ -1,7 +1,23 @@
 /* SPDX-License-Identifier: MIT */
 #include "../../app/app.overlay"
 
+/* Use the Zephyr USB stack and CDC ACM class with a software controller. */
+/delete-node/ &zephyr_udc0;
+
 / {
+	aliases {
+		volt-sensor0 = &test_supply;
+	};
+	test_supply: test-supply {
+	};
+	zephyr_udc0: test-usb {
+		compatible = "zephyr,udc-skeleton";
+		num-bidir-endpoints = <4>;
+		maximum-speed = "full-speed";
+		cdc_acm_uart0: cdc-acm {
+			compatible = "zephyr,cdc-acm-uart";
+		};
+	};
 	chosen {
 		zephyr,console = &usart1;
 		zephyr,shell-uart = &usart1;
@@ -21,5 +37,6 @@
 	/delete-property/ dma-names;
 };
 
-&zephyr_udc0 { status = "disabled"; };
+&vref { status = "disabled"; };
+&adc1 { status = "disabled"; };
 &clk_hsi48 { status = "disabled"; };

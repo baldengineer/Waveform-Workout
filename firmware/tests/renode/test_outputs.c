@@ -1,12 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 #include "outputs.h"
-#include "usb_console.h"
 #include <zephyr/sys/printk.h>
 
-int usb_console_init(void)
-{
-	return 0; /* Zephyr's serial shell starts on the emulated USART. */
-}
+volatile uint32_t test_playback_requests;
+volatile uint32_t test_idle_requests;
 
 int outputs_init(void)
 {
@@ -15,10 +12,12 @@ int outputs_init(void)
 
 void outputs_idle(void)
 {
+	test_idle_requests++;
 }
 
 int outputs_apply(const struct lesson *lesson)
 {
+	test_playback_requests++;
 	printk("Playback request: %s %s\n", lesson_mode_names[lesson->mode],
 	       lesson_value_names[lesson->mode][lesson->value[lesson->mode]]);
 	return 0;

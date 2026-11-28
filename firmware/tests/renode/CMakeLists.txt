@@ -12,5 +12,8 @@ target_sources(app PRIVATE
   "${firmware}/app/src/preset_store.c"
   "${firmware}/app/src/trainer_shell.c"
   "${firmware}/app/src/i2c_scan.c"
+  "${firmware}/app/src/usb_console.c"
   "${firmware}/app/src/oled.c"
+  test_usb.c
   test_outputs.c)
+target_link_options(app PUBLIC -Wl,--wrap=usbd_enable -Wl,--wrap=usbd_disable)

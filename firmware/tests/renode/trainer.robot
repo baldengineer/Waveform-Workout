@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Waveform Workout Rev 1 front panel, EEPROM, and J6 integration.
+Documentation    Waveform Workout Rev 1 front panel, EEPROM, J6, and USB power monitoring.
 
 *** Keywords ***
 Create Trainer
@@ -15,7 +15,9 @@ Create Trainer
     Create Terminal Tester    sysbus.usart1    defaultPauseEmulation=True
 
 Boot Trainer
-    [Arguments]    ${expected}
+    [Arguments]    ${expected}    ${vbus_pin}=true
+    # PA15 is the active-low VBUS detector. High represents no cable.
+    Execute Command    sysbus.gpioPortA OnGPIO 15 ${vbus_pin}
     Execute Command    sysbus.gpioPortB OnGPIO 12 true
     Execute Command    sysbus.gpioPortB OnGPIO 14 true
     Start Emulation
@@ -42,6 +44,22 @@ Check J6 Power
     ${odr}=    Execute Command    sysbus ReadDoubleWord 0x50000414
     ${on}=    Evaluate    (int($odr.strip(), 0) & 0x20) == 0
     Should Be Equal    ${on}    ${powered}
+
+Set Test Input
+    [Arguments]    ${symbol}    ${value}
+    Execute Command    sysbus WriteDoubleWord `sysbus GetSymbolAddress "${symbol}"` ${value}
+
+Check Test Counter
+    [Arguments]    ${symbol}    ${expected}
+    ${value}=    Execute Command    sysbus ReadDoubleWord `sysbus GetSymbolAddress "${symbol}"`
+    Should Be Equal As Integers    ${value}    ${expected}    ${symbol}
+
+Check USB After Two Polls
+    [Arguments]    ${enabled}    ${enable_calls}    ${disable_calls}
+    Execute Command    emulation RunFor "0.22"
+    Check Test Counter    test_stack_enabled    ${enabled}
+    Check Test Counter    test_enable_calls    ${enable_calls}
+    Check Test Counter    test_disable_calls    ${disable_calls}
 
 *** Test Cases ***
 VALUE Press Advances Once And Survives Reset
@@ -129,3 +147,62 @@ Saved Alternate OLED Address Selects Display On Next Boot
     Write Line To Uart    i2c_scan
     Wait For Line On Uart    0x3C
     Wait For Line On Uart    1 device(s) found on J6
+
+USB Attach And Detach Respect Both Millivolt Boundaries
+    Create Trainer
+    Boot Trainer    shape sine
+    Set Test Input    test_vdd_mv    3099
+    Execute Command    sysbus.gpioPortA OnGPIO 15 false
+    Check USB After Two Polls    0    0    0
+    Set Test Input    test_vdd_mv    3100
+    Check USB After Two Polls    1    1    0
+    Set Test Input    test_vdd_mv    3000
+    Check USB After Two Polls    1    1    0
+    Set Test Input    test_vdd_mv    2999
+    Check USB After Two Polls    0    1    1
+    Set Test Input    test_vdd_mv    3099
+    Check USB After Two Polls    0    1    1
+    Set Test Input    test_vdd_mv    3100
+    Check USB After Two Polls    1    2    1
+
+Repeated Cable Reconnects Preserve Standalone Playback
+    Create Trainer
+    Boot Trainer    shape sine    vbus_pin=false
+    Check USB After Two Polls    1    1    0
+    FOR    ${cycle}    IN RANGE    1    4
+        Execute Command    sysbus.gpioPortA OnGPIO 15 true
+        Check USB After Two Polls    0    ${cycle}    ${cycle}
+        IF    ${cycle} == 1
+            Press Key    12    shape square
+        END
+        Set Test Input    test_vdd_mv    3050
+        Execute Command    sysbus.gpioPortA OnGPIO 15 false
+        Check USB After Two Polls    0    ${cycle}    ${cycle}
+        Set Test Input    test_vdd_mv    3447
+        Check USB After Two Polls    1    ${cycle + 1}    ${cycle}
+    END
+    Check Test Counter    test_playback_requests    2
+    Check Test Counter    test_idle_requests    0
+    Write Line To Uart    trainer settings show
+    Wait For Line On Uart    shape square
+
+Failed Supply Read Detaches And Recovery Reattaches
+    Create Trainer
+    Boot Trainer    shape sine    vbus_pin=false
+    Check USB After Two Polls    1    1    0
+    FOR    ${fault}    IN RANGE    1    3
+        Set Test Input    test_sensor_fault    ${fault}
+        Check USB After Two Polls    0    ${fault}    ${fault}
+        Set Test Input    test_sensor_fault    0
+        Check USB After Two Polls    1    ${fault + 1}    ${fault}
+    END
+
+Failed Stack Transitions Are Retried
+    Create Trainer
+    Boot Trainer    shape sine
+    Set Test Input    test_fail_next_transition    1
+    Execute Command    sysbus.gpioPortA OnGPIO 15 false
+    Check USB After Two Polls    1    2    0
+    Set Test Input    test_fail_next_transition    1
+    Execute Command    sysbus.gpioPortA OnGPIO 15 true
+    Check USB After Two Polls    0    2    2

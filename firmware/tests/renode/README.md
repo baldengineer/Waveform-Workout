@@ -1,6 +1,6 @@
 # Waveform Workout Renode test plan
 
-Run the front panel, settings store, shell, and optional OLED against Renode's STM32L072 model before Rev 1 hardware arrives. Each case starts with a fresh machine. Within a case, reset restarts the image with the existing EEPROM contents.
+Run the front panel, settings store, shell, optional OLED, and USB power monitor against Renode's STM32L072 model before Rev 1 hardware arrives. Each case starts with a fresh machine. Within a case, reset restarts the image with the existing EEPROM contents.
 
 | Case | Stimulus | Acceptance |
 | --- | --- | --- |
@@ -12,6 +12,10 @@ Run the front panel, settings store, shell, and optional OLED against Renode's S
 | Empty J6 | Boot and run `i2c_scan` with no I²C target, then press VALUE. | The scan reports zero devices, PB5 releases the active-low rail enable, and the panel advances to square. |
 | Default OLED | Connect an I²C target at 0x3D. | The target receives the SSD1306 display-on command, the scan finds only 0x3D, and J6 stays enabled. |
 | Alternate OLED | Connect the target at 0x3C, save its address through the shell, then reset. | The first boot releases J6. The next boot sends display-on to 0x3C, the scan finds only 0x3C, and J6 stays enabled. |
+| USB supply thresholds | With cable present, drive VDD through 3099, 3100, 3000, 2999, 3099, and 3100 mV. | The stack enables, disables, and enables once each at the expected crossings. It holds its prior state inside the hysteresis band. |
+| Cable reconnects | Boot with a cable, unplug and replug three times, and press VALUE during the first disconnect. Reconnect at 3050 mV before restoring nominal VDD. | Each unplug disables USB. Each reconnect waits for adequate VDD. Only boot and the button request playback, and no event requests idle. |
+| Failed VDD reading | Inject a failed sample fetch and a failed channel read separately while attached. | Either failure disables USB. A valid reading restores it. |
+| Failed USB transition | Return an I/O error on the first enable and first disable request. | The power worker retries both, reaches the requested stack state, and makes no duplicate requests while stable. |
 
 ## Running on Windows
 
@@ -46,6 +50,8 @@ $results = Join-Path $env:TEMP ("ww-renode-" + (Get-Date -Format 'yyyyMMdd-HHmms
 
 The test image compiles the production event loop, gpio-keys input path, lesson code, EEPROM driver and record format, shell commands, I²C scanner, and OLED code. Test instrumentation reports each playback request on USART1. The test overlay moves the shell to USART1 and uses SPI2 without DMA. The I²C target acknowledges commands. The J6 power assertion reads the GPIO output latch.
 
+USB tests drive the board's active-low PA15 VBUS input and supply millivolts through a test voltage sensor. They run the production 100 ms power worker, USB initialization, CDC ACM registration, and Zephyr USB stack with a software device controller. They check the stack's enabled flag and count enable/disable calls after each input change. The retry case injects a single error before forwarding subsequent requests to the stack. No USB host participates.
+
 On the boards, measure TIM6/DMA dual-DAC playback, TIM2/TIM21 pulse alignment, filter response under load, and pixel timing. Check native USB enumeration and reconnects, visible OLED output, and J6 rail voltage. The EEPROM fault cases exercise recovery from injected record contents. Physical power-loss timing needs a bench test.
 
-Verified on Windows with Zephyr 4.5.0 and Renode 1.17.1 on 2026-11-28. All eight cases passed.
+Verified on Windows with Zephyr 4.5.0 and Renode 1.17.1 on 2026-11-28. All twelve cases passed.
