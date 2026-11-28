@@ -4,7 +4,8 @@
 
 #include "lesson.h"
 
-void oled_init(uint8_t address);
+void oled_wake(uint8_t address);
+void oled_sleep(void);
 void oled_show(const struct lesson *lesson);
 
 #endif

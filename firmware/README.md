@@ -38,7 +38,7 @@ Flash from that workspace with `west flash -d build/trainer`. OpenOCD is the def
 
 ## USB serial shell
 
-The trainer and filter diagnostic include Zephyr's interactive shell over native USB CDC ACM. After flashing, power the board through SW1 and JP1 and connect a USB data cable. Open the new serial port in a terminal such as PuTTY, with 115200 baud, 8 data bits, no parity, one stop bit, and hardware flow control off. CDC ACM does not use the baud rate to time USB transfers. The terminal must assert DTR; press Enter to display the `trainer:~$` prompt.
+The trainer and filter diagnostic include Zephyr's interactive shell over native USB CDC ACM. After flashing, power the board through SW1 and JP1 and connect a USB data cable. Open the new serial port in a terminal such as PuTTY, with 115200 baud, 8 data bits, no parity, one stop bit, and hardware flow control off. CDC ACM does not use the baud rate to time USB transfers. Press Enter to display the `trainer:~$` prompt.
 
 Useful commands are:
 
@@ -55,19 +55,23 @@ Tab completes commands and the arrow keys recall command history. Waveform playb
 
 To fit the 20 KiB SRAM, the single full-speed CDC interface uses a 512-byte USB request pool and the interrupt stack is 1 KiB; the shell retains its 2 KiB stack. During board bring-up, run `kernel thread stacks` after exercising the shell and USB reconnects to inspect runtime stack usage, and check that waveform playback continues with USB disconnected while independently powered.
 
-The application checks the active-low VBUS detector and VREFINT supply measurement every 100 ms. USB attaches with cable power present and VDD at or above 3.1 V, and detaches below 3.0 V, on cable removal, or on a failed power reading. This adds hysteresis around the STM32's [3.0 V USB minimum supply](https://www.st.com/resource/en/datasheet/stm32l072kz.pdf). Reconnect the terminal if the serial device disappears and re-enumerates. D12 also indicates a USB initialization error; waveform initialization still proceeds.
+Both edges of the active-low VBUS detector wake the CPU. With cable power present, the application checks VDD through VREFINT every 100 ms. On battery, the USB controller, its dedicated 48 MHz clock, and the supply-monitor ADC are idle. A cable insertion triggers a fresh voltage check. USB attaches with cable power present and VDD at or above 3.1 V, and detaches below 3.0 V, on cable removal, or on a failed power reading. This adds hysteresis around the STM32's [3.0 V USB minimum supply](https://www.st.com/resource/en/datasheet/stm32l072kz.pdf). Reconnect the terminal if the serial device disappears and re-enumerates. A USB power-monitor setup error lights D12 and waveform initialization continues.
 
 USB descriptors identify the device as `Waveform Workout`, with its MCU hardware ID as the serial number. `CONFIG_WORKOUT_USB_VID` and `CONFIG_WORKOUT_USB_PID` default to Zephyr's development console IDs (`2fe3:0004`); use assigned IDs before distributing devices outside development. The implementation uses Zephyr's [USB device stack and CDC ACM class](https://docs.zephyrproject.org/latest/services/connectivity/usb/device_next/cdc_acm.html).
 
 ## First scope check
 
-Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. With fresh EEPROM, both channels should show matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the indicators go dark. A steady D12 indicates an application setup or update error.
+Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. With fresh EEPROM, both channels should show matching 1 kHz sines from about +0.25 to +1.25 V.
+
+The panel starts dark on both battery and USB power. Press either button once to see the current row and value on the two green indicators and the optional OLED. That first press leaves playback and EEPROM untouched. While the panel is lit, MODE selects the next row and VALUE cycles its three positions. Two seconds after the last debounced press, all nine pixels go dark and the OLED releases J6 power. Holding a button or editing over USB does not extend the timeout.
+
+Between events the CPU enters ordinary Sleep while the active waveform timer and DMA continue driving the outputs. D12 gives a 20 ms heartbeat every five seconds during normal trainer operation and stays on after an application setup or update error.
 
 For a quick two-channel check, select XY and set its value to 90 degrees. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A.
 
 ## Saved settings
 
-The trainer restores the active mode, the value of each row, and the OLED address from the STM32's internal data EEPROM. Button presses and USB shell edits save immediately. Two versioned, checksummed records occupy the first 32 bytes of EEPROM. An interrupted update leaves the previous record available. Older firmware presets retain their waveform settings and start with OLED address `0x3D`. The next save upgrades the record. With no valid record, the trainer uses the factory settings below.
+The trainer restores the active mode, the value of each row, and the OLED address from the STM32's internal data EEPROM. Button edits and USB shell edits save immediately. Two versioned, checksummed records occupy the first 32 bytes of EEPROM. An interrupted update leaves the previous record available. Older firmware presets retain their waveform settings and start with OLED address `0x3D`. The next save upgrades the record. With no valid record, the trainer uses the factory settings below.
 
 ```text
 trainer settings show
@@ -89,11 +93,11 @@ trainer settings set mode freq
 | `trig` | `rare-pulse`, `pulse-width`, `missing` | `rare-pulse` |
 | `oled_addr` (shell only) | `0x3C`, `0x3D` | `0x3D` |
 
-To check persistence, run the example commands, press reset, and run `trainer settings show` again. The scope should still show a 10 kHz square wave. Press VALUE in the frequency row, then power-cycle the board to check that the buttons also save the new 100 Hz selection. The separate filter diagnostic ignores trainer settings.
+To check persistence, run the example commands, press reset, and run `trainer settings show` again. The scope should still show a 10 kHz square wave. Wake the panel, press VALUE in the frequency row, then power-cycle the board to check that the buttons also save the new 100 Hz selection. The separate filter diagnostic ignores trainer settings.
 
 ## Optional SSD1306 OLED
 
-Connect an I²C SSD1306 to J6 before power-up. The default trainer image enables the QT rail, waits for the module to reset, and initializes a **128×64** panel at 7-bit address **0x3D** for the Adafruit 326 enclosure. It displays the active row and value after boot and after edits. An absent or unresponsive module releases the QT rail and the trainer continues. The drawing code in `app/src/oled.c` uses Zephyr's native character framebuffer, which provides fonts, text, points, lines, rectangles and circles. [Zephyr framebuffer API](https://docs.zephyrproject.org/latest/doxygen/html/group__monochrome__character__framebuffer.html) · [Adafruit OLED addressing](https://learn.adafruit.com/monochrome-oled-breakouts?view=all)
+Connect an I²C SSD1306 to J6 before power-up. On each panel wake the default trainer image enables the QT rail, waits for the module to reset, and initializes a **128×64** panel at 7-bit address **0x3D** for the Adafruit 326 enclosure. It displays the current row and value during the two-second button window. An absent or unresponsive module releases the QT rail and the trainer continues. The drawing code in `app/src/oled.c` uses Zephyr's native character framebuffer, which provides fonts, text, points, lines, rectangles and circles. [Zephyr framebuffer API](https://docs.zephyrproject.org/latest/doxygen/html/group__monochrome__character__framebuffer.html) · [Adafruit OLED addressing](https://learn.adafruit.com/monochrome-oled-breakouts?view=all)
 
 For a 128×32 panel, add the supplied overlay at build time. Use an absolute path to the overlay if building outside the firmware directory.
 
@@ -115,7 +119,7 @@ trainer settings set oled_addr 0x3C
 trainer settings show
 ```
 
-Press RESET to initialize the display at the saved address. Use `trainer settings set oled_addr 0x3D` to restore the default. Match the address to the panel's hardware strap.
+Press RESET, then either front-panel button to initialize the display at the saved address. Use `trainer settings set oled_addr 0x3D` to restore the default. Match the address to the panel's hardware strap.
 
 ## Filter diagnostic and board samples
 

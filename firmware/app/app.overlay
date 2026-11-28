@@ -2,6 +2,10 @@
 #include <zephyr/dt-bindings/dma/stm32_dma.h>
 
 / {
+	buttons {
+		zephyr,suspend-action = "none";
+	};
+
 	chosen {
 		zephyr,console = &cdc_acm_uart0;
 		zephyr,shell-uart = &cdc_acm_uart0;
@@ -10,6 +14,22 @@
 };
 
 &eeprom { status = "okay"; };
+
+&adc1 { zephyr,pm-device-runtime-auto; };
+
+&spi2 {
+	zephyr,pm-device-runtime-auto;
+	/* Hold DIN low between frames. PB12/PB14 remain button inputs. */
+	pinctrl-1 = <&pixel_data_idle>;
+	pinctrl-names = "default", "sleep";
+};
+
+&pinctrl {
+	pixel_data_idle: pixel-data-idle {
+		pinmux = <STM32_PINMUX('B', 15, GPIO)>;
+		output-low;
+	};
+};
 
 &zephyr_i2c {
 	trainer_oled_alt: ssd1306@3c {
@@ -25,7 +45,9 @@
 &zephyr_udc0 {
 	cdc_acm_uart0: cdc-acm-uart0 {
 		compatible = "zephyr,cdc-acm-uart";
-		label = "Waveform Workout shell";
+		/* Use the device product string. Zephyr 4.5 caches the optional
+		 * CDC interface string index across USB shutdown/reinitialization.
+		 */
 		tx-fifo-size = <256>;
 		rx-fifo-size = <256>;
 	};

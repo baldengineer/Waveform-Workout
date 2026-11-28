@@ -36,9 +36,15 @@ static const struct dma_stream analog = DMA_STREAM(DAC_NODE, dual);
 static const struct dma_stream pulse = DMA_STREAM(MARKER_TIMER, pulse);
 static const struct dma_stream marker = DMA_STREAM(MARKER_TIMER, marker);
 
-static uint32_t samples[CYCLE_SAMPLES];
+/* outputs_idle() stops DMA before a new lesson fills either table. */
 BUILD_ASSERT(TRIGGER_PERIOD_US <= UINT8_MAX);
-static uint8_t pulse_us[RARE_PERIODS], marker_us[RARE_PERIODS];
+static union {
+	uint32_t samples[CYCLE_SAMPLES];
+	struct {
+		uint8_t pulse_us[RARE_PERIODS];
+		uint8_t marker_us[RARE_PERIODS];
+	} trigger;
+} tables;
 
 static int start_dma(const struct dma_stream *stream, const void *table, unsigned int count,
 		     size_t memory_width, size_t peripheral_width, volatile uint32_t *destination)
@@ -75,6 +81,10 @@ static int select_analog(bool enable)
 
 void outputs_idle(void)
 {
+	/* A previous lesson may have gated either timer bank or the DAC. */
+	LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM6 | LL_APB1_GRP1_PERIPH_TIM2 |
+				 LL_APB1_GRP1_PERIPH_DAC1);
+	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_TIM21);
 	TIM6->CR1 = 0;
 	DAC1->CR &= ~DAC_CR_DMAEN1;
 	TIM2->DIER = 0;
@@ -90,6 +100,10 @@ void outputs_idle(void)
 	TIM2->EGR = TIM_EGR_UG;
 	TIM21->EGR = TIM_EGR_UG;
 	select_analog(false);
+	DAC1->CR &= ~(DAC_CR_EN1 | DAC_CR_EN2);
+	LL_APB1_GRP1_DisableClock(LL_APB1_GRP1_PERIPH_TIM6 | LL_APB1_GRP1_PERIPH_TIM2 |
+				  LL_APB1_GRP1_PERIPH_DAC1);
+	LL_APB2_GRP1_DisableClock(LL_APB2_GRP1_PERIPH_TIM21);
 }
 
 int outputs_init(void)
@@ -149,6 +163,10 @@ int outputs_init(void)
 
 static int start_trigger(uint8_t value)
 {
+	LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM2);
+	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_TIM21);
+	uint8_t *pulse_us = tables.trigger.pulse_us;
+	uint8_t *marker_us = tables.trigger.marker_us;
 	unsigned int count = trigger_sequence(value, pulse_us, marker_us);
 	/* DMA zero-extends each byte to a timer compare halfword. */
 	int rc = start_dma(&pulse, pulse_us, count, sizeof(*pulse_us), sizeof(uint16_t),
@@ -172,6 +190,9 @@ static int start_trigger(uint8_t value)
 
 static int start_analog(const struct lesson *lesson)
 {
+	LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM6 | LL_APB1_GRP1_PERIPH_DAC1);
+	DAC1->CR |= DAC_CR_EN1 | DAC_CR_EN2;
+	uint32_t *samples = tables.samples;
 	unsigned int count = CYCLE_SAMPLES;
 	unsigned int rate = lesson_sample_rate(lesson);
 	bool playback = lesson->mode != DC;
@@ -206,6 +227,8 @@ static int start_analog(const struct lesson *lesson)
 	int rc = select_analog(true);
 	if (!rc && playback) {
 		LL_TIM_EnableCounter(TIM6);
+	} else {
+		LL_APB1_GRP1_DisableClock(LL_APB1_GRP1_PERIPH_TIM6);
 	}
 	return rc;
 }

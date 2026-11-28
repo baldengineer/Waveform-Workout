@@ -39,6 +39,13 @@ Press Key
     Execute Command    sysbus.gpioPortB OnGPIO ${pin} true
     Execute Command    emulation RunFor "0.1"
 
+Tap Key
+    [Arguments]    ${pin}
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} false
+    Execute Command    emulation RunFor "0.16"
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} true
+    Execute Command    emulation RunFor "0.16"
+
 Check J6 Power
     [Arguments]    ${powered}
     # STM32 GPIOB ODR bit 5 is active low.
@@ -66,6 +73,7 @@ Bounce Key During Shell Edit
     [Arguments]    ${pin}
     Create Trainer
     Boot Trainer    shape sine
+    Tap Key    ${pin}
     Execute Command    sysbus.gpioPortB OnGPIO ${pin} false
     Execute Command    emulation RunFor "0.002"
     Execute Command    sysbus.gpioPortB OnGPIO ${pin} true
@@ -119,6 +127,7 @@ Observe CPU Sleep
 VALUE Press Advances Once And Survives Reset
     Create Trainer
     Boot Trainer    shape sine
+    Tap Key    12
     Press Key    12    shape square
     Reset Trainer    shape square
     Write Line To Uart    trainer settings show
@@ -127,6 +136,7 @@ VALUE Press Advances Once And Survives Reset
 Uncommitted Newest Preset Falls Back To Previous Save
     Create Trainer
     Boot Trainer    shape sine
+    Tap Key    14
     Press Key    12    shape square
     Press Key    12    shape triangle
     # Slot 1 contains the second save. Simulate losing its commit marker.
@@ -136,6 +146,7 @@ Uncommitted Newest Preset Falls Back To Previous Save
 Bad Checksum Falls Back Even With A Valid Commit Marker
     Create Trainer
     Boot Trainer    shape sine
+    Tap Key    12
     Press Key    12    shape square
     Press Key    12    shape triangle
     # Change a valid shape index without updating the CRC.
@@ -150,6 +161,7 @@ Legacy Preset Upgrades And Sequence Wraps
     Execute Command    sysbus WriteDoubleWord 0x08080008 0x00005900
     Execute Command    sysbus WriteByte 0x0808000C 0xA5
     Boot Trainer    shape square
+    Tap Key    12
     Write Line To Uart    trainer settings show
     Wait For Line On Uart    oled_addr 0x3D
     Press Key    12    shape triangle
@@ -160,6 +172,7 @@ Legacy Preset Upgrades And Sequence Wraps
 MODE Selects Amplitude And Shell Edits Persist
     Create Trainer
     Boot Trainer    shape sine
+    Tap Key    14
     Execute Command    sysbus.gpioPortB OnGPIO 14 false
     Execute Command    emulation RunFor "0.1"
     Execute Command    sysbus.gpioPortB OnGPIO 14 true
@@ -177,11 +190,15 @@ Missing OLED Releases J6 And Allows Panel Edits
     Write Line To Uart    i2c_scan
     Wait For Line On Uart    0 device(s) found on J6
     Check J6 Power    ${False}
+    Tap Key    12
+    Check J6 Power    ${False}
     Press Key    12    shape square
 
 Default OLED Address Appears On J6
     Create Trainer    0x3D
     Boot Trainer    shape sine
+    Check J6 Power    ${False}
+    Tap Key    12
     Check J6 Power    ${True}
     Wait For Log Entry    i2c1.panel: Received 2 bytes: [0x0, 0xAF]
     Write Line To Uart    i2c_scan
@@ -196,6 +213,8 @@ Saved Alternate OLED Address Selects Display On Next Boot
     Write Line To Uart    trainer settings set oled_addr 0x3C
     Wait For Line On Uart    Saved oled_addr 0x3C for next boot
     Reset Trainer    shape sine
+    Check J6 Power    ${False}
+    Tap Key    14
     Check J6 Power    ${True}
     Wait For Log Entry    i2c1.panel: Received 2 bytes: [0x0, 0xAF]
     Write Line To Uart    i2c_scan
@@ -227,6 +246,7 @@ Repeated Cable Reconnects Preserve Standalone Playback
         Execute Command    sysbus.gpioPortA OnGPIO 15 true
         Check USB After Two Polls    0    ${cycle}    ${cycle}
         IF    ${cycle} == 1
+            Tap Key    12
             Press Key    12    shape square
         END
         Set Test Input    test_vdd_mv    3050
@@ -274,44 +294,99 @@ Bouncing MODE And Shell Edit Both Persist
     Reset Trainer    amp 500mVpp
 
 Panel Edit Restarts Two Second Indicator Timeout
-    Create Trainer
+    Create Trainer    0x3D
     Execute Command    include "${CURDIR}/PixelCapture.cs"
     Execute Command    machine LoadPlatformDescriptionFromString "pixels: Mocks.PixelCapture @ spi2"
     Boot Trainer    shape sine
+    Check Pixel Frame    1
+    Check J6 Power    ${False}
+    Write Line To Uart    trainer settings set amp 500mVpp
+    Wait For Line On Uart    Saved amp 500mVpp
+    Check Pixel Frame    1
+    Check J6 Power    ${False}
+    Tap Key    12
     Check Pixel Frame    2    7    2
+    Check J6 Power    ${True}
     Execute Command    emulation RunFor "1.1"
     Press Key    12    shape square
     Check Pixel Frame    3    7    1
     ${lit}=    Execute Command    sysbus.spi2.pixels FrameTimeMs
-    Execute Command    emulation RunFor "1.8"
-    Check Pixel Frame    3    7    1
+    Execute Command    emulation RunFor "1.4"
+    Write Line To Uart    trainer settings set oled_addr 0x3D
+    Wait For Line On Uart    Saved oled_addr 0x3D for next boot
+    Execute Command    emulation RunFor "0.3"
+    Check Pixel Frame    4    7    1
+    Check J6 Power    ${True}
     Execute Command    emulation RunFor "0.2"
-    Check Pixel Frame    4
+    Check Pixel Frame    5
+    Check J6 Power    ${False}
     ${dark}=    Execute Command    sysbus.spi2.pixels FrameTimeMs
     ${elapsed}=    Evaluate    int($dark.strip(), 0) - int($lit.strip(), 0)
-    Should Be True    1990 <= ${elapsed} <= 2020    Indicator timeout was ${elapsed} ms.
-    Check Test Counter    test_playback_requests    2
+    Should Be True    1980 <= ${elapsed} <= 2020    Indicator timeout was ${elapsed} ms.
+    Tap Key    14
+    Check J6 Power    ${True}
+    Check Pixel Frame    6    7    1
+    Wait For Log Entry    i2c1.panel: Received 2 bytes: [0x0, 0xAF]
+    Wait For Log Entry    i2c1.panel: Received 2 bytes: [0x0, 0xAF]
+    Check Test Counter    test_playback_requests    3
     Check Test Counter    test_idle_requests    0
+
+Battery Heartbeat Leaves The Panel Asleep
+    Create Trainer    0x3D
+    Boot Trainer    shape sine
+    Execute Command    sysbus.cpu AddHook `sysbus GetSymbolAddress "check_power"` 'self.InfoLog("unexpected USB poll")'
+    Execute Command    emulation RunFor "4.5"
+    Should Not Be In Log    unexpected USB poll    timeout=0
+    Execute Command    sysbus.cpu AddHook `sysbus GetSymbolAddress "heartbeat"` 'self.InfoLog("D12 timer")'
+    Wait For Log Entry    D12 timer    pauseEmulation=True
+    Execute Command    emulation RunFor "0.005"
+    ${on}=    Execute Command    sysbus ReadDoubleWord 0x50000014
+    Should Be True    int($on.strip(), 0) & 4
+    Execute Command    emulation RunFor "0.020"
+    ${off}=    Execute Command    sysbus ReadDoubleWord 0x50000014
+    Should Be True    (int($off.strip(), 0) & 4) == 0
+    Check J6 Power    ${False}
+    Check Test Counter    test_playback_requests    1
+
+Holding A Wake Press Through Timeout Leaves The Preset Alone
+    Create Trainer    0x3D
+    Boot Trainer    shape sine
+    Execute Command    sysbus.gpioPortB OnGPIO 14 false
+    Execute Command    emulation RunFor "0.4"
+    Check J6 Power    ${True}
+    Execute Command    emulation RunFor "1.8"
+    Check J6 Power    ${False}
+    Execute Command    sysbus.gpioPortB OnGPIO 14 true
+    Execute Command    emulation RunFor "0.1"
+    Check J6 Power    ${False}
+    Tap Key    12
+    Check J6 Power    ${True}
+    Check Test Counter    test_playback_requests    1
+    ${commit}=    Execute Command    sysbus ReadByte 0x0808000C
+    Should Be Equal As Integers    ${commit}    0
+    Press Key    12    shape square
 
 VALUE Interrupt Wakes The Idle CPU
     Create Trainer
     Boot Trainer    shape sine
-    Observe CPU Sleep    gpio_keys_interrupt    outputs_apply
+    Observe CPU Sleep    gpio_keys_interrupt    on_key
     Execute Command    sysbus.gpioPortB OnGPIO 12 false
     Wait For Log Entry    trainer wake
     Wait For Log Entry    trainer handler gpio_keys_interrupt    pauseEmulation=True
-    Wait For Log Entry    trainer handler outputs_apply    pauseEmulation=True
-    Wait For Line On Uart    Playback request: shape square
+    Wait For Log Entry    trainer handler on_key    pauseEmulation=True
     Execute Command    sysbus.gpioPortB OnGPIO 12 true
     Wait For Log Entry    trainer sleep    pauseEmulation=True
+    Check Test Counter    test_playback_requests    1
+    ${commit}=    Execute Command    sysbus ReadByte 0x0808000C
+    Should Be Equal As Integers    ${commit}    0
 
-SysTick Wakes The Idle CPU To Poll USB
+VBUS Edge Wakes The Idle CPU For USB
     Create Trainer
     Boot Trainer    shape sine
-    Observe CPU Sleep    sys_clock_isr    check_power
+    Observe CPU Sleep    vbus_changed    check_power
     Execute Command    sysbus.gpioPortA OnGPIO 15 false
     Wait For Log Entry    trainer wake
-    Wait For Log Entry    trainer handler sys_clock_isr    pauseEmulation=True
+    Wait For Log Entry    trainer handler vbus_changed    pauseEmulation=True
     Wait For Log Entry    trainer handler check_power    pauseEmulation=True
     Execute Command    pause
     Check USB After Two Polls    1    1    0
