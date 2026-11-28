@@ -19,7 +19,7 @@ struct reply {
 	int rc;
 };
 
-enum panel_action { NEXT_MODE, NEXT_VALUE, SET_MODE, SET_VALUE };
+enum panel_action { NEXT_MODE, NEXT_VALUE, SET_MODE, SET_VALUE, SET_OLED_ADDRESS };
 struct panel_event {
 	enum panel_action action;
 	uint8_t field;
@@ -29,24 +29,36 @@ struct panel_event {
 K_MSGQ_DEFINE(events, sizeof(struct panel_event), 8, 4);
 static atomic_t accepting_edits;
 
+static int submit_edit(struct panel_event event)
+{
+	if (!atomic_get(&accepting_edits)) {
+		return -EAGAIN;
+	}
+	struct reply reply;
+	event.reply = &reply;
+	k_sem_init(&reply.done, 0, 1);
+	k_msgq_put(&events, &event, K_FOREVER);
+	k_sem_take(&reply.done, K_FOREVER);
+	return reply.rc;
+}
+
 int trainer_set(enum mode field, uint8_t value)
 {
 	if ((unsigned int)field > MODE_COUNT ||
 	    value >= (field == MODE_COUNT ? MODE_COUNT : VALUE_COUNT)) {
 		return -EINVAL;
 	}
-	if (!atomic_get(&accepting_edits)) {
-		return -EAGAIN;
+	return submit_edit((struct panel_event){
+		.action = field == MODE_COUNT ? SET_MODE : SET_VALUE, .field = field, .value = value,
+	});
+}
+
+int trainer_set_oled_address(uint8_t address)
+{
+	if (!oled_address_valid(address)) {
+		return -EINVAL;
 	}
-	struct reply reply;
-	struct panel_event event = {
-		.action = field == MODE_COUNT ? SET_MODE : SET_VALUE,
-		.field = field, .value = value, .reply = &reply,
-	};
-	k_sem_init(&reply.done, 0, 1);
-	k_msgq_put(&events, &event, K_FOREVER);
-	k_sem_take(&reply.done, K_FOREVER);
-	return reply.rc;
+	return submit_edit((struct panel_event){ .action = SET_OLED_ADDRESS, .value = address });
 }
 
 static void on_key(struct input_event *event, void *context)
@@ -79,7 +91,8 @@ static int run_trainer(void)
 	if (IS_ENABLED(CONFIG_WORKOUT_FILTER_TEST)) {
 		return outputs_apply(&lesson);
 	}
-	int load_rc = preset_load(&lesson);
+	uint8_t oled_address = OLED_ADDRESS_DEFAULT;
+	int load_rc = preset_load(&lesson, &oled_address);
 	if (load_rc && load_rc != -ENOENT) {
 		gpio_pin_set_dt(&diagnostic, 1);
 	}
@@ -88,7 +101,7 @@ static int run_trainer(void)
 		return rc;
 	}
 	if (IS_ENABLED(CONFIG_WORKOUT_OLED)) {
-		oled_init();
+		oled_init(oled_address);
 		oled_show(&lesson);
 	}
 	rc = display(&lesson);
@@ -108,11 +121,13 @@ static int run_trainer(void)
 			continue;
 		}
 		struct lesson next = lesson;
+		uint8_t next_address = oled_address;
 		switch (event.action) {
 		case NEXT_MODE: lesson_next_mode(&next); break;
 		case NEXT_VALUE: lesson_next_value(&next); break;
 		case SET_MODE: next.mode = event.value; break;
 		case SET_VALUE: next.value[event.field] = event.value; break;
+		case SET_OLED_ADDRESS: next_address = event.value; break;
 		}
 		rc = 0;
 		if (!outputs_running || lesson_output_changed(&lesson, &next)) {
@@ -121,7 +136,10 @@ static int run_trainer(void)
 		}
 		if (!rc) {
 			lesson = next;
-			rc = preset_save(&lesson);
+			rc = preset_save(&lesson, next_address);
+			if (!rc) {
+				oled_address = next_address;
+			}
 			int led_rc = display(&lesson);
 			if (!rc) {
 				rc = led_rc;

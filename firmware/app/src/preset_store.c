@@ -13,13 +13,14 @@ struct preset_record {
 	uint8_t sequence;
 	uint8_t mode;
 	uint8_t value[6];
+	uint8_t oled_address; /* Occupies the original v1 CRC byte. */
 	uint8_t crc;
-	uint8_t reserved[2];
+	uint8_t reserved;
 	uint8_t committed;
 	uint8_t padding[3];
 };
 
-enum { FORMAT_VERSION = 1, COMMITTED = 0xa5 };
+enum { FORMAT_VERSION = 2, COMMITTED = 0xa5 };
 #define EEPROM_NODE DT_NODELABEL(eeprom)
 static const struct device *const storage = DEVICE_DT_GET(EEPROM_NODE);
 BUILD_ASSERT(MODE_COUNT == 6 && sizeof(struct preset_record) == 16);
@@ -30,10 +31,9 @@ static uint8_t checksum(const struct preset_record *record)
 	return crc8_ccitt(0, (const uint8_t *)record, offsetof(struct preset_record, crc));
 }
 
-static bool valid(const struct preset_record *record)
+static bool decode(struct preset_record *record)
 {
-	if (record->committed != COMMITTED || record->version != FORMAT_VERSION ||
-	    record->mode >= MODE_COUNT || record->crc != checksum(record)) {
+	if (record->committed != COMMITTED || record->mode >= MODE_COUNT) {
 		return false;
 	}
 	for (size_t i = 0; i < MODE_COUNT; ++i) {
@@ -41,7 +41,16 @@ static bool valid(const struct preset_record *record)
 			return false;
 		}
 	}
-	return true;
+	if (record->version == 1) {
+		uint8_t old_crc = crc8_ccitt(0, record, offsetof(struct preset_record, oled_address));
+		if (old_crc != record->oled_address) {
+			return false;
+		}
+		record->oled_address = OLED_ADDRESS_DEFAULT;
+		return true;
+	}
+	return record->version == FORMAT_VERSION && oled_address_valid(record->oled_address) &&
+	       record->crc == checksum(record);
 }
 
 static int latest(struct preset_record *result)
@@ -55,19 +64,19 @@ static int latest(struct preset_record *result)
 		return rc;
 	}
 	int slot = 0;
-	if (!valid(&slots[0])) {
-		if (!valid(&slots[1])) {
+	if (!decode(&slots[0])) {
+		if (!decode(&slots[1])) {
 			return -ENOENT;
 		}
 		slot = 1;
-	} else if (valid(&slots[1]) && slots[1].sequence == (uint8_t)(slots[0].sequence + 1)) {
+	} else if (decode(&slots[1]) && slots[1].sequence == (uint8_t)(slots[0].sequence + 1)) {
 		slot = 1;
 	}
 	*result = slots[slot];
 	return slot;
 }
 
-int preset_load(struct lesson *lesson)
+int preset_load(struct lesson *lesson, uint8_t *oled_address)
 {
 	struct preset_record record;
 	int slot = latest(&record);
@@ -75,23 +84,30 @@ int preset_load(struct lesson *lesson)
 		return slot;
 	}
 	lesson->mode = record.mode;
+	*oled_address = record.oled_address;
 	memcpy(lesson->value, record.value, sizeof(record.value));
 	return 0;
 }
 
-int preset_save(const struct lesson *lesson)
+int preset_save(const struct lesson *lesson, uint8_t oled_address)
 {
-	struct preset_record record = { .version = FORMAT_VERSION };
+	if (!oled_address_valid(oled_address)) {
+		return -EINVAL;
+	}
+	struct preset_record record = {0};
 	int slot = latest(&record);
 	if (slot < 0 && slot != -ENOENT) {
 		return slot;
 	}
-	if (slot >= 0 && record.mode == lesson->mode &&
+	if (slot >= 0 && record.version == FORMAT_VERSION && record.mode == lesson->mode &&
+	    record.oled_address == oled_address &&
 	    memcmp(record.value, lesson->value, sizeof(record.value)) == 0) {
 		return 0;
 	}
 	int offset = (slot == 0) ? sizeof(record) : 0;
 	record.sequence++;
+	record.version = FORMAT_VERSION;
+	record.oled_address = oled_address;
 	record.mode = lesson->mode;
 	memcpy(record.value, lesson->value, sizeof(record.value));
 	record.crc = checksum(&record);

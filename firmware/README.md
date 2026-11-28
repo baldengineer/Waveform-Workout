@@ -67,7 +67,7 @@ For a quick two-channel check, select XY and set its value to 90 degrees. In XY 
 
 ## Saved settings
 
-The trainer restores the active mode and the value of each row from the STM32's internal data EEPROM before starting playback. Button presses and USB shell edits save immediately. Two versioned, checksummed records occupy the first 32 bytes of EEPROM. An interrupted update leaves the previous record available. Repeating a stored setting skips the write. With no valid record, the trainer uses the factory settings below.
+The trainer restores the active mode, the value of each row, and the OLED address from the STM32's internal data EEPROM. Button presses and USB shell edits save immediately. Two versioned, checksummed records occupy the first 32 bytes of EEPROM. An interrupted update leaves the previous record available. Older firmware presets retain their waveform settings and start with OLED address `0x3D`. The next save upgrades the record. With no valid record, the trainer uses the factory settings below.
 
 ```text
 trainer settings show
@@ -87,6 +87,7 @@ trainer settings set mode freq
 | `dc` | `250mV`, `500mV`, `1V` | `250mV` |
 | `xy` | `0deg`, `90deg`, `180deg` | `0deg` |
 | `trig` | `rare-pulse`, `pulse-width`, `missing` | `rare-pulse` |
+| `oled_addr` (shell only) | `0x3C`, `0x3D` | `0x3D` |
 
 To check persistence, run the example commands, press reset, and run `trainer settings show` again. The scope should still show a 10 kHz square wave. Press VALUE in the frequency row, then power-cycle the board to check that the buttons also save the new 100 Hz selection. The separate filter diagnostic ignores trainer settings.
 
@@ -100,7 +101,21 @@ For a 128×32 panel, add the supplied overlay at build time. Use an absolute pat
 west build -b waveform_workout -d build/oled32 app -- -DEXTRA_DTC_OVERLAY_FILE=oled-128x32.overlay
 ```
 
-The overlay overrides the `trainer_oled` devicetree node. Set `width`, `height`, `multiplex-ratio` and the COM configuration for your glass. For a module strapped to **0x3C**, set `reg = <0x3c>;` in the same node. To keep J6 off and omit the display code and framebuffer, build with `-DCONFIG_WORKOUT_OLED=n` after `--`. The filter diagnostic leaves J6 off.
+The overlay sets the geometry of both SSD1306 address variants. For different glass, set `width`, `height`, `multiplex-ratio` and the COM configuration on both nodes. An OLED-disabled build (`-DCONFIG_WORKOUT_OLED=n` after `--`) and the filter diagnostic leave J6 off during boot.
+
+### Find the panel address on J6
+
+Run `i2c_scan` in the USB shell. It temporarily powers J6, probes the 7-bit addresses `0x08` through `0x77` without sending data bytes, and prints each address that acknowledges. It then releases its power request. An active OLED stays powered. The scanner is also available in OLED-disabled and filter builds.
+
+For a panel that responds at `0x3C`, run:
+
+```text
+i2c_scan
+trainer settings set oled_addr 0x3C
+trainer settings show
+```
+
+Press RESET to initialize the display at the saved address. Use `trainer settings set oled_addr 0x3D` to restore the default. Match the address to the panel's hardware strap.
 
 ## Filter diagnostic and board samples
 

@@ -1,21 +1,26 @@
 /* SPDX-License-Identifier: MIT */
 #include "oled.h"
+#include "preset_store.h"
 #include <zephyr/display/cfb.h>
 #include <zephyr/drivers/regulator.h>
 #include <zephyr/kernel.h>
 
 #define PANEL DT_CHOSEN(zephyr_display)
-static const struct device *const panel = DEVICE_DT_GET(PANEL);
+#define ALT_PANEL DT_NODELABEL(trainer_oled_alt)
+BUILD_ASSERT(DT_REG_ADDR(PANEL) == OLED_ADDRESS_DEFAULT);
+BUILD_ASSERT(DT_REG_ADDR(ALT_PANEL) == OLED_ADDRESS_LOW);
+static const struct device *panel;
 static const struct device *const rail = DEVICE_DT_GET(DT_NODELABEL(qt_vdd));
 static bool available;
 static uint8_t font_height;
 
-void oled_init(void)
+void oled_init(uint8_t address)
 {
 	if (!device_is_ready(rail) || regulator_enable(rail)) {
 		return;
 	}
-	k_sleep(K_MSEC(DT_PROP(PANEL, ready_time_ms)));
+	panel = address == OLED_ADDRESS_LOW ? DEVICE_DT_GET(ALT_PANEL) : DEVICE_DT_GET(PANEL);
+	k_sleep(K_MSEC(MAX(DT_PROP(PANEL, ready_time_ms), DT_PROP(ALT_PANEL, ready_time_ms))));
 	if (device_init(panel) || cfb_framebuffer_init(panel)) {
 		regulator_disable(rail);
 		return;

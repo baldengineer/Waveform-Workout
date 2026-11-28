@@ -4,7 +4,7 @@
 
 #include "lesson.h"
 
-void oled_init(void);
+void oled_init(uint8_t address);
 void oled_show(const struct lesson *lesson);
 
 #endif
