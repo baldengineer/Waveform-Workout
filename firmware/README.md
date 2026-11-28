@@ -142,6 +142,8 @@ cc -std=c11 -Wall -Wextra -Werror -Iapp/src app/src/lesson.c tests/lesson_test.c
 ./build/lesson-test
 ```
 
+The [Renode test plan](tests/renode/README.md) runs the Rev 1 front panel, EEPROM recovery, shell, and optional OLED against an emulated STM32L072. It includes Windows build and run commands.
+
 ## Application interfaces
 
 | Hardware | Zephyr interface |
