@@ -142,7 +142,7 @@ cc -std=c11 -Wall -Wextra -Werror -Iapp/src app/src/lesson.c tests/lesson_test.c
 ./build/lesson-test
 ```
 
-The [Renode test plan](tests/renode/README.md) covers the Rev 1 front panel, EEPROM recovery, shell, optional OLED, and USB supply thresholds and cable reconnects. It includes Windows build and run commands.
+The [Renode test plan](tests/renode/README.md) covers front-panel debounce, indicator timing, EEPROM recovery, the shell and optional OLED, USB supply thresholds and reconnects, and CPU sleep and wake. It includes Windows build and run commands.
 
 ## Application interfaces
 

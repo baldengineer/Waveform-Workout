@@ -16,6 +16,11 @@ Run the front panel, settings store, shell, optional OLED, and USB power monitor
 | Cable reconnects | Boot with a cable, unplug and replug three times, and press VALUE during the first disconnect. Reconnect at 3050 mV before restoring nominal VDD. | Each unplug disables USB. Each reconnect waits for adequate VDD. Only boot and the button request playback, and no event requests idle. |
 | Failed VDD reading | Inject a failed sample fetch and a failed channel read separately while attached. | Either failure disables USB. A valid reading restores it. |
 | Failed USB transition | Return an I/O error on the first enable and first disable request. | The power worker retries both, reaches the requested stack state, and makes no duplicate requests while stable. |
+| VALUE bounce during shell edit | Toggle PB12 at 2 ms intervals on press and release. Save 500 mVpp through the shell during the 30 ms debounce window. | Exactly two settings records are written. Reset restores a square wave at 500 mVpp. |
+| MODE bounce during shell edit | Repeat on PB14. | Exactly two settings records are written. Reset restores amplitude mode at 500 mVpp. Switching rows adds no playback restart. |
+| Indicator timeout | Capture the nine pixels on SPI2, then press VALUE before the first timeout expires. | The mode and value indicators stay green past the original deadline. All nine pixels go dark 1,990–2,020 ms after the updated frame. Playback receives no stop or restart request at timeout. |
+| Sleep and button wake | Wait for the CPU to enter ordinary Sleep, then assert VALUE on PB12. | Renode observes a wake, the GPIO key handler runs, the trainer requests square-wave playback, and the CPU returns to Sleep. |
+| Sleep and periodic USB polling | Assert VBUS on PA15 while the CPU is in ordinary Sleep. | A SysTick wake runs the scheduled power check, USB enables once, and playback receives no additional requests. |
 
 ## Running on Windows
 
@@ -52,6 +57,8 @@ The test image compiles the production event loop, gpio-keys input path, lesson 
 
 USB tests drive the board's active-low PA15 VBUS input and supply millivolts through a test voltage sensor. They run the production 100 ms power worker, USB initialization, CDC ACM registration, and Zephyr USB stack with a software device controller. They check the stack's enabled flag and count enable/disable calls after each input change. The retry case injects a single error before forwarding subsequent requests to the stack. No USB host participates.
 
-On the boards, measure TIM6/DMA dual-DAC playback, TIM2/TIM21 pulse alignment, filter response under load, and pixel timing. Check native USB enumeration and reconnects, visible OLED output, and J6 rail voltage. The EEPROM fault cases exercise recovery from injected record contents. Physical power-loss timing needs a bench test.
+The indicator test attaches a capture peripheral to SPI2, checks every byte of each 108-byte GRB frame, and timestamps the completed frames in emulated time. The sleep tests hook Cortex-M wait-for-interrupt entry and exit, check that the SLEEPDEEP bit is clear, and trace the handlers in the running firmware. Both the board and test builds use tickless SysTick with Zephyr system power management disabled. The firmware currently uses ordinary Sleep and has no STOP or Standby transition.
 
-Verified on Windows with Zephyr 4.5.0 and Renode 1.17.1 on 2026-11-28. All twelve cases passed.
+On the boards, measure TIM6/DMA dual-DAC playback, TIM2/TIM21 pulse alignment, filter response under load, pixel timing, and supply current during idle. Check native USB enumeration and reconnects, visible OLED output, and J6 rail voltage. The EEPROM fault cases exercise recovery from injected record contents. Physical power-loss timing needs a bench test.
+
+Verified on Windows with Zephyr 4.5.0 and Renode 1.17.1 on 2026-11-28. All seventeen cases passed. The updated indicator frame remained visible for 2,001 ms of emulated time. Both wake tests observed a System Control Register value of 0x10 at sleep entry, with SLEEPDEEP clear.

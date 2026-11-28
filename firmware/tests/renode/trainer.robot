@@ -1,4 +1,5 @@
 *** Settings ***
+Library    Collections
 Documentation    Waveform Workout Rev 1 front panel, EEPROM, J6, and USB power monitoring.
 
 *** Keywords ***
@@ -60,6 +61,59 @@ Check USB After Two Polls
     Check Test Counter    test_stack_enabled    ${enabled}
     Check Test Counter    test_enable_calls    ${enable_calls}
     Check Test Counter    test_disable_calls    ${disable_calls}
+
+Bounce Key During Shell Edit
+    [Arguments]    ${pin}
+    Create Trainer
+    Boot Trainer    shape sine
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} false
+    Execute Command    emulation RunFor "0.002"
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} true
+    Execute Command    emulation RunFor "0.002"
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} false
+    Write Line To Uart    trainer settings set amp 500mVpp
+    Wait For Line On Uart    Saved amp 500mVpp
+    # Only the shell save has committed during the 30 ms key debounce.
+    ${commit}=    Execute Command    sysbus ReadByte 0x0808001C
+    Should Be Equal As Integers    ${commit}    0
+    Execute Command    emulation RunFor "0.2"
+    # Bounce on release too. Neither the held key nor release is another press.
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} true
+    Execute Command    emulation RunFor "0.002"
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} false
+    Execute Command    emulation RunFor "0.002"
+    Execute Command    sysbus.gpioPortB OnGPIO ${pin} true
+    Execute Command    emulation RunFor "0.15"
+    # Both slots still have their original sequence numbers after exactly two saves.
+    FOR    ${address}    ${seq}    IN    0x08080001    1    0x08080011    2
+        ${actual}=    Execute Command    sysbus ReadByte ${address}
+        Should Be Equal As Integers    ${actual}    ${seq}
+    END
+
+Check Pixel Frame
+    [Arguments]    ${count}    @{green_pixels}
+    ${received}=    Execute Command    sysbus.spi2.pixels LastFrame
+    # Green level 4 encodes as 88 88 8C 88. Each red and blue byte encodes to four 88s.
+    ${pixels}=    Evaluate    ['88' * 12] * 9
+    FOR    ${index}    IN    @{green_pixels}
+        Set List Value    ${pixels}    ${index}    88888C888888888888888888
+    END
+    ${expected}=    Evaluate    ''.join($pixels)
+    Should Be Equal    ${received.strip()}    ${expected}
+    ${actual}=    Execute Command    sysbus.spi2.pixels FrameCount
+    Should Be Equal As Integers    ${actual}    ${count}
+
+Observe CPU Sleep
+    [Arguments]    ${wake_handler}    ${work_handler}
+    Create Log Tester    1
+    Execute Command    sysbus.cpu AddHookAtWfiStateChange 'self.InfoLog("trainer sleep" if isInWfi else "trainer wake")'
+    # Trace the ELF handlers to distinguish GPIO from SysTick on Cortex-M.
+    FOR    ${symbol}    IN    ${wake_handler}    ${work_handler}
+        Execute Command    sysbus.cpu AddHook `sysbus GetSymbolAddress "${symbol}"` 'self.InfoLog("trainer handler ${symbol}")'
+    END
+    Wait For Log Entry    trainer sleep    pauseEmulation=True
+    ${scr}=    Execute Command    sysbus ReadDoubleWord 0xE000ED10
+    Should Be True    (int($scr.strip(), 0) & 4) == 0    Expected ordinary Sleep (SLEEPDEEP clear).
 
 *** Test Cases ***
 VALUE Press Advances Once And Survives Reset
@@ -206,3 +260,60 @@ Failed Stack Transitions Are Retried
     Set Test Input    test_fail_next_transition    1
     Execute Command    sysbus.gpioPortA OnGPIO 15 true
     Check USB After Two Polls    0    2    2
+
+Bouncing VALUE And Shell Edit Both Persist
+    Bounce Key During Shell Edit    12
+    Check Test Counter    test_playback_requests    3
+    Reset Trainer    shape square
+    Write Line To Uart    trainer settings show
+    Wait For Line On Uart    amp 500mVpp
+
+Bouncing MODE And Shell Edit Both Persist
+    Bounce Key During Shell Edit    14
+    Check Test Counter    test_playback_requests    2
+    Reset Trainer    amp 500mVpp
+
+Panel Edit Restarts Two Second Indicator Timeout
+    Create Trainer
+    Execute Command    include "${CURDIR}/PixelCapture.cs"
+    Execute Command    machine LoadPlatformDescriptionFromString "pixels: Mocks.PixelCapture @ spi2"
+    Boot Trainer    shape sine
+    Check Pixel Frame    2    7    2
+    Execute Command    emulation RunFor "1.1"
+    Press Key    12    shape square
+    Check Pixel Frame    3    7    1
+    ${lit}=    Execute Command    sysbus.spi2.pixels FrameTimeMs
+    Execute Command    emulation RunFor "1.8"
+    Check Pixel Frame    3    7    1
+    Execute Command    emulation RunFor "0.2"
+    Check Pixel Frame    4
+    ${dark}=    Execute Command    sysbus.spi2.pixels FrameTimeMs
+    ${elapsed}=    Evaluate    int($dark.strip(), 0) - int($lit.strip(), 0)
+    Should Be True    1990 <= ${elapsed} <= 2020    Indicator timeout was ${elapsed} ms.
+    Check Test Counter    test_playback_requests    2
+    Check Test Counter    test_idle_requests    0
+
+VALUE Interrupt Wakes The Idle CPU
+    Create Trainer
+    Boot Trainer    shape sine
+    Observe CPU Sleep    gpio_keys_interrupt    outputs_apply
+    Execute Command    sysbus.gpioPortB OnGPIO 12 false
+    Wait For Log Entry    trainer wake
+    Wait For Log Entry    trainer handler gpio_keys_interrupt    pauseEmulation=True
+    Wait For Log Entry    trainer handler outputs_apply    pauseEmulation=True
+    Wait For Line On Uart    Playback request: shape square
+    Execute Command    sysbus.gpioPortB OnGPIO 12 true
+    Wait For Log Entry    trainer sleep    pauseEmulation=True
+
+SysTick Wakes The Idle CPU To Poll USB
+    Create Trainer
+    Boot Trainer    shape sine
+    Observe CPU Sleep    sys_clock_isr    check_power
+    Execute Command    sysbus.gpioPortA OnGPIO 15 false
+    Wait For Log Entry    trainer wake
+    Wait For Log Entry    trainer handler sys_clock_isr    pauseEmulation=True
+    Wait For Log Entry    trainer handler check_power    pauseEmulation=True
+    Execute Command    pause
+    Check USB After Two Polls    1    1    0
+    Check Test Counter    test_playback_requests    1
+    Check Test Counter    test_idle_requests    0
