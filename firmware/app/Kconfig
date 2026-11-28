@@ -18,4 +18,18 @@ config WORKOUT_FILTER_TEST
 	help
 	  Play the four raw DAC codes continuously after reset.
 
+config WORKOUT_OLED
+	bool "Show the active preset on an SSD1306 on J6"
+	default y
+	depends on !WORKOUT_FILTER_TEST
+	select DISPLAY
+	select CHARACTER_FRAMEBUFFER
+
+config HEAP_MEM_POOL_ADD_SIZE_WORKOUT_OLED
+	int
+	default 1152 if WORKOUT_OLED
+	default 0
+	help
+	  Space for the character framebuffer (up to 128 x 64) and allocator metadata.
+
 source "Kconfig.zephyr"

@@ -10,7 +10,7 @@ r1 is at the fab.
 
 ## Firmware
 
-[Build and flash the trainer](firmware/README.md). On reset, both outputs target a 1 kHz sine at 1.00 Vpp centered on +0.75 V. Use MODE and VALUE to select waveform, DC, XY and trigger exercises.
+[Build and flash the trainer](firmware/README.md). The first boot starts both outputs with a 1 kHz sine at 1.00 Vpp centered on +0.75 V. Later boots restore the last selection from EEPROM. Use MODE and VALUE or the USB shell to select waveform, DC, XY and trigger exercises. An optional SSD1306 OLED on J6 shows the active mode and value.
 
 ## Design files
 

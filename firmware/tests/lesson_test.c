@@ -33,6 +33,24 @@ static int expected_code(double volts)
 	return (int)lround(volts * 4096.0 / 3.447);
 }
 
+static void test_edits_during_playback(void)
+{
+	struct lesson before = LESSON_DEFAULT;
+	for (enum mode m = SHAPE; m < MODE_COUNT; ++m) {
+		before.mode = m;
+		for (enum mode field = SHAPE; field < MODE_COUNT; ++field) {
+			struct lesson next = before;
+			next.mode = field;
+			assert(lesson_output_changed(&before, &next) ==
+			       (m != field && (m >= DC || field >= DC)));
+			next = before;
+			next.value[field] = (next.value[field] + 1) % VALUE_COUNT;
+			bool used = (m < DC && field < DC) || field == m || (m == XY && field == AMP);
+			assert(lesson_output_changed(&before, &next) == used);
+		}
+	}
+}
+
 static void test_analog(void)
 {
 	struct lesson s = LESSON_DEFAULT;
@@ -79,7 +97,7 @@ static void test_analog(void)
 
 static void test_triggers(void)
 {
-	uint16_t a[RARE_PERIODS], b[RARE_PERIODS];
+	uint8_t a[RARE_PERIODS], b[RARE_PERIODS];
 	for (int v = 0; v < 3; ++v) {
 		unsigned int count = trigger_sequence(v, a, b);
 		if (v == 1) {
@@ -98,6 +116,7 @@ static void test_triggers(void)
 int main(void)
 {
 	test_panel();
+	test_edits_during_playback();
 	test_analog();
 	test_triggers();
 	puts("Front panel, analog presets, XY phase and trigger sequences passed.");

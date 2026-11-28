@@ -1,5 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 #include "outputs.h"
+#include "oled.h"
+#include "preset_store.h"
+#include "trainer.h"
 #include "usb_console.h"
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/drivers/led_strip.h>
@@ -10,14 +13,52 @@
 BUILD_ASSERT(DT_PROP(PIXELS, chain_length) == 9);
 static const struct device *const pixels = DEVICE_DT_GET(PIXELS);
 static const struct gpio_dt_spec diagnostic = GPIO_DT_SPEC_GET(DT_ALIAS(led0), gpios);
-K_MSGQ_DEFINE(presses, sizeof(uint16_t), 8, 2);
+
+struct reply {
+	struct k_sem done;
+	int rc;
+};
+
+enum panel_action { NEXT_MODE, NEXT_VALUE, SET_MODE, SET_VALUE };
+struct panel_event {
+	enum panel_action action;
+	uint8_t field;
+	uint8_t value;
+	struct reply *reply;
+};
+K_MSGQ_DEFINE(events, sizeof(struct panel_event), 8, 4);
+static atomic_t accepting_edits;
+
+int trainer_set(enum mode field, uint8_t value)
+{
+	if ((unsigned int)field > MODE_COUNT ||
+	    value >= (field == MODE_COUNT ? MODE_COUNT : VALUE_COUNT)) {
+		return -EINVAL;
+	}
+	if (!atomic_get(&accepting_edits)) {
+		return -EAGAIN;
+	}
+	struct reply reply;
+	struct panel_event event = {
+		.action = field == MODE_COUNT ? SET_MODE : SET_VALUE,
+		.field = field, .value = value, .reply = &reply,
+	};
+	k_sem_init(&reply.done, 0, 1);
+	k_msgq_put(&events, &event, K_FOREVER);
+	k_sem_take(&reply.done, K_FOREVER);
+	return reply.rc;
+}
 
 static void on_key(struct input_event *event, void *context)
 {
 	ARG_UNUSED(context);
 	/* gpio-keys debounces both edges. Only a press advances the panel. */
-	if (event->type == INPUT_EV_KEY && event->value == 1) {
-		k_msgq_put(&presses, &event->code, K_NO_WAIT);
+	if (event->type == INPUT_EV_KEY && event->value == 1 &&
+	    (event->code == INPUT_KEY_0 || event->code == INPUT_KEY_1)) {
+		struct panel_event press = {
+			.action = event->code == INPUT_KEY_0 ? NEXT_MODE : NEXT_VALUE,
+		};
+		k_msgq_put(&events, &press, K_NO_WAIT);
 	}
 }
 INPUT_CALLBACK_DEFINE(DEVICE_DT_GET(DT_PATH(buttons)), on_key, NULL);
@@ -35,38 +76,69 @@ static int display(const struct lesson *lesson)
 static int run_trainer(void)
 {
 	struct lesson lesson = LESSON_DEFAULT;
+	if (IS_ENABLED(CONFIG_WORKOUT_FILTER_TEST)) {
+		return outputs_apply(&lesson);
+	}
+	int load_rc = preset_load(&lesson);
+	if (load_rc && load_rc != -ENOENT) {
+		gpio_pin_set_dt(&diagnostic, 1);
+	}
 	int rc = outputs_apply(&lesson);
-	if (rc || IS_ENABLED(CONFIG_WORKOUT_FILTER_TEST)) {
-		return rc; /* In the filter image TIM6 and DMA continue autonomously. */
+	if (rc) {
+		return rc;
+	}
+	if (IS_ENABLED(CONFIG_WORKOUT_OLED)) {
+		oled_init();
+		oled_show(&lesson);
+	}
+	rc = display(&lesson);
+	if (rc) {
+		return rc;
 	}
 	k_timeout_t timeout = K_SECONDS(2);
-	rc = display(&lesson);
-	while (!rc) {
-		uint16_t key;
-		if (k_msgq_get(&presses, &key, timeout) != 0) {
-			rc = display(NULL);
+	bool outputs_running = true;
+	atomic_set(&accepting_edits, 1);
+	for (;;) {
+		struct panel_event event;
+		if (k_msgq_get(&events, &event, timeout) != 0) {
+			if (display(NULL)) {
+				gpio_pin_set_dt(&diagnostic, 1);
+			}
 			timeout = K_FOREVER;
 			continue;
 		}
-		enum mode previous = lesson.mode;
-		if (key == INPUT_KEY_0) {
-			lesson_next_mode(&lesson);
-		} else if (key == INPUT_KEY_1) {
-			lesson_next_value(&lesson);
-		} else {
-			continue;
+		struct lesson next = lesson;
+		switch (event.action) {
+		case NEXT_MODE: lesson_next_mode(&next); break;
+		case NEXT_VALUE: lesson_next_value(&next); break;
+		case SET_MODE: next.mode = event.value; break;
+		case SET_VALUE: next.value[event.field] = event.value; break;
 		}
-		/* Moving between the three basic editors leaves playback in phase. */
-		if (key == INPUT_KEY_1 || previous >= DC || lesson.mode >= DC) {
-			rc = outputs_apply(&lesson);
-			if (rc) {
-				break;
+		rc = 0;
+		if (!outputs_running || lesson_output_changed(&lesson, &next)) {
+			rc = outputs_apply(&next);
+			outputs_running = rc == 0;
+		}
+		if (!rc) {
+			lesson = next;
+			rc = preset_save(&lesson);
+			int led_rc = display(&lesson);
+			if (!rc) {
+				rc = led_rc;
+			}
+			if (IS_ENABLED(CONFIG_WORKOUT_OLED)) {
+				oled_show(&lesson);
 			}
 		}
-		rc = display(&lesson);
+		if (rc) {
+			gpio_pin_set_dt(&diagnostic, 1);
+		}
+		if (event.reply) {
+			event.reply->rc = rc;
+			k_sem_give(&event.reply->done);
+		}
 		timeout = K_SECONDS(2);
 	}
-	return rc;
 }
 
 int main(void)

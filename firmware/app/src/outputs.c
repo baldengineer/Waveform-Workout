@@ -37,20 +37,25 @@ static const struct dma_stream pulse = DMA_STREAM(MARKER_TIMER, pulse);
 static const struct dma_stream marker = DMA_STREAM(MARKER_TIMER, marker);
 
 static uint32_t samples[CYCLE_SAMPLES];
-static uint16_t pulse_us[RARE_PERIODS], marker_us[RARE_PERIODS];
+BUILD_ASSERT(TRIGGER_PERIOD_US <= UINT8_MAX);
+static uint8_t pulse_us[RARE_PERIODS], marker_us[RARE_PERIODS];
 
 static int start_dma(const struct dma_stream *stream, const void *table, unsigned int count,
-		     size_t width, volatile uint32_t *destination)
+		     size_t memory_width, size_t peripheral_width, volatile uint32_t *destination)
 {
 	struct dma_block_config block = {
 		.source_address = (uintptr_t)table, .dest_address = (uintptr_t)destination,
 		.source_addr_adj = DMA_ADDR_ADJ_INCREMENT, .dest_addr_adj = DMA_ADDR_ADJ_NO_CHANGE,
-		.source_reload_en = true, .dest_reload_en = true, .block_size = count * width,
+		.source_reload_en = true, .dest_reload_en = true,
+		/* Zephyr's STM32 driver divides the TX block size by the peripheral width
+		 * to obtain CNDTR, the number of timer or DAC transfers.
+		 */
+		.block_size = count * peripheral_width,
 	};
 	struct dma_config config = {
 		.dma_slot = stream->slot, .channel_direction = MEMORY_TO_PERIPHERAL,
 		.channel_priority = 2, .cyclic = true, .block_count = 1, .head_block = &block,
-		.source_data_size = width, .dest_data_size = width,
+		.source_data_size = memory_width, .dest_data_size = peripheral_width,
 		.source_burst_length = 1, .dest_burst_length = 1,
 	};
 	int rc = dma_config(stream->device, stream->channel, &config);
@@ -145,11 +150,14 @@ int outputs_init(void)
 static int start_trigger(uint8_t value)
 {
 	unsigned int count = trigger_sequence(value, pulse_us, marker_us);
-	int rc = start_dma(&pulse, pulse_us, count, sizeof(*pulse_us), &TIM21->CCR1);
+	/* DMA zero-extends each byte to a timer compare halfword. */
+	int rc = start_dma(&pulse, pulse_us, count, sizeof(*pulse_us), sizeof(uint16_t),
+			   &TIM21->CCR1);
 	if (rc) {
 		return rc;
 	}
-	rc = start_dma(&marker, marker_us, count, sizeof(*marker_us), &TIM2->CCR2);
+	rc = start_dma(&marker, marker_us, count, sizeof(*marker_us), sizeof(uint16_t),
+		       &TIM2->CCR2);
 	if (rc) {
 		return rc;
 	}
@@ -186,7 +194,8 @@ static int start_analog(const struct lesson *lesson)
 	DAC1->SR = DAC_SR_DMAUDR1;
 	DAC1->DHR12RD = samples[count - 1];
 	if (playback) {
-		int rc = start_dma(&analog, samples, count, sizeof(*samples), &DAC1->DHR12RD);
+		int rc = start_dma(&analog, samples, count, sizeof(*samples), sizeof(uint32_t),
+				   &DAC1->DHR12RD);
 		if (rc) {
 			return rc;
 		}

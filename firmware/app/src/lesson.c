@@ -1,6 +1,20 @@
 /* SPDX-License-Identifier: MIT */
 #include "lesson.h"
 
+const char *const lesson_mode_names[MODE_COUNT] = {
+	[SHAPE] = "shape", [AMP] = "amp", [FREQ] = "freq",
+	[DC] = "dc", [XY] = "xy", [TRIG] = "trig",
+};
+
+const char *const lesson_value_names[MODE_COUNT][VALUE_COUNT] = {
+	[SHAPE] = {"sine", "square", "triangle"},
+	[AMP] = {"200mVpp", "500mVpp", "1Vpp"},
+	[FREQ] = {"100Hz", "1kHz", "10kHz"},
+	[DC] = {"250mV", "500mV", "1V"},
+	[XY] = {"0deg", "90deg", "180deg"},
+	[TRIG] = {"rare-pulse", "pulse-width", "missing"},
+};
+
 void lesson_next_mode(struct lesson *lesson)
 {
 	lesson->mode = (lesson->mode + 1) % MODE_COUNT;
@@ -9,13 +23,26 @@ void lesson_next_mode(struct lesson *lesson)
 void lesson_next_value(struct lesson *lesson)
 {
 	uint8_t *value = &lesson->value[lesson->mode];
-	*value = (*value + 1) % 3;
+	*value = (*value + 1) % VALUE_COUNT;
 }
 
 unsigned int lesson_mode_pixel(const struct lesson *lesson)
 {
 	static const uint8_t pixels[] = {7, 8, 6, 5, 4, 3};
 	return pixels[lesson->mode];
+}
+
+bool lesson_output_changed(const struct lesson *previous, const struct lesson *next)
+{
+	/* SHAPE, AMP and FREQ are three editors for the same running waveform. */
+	if (previous->mode < DC && next->mode < DC) {
+		return previous->value[SHAPE] != next->value[SHAPE] ||
+		       previous->value[AMP] != next->value[AMP] ||
+		       previous->value[FREQ] != next->value[FREQ];
+	}
+	return previous->mode != next->mode ||
+	       previous->value[next->mode] != next->value[next->mode] ||
+	       (next->mode == XY && previous->value[AMP] != next->value[AMP]);
 }
 
 unsigned int lesson_value_pixel(const struct lesson *lesson)
@@ -79,10 +106,10 @@ uint32_t lesson_sample(const struct lesson *lesson, unsigned int phase, unsigned
 	return (a << 16) | b; /* DAC2 = J2 (A), DAC1 = TP3 (B). */
 }
 
-unsigned int trigger_sequence(uint8_t value, uint16_t *pulse_us, uint16_t *marker_us)
+unsigned int trigger_sequence(uint8_t value, uint8_t *pulse_us, uint8_t *marker_us)
 {
 	if (value == 1) {
-		static const uint16_t widths[] = {10, 40, 80};
+		static const uint8_t widths[] = {10, 40, 80};
 		for (unsigned int i = 0; i < 3; ++i) {
 			pulse_us[i] = widths[i];
 			marker_us[i] = i == 0 ? 10 : 0;

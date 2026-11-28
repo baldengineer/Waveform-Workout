@@ -51,7 +51,7 @@ kernel thread stacks
 device list
 ```
 
-Tab completes commands and the arrow keys recall command history. These are Zephyr diagnostic commands; the front-panel MODE and VALUE buttons control the waveform exercises. No terminal connection is needed for waveform playback, and closing the terminal or unplugging USB does not stop playback while the board remains powered.
+Tab completes commands and the arrow keys recall command history. Waveform playback and the front-panel buttons work with USB disconnected while the board remains powered.
 
 To fit the 20 KiB SRAM, the single full-speed CDC interface uses a 512-byte USB request pool and the interrupt stack is 1 KiB; the shell retains its 2 KiB stack. During board bring-up, run `kernel thread stacks` after exercising the shell and USB reconnects to inspect runtime stack usage, and check that waveform playback continues with USB disconnected while independently powered.
 
@@ -61,9 +61,46 @@ USB descriptors identify the device as `Waveform Workout`, with its MCU hardware
 
 ## First scope check
 
-Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. Reset should give two matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the panel goes dark. A steady D12 indicates an application setup or update error.
+Use DC coupling and a 1 MΩ input. Connect CH1 to J2 and CH2 to TP3 with ground at TP4. With fresh EEPROM, both channels should show matching 1 kHz sines from about +0.25 to +1.25 V. MODE selects a row. VALUE cycles its three positions. The two dim green indicators show the selection for two seconds. The outputs continue when the indicators go dark. A steady D12 indicates an application setup or update error.
 
-For a quick two-channel check, select XY and press VALUE once. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A. The trainer provides the USB serial shell when cable power and VDD permit, and keeps the QT rail off.
+For a quick two-channel check, select XY and set its value to 90 degrees. In XY display with equal scales and centered traces, expect a circle. In normal time display, B leads A by 250 µs. XY uses the saved amplitude. TRIG runs at logic level and uses B to mark the exercise on A.
+
+## Saved settings
+
+The trainer restores the active mode and the value of each row from the STM32's internal data EEPROM before starting playback. Button presses and USB shell edits save immediately. Two versioned, checksummed records occupy the first 32 bytes of EEPROM. An interrupted update leaves the previous record available. Repeating a stored setting skips the write. With no valid record, the trainer uses the factory settings below.
+
+```text
+trainer settings show
+trainer settings set shape square
+trainer settings set freq 10kHz
+trainer settings set mode freq
+```
+
+`show` reads EEPROM. `set` changes one field and saves the full selection. Editing an inactive row preserves the active mode. Field names and values are case-sensitive.
+
+| Field | Accepted values in button order | Factory setting |
+| --- | --- | --- |
+| `mode` | `shape`, `amp`, `freq`, `dc`, `xy`, `trig` | `shape` |
+| `shape` | `sine`, `square`, `triangle` | `sine` |
+| `amp` | `200mVpp`, `500mVpp`, `1Vpp` | `1Vpp` |
+| `freq` | `100Hz`, `1kHz`, `10kHz` | `1kHz` |
+| `dc` | `250mV`, `500mV`, `1V` | `250mV` |
+| `xy` | `0deg`, `90deg`, `180deg` | `0deg` |
+| `trig` | `rare-pulse`, `pulse-width`, `missing` | `rare-pulse` |
+
+To check persistence, run the example commands, press reset, and run `trainer settings show` again. The scope should still show a 10 kHz square wave. Press VALUE in the frequency row, then power-cycle the board to check that the buttons also save the new 100 Hz selection. The separate filter diagnostic ignores trainer settings.
+
+## Optional SSD1306 OLED
+
+Connect an I²C SSD1306 to J6 before power-up. The default trainer image enables the QT rail, waits for the module to reset, and initializes a **128×64** panel at 7-bit address **0x3D** for the Adafruit 326 enclosure. It displays the active row and value after boot and after edits. An absent or unresponsive module releases the QT rail and the trainer continues. The drawing code in `app/src/oled.c` uses Zephyr's native character framebuffer, which provides fonts, text, points, lines, rectangles and circles. [Zephyr framebuffer API](https://docs.zephyrproject.org/latest/doxygen/html/group__monochrome__character__framebuffer.html) · [Adafruit OLED addressing](https://learn.adafruit.com/monochrome-oled-breakouts?view=all)
+
+For a 128×32 panel, add the supplied overlay at build time. Use an absolute path to the overlay if building outside the firmware directory.
+
+```sh
+west build -b waveform_workout -d build/oled32 app -- -DEXTRA_DTC_OVERLAY_FILE=oled-128x32.overlay
+```
+
+The overlay overrides the `trainer_oled` devicetree node. Set `width`, `height`, `multiplex-ratio` and the COM configuration for your glass. For a module strapped to **0x3C**, set `reg = <0x3c>;` in the same node. To keep J6 off and omit the display code and framebuffer, build with `-DCONFIG_WORKOUT_OLED=n` after `--`. The filter diagnostic leaves J6 off.
 
 ## Filter diagnostic and board samples
 
@@ -80,7 +117,7 @@ For a board-only check, build the Zephyr sample `deps/zephyr/samples/basic/blink
 
 ## Firmware structure and host check
 
-`app/src/lesson.c` defines the presets, physical pixel order, packed DAC samples and trigger sequences. `usb_console.c` initializes USB CDC ACM and monitors cable power and VDD independently of the trainer loop; Zephyr's serial shell handles terminal input and output. `outputs.c` drives both DACs from TIM6 using circular DMA. In TRIG, TIM2 starts TIM21 over ITR0. Two internal TIM2 compares load the next A and B pulse widths through DMA halfway through each 100 µs period. The timers latch them at rollover. SPI2 uses separate DMA channels for the display. [STM32L0x2 reference manual, tables 51 and 95](https://www.st.com/resource/en/reference_manual/rm0376-ultralowpower-stm32l0x2-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+`app/src/lesson.c` defines the presets, physical pixel order, packed DAC samples and trigger sequences. `usb_console.c` initializes USB CDC ACM and monitors cable power and VDD independently of the trainer loop; Zephyr's serial shell handles terminal input and output. `outputs.c` drives both DACs from TIM6 using circular DMA. In TRIG, TIM2 starts TIM21 over ITR0. Two internal TIM2 compares load the next A and B pulse widths through DMA halfway through each 100 µs period. The trigger tables store one byte per width. DMA expands each byte into a 16-bit timer compare value, which the timers latch at rollover. SPI2 uses separate DMA channels for the front-panel pixels. [STM32L0x2 reference manual, tables 51 and 95](https://www.st.com/resource/en/reference_manual/rm0376-ultralowpower-stm32l0x2-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 
 From `firmware`, a host C compiler can check the state transitions, LED positions, waveform samples and trigger sequences.
 
@@ -98,7 +135,7 @@ cc -std=c11 -Wall -Wextra -Werror -Iapp/src app/src/lesson.c tests/lesson_test.c
 | Nine front-panel pixels | `led-strip` uses SPI2 MOSI on PB15. A 24 MHz internal system clock supplies the 3 MHz SPI bit clock. DMA1 channels 5 and 6 feed SPI2 while leaving channels 2 and 4 available for the DAC. |
 | Analog outputs | `DAC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), dac_a)` selects A on PA5, DAC channel 2. Use `dac_b` for B on PA4, DAC channel 1. For synchronized playback, use TIM6 and the DAC's `dual` DMA entry (DMA1 channel 2, request 9) to transfer packed 32-bit A/B pairs. |
 | Source switches and digital outputs | On `/zephyr,user`, `a-select-gpios` and `b-select-gpios` select analog when asserted. `a-digital-gpios` and `b-digital-gpios` drive the digital paths. For timer output, enable `&pwm_a` (TIM21 CH1) or `&pwm_b` (TIM2 CH2) in an application overlay. |
-| STEMMA QT | `zephyr_i2c` is J6. Enable the `qt_vdd` regulator before the first transaction. The rail defaults off and the bus uses its switched external pull-ups. |
+| STEMMA QT | `zephyr_i2c` is J6. Enable the `qt_vdd` regulator before the first transaction. The bus uses switched external pull-ups. The OLED build powers J6 for discovery and keeps it on while the panel is in use. |
 | Native USB | `zephyr_udc0` uses HSI48 with clock recovery from USB frames. The application connects CDC ACM to `zephyr,console` and `zephyr,shell-uart`. `vbus-present-gpios` on `/zephyr,user` and the `volt-sensor0` supply-voltage reading gate USB attachment. |
 
 The 3 MHz pixel encoding gives a nominal 1.00 µs zero-bit low interval, at the upper timing limit for the fitted LEDs. Check the waveform at TP21 during bring-up.

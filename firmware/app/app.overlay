@@ -5,6 +5,28 @@
 	chosen {
 		zephyr,console = &cdc_acm_uart0;
 		zephyr,shell-uart = &cdc_acm_uart0;
+		zephyr,display = &trainer_oled;
+	};
+};
+
+&eeprom { status = "okay"; };
+
+&zephyr_i2c {
+	trainer_oled: ssd1306@3d {
+		compatible = "solomon,ssd1306";
+		reg = <0x3d>;
+		/* The application switches on J6 and waits for the panel's reset. */
+		zephyr,deferred-init;
+		ready-time-ms = <100>;
+		width = <128>;
+		height = <64>;
+		multiplex-ratio = <63>;
+		segment-offset = <0>;
+		page-offset = <0>;
+		display-offset = <0>;
+		segment-remap;
+		com-invdir;
+		prechargep = <0x22>;
 	};
 };
 
@@ -25,7 +47,9 @@
  * each period. RM0376 table 51 maps CC3 and CC4 to request 8.
  */
 &timers2 {
-	dmas = <&dma1 1 8 (STM32_DMA_PERIPH_TX | STM32_DMA_16BITS | STM32_DMA_MODE_CYCLIC)>,
-	       <&dma1 4 8 (STM32_DMA_PERIPH_TX | STM32_DMA_16BITS | STM32_DMA_MODE_CYCLIC)>;
+	dmas = <&dma1 1 8 (STM32_DMA_PERIPH_TX | STM32_DMA_MEM_8BITS | STM32_DMA_PERIPH_16BITS |
+			   STM32_DMA_MODE_CYCLIC)>,
+	       <&dma1 4 8 (STM32_DMA_PERIPH_TX | STM32_DMA_MEM_8BITS | STM32_DMA_PERIPH_16BITS |
+			   STM32_DMA_MODE_CYCLIC)>;
 	dma-names = "pulse", "marker";
 };
